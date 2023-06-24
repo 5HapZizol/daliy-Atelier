@@ -1,0 +1,36 @@
+
+#wrap {
+    width: 50%;
+    border: 1px solid red;
+    margin: 0 auto;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+article {
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+div>article {
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.box {
+    margin: 0 auto;
+    padding-top:2em;
+    padding-bottom: 2em;
+    align-items: center;
+    border:solid 0em;
+    width: 40vw;
+}
+
+.img_list{
+    display: inline;
+}
+.img_list_info *{
+    min-width: auto;
+    display: inline-;
+}

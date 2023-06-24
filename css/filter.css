@@ -1,0 +1,105 @@
+.h1_top {
+    text-align: center;
+    padding: 0.5em;
+}
+.divide_hr > hr {
+    align-items: center;
+    border:solid 0.em;
+    width: 50%;
+}
+
+/*전체 박스*/
+.box {
+    margin: 0 auto;
+    padding-top:2em;
+    padding-bottom: 2em;
+    align-items: center;
+    border:solid 0em;
+    width: 40vw;
+}
+
+/*줄 간격*/
+.box > div {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/*테마 버튼*/
+.theme_btn {
+    outline: 0.1em;
+    border-style: none;
+    border-color: #778C86;
+    background-color: white;
+    text-align: center;
+    width: auto;
+    height: 2em;
+    justify-content: center;
+    min-height: 100wh;
+}
+
+
+/*테마 버튼 액션 이벤트*/
+.theme_btn:hover {
+    background-color: #778C86;
+    transition: 0s;
+}
+
+/*구매 가격 직접 입력 font*/
+.font_buy {
+    display: inline-block;
+    padding-left: 5%;
+    padding-right: 2%;
+    font-size: 1em;
+    color: #616161;
+    width: auto;
+}
+
+.pick_btn{
+    padding-left: 5%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pick_new input[type="radio"] {
+    display: none;
+}
+
+.pick_new input[type="radio"] + span {
+    display: inline-block;
+    padding: 15px 10px;
+    border: 1px solid #dfdfdf;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.pick_new input[type="radio"]:checked + span {
+    background-color: #778C86;
+    color: #000000;
+}
+
+/*구매가격_직접입력*/
+.text_100_800 {
+    position: relative;
+    width: 2em;
+  }
+  
+  input {
+    width: 6em;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+.search_filter_btn {
+    width: 4em;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #fff;
+}
+.serach_filter_btn:hover {
+        background-color: #778C86;
+        transition: 1s;
+}

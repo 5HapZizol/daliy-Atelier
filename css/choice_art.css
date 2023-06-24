@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;    /*굵기는 100, 300, 400, 500, 700이 있음.*/
+    font-style: normal;
+}
+.page_top_1{
+    display: inline-block;
+    margin-left:auto; 
+    margin-right:auto;
+    width: 60%;
+    display: table;
+    margin: 1em auto;
+}
+.page_name_1 {
+    margin: 1em auto;
+    display: table;
+    font-size: 2.2em;
+}
+.page_top_1 .hr_1_1{
+    margin: 2em;
+    text-align: center;
+}
+.page_path_1 {
+    display: inline;
+    float: left;
+    padding-left: 3.5em;
+    font-size: 0.6em;
+    color: rgb(180, 180, 180);
+    margin-bottom: 3em;
+}  
+/*선택 버튼*/
+.pick_btn{
+    text-align: center;
+}
+
+.pick_new input[type="radio"] {
+    display: none;
+}
+
+.pick_new input[type="radio"] + span {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #dfdfdf;
+    background-color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+}
+.pick_new input[type="radio"]:checked + span {
+    background-color: #000;
+    color: #ffffff;
+}
+/*작품 목록*/
+.img_list{
+    text-align: center;
+    position: static;
+    display: inline-block;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img_list > ul{
+    width: 51em;
+    height: 50em;
+}
+.img_list > ul > li{
+    float: left;
+    width: 10em;
+    height: 28em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.img_list_1 > h1{
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    font-size: 1.5em;
+}
+.img_list_1 > h2{
+    margin-bottom: 0.3em;
+    font-size: 1.2em;
+}
+.img_list_1 > .status{
+    display: inline-block;
+    padding: 0.5em;
+}.img_list_1 > .status > a{
+    color: #0e0a0a;
+}
+.img_list_1 *{
+    float: none;
+}
+.img_list li {
+    list-style: none;
+}
+.status {
+    display: inline-block;
+    background-color: #b0aeae;
+    padding: 0.5em;
+}

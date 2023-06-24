@@ -1,0 +1,61 @@
+.h1_top {
+    text-align: center;
+    padding: 3em;
+}
+.divide_hr > hr {
+    align-items: center;
+    border:solid 0.em;
+    width: 50%;
+}
+
+table {
+    margin-top: 3em;
+    padding-top: 1em;
+    width: 50%;
+    border-top: 1px solid #444444;
+    border-collapse: collapse;
+    align-items: center;
+}
+
+th, td {
+    border-bottom: 1px solid #444444;
+    padding: 1em;
+}
+
+.container {
+    margin: 0 auto;
+    text-align: left;
+    align-items: center;
+    border:solid 1em;
+    width: 40%;
+    border: 1px;
+}
+
+.last_container {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    border:solid 1em;
+    width: 40%;
+    border: 1px;
+    padding-bottom: 3em;
+}
+
+.order-pay-button {
+    border-radius: 4px 4px 4px 4px;
+    padding-top: 20px;
+    background-color: rgb(226, 226, 226);
+    width: 80%;
+    height: 2.5em;
+    border: none;
+    display: inline-block;
+    margin: 2em 2em;
+}
+.pay-button input[type="radio"] + span {
+    display: inline-block;
+    padding: 15px 10px;
+    border: 1px solid #dfdfdf;
+    background-color: #ffffff;
+    color: #868686;
+    cursor: pointer;
+}

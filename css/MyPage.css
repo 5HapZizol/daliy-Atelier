@@ -1,0 +1,108 @@
+    
+    .page_top{
+        display: inline-block;
+        margin-left:auto; 
+        margin-right:auto;
+        width: 60%;
+        display: table;
+        margin: 1em auto;
+    }
+    .page_name {
+        margin: 1em auto;
+        display: table;
+        font-size: 2.2em;
+    }
+    .page_top .hr_1{
+        margin: 2em;
+    }
+    .page_path {
+        display: inline;
+        float: left;
+        padding-left: 3.5em;
+        font-size: 0.6em;
+        color: rgb(180, 180, 180);
+        margin-bottom: 3em;
+    }  
+    .mem_fro_info_1 {
+        display: table;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .img_1 {
+        display: inline-block;
+        float: left;
+        margin-right: 1em;
+    }
+    
+    .box_1 {
+        display: inline-block;
+        float: right; 
+        width: 40em; /* 너비 조절 */
+        height: 7.5em; /* 높이 조절 */
+        border: 1px solid black; /* 테두리 선 지정 */
+        background-color: rgba(255, 255, 255, 0.923); 
+    }
+    .box_text {
+        display: table;
+        float: left;
+        margin-left: 1.2em;
+        font-size: 0.9em;
+    }
+    .charge_btn {
+        background-color: rgb(226, 226, 226);
+        border: none;
+        width: 3.6em;
+        height: 2em;
+    }
+    .box_text_1 {
+        display: inline-block;
+        margin-right: -2em;
+        font-size: 0.9em;
+    }
+    .line {
+        display: table;
+        width: 0.07em;
+        height: 7.6em; 
+        background-color: black;
+        margin-left: 20em;
+        margin-top: -3.8em;
+    }
+    table{
+        border-collapse : collapse;
+        text-align:center;
+        margin-left:auto; 
+        margin-right:auto;
+        table-layout: fixed;
+        width: 50%;
+        height: 20px;
+    }
+    .td_1{
+        background-color: #778C86;
+        height: 2em;
+    }
+    tr.no-border-bottom {
+        border-bottom-color: transparent;
+        height: 3em;
+      }
+      .btn-group {
+        text-align: center;  
+    }
+    .mem_info {
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(226, 226, 226);
+        width: 15em;
+        height: 5em;
+        border: none;
+        margin: 0.3em 0.3em;
+        font-size: 120%; 
+    }
+    .mem_info:hover{
+        background-color: #778C86;
+        transition: 0s;
+    }
+    .charge_btn:hover {
+        background-color: #778C86;
+        transition: 0s;
+    }

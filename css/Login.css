@@ -1,0 +1,91 @@
+ @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+* {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+/* 여기서부터 시작! */
+#TitleLogin{
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 37px;
+  font-weight: 700;
+  margin: 50px auto 50px;
+  justify-content: center;
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 440px;
+  margin: 50px auto 120px;
+  box-shadow: 5px 8px 5px #b2b9b2;
+}
+
+.login-tab {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.login-tab div {
+  position: relative;
+  top: 1px;
+  width: 50%;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #223;
+}
+
+.login-tab .General_Login {
+  border-top-right-radius: 2rem;
+  border-bottom: 1px solid #fff;
+}
+
+.login-tab .Author_Login {
+  border-top-left-radius: 2rem;
+  background-color: #cfcfcf;
+}
+
+.login-form {
+  width: 100%;
+  padding: 40px;
+  border: 1px solid #223;
+  box-sizing: border-box;
+}
+
+.login-form form input {
+  width: 100%;
+  margin: 0.8rem 0;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.login-form form button {
+  width: 100%;
+  margin: 1.8rem 0;
+  padding: 0.4rem 0;
+}
+
+.account {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-login {
+  margin-top: 2rem;
+  padding: 0 3rem;
+}
+
+.social-login button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.social-login button:last-child {
+  margin: 0;
+}
+

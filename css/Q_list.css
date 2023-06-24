@@ -1,0 +1,149 @@
+
+/*경로*/
+.rudfh {
+  font-size: 15px;
+  text-align: center;
+  color: #949494;
+  padding-bottom: 1em;
+}
+
+
+.h1_top {
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 1em;
+}
+#wrap {
+    width: 50%;
+    border: 1px solid red;
+    margin: 0 auto;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.divide_hr > hr {
+    align-items: center;
+    border:solid 0.em;
+    width: 50%;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  border:solid 1em;
+  width: 50%;
+  border: 1px;
+}
+
+  .title{
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2{
+    text-align: center;
+}
+
+.hr_1{
+    align-items: center;
+    border:solid 0.em
+}
+
+.hr_2{
+   margin-top: 45px;
+}
+
+div .btn_Q{
+    border: none;
+    width: 100px;
+    height: 30px;
+    clear: right;
+    float: right;
+}
+
+
+
+table {
+  margin-top: 3em;
+  padding-top: 1em;
+  width: 50%;
+  border-top: 1px solid #444444;
+  border-collapse: collapse;
+  align-items: center;
+}
+  
+th, td {
+	border-left: 1px black solid;
+	border-right: 1px black solid;
+  padding: 0.5em;
+
+}
+table th:first-child,
+table td:first-child {
+	border-left: 0;
+}
+table th:last-child,
+table td:last-child {
+	border-right: 0;
+}
+table .tb_head{
+    text-align: center;
+    background-color: #93ad93;
+}
+
+table .Q_stay{
+    background-color: #c6c5c5;
+}
+
+table{
+    margin-bottom: 100px;
+}
+
+
+
+
+
+div.app {
+    width: 100%;
+  }
+
+
+  thead, tfoot {
+    background-color: #333;
+    color: #fff;
+  }
+
+  td.center {
+    text-align: center;
+  }
+
+  div.paging {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.paging>i,
+  div.paging>div.pages {
+    margin: 0 10px;
+  }
+
+  div.paging>i,
+  div.paging>div.pages>span {
+    margin: 0 3px;
+    cursor: pointer;
+  }
+
+  span.active {
+    color: orangered;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
