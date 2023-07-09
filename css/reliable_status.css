@@ -1,0 +1,162 @@
+.Bid-Range{
+    margin: 30px auto 120px;
+}
+
+#TitleBid{
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 200px auto 50px;
+    justify-content: center;
+}
+
+.Tap-Choice{
+    display: flex;
+    justify-content: center;
+}
+
+.Tap-Choice div{
+    margin: 0 10px 0;
+}
+
+.Tap-Choice button{
+    font-size:20px;
+    background-color: #fff;
+    border: 2px #000 solid;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+.Bid-Tap-btn1{
+
+}
+
+.Bid-Tap-btn2 button{
+    color: #a5a5a5;
+    border: 1px #757575 solid;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+.Bid-Tap-btn3 button{
+    color: #a5a5a5;
+    border: 1px #757575 solid;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+}
+
+.Bid-Range hr{
+    width: 75%;
+    margin: -2px auto;
+}
+
+.Bid-List{
+    display: flex;
+    justify-content: center;
+}
+
+.Bid-Art-Image{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: 50px;
+}
+
+.Bid-Art-Image > img{
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.Bid-Information{
+    display: flex;
+    border: 1px solid rgb(185, 185, 185);
+    justify-content: space-between;
+    margin-top: 100px;
+    box-shadow: 5px 5px 10px #b3b3b3;
+}
+
+.Bid-Line{
+    border: 1px solid #bbb;
+    height: 50%;
+    transform: translate(50%, 50%);
+}
+
+.Bid-First{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 0;
+}
+
+.Bid-First > div {
+    margin: 7px 0;
+}
+
+.Bid-First > div:first-child{
+    font-weight: 700;
+}
+
+.Bid-Second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 0;
+}
+
+.Bid-Second > div{
+    margin: 10px 0;
+}
+
+
+.Bid-Second > div:first-child{
+    font-weight: 700;
+}
+
+
+.Bid-Third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 0;
+}
+
+.Bid-Third > div{
+    margin: 10px 0;
+}
+
+.Bid-Third > div:first-child{
+    font-weight: 700;
+}
+
+.Bid-Fourth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 0;
+}
+
+.Bid-Fourth > div{
+    margin: 10px 0;
+}
+
+.Bid-Fourth > div:first-child{
+    font-weight: 700;
+}
+
+.Bid-Fourth button{
+    width: 110px;
+    font-size: 15px;
+    background-color: #b3b3b3;
+    color: #231f22;
+    border:none
+}

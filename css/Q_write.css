@@ -1,6 +1,20 @@
-*{
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: -moz-none;
-    user-select: none;
-  }
+.Q-Write-Backgoround{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Q-Write-Title{
+    display: flex;
+    margin: 50px auto;
+}
+
+.Q-Write-Title h1{
+    font-size: 30px;
+}
+
+.Q-Write-Frist{
+    display: flex;
+    
+}
+
