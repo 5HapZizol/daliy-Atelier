@@ -100,20 +100,21 @@
                     <div class="Author_Login">작가 로그인</div>
                 </div>
                 
+                
                 <div class="login-form">
                     <div class="input_infor">
-                        <form>
+                    <form method="POST" action="loginProcess.php">
                         <div>
                             <div id="form_Id">아이디</div>
-                            <input type="text" id="input_Id" placeholder="아이디를 입력하세요" required />
+                            <input type="text" id="input_Id" name="userId" placeholder="아이디를 입력하세요" required />
                         </div>
                         <div>
                             <div id="form_Pwd">비밀번호</div>
-                            <input type="password" id="input_Pwd" placeholder="비밀번호를 입력하세요" />
+                            <input type="password" id="input_Pwd" name="password" placeholder="비밀번호를 입력하세요" />
                         </div>
 
-                        <button class="btn_Login" onclick="location.href = '../HTML/main_Login.html'">로 그 인</button>
-                        </form>
+                        <button class="btn_Login" type="submit">로 그 인</button>
+                      </form>
                     </div>
 
                     <div class="account">
