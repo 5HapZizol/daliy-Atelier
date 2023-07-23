@@ -56,17 +56,12 @@ h2{
    margin-top: 45px;
 }
 
-.btn_Q{
+div .btn_Q{
     border: none;
     width: 100px;
     height: 30px;
     clear: right;
     float: right;
-}
-
-.btn_Q:hover {
-  background-color: #778C86;
-  transition: 0s;
 }
 
 
@@ -101,6 +96,10 @@ table .tb_head{
 
 table .Q_stay{
     background-color: #c6c5c5;
+}
+
+table{
+    margin-bottom: 100px;
 }
 
 
@@ -148,51 +147,3 @@ div.app {
     font-size: 20px;
   }
 
-/*페이지 넘김 버튼*/
-go_to_btn_search {
-  font-size: 15px;
-  font-weight: 300;
-  text-align: center;
-  padding-top: 0.5em;
-  background-color: rgb(226, 226, 226);
-  width: 2em;
-  height: 2em;
-  border: none;
-  display: inline-block;
-  margin: 0.01em;
-}
-
-/*페이지 넘김 버튼 액션 이벤트*/
-go_to_btn_search:hover{
-  background-color: #778C86;
-  transition: 0s;
-}
-
-.ques {
-  font-size: 1.2em;
-  margin: 0 auto;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 5%;
-  padding-right: 5%;
-  text-align: left;
-  align-items: center;
-  border:solid 1em;
-  width: 40%;
-  border: none;
-  color: rgb(226, 226, 226);
-  -webkit-text-fill-color: black;
-}
-
-/*Q 줄 간격*/
-.ques > div {
-  margin-bottom: 3em;  
-}
-/*항목 선택 버튼 중앙 정렬*/
-.btn-group {
-  text-align: center;
-  align-items: center;
-}
-.btn_cataloague {
-    text-align: center;
-}
