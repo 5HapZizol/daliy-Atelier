@@ -13,80 +13,83 @@
 <body>
   
     <header>    <!-- 헤더 시작-->
-        <div class="Header">
-          <div class="Logo">
-            <a href="main_Login.html"><img src="/img/Header_Image/Logo_2.png" /></a>
-          </div>
-    
-          <div class="a12">
-            <div class="Header-SignUp">
-              <a href="main.html">로그아웃</a>
-              <a href="#">구매 현황</a>
-              <a href="MyPage.html">마이페이지</a>
-            </div>
-    
-            <div class="Header-catalogue">
-              <!--카테고리 시작-->
-              <nav>
-                <ul id="gnb">
-                  <li class="dept1">
-                    <a href="#">이벤트</a>
-                    <ul class="inner-menu">
-                      <li class="dept2"><a href="#">이벤트 안내</a></li>
-                      <li class="dept2"><a href="#">당첨자 발표</a></li>
-                    </ul>
-                  </li>
-    
-                  <li class="dept1">
-                    <a href="#">경매</a>
-                    <ul class="inner-menu">
-                      <li class="dept2"><a href="totalart.html">전체</a></li>
-                      <li class="dept2"><a href="digitalArt.html">디지털</a></li>
-                      <li class="dept2"><a href="analogart.html">실물</a></li>
-                      <li class="dept2"><a href="#">작가별 작품</a></li>
-                    </ul>
-                  </li>
-    
-                  <li class="dept1">
-                    <a href="#">소개글</a>
-                    <ul class="inner-menu">
-                      <li class="dept2"><a href="artist_introduce.html">작가소개</a></li>
-                      <li class="dept2"><a href="#">개발자 소개</a></li>
-                    </ul>
-                  </li>
-    
-                  <li class="dept1">
-                    <a href="#">서비스</a>
-                    <ul class="inner-menu">
-                      <li class="dept2"><a href="service.html">경매 진행방법</a></li>
-                      <li class="dept2"><a href="Q_write.html">1:1문의</a></li>
-                      <li class="dept2"><a href="Q_list.html">Q&A</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </nav>
-    
-              <!-- * 검색 영역 추가 * -->
-              <div class="Header-search">
-                <input type="text" />
-                <button class="Header-search-Button">
-                  <img src="/img/Header_Image/search.png" />
-                </button>
-              </div>
-            </div>
-            <!--카테고리 끝-->
-          </div>
-    
-          <div class="mobile">
-            <a href="#" class="mobile-button">
-              <div></div>
-              <div></div>
-              <div></div>
-            </a>
-          </div>
+      <div class="Header">
+        <div class="Logo">
+          <a href="main.html"><img src="../img/Header_Image/Logo_2.png" /></a>
         </div>
-        <div class="hd_bg"></div>
-      </header>   <!-- 헤더 끝 -->
+  
+        <div class="a12">
+          <div class="Header-SignUp">
+            <a href="Login.html">로그인</a>
+            <a href="Member_register.html">회원가입</a>
+            <a href="service.html">고객센터</a>
+          </div>
+  
+          <div class="Header-catalogue">
+            <!--카테고리 시작-->
+            <nav>
+              <ul id="gnb">
+                <li class="dept1">
+                  <a href="#">이벤트</a>
+                  <ul class="inner-menu">
+                    <li class="dept2"><a href="#">이벤트 안내</a></li>
+                    <li class="dept2"><a href="#">당첨자 발표</a></li>
+                  </ul>
+                </li>
+  
+                <li class="dept1">
+                  <a href="#">경매</a>
+                  <ul class="inner-menu">
+                    <li class="dept2"><a href="totalart.html">전체</a></li>
+                    <li class="dept2"><a href="digitalArt.html">디지털</a></li>
+                    <li class="dept2"><a href="analogart.html">실물</a></li>
+                    <li class="dept2"><a href="#">작가별 작품</a></li>
+                  </ul>
+                </li>
+  
+                <li class="dept1">
+                  <a href="#">소개글</a>
+                  <ul class="inner-menu">
+                    <li class="dept2"><a href="artist_introduce.html">작가소개</a></li>
+                    <li class="dept2"><a href="#">개발자 소개</a></li>
+                  </ul>
+                </li>
+  
+                <li class="dept1">
+                  <a href="#">서비스</a>
+                  <ul class="inner-menu">
+                    <li class="dept2"><a href="service.html">경매 진행방법</a></li>
+                    <li class="dept2"><a href="Q_list.html">1:1문의</a></li>
+                    <li class="dept2"><a href="center.html">Q&A</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+  
+            <!-- * 검색 영역 추가 * -->
+            <div class="Header-search">
+              <input type="text" />
+              <button class="Header-search-Button">
+                <img src="../img/Header_Image/search.png" />
+              </button>
+            </div>
+          </div>
+          <!--카테고리 끝-->
+        </div>
+  
+        <div class="mobile">
+          <a href="#" class="mobile-button">
+            <div></div>
+            <div></div>
+            <div></div>
+          </a>
+        </div>
+      </div>
+      <div class="hd_bg"></div>
+    </header>   <!-- 헤더 끝 -->
+
+    <!--본문 시작-->
+    <div style="margin-top: 140px;">
 
     <div class = "h1_top"><h1>1대 1 문의</h1></div>
         
@@ -97,6 +100,7 @@
     <div class = "title">
         <button class="btn_Q" onclick="location.href='Q_write.html'">문의하기</button>
     </div>
+    <!--이 버튼 좀 마진 먹여서 떨어뜨리고 싶은데 망할놈의 컨테이너도 안 먹히고 아무것도 안 먹히는 상황임-->
 
     <table align="center">
         <thead class="tb_head">
@@ -105,7 +109,7 @@
             </tr>    
         </thead>
 
-        <tbody class="tb_body">
+        <tbody>
             <div class="safe">
                 <tr >
                     <td>8203</td> <td>배송</td> <td>배송이 안와요</td> <td>se***34</td> <td>23-03-12</td> <td>대기</td>
@@ -174,19 +178,20 @@
         </tbody>
     </table>
 
-    <div calss="paging">
-      <i class="fa-solid fa-angles-left" id="first_page"></i>
-      <i calss="fa-solid fa-angle-left" id="prev_page"></i>
-      <div class="pages">
-          <span class="active">1</span>
-          <span>2</span>
-          <span>3</span>
-          <span>4</span>
-          <span>5</span>
+    <div class = "ques">
+      <div class="btn-group">
+          <nav class="btn_catalogue">
+              <go_to_btn_search> 1 </go_to_btn_search>
+              <go_to_btn_search> 2 </go_to_btn_search>
+              <go_to_btn_search> 3 </go_to_btn_search>
+              <go_to_btn_search> 4 </go_to_btn_search>
+              <go_to_btn_search> 5 </go_to_btn_search>
+              <go_to_btn_search> 6 </go_to_btn_search>
+              <go_to_btn_search style="background-color: #bbbbbb;"> > </go_to_btn_search>
+              <go_to_btn_search style="background-color: #646464;"> >> </go_to_btn_search>
+          </nav>
       </div>
-  
-      <i class="fa-solid fa-angle-right" id="next_page"></i>
-      <i class="fa-solid fa-anles-right" id="last_page"></i>
+    </div>
   </div>
   
   
