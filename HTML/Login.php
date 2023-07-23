@@ -124,7 +124,7 @@
                         </div>
 
                         <div class="right">
-                        <span class="Sign_Up"><a href="Member_register.html">회원가입</a></span>
+                        <span class="Sign_Up"><a href="Member_register.php">회원가입</a></span>
                         </div>
                     </div>
 
