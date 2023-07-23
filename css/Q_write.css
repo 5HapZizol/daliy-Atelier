@@ -1,12 +1,13 @@
 .Q-Write-Backgoround{
     display: flex;
-    align-items: center;
+    max-width: 750px;
+    margin: 0 auto;
     flex-direction: column;
 }
 
 .Q-Write-Title{
     display: flex;
-    margin: 50px auto;
+    margin: 40px auto;
 }
 
 .Q-Write-Title h1{
@@ -15,6 +16,79 @@
 
 .Q-Write-Frist{
     display: flex;
-    
+    align-items: center;
+    border : 1px solid #231f22;
 }
 
+.Q-Write-Type{
+    display: flex;
+    padding: 1rem;
+    width: 20%;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.Q-Write-Type-Select{
+    margin: 0 4rem;
+}
+
+.Q-Write-Type-Select select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance : none;
+    background: url('../img/Select_arrow.jpg') no-repeat 95% 50%;
+    border-radius:3px;
+    width: 180px;
+    padding: 0.5rem 25px;
+}
+
+.Q-Write-Secound{
+    display: flex;
+    align-items: center;
+    border : 1px solid #231f22;
+}
+
+.Q-Write-SvTitle{
+    display: flex;
+    padding: 1rem;
+    width: 20%;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.Q-Write-SvInput{
+    margin: 0 4rem;
+}
+
+.Q-Write-SvInput input{
+    width: 400px;
+}
+
+.Q-Write-Thrid{
+    display: flex;
+    border : 1px solid #231f22;
+}
+
+.Q-Write-Content{
+    display: flex;
+    padding: 1rem;
+    width: 20%;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.Q-Write-Attachment{
+    display: flex;
+    padding: 1rem;
+    width: 20%;
+    justify-content: center;
+    background-color: aqua;
+}
+
+.Q-Write-Alarm{
+    display: flex;
+    padding: 1rem;
+    width: 20%;
+    justify-content: center;
+    background-color: aqua;
+}
