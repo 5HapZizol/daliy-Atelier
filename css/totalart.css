@@ -55,7 +55,7 @@ div>article {
     text-align: center;
 }
 
-/*작품 목록*/
+
 /*작품 목록*/
 .img_list{
     position: static;
@@ -136,3 +136,13 @@ div>article {
 }
 
 /*user agent stylesheet 때문에 ul에 자꾸 패딩 값이 들어감*/
+
+
+img {
+    width: 150px;
+    height: 100px;
+    border: 1px solid #000;
+}
+.contain {
+  object-fit: contain;
+}
