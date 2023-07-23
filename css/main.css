@@ -18,8 +18,6 @@ font-style: normal;
     
 
 /*슬라이딩*/
-
-/*슬라이딩*/
 .section input[id*="slide"] {
     display:none;
 }

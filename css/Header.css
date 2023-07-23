@@ -9,7 +9,6 @@ body {
 
 header {
   box-shadow: 0 10px 10px rgba(2, 3, 3, 0.1);
-  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -196,4 +195,8 @@ article {
   .mobile {
     display: block;
   }
+}
+
+header{
+  clear:both;
 }
