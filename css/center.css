@@ -85,13 +85,14 @@ h3_center {
     color: rgb(226, 226, 226);
 }
 
-/*검색창*/
+/*검색창
 input {
     width: 20em;
     height: 0.75em;
     padding: 0.5em;
     outline: none;
 }
+*/
 
 /*셀렉트 박스*/
 select {

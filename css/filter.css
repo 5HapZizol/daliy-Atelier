@@ -9,7 +9,7 @@
 }
 
 /*전체 박스*/
-.box {
+/*.box {
     margin: 0 auto;
     padding-top:2em;
     padding-bottom: 2em;
@@ -17,6 +17,7 @@
     border:solid 0em;
     width: 40vw;
 }
+*/
 
 /*줄 간격*/
 .box > div {
