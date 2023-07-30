@@ -17,22 +17,22 @@
   <header>  <!-- 헤더 시작-->
     <div class="Header">
       <div class="Logo">
-        <a href="main.html"><img src="/img/Header_Image/Logo_2.png" /></a>
+        <a href="main.html"><img src="../img/Header_Image/Logo_2.png" /></a>
       </div>
 
       <div class="a12">
         <div class="Header-SignUp">
           <a href="Login.html">로그인</a>
-          <a href="#">회원가입</a>
-          <a href="#">마이페이지</a>
+          <a href="Member_register.html">회원가입</a>
+          <a href="service.html">고객센터</a>
         </div>
 
         <div class="Header-catalogue">
           <!--카테고리 시작-->
           <nav>
-            <ul id = "gnb">
+            <ul id="gnb">
               <li class="dept1">
-                <a href="#">이벤트</a>  
+                <a href="#">이벤트</a>
                 <ul class="inner-menu">
                   <li class="dept2"><a href="#">이벤트 안내</a></li>
                   <li class="dept2"><a href="#">당첨자 발표</a></li>
@@ -40,11 +40,11 @@
               </li>
 
               <li class="dept1">
-                <a href="#">경매</a> 
+                <a href="#">경매</a>
                 <ul class="inner-menu">
-                  <li class="dept2"><a href="#">전체</a></li>
-                  <li class="dept2"><a href="#">디지털</a></li>
-                  <li class="dept2"><a href="#">실물</a></li>
+                  <li class="dept2"><a href="totalart.html">전체</a></li>
+                  <li class="dept2"><a href="digitalArt.html">디지털</a></li>
+                  <li class="dept2"><a href="analogart.html">실물</a></li>
                   <li class="dept2"><a href="#">작가별 작품</a></li>
                 </ul>
               </li>
@@ -52,7 +52,7 @@
               <li class="dept1">
                 <a href="#">소개글</a>
                 <ul class="inner-menu">
-                  <li class="dept2"><a href="#">작가소개</a></li>
+                  <li class="dept2"><a href="artist_introduce.html">작가소개</a></li>
                   <li class="dept2"><a href="#">개발자 소개</a></li>
                 </ul>
               </li>
@@ -60,12 +60,11 @@
               <li class="dept1">
                 <a href="#">서비스</a>
                 <ul class="inner-menu">
-                  <li class="dept2"><a href="#">경매 진행방법</a></li>
-                  <li class="dept2"><a href="#">1:1문의</a></li>
-                  <li class="dept2"><a href="#">Q&A</a></li>
+                  <li class="dept2"><a href="Information_Use.html">경매 진행방법</a></li>
+                  <li class="dept2"><a href="Q_list.html">고객센터</a></li>
+                  <li class="dept2"><a href="QnA.html">Q&A</a></li>
                 </ul>
               </li>
-              
             </ul>
           </nav>
 
@@ -73,11 +72,19 @@
           <div class="Header-search">
             <input type="text" />
             <button class="Header-search-Button">
-              <img src="/img/Header_Image/search.png">
+              <img src="../img/Header_Image/search.png" />
             </button>
           </div>
         </div>
         <!--카테고리 끝-->
+      </div>
+
+      <div class="mobile">
+        <a href="#" class="mobile-button">
+          <div></div>
+          <div></div>
+          <div></div>
+        </a>
       </div>
     </div>
     <div class="hd_bg"></div>
@@ -85,11 +92,14 @@
   <!-- 헤더 끝 -->
 
     <!--본문 시작-->
-    <div class = "h1_top"><h1>고객센터</h1></div>
-    
-    <div class = "rudfh">홈 > 서비스 > Q&A</div>
-
-    <div class = "divide_hr"><hr></div>
+  <div style="margin-top: 200px;">
+       
+    <div class="page_top">
+      <span class="page_name">고객센터</span>
+      <p class="page_path">서비스 > Q&A</p>
+      <br>
+      <hr class="hr_1">
+    </div>
 
     <h3_center>
         <h3>자주 묻는 질문(FAQ)</h3>
@@ -102,17 +112,17 @@
         
     <div class = "btn-group">
       <nav class="btn_catalogue">
-          <p>
-            <a href="/html/center.html" class = "select_btn">전체</a>
-            <a href="/html/center/center_delivery.html" class = "select_btn">배송</a>
-            <a href="/html/center/center_point.html" class = "select_btn">포인트</a>
-            <a href="/html/center/center_author.html" class = "select_btn">작가등록</a>
-            <br>
-            <a href="/html/center/center_auction.html" class = "select_btn">경매</a>
-            <a href="/html/center/center_work.html" class = "select_btn">작품등록</a>
-            <a href="/html/center/center_member.html" class = "select_btn">회원정보</a>
-            <a href="/html/center/center_etc.html" class = "select_btn">기타</a>
-          </p>
+        <p>
+          <button class="select_btn" onclick="location.href='QnA.html'">전체</button>
+          <button class="select_btn" onclick="location.href='center_delivery.html'">배송</button>
+          <button class="select_btn" onclick="location.href='center_point.html'">포인트</button>
+          <button class="select_btn" onclick="location.href='center_author.html'">작가등록</button>
+          <br>
+          <button class="select_btn" onclick="location.href='center_auction.html'">경매</button>
+          <button class="select_btn" onclick="location.href='center_work.html'">작품등록</button>
+          <button class="select_btn" onclick="location.href='center_member.html'">회원정보</button>
+          <button class="select_btn" onclick="location.href='center_etc.html'">기타</button>
+        </p>
       </nav>
   </div>
 
@@ -142,11 +152,42 @@
         <span style="float: right;"> 총 n개</span>
     </div>
 
-    <div class = "ques">
-        <div><ques_btn>Q</ques_btn><a herf="#"> [회원 정보] 주문 조회 및 정보 변경은 어떻게 하나요?</a></div>
-        <div><ques_btn>Q</ques_btn><a herf="#"> [경매] 경매 진행과정을 어떻게 알 수 있나요?</a></div>
-        <div><ques_btn>Q</ques_btn><a herf="#"> [포인트] 적립금 충전 및 환불은 어떻게 하면 되나요?</a></div>
-        <div><ques_btn>Q</ques_btn><a herf="#"> [작가 등록] 일반회원에서 작가 회원으로 변경할 수 있나요?</a></div>
+    <div class = "accordion">
+      <input type="radio" name="accordion" id = 'answer01'>
+      <label for = "answer01">[경매] 자주 들어오는 질문을 넣는 곳<em></em></label>
+        <div><p>
+          자주 묻는 질문의 응답을 적어두는 곳
+        </p></div>
+
+      <input type="radio" name="accordion" id = 'answer02'>
+      <label for = "answer02">[배송] 자주 들어오는 질문을 넣는 곳<em></em></label>
+        <div><p>
+          자주 묻는 질문의 응답을 적어두는 곳
+        </p></div>
+
+      <input type="radio" name="accordion" id = 'answer03'>
+      <label for = "answer03">[포인트] 자주 들어오는 질문을 넣는 곳<em></em></label>
+        <div><p>
+          자주 묻는 질문의 응답을 적어두는 곳
+        </p></div>
+      
+      <input type="radio" name="accordion" id = 'answer04'>
+      <label for = "answer04">[작품등록] 자주 들어오는 질문을 넣는 곳<em></em></label>
+        <div><p>
+          자주 묻는 질문의 응답을 적어두는 곳
+        </p></div>
+      
+      <input type="radio" name="accordion" id = 'answer05'>
+      <label for = "answer05">[포인트] 자주 들어오는 질문을 넣는 곳<em></em></label>
+        <div><p>
+          자주 묻는 질문의 응답을 적어두는 곳
+        </p></div>
+      
+      <input type="radio" name="accordion" id = 'answer06'>
+      <label for = "answer06">[회원정보] 자주 들어오는 질문을 넣는 곳<em></em></label>
+        <div><p>
+          자주 묻는 질문의 응답을 적어두는 곳
+        </p></div>
     </div>
 
     <div class = "ques">
