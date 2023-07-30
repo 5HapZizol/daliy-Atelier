@@ -1,18 +1,69 @@
-
-/*경로*/
-.rudfh {
-  font-size: 15px;
-  text-align: center;
-  color: #949494;
-  padding-bottom: 1em;
-}
-
-
 .h1_top {
-    text-align: center;
-    padding-top: 3em;
-    padding-bottom: 1em;
+  text-align: center;
+  padding: 3em;
 }
+.divide_hr > hr {
+  align-items: center;
+  border:solid 0.em;
+  width: 50%;
+}
+
+.page_top{
+  display: inline-block;
+  width: 60%;
+  display: table;
+  margin: 1em auto;
+}
+.page_name {
+  margin: 1em auto;
+  display: table;
+  font-size: 2em;
+}
+.page_top .hr_1{
+  margin: 2em;
+}
+.page_path {
+  display: inline;
+  float: left;
+  padding-left: 3.5em;
+  font-size: 0.6em;
+  color: rgb(180, 180, 180);
+  margin-bottom: 3em;
+}
+.hr_1{
+  margin-top: 4em;
+  border : 0px;
+  border-top: 1px solid;
+}
+
+.page_top{
+  display: inline-block;
+  width: 60%;
+  display: table;
+  margin: 1em auto;
+}
+.page_name {
+  margin: 1em auto;
+  display: table;
+  font-size: 2em;
+}
+.page_top .hr_1{
+  margin: 2em;
+}
+.page_path {
+  display: inline;
+  float: left;
+  padding-left: 3.5em;
+  font-size: 0.6em;
+  color: rgb(180, 180, 180);
+  margin-bottom: 3em;
+}
+.hr_1{
+  margin-top: 4em;
+  border : 0px;
+  border-top: 1px solid;
+}
+
 #wrap {
     width: 50%;
     border: 1px solid red;
@@ -56,12 +107,17 @@ h2{
    margin-top: 45px;
 }
 
-div .btn_Q{
+.btn_Q{
     border: none;
     width: 100px;
     height: 30px;
     clear: right;
     float: right;
+}
+
+.btn_Q:hover {
+  background-color: #778C86;
+  transition: 0s;
 }
 
 
@@ -96,10 +152,6 @@ table .tb_head{
 
 table .Q_stay{
     background-color: #c6c5c5;
-}
-
-table{
-    margin-bottom: 100px;
 }
 
 
@@ -147,3 +199,51 @@ div.app {
     font-size: 20px;
   }
 
+/*페이지 넘김 버튼*/
+go_to_btn_search {
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 0.5em;
+  background-color: rgb(226, 226, 226);
+  width: 2em;
+  height: 2em;
+  border: none;
+  display: inline-block;
+  margin: 0.01em;
+}
+
+/*페이지 넘김 버튼 액션 이벤트*/
+go_to_btn_search:hover{
+  background-color: #778C86;
+  transition: 0s;
+}
+
+.ques {
+  font-size: 1.2em;
+  margin: 0 auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+  align-items: center;
+  border:solid 1em;
+  width: 40%;
+  border: none;
+  color: rgb(226, 226, 226);
+  -webkit-text-fill-color: black;
+}
+
+/*Q 줄 간격*/
+.ques > div {
+  margin-bottom: 3em;  
+}
+/*항목 선택 버튼 중앙 정렬*/
+.btn-group {
+  text-align: center;
+  align-items: center;
+}
+.btn_cataloague {
+    text-align: center;
+}
