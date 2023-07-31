@@ -86,13 +86,30 @@ h3_center {
 }
 
 /*검색창
+<<<<<<< HEAD:css/center.css
 input {
     width: 20em;
+=======
+<<<<<<< HEAD:css/center.css
+input {
+    width: 20em;
+=======
+.input_QnA {
+    width: 20px;
+>>>>>>> back:css/QnA.css
+>>>>>>> da25bc3581d40c806ae62ca1f41d88e14888a8b6:css/QnA.css
     height: 0.75em;
     padding: 0.5em;
     outline: none;
 }
 */
+<<<<<<< HEAD:css/center.css
+=======
+<<<<<<< HEAD:css/center.css
+=======
+
+>>>>>>> back:css/QnA.css
+>>>>>>> da25bc3581d40c806ae62ca1f41d88e14888a8b6:css/QnA.css
 
 /*셀렉트 박스*/
 select {
