@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+}
+section .box_1 {
+    height: 400px;
+    background: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    padding: 30px 10px;
+}
+section .box_1:nth-child(2n) {
+    background: rgb(197, 197, 197);
+}
+
+/*나 죽소*/
+
+.contianer {
+    margin: 3em;
+}
+
+.box_1 {
+    margin: 0 auto;
+    padding-bottom: 2em;
+    align-items: center;
+    border:solid 0em;
+    width: 50%;
+}
