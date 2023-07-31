@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .page_top{
     display: inline-block;
@@ -30,6 +31,46 @@
 html, body {
     margin: 0;
 }
+=======
+.h1_top {
+    text-align: center;
+    padding: 3em;
+}
+.divide_hr > hr {
+    align-items: center;
+    border:solid 0.em;
+    width: 50%;
+}
+
+.page_top{
+    display: inline-block;
+    width: 60%;
+    display: table;
+    margin: 1em auto;
+}
+.page_name {
+    margin: 1em auto;
+    display: table;
+    font-size: 2em;
+}
+.page_top .hr_1{
+    margin: 2em;
+}
+.page_path {
+    display: inline;
+    float: left;
+    padding-left: 3.5em;
+    font-size: 0.6em;
+    color: rgb(180, 180, 180);
+    margin-bottom: 3em;
+}
+.hr_1{
+    margin-top: 4em;
+    border : 0px;
+    border-top: 1px solid;
+}
+
+>>>>>>> back
 /*경로*/
 .rudfh {
     font-size: 15px;
@@ -68,6 +109,7 @@ div>article {
 }
 
 /*작품 목록*/
+
 /*작품 목록*/
 .img_list{
     position: static;
@@ -147,4 +189,28 @@ div>article {
     border: 1px;
 }
 
-/*user agent stylesheet 때문에 ul에 자꾸 패딩 값이 들어감*/
+/*user agent stylesheet 때문에 ul에 자꾸 패딩 값이 들어감*//*user agent stylesheet 때문에 ul에 자꾸 패딩 값이 들어감*//*user agent stylesheet 때문에 ul에 자꾸 패딩 값이 들어감*/
+
+
+
+.contain {
+  object-fit: contain;
+}
+
+.img_size-fix {
+    width: 150px;
+    height: 100px;
+    border: none;
+}
+
+.contianer {
+    margin: 3em;
+}
+
+.box_1 {
+    margin: 0 auto;
+    padding-bottom: 2em;
+    align-items: center;
+    border:solid 0em;
+    width: 50%;
+}

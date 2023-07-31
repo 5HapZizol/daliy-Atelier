@@ -1,7 +1,11 @@
 <?php
     //include root 설정..??
 
+<<<<<<< HEAD
     $conn = mysqli_connect("127.0.0.1", "root", "5hapzizol", "daily-artlier", "3306");
+=======
+    $conn = mysqli_connect("127.0.0.1", "root", "pma5hapzizol", "daily-art", "3306");
+>>>>>>> da25bc3581d40c806ae62ca1f41d88e14888a8b6
 
     $ch_name = $_POST['name'];
     $ch_nickname = $_POST['nickname'];
@@ -18,7 +22,11 @@
     $sql = "
     INSERT INTO user
     (name, nickname, phone_number, email, address)
+<<<<<<< HEAD
     VALUES('{$_POST['name']}', '{$_POST['nickname']}', '{$_POST['tell']}', '{$_POST['email']}', '{$_POST['address']}'
+=======
+    VALUES('{$_POST['name']}', '{$_POST['nickname']}', '{$_POST['tell']}', '{$_POST['email']}', '{$_POST['address']}', NOW()
+>>>>>>> da25bc3581d40c806ae62ca1f41d88e14888a8b6
     )";
     //sql문
     echo $sql;

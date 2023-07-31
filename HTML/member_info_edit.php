@@ -104,15 +104,24 @@
       <table class="mem_table">
           <tr>
               <td>이름</td>
+<<<<<<< HEAD
               <td><input type="text" name="name" placeholder="이름 입력" style="width: 11em;"></td>
           </tr>
           <tr>
               <td>닉네임 </td>
               <td><input type="text" name="nickname" placeholder="닉네임 입력" style="width: 11em;">
+=======
+              <td><input type="text" id="name" placeholder="이름 입력" style="width: 11em;"></td>
+          </tr>
+          <tr>
+              <td>닉네임 </td>
+              <td><input type="text" id="nickname" placeholder="닉네임 입력" style="width: 11em;">
+>>>>>>> da25bc3581d40c806ae62ca1f41d88e14888a8b6
                   <button>중복 확인</button></td>
           </tr>
           <tr>
               <td>E-MAIL</td>
+<<<<<<< HEAD
               <td><input type="text" name="email_body" placeholder="직접 입력" style="width: 11em;">
                   <select class="num">
                       <option value="1">선택</option>
@@ -120,24 +129,46 @@
                       <option value="2" name="email_daum">daum.net</option>
                       <option value="3" name="email_google">google.co.kr</option>
                       <option value="4" name="email_nate">nate.com</option>
+=======
+              <td><input type="text" id="email_body" placeholder="직접 입력" style="width: 11em;">
+                  <select class="num">
+                      <option value="1">선택</option>
+                      <option value="2" id="email_naver">naver.com</option>
+                      <option value="2" id="email_daum">daum.net</option>
+                      <option value="3" id="email_google">google.co.kr</option>
+                      <option value="4" id="email_nate">nate.com</option>
+>>>>>>> da25bc3581d40c806ae62ca1f41d88e14888a8b6
                   </select></td>
           </tr>
           <tr>
               <td>우편번호</td>
+<<<<<<< HEAD
               <td><input type="text" name="email" style="width: 11em;">
+=======
+              <td><input type="text" id="email" style="width: 11em;">
+>>>>>>> da25bc3581d40c806ae62ca1f41d88e14888a8b6
               <button>주소 검색</button></td>
           </tr>
           <tr>
               <td>주소</td>
+<<<<<<< HEAD
               <td><input type="text" name="address" style="width: 25em;"></td>
           </tr>
           <tr>
               <td>상세 주소</td>
               <td><input type="text" name="address_detail" style="width: 25em;"></td>
+=======
+              <td><input type="text" id="address" style="width: 25em;"></td>
+          </tr>
+          <tr>
+              <td>상세 주소</td>
+              <td><input type="text" id="address_detail" style="width: 25em;"></td>
+>>>>>>> da25bc3581d40c806ae62ca1f41d88e14888a8b6
           </tr>
           <tr>
             <td>전화번호</td>
             <td>
+<<<<<<< HEAD
             <select class="num" name="tell1">
                 <option value="1">선택</option>
                 <option value="010">010</option>
@@ -148,10 +179,23 @@
                 <input type="number" name="tell2" style="width: 3em;">
                 -
                 <input type="number" name="tell3" style="width: 3em;">
+=======
+            <input type="number"  id="tell1"><select class="num">
+                <option value="1">선택</option>
+                <option value="2">010</option>
+                <option value="2">011</option>
+                <option value="3">012</option>
+            </select>
+                -
+                <input type="text" id="tell2" style="width: 3em;">
+                -
+                <input type="text" id="tell3" style="width: 3em;">
+>>>>>>> da25bc3581d40c806ae62ca1f41d88e14888a8b6
             </td>
           </tr>
           <tr>
               <td>SNS 수신 동의</td>
+<<<<<<< HEAD
               <td><input type="radio" name="sns" id="sns_ok" value="ok" checked="checked">동의
                   <input type="radio" name="sns" id="sns_no" value="no">비동의</td>
           </tr>
@@ -161,6 +205,18 @@
                   <input type="radio" name="email" id="email_no" value="no">비동의</td>
           </tr>
         </table>
+=======
+              <td><input type="radio" name="agree" id="sns_ok" value="ok" checked="checked">동의
+                  <input type="radio" name="agree" id="sns_no" value="no">비동의</td>
+          </tr>
+          <tr>
+              <td>E-MAIL 수신 동의</td>
+              <td><input type="radio" name="agree" id="email_ok" value="ok" checked="checked">동의
+                  <input type="radio" name="agree" id="email_no" value="no">비동의</td>
+          </tr>
+        </table>
+      </form>
+>>>>>>> da25bc3581d40c806ae62ca1f41d88e14888a8b6
     </div>
     <div class = "btn-group">
       <p>
