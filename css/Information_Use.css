@@ -1,0 +1,68 @@
+.h1_top {
+    text-align: center;
+    padding: 3em;
+}
+.divide_hr > hr {
+    align-items: center;
+    border:solid 0.em;
+    width: 50%;
+}
+
+.page_top{
+    display: inline-block;
+    width: 60%;
+    display: table;
+    margin: 1em auto;
+}
+.page_name {
+    margin: 1em auto;
+    display: table;
+    font-size: 2em;
+}
+.page_top .hr_1{
+    margin: 2em;
+}
+.page_path {
+    display: inline;
+    float: left;
+    padding-left: 3.5em;
+    font-size: 0.6em;
+    color: rgb(180, 180, 180);
+    margin-bottom: 3em;
+}
+.hr_1{
+    margin-top: 4em;
+    border : 0px;
+    border-top: 1px solid;
+}
+
+
+/*이미지 중앙정렬, margin*/
+.img_center {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+/*왜 있는지 까먹었는데 잘 모르겠음...*/
+@media (max-wdith:530em) {
+    button{
+        display: block;
+    }
+}
+
+.service_box {
+    font-size: 1.2em;
+    margin: 0 auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    align-items: center;
+    border:solid 1em;
+    width: 40%;
+    border: none;
+    color: rgb(226, 226, 226);
+    -webkit-text-fill-color: black;
+}
