@@ -1,16 +1,37 @@
 <?php
+
     $conn = mysqli_connect("127.0.0.1", "root", "pma5hapzizol", "daily-art", "3306");
     //$conn = mysqli_connect(주소, 아이디, "비밀번호", DB 스키마 이름, 포트);
+    
+    //이미지 고유 아이디 난수 생성
+    $img_id = uniqid("image_", true);
 
-    //이미지 db 업로드 및 파일 저장
-    $tmpfile =  $_FILES['input_file']['tmp_name'];
-    $o_name = $_FILES['input_file']['name'];
-    $filename = iconv("UTF-8", "EUC-KR",$_FILES['input_file']['name']);
+    //이미지 파일 저장
+    $tmpfile =  $_FILES['input_image']['tmp_name'];
+    $o_name = $_FILES['input_image']['name'];
+    $filename = iconv("UTF-8", "EUC-KR",$_FILES['input_image']['name']);
     $folder = "../img/auction".$filename; //파일경로
     move_uploaded_file($tmpfile,$folder);
 
+    //이미지 db 업로드
+    $sql = "
+        INSERT INTO IMAGE(
+           art_img_id, img_name, img_path)
+        VALUES(
+            '{$img_id}', '{$filename}', '{$folder}'
+        )";
+
+    //sql문
+    echo $sql;
+    $result = mysqli_query($conn, $sql);
+
+    if ($result === false) {    //오류 여부
+        echo "저장에 문제가 생겼습니다. 관리자에게 문의해주세요.";
+        echo mysqli_error($conn);
+    } 
+    
     //작품 고유 아이디 난수 생성
-    $art_id = sprintf('%s.%s.%08d', date('Ymd.His'), substr(microtime(), 2, 6), rand(0, 99999999));
+    $art_id = uniqid("art_", true);
 
     //기본 시간대 설정
     date_default_timezone_set('Asia/Seoul');
@@ -22,11 +43,13 @@
     //작품 db 업로드
     $sql = "
         INSERT INTO ART(
-            artid, artist_code, art_img_id, art_type, name, material,
-            descript, start_price, current_price, registration_date, bid_start_time, closing_time)
+            artid, artist_code, art_img_id, art_type, name,
+            material, descript, start_price, current_price, registration_date,
+            bid_start_time, closing_time)
         VALUES(
-            '{$art_id}', 33, '".$o_name."', '{$_POST['art_type']}','{$_POST['Upname']}', '{$_POST['material']}',
-            '{$_POST['info']}', '{$_POST['price']}', '{$_POST['price']}', NOW(), '{$bid_start_time}', '{$closing_time}'
+            '{$art_id}', 33, '".$o_name."', '{$_POST['art_type']}','{$_POST['Upname']}',
+            '{$_POST['material']}', '{$_POST['info']}', '{$_POST['price']}', '{$_POST['price']}', NOW(),
+            '{$bid_start_time}', '{$closing_time}'
         )";
 
     //sql문
@@ -40,7 +63,7 @@
     ?>
     <script>
         alert("업로드가 완료되었습니다");
-        location.href = "main.html";
+        location.href = "main.php";
     </script>
 <?php
 }
