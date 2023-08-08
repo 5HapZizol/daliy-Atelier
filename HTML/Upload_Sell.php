@@ -7,9 +7,26 @@
     <link rel="stylesheet" href="..\CSS\Upload_Sell.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="/js/header.js"></script>
+
+    <!--태그 관련 -->
+    <script src="https://unpkg.com/@yaireo/tagify"></script>
+    <link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
+    
     <script>
+      var input = document.getElementById('tag');
+      var tagify = new Tagify(input);
+        
+      // 태그가 추가되면 이벤트 발생
+      tagify.on('add', function() {
+        console.log(tagify.value); // 입력된 태그 정보 객체
+      });
+
+      //엔터 이벤트 삭제
+      
+
       $.fn.setPreview = function(opt){
           "use strict"
               var defaultOpt = {
@@ -167,7 +184,7 @@
       <img id="img_preview" style="display:none;"/>
       <div class ="up_file">
           <label for="file">파일 업로드하기</label>
-          <input type="file" name="input_file" onchange="dropFile.handleFiles(this.files)" accept="image/png, image/jpeg, image/jpg">
+          <input type="file" id="input_file" name="input_image" onchange="dropFile.handleFiles(this.files)" accept="image/png, image/jpeg, image/jpg">
       </div>
 
 
@@ -194,7 +211,7 @@
 
                 <tr>
                     <td>해시태그</td>
-                    <td><input type="text" name="hash" size="20" style="width:100%;"></td>
+                    <td><input type="text" id="tag" name="hash" size="20" style="width:100%;"></td>
                 </tr>
             
                 <tr>

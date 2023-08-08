@@ -1,0 +1,16 @@
+<script src="https://unpkg.com/@yaireo/tagify"></script>
+<!--<script src="https://unpkg.com/@yaireo/tagify/dist/tagify.polyfills.min.js"></script>-->
+<link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
+
+<h1>Tagify 데모</h1>
+해시태그<input placeholder="type tags">
+
+<script>
+var input = document.querySelector('input')
+var tagify = new Tagify(input);
+  
+// 태그가 추가되면 이벤트 발생
+tagify.on('add', function() {
+  console.log(tagify.value); // 입력된 태그 정보 객체
+})
+</script>
