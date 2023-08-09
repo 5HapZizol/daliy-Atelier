@@ -1,30 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>작품 페이지</title>
-    <link rel="stylesheet" href="../css/new_1.css">
+    <link rel="stylesheet" href="../css/best_2.css">
+    <link rel="stylesheet" href="../css/modal.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
   <header>    <!-- 헤더 시작-->
     <div class="Header">
-    </div>
+      </div>
   </header>   <!-- 헤더 끝 -->
 
   <article>
     <div class="art_auction_info">
-      <img src="/img/art_auction_pic1.jpg" width="50%">
+      <img src="../img/auction/best2.png" width="50%">
       <div class="art_auction_info_right">
           <div class="art_info_text_box">
-              <div class="title">속마음</div>
+              <div class="title">역류</div>
               <div class="artist">전채영</div>
-              <div class="category">#흑백 #어두운 #구름 #비 #디지털아트</div>
+              <div class="category">#자연 #초자연 #밝은 #강 #디지털아트</div>
               <div class="start_price">시작가: 100,000 원</div>
               <div class="left_time">남은시간: 25:04:30</div>
-              <div class="current_price">현재 최고가: 450,000 원</div>
+              <div class="current_price">현재 최고가: 900,000 원</div>
           </div>
           <div class="art_auction_btns">
-              <button class="bid" type="button">
+              <button class="openBtn" type="button">
                   <label>입찰 하기</label>
               </button>
               <button class="likes" type="button">
@@ -59,45 +61,77 @@
       <div>실물을 확인하지 않아 발생되는 문제에 대한 책임은 응찰자에게 있으며, 이와 같은 유의사항을 반드시 확인하시고 신중히 응찰해 주시길바랍니다.</div>
   </div>
   <div class="artist_other_art">
-      <div class="top">작가의 다른 작품</div>
-      <hr/>
-      <ul>
-          <li>
-              <img src="../img/other_art_1.png" width="90%" class="bottom" style="
-              vertical-align: text-bottom;">
-          </li>
-          <li>
-              <img src="../img/other_art_2.png" width="90%" class="bottom" style="
-              vertical-align: text-bottom;">
-          </li>
-          <li>
-              <img src="../img/auction/new_3.jpg" width="90%" class="bottom" style="
-              vertical-align: text-bottom;">
-          </li>
-          <li>
-              <img src="../img/auction/best3.jpg" width="90%" class="bottom">
-          </li>
-          <li>
-              <img src="../img/auction/new_1.jpg" width="90%" class="bottom">
-          </li>
-      </ul>
-  </div>
-  </article>  
+    <div class="top">작가의 다른 작품</div>
+    <hr/>
+    <ul>
+        <li>
+            <img src="../img/other_art_1.png" width="90%" class="bottom" style="
+            vertical-align: text-bottom;">
+        </li>
+        <li>
+            <img src="../img/other_art_2.png" width="90%" class="bottom" style="
+            vertical-align: text-bottom;">
+        </li>
+        <li>
+            <img src="../img/auction/new_3.jpg" width="90%" class="bottom" style="
+            vertical-align: text-bottom;">
+        </li>
+        <li>
+            <img src="../img/auction/best3.jpg" width="90%" class="bottom">
+        </li>
+        <li>
+            <img src="../img/auction/new_1.jpg" width="90%" class="bottom">
+        </li>
+    </ul>
+</div>
 
-    <!-- footer 시작 -->
-    <footer>  
-      <div class="footer-Background">
+<div class="modal hidden">
+  <div class="bg">
+  </div>
+  <div class="modalBox">
+      <div class="modalTop">
+          <span>결제입력창</span>
       </div>
-    </footer>  <!-- footer 끝 -->
-    
+      <p>현재가: 8,600,000원</p>
+      <p>마감일: 9/23(토) 14:00 KST 순차마감</p>
+      <div class="inputMoney">
+          입찰가 : <input type="text" placeholder="900,000 이상">원
+      </div>
+      <div class="buttonBox">
+          <button class="nextBtn">확인</button>
+          <button class="closeBtn">닫기</button>
+      </div>
+  </div>
+</div>
+  </article>
+
+  <footer> <!--  footer 시작 -->
+    <div class="footer-Background">
+      
+    </div>
+   </footer> <!-- footer 끝 -->
+
     <script>
+
       $(document).ready(function(){
-        $(".Header").load("/html/Header.html");
+          $(".Header").load("/html/Header.html");
       });
 
       $(document).ready(function(){
           $(".footer-Background").load("/html/Footer.html");
       });
+      const open = () => {
+        document.querySelector(".modal").classList.remove("hidden");
+      }
+    
+      const close = () => {
+        document.querySelector(".modal").classList.add("hidden");
+      }
+    
+      document.querySelector(".openBtn").addEventListener("click", open);
+      document.querySelector(".closeBtn").addEventListener("click", close);
+      document.querySelector(".bg").addEventListener("click", close);
+    
     </script>
 </body>
 </html>

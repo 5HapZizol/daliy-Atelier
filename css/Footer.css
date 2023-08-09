@@ -29,6 +29,16 @@ footer {
     gap: 2rem;
 }
 
+.footer-terms a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-terms a:visited{
+    text-decoration: none;
+}
+
+
 .footer-social-Icon{
     display: flex;
     margin: 25px;
