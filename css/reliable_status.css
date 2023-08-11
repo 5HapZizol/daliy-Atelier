@@ -1,5 +1,5 @@
 .Bid-Range{
-    margin: 30px auto 120px;
+    margin: 50px auto 120px;
 }
 
 #TitleBid{
@@ -11,48 +11,54 @@
     justify-content: center;
 }
 
-.Tap-Choice{
+/* 목록창 */
+.Tap-Choice {
     display: flex;
     justify-content: center;
-}
+    position: relative;
+  }
 
-.Tap-Choice div{
+  .Tap-Choice div {
     margin: 0 10px 0;
-}
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+  }
 
-.Tap-Choice button{
-    font-size:20px;
-    background-color: #fff;
-    border: 2px #000 solid;
-    border-top-width: 0;
-    border-right-width: 0;
-    border-left-width: 0;
-}
+  .Tap-Choice button {
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #b3b3b3; /* 모든 자식 요소의 기본 텍스트 색상 */
+  }
 
-.Bid-Tap-btn1{
+  .Tap-animation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.5s;
+  }
 
-}
+  .Tap-Choice div.active .Tap-animation {
+    width: 100%;
+  }
 
-.Bid-Tap-btn2 button{
-    color: #a5a5a5;
-    border: 1px #757575 solid;
-    border-top-width: 0;
-    border-right-width: 0;
-    border-left-width: 0;
-}
+  .Tap-Choice div.active button {
+    color: #000000; /* 클릭된 요소의 텍스트 색상 */
+  }
 
-.Bid-Tap-btn3 button{
-    color: #a5a5a5;
-    border: 1px #757575 solid;
-    border-top-width: 0;
-    border-right-width: 0;
-    border-left-width: 0;
-}
+  .Tap-Choice div:first-child.active button {
+    color: #000000; /* 첫 번째 자식 요소인 "Bid status"의 텍스트 색상 */
+  }
 
-.Bid-Range hr{
+  .Bid-Range hr {
     width: 75%;
     margin: -2px auto;
-}
+  }
 
 .Bid-List{
     display: flex;
@@ -78,7 +84,6 @@
     border: 1px solid rgb(185, 185, 185);
     justify-content: space-between;
     margin-top: 100px;
-    box-shadow: 5px 5px 10px #b3b3b3;
 }
 
 .Bid-Line{

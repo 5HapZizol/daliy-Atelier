@@ -1,0 +1,106 @@
+.Ordered-Status-Title{
+    margin: 200px auto 100px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.Order-Menu-List{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto 200px;
+}
+
+.Order-Menu-Category {
+    display: flex;
+    border: 1px solid #231f22;
+    border-left-width: 0;
+    border-right-width: 0;
+    padding: 5px 0;
+}
+
+.Order-Menu-Category div{
+    /* width: 200px; */
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.Order-Menu-Number{
+    width: 150px;
+}
+
+.Order-Menu-Image{
+    width: 200px;
+}
+
+.Order-Menu-Name{
+    width: 350px;
+}
+
+.Order-Menu-Price{
+   width: 150px;
+}
+
+.Order-Menu-Status{
+    width: 150px;
+}
+
+.Order-Item {
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid #b3b3b3;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    padding-bottom: 15px;
+}
+
+.Order-Item div{
+    display: flex;
+    justify-content: center
+}
+
+.Order-Item-Number{
+    flex-direction: column;
+    width: 150px;
+}
+
+.Order-Item-Image{
+    width: 200px;
+}
+
+.Order-Item-Image > img{
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.Order-Item-Name{
+    flex-direction: column;
+    width: 350px;
+}
+
+.Order-Item-Price{
+   align-items: center;
+   width: 150px;
+}
+
+.Order-Item-Status{
+    flex-direction: column;
+    width: 150px;
+}
+
+.Order-Item-Status div:nth-child(2){
+    padding: 5px 0;
+}
+
+.Order-Item-Status button{
+    background-color: #231f22;
+    color: #fff;
+}
+
+.Order-Item-Status button:hover{
+    cursor: pointer;
+}

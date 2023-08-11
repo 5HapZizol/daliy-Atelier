@@ -1,3 +1,12 @@
+.h1_top {
+    text-align: center;
+    padding: 3em;
+}
+.divide_hr > hr {
+    align-items: center;
+    border:solid 0.em;
+    width: 50%;
+}
 
 .page_top{
     display: inline-block;
@@ -27,9 +36,6 @@
     border-top: 1px solid;
 }
 
-html, body {
-    margin: 0;
-}
 /*경로*/
 .rudfh {
     font-size: 15px;
@@ -53,6 +59,7 @@ div>article {
 
 .box {
     margin: 0 auto;
+    padding-top:2em;
     padding-bottom: 2em;
     align-items: center;
     border:solid 0em;
@@ -67,7 +74,6 @@ div>article {
     text-align: center;
 }
 
-/*작품 목록*/
 
 /*작품 목록*/
 .img_list{
@@ -148,7 +154,7 @@ div>article {
     border: 1px;
 }
 
-/*user agent stylesheet 때문에 ul에 자꾸 패딩 값이 들어감*//*user agent stylesheet 때문에 ul에 자꾸 패딩 값이 들어감*//*user agent stylesheet 때문에 ul에 자꾸 패딩 값이 들어감*/
+/*user agent stylesheet 때문에 ul에 자꾸 패딩 값이 들어감*/
 
 
 

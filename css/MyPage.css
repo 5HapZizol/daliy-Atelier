@@ -31,11 +31,13 @@
     } 
     .img_1 {
         display: inline-block;
+        float: left;
         margin-right: 1em;
     }
     
     .box_1 {
         display: inline-block;
+        float: right; 
         width: 40em; /* 너비 조절 */
         height: 7.5em; /* 높이 조절 */
         border: 1px solid black; /* 테두리 선 지정 */
