@@ -9,7 +9,6 @@ session_start();
     <link rel="stylesheet" href="../css/main.css" type="text/css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script>
-
       $(document).ready(function(){
           $(".Header").load("../html/Header.html");
       });
