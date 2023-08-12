@@ -19,14 +19,16 @@
     font-size: 0.6em;
     color: rgb(180, 180, 180);
 }
+
 .box_1 {
-    margin-left: 25%;
-    width: 47em; 
-    height: 19em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em; 
+    height: 20em;
     border: 1px solid black;
 }
 .my_work_1 {
-    display: inline-block;
+    display: flex;
     margin: 1%;
 }
 .workss {
@@ -34,7 +36,7 @@
     vertical-align:top;
 }
 .workss .title {
-    font-size: 2.2em;
+    font-size: 1.8em;
     font-weight: bold;
 }
 .workss .category {
@@ -50,32 +52,41 @@
 .workss .consumer {
     font-size: 0.8em;
     font-weight: bold;
+    font-size: 1em;
     color: rgb(104, 104, 104);
 }
 .workss .review {
     font-size: 0.8em;  
     color: rgb(206, 206, 206);
 }
+.popupchang{
+    margin:0.5em;
+}
+.divider{  
+    border: 0.1px #f2f2f2 solid;
+    border-radius: inherit;
+}
 .space {
     margin-top: 3em;
 }
 .open_btn {
- display: block;
+  display: block;
+  text-align: center;
   background-color: #4ac4f3;
   border: none;
   color: white;
   border-radius: 50px;
   padding: 0.5em 1em;
-  font-size: 0.9em;
-  margin-left: 24em;
-  margin-top: 2.5em;
+  font-size: 0.8em;
+  margin-left: 26em;
+  margin-top: 1em;
 }
 .popup {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 1200px;
+    width: 1300px;
     height: 700px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background: #fff;
@@ -97,8 +108,8 @@
    display: block;
 }
 .pop_detail {
-   display: inline-block;
-   text-align: left;
+   display: contents;
+   text-align: center;
    float: right;
    margin-right: 1em;
 }
@@ -109,12 +120,16 @@
 .popup:target + .dim{
     opacity: 1;
 }
+.referral {
+    display: block;
+    text-align: center;
+}
+.referral_num {
+    display: block;
+}
 .dim {
     position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    top:0; left: 0; bottom: 0; right: 0;
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
     z-index: -1;
