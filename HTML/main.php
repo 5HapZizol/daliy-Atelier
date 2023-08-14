@@ -7,14 +7,14 @@ session_start();
     <meta charset="UTF-8">
     <title>데일리 아틀리에</title>
     <link rel="stylesheet" href="../css/main.css" type="text/css">
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="../js/code.jquery.com_jquery-3.7.0.min.js"></script>
     <script>
 
-      $(document).ready(function(){
+      $(function(){
           $(".Header").load("../html/Header.html");
       });
 
-      $(document).ready(function(){
+      $(function(){
           $(".footer-Background").load("../html/Footer.html");
       });
 
