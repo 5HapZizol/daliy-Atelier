@@ -11,145 +11,101 @@
     display: table;
     font-size: 2.2em;
 }
-.page_top .hr_1{
-    margin: 2em;
+.page_name{
+    margin-top: 2em;
+}
+.hr_1{
+    margin-bottom: 1em;
 }
 .page_path { 
-    margin-left: 4%;
+    margin-left: 1%;
     font-size: 0.6em;
     color: rgb(180, 180, 180);
 }
-
-.box_1 {
+/*메뉴타입*/
+.menu_type {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 2em;
+}
+.menu_type div {
+    margin: 0 5px 0;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
+.menu_type button {
+    font-weight: 500;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #b3b3b3; /* 모든 자식 요소의 기본 텍스트 색상 */
+}
+.menu-animation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.5s;
+}
+.menu_type div.active .Tap-animation {
+    width: 100%;
+  }
+.menu_type div.active button {
+    color: #000000; /* 클릭된 요소의 텍스트 색상 */
+  }
+.menu_type div:first-child.active button {
+    color: #000000; /* 첫 번째 자식 요소인 "Bid status"의 텍스트 색상 */
+  }
+.separator{
+    border-left: 1px solid #7b7b7b;
+    height: 1.1em;
+    top: 0.3em;
+}
+/*리뷰 한줄에 4개씩*/
+.reviewss{
+    display: inline-block;
+}
+/*리뷰 박스*/
+.box {
     margin-left: auto;
     margin-right: auto;
-    width: 50em; 
-    height: 20em;
-    border: 1px solid black;
+    width: 13em;
+    height: 18em;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
-.my_work_1 {
-    display: flex;
-    margin: 1%;
+.winning_bid{
+    display: block;
+    text-align: center;
+    margin: 0.2em;
 }
-.workss {
-    display: inline-block;
-    vertical-align:top;
+/*리뷰 내용*/
+.contents {
+    text-align: center;
 }
-.workss .title {
-    font-size: 1.8em;
-    font-weight: bold;
-}
-.workss .category {
-    font-size: 1.1em;
-    font-weight: bold;
-    color: darkgray;
+.contents .detail {
+    font-size: 0.7em;
+    color: rgb(0, 0, 0);
 }
 .bid_price {
-    font-size: 1em;
-    font-family: fantasy;
-    color: rgb(75, 74, 74);
-}
-.workss .consumer {
     font-size: 0.8em;
     font-weight: bold;
-    font-size: 1em;
-    color: rgb(104, 104, 104);
+    margin-top: 0.5em;
+    color: rgb(75, 74, 74);
 }
-.workss .review {
-    font-size: 0.8em;  
-    color: rgb(206, 206, 206);
+.contents .title {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
 }
-.popupchang{
-    margin:0.5em;
-}
-.divider{  
-    border: 0.1px #f2f2f2 solid;
-    border-radius: inherit;
-}
-.space {
-    margin-top: 3em;
-}
-.open_btn {
-  display: block;
-  text-align: center;
-  background-color: #4ac4f3;
-  border: none;
-  color: white;
-  border-radius: 50px;
-  padding: 0.5em 1em;
-  font-size: 0.8em;
-  margin-left: 26em;
-  margin-top: 1em;
-}
-.popup {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 1300px;
-    height: 700px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background: #fff;
-    border-radius: 5px;
-    padding: 1em;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 20px;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 1000;
-    transition: all 0.5s;
-}
-.popup a {
-    color: gray;
-    text-decoration: none;
-}
-.pop_pic {
-   display: block;
-}
-.pop_detail {
-   display: contents;
-   text-align: center;
-   float: right;
-   margin-right: 1em;
-}
-.popup:target {
-    visibility: visible;
-    opacity: 1;
-}
-.popup:target + .dim{
-    opacity: 1;
-}
-.referral {
+.bid_rated{
     display: block;
     text-align: center;
-}
-.referral_num {
-    display: block;
-}
-.dim {
-    position: fixed;
-    top:0; left: 0; bottom: 0; right: 0;
-    background: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    z-index: -1;
-}
-.popupchang .review {
-  color: black;
-}
-.ques {
-    font-size: 1.2em;
-    text-align: center;
-}
-.btn_next{
-    font-size: 1.1em;
-    border: none;
-
-}
-.btn_next:hover{
-    background-color: #778C86;
-    transition: 0s;
-}
-.btn-group{
-    font-family: unset;
 }
