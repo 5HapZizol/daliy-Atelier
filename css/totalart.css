@@ -1,7 +1,9 @@
-.h1_top {
-    text-align: center;
-    padding-top: 3em;
-    padding-bottom: 1em;
+
+.page_top{
+    display: inline-block;
+    width: 60%;
+    display: table;
+    margin: 1em auto;
 }
 #wrap {
     width: 50%;
@@ -55,7 +57,7 @@ div>article {
     text-align: center;
 }
 
-/*작품 목록*/
+
 /*작품 목록*/
 .img_list{
     position: static;
@@ -136,3 +138,27 @@ div>article {
 }
 
 /*user agent stylesheet 때문에 ul에 자꾸 패딩 값이 들어감*/
+
+
+
+.contain {
+  object-fit: contain;
+}
+
+.img_size-fix {
+    width: 150px;
+    height: 100px;
+    border: none;
+}
+
+.contianer {
+    margin: 3em;
+}
+
+.box_1 {
+    margin: 0 auto;
+    padding-bottom: 2em;
+    align-items: center;
+    border:solid 0em;
+    width: 50%;
+}

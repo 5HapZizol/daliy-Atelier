@@ -1,0 +1,140 @@
+.page_top{
+    display: inline-block;
+    margin-left:auto; 
+    margin-right:auto;
+    width: 60%;
+    display: table;
+    margin: 1em auto;
+}
+.page_name {
+    margin: 1em auto;
+    display: table;
+    font-size: 2.2em;
+}
+.page_top .hr_1{
+    margin: 2em;
+}
+.page_path { 
+    margin-left: 4%;
+    font-size: 0.6em;
+    color: rgb(180, 180, 180);
+}
+.box_1 {
+    margin-left: 25%;
+    width: 47em; 
+    height: 19em;
+    border: 1px solid black;
+}
+.my_work_1 {
+    display: inline-block;
+    margin: 1%;
+}
+.workss {
+    display: inline-block;
+    vertical-align:top;
+}
+.workss .title {
+    font-size: 2.2em;
+    font-weight: bold;
+}
+.workss .category {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: darkgray;
+}
+.bid_price {
+    font-size: 1em;
+    font-family: fantasy;
+    color: rgb(75, 74, 74);
+}
+.workss .consumer {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: rgb(104, 104, 104);
+}
+.workss .review {
+    font-size: 0.8em;  
+    color: rgb(206, 206, 206);
+}
+.space {
+    margin-top: 3em;
+}
+.open_btn {
+ display: block;
+  background-color: #4ac4f3;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+  margin-left: 24em;
+  margin-top: 2.5em;
+}
+.popup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 700px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: #fff;
+    border-radius: 5px;
+    padding: 1em;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 20px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    transition: all 0.5s;
+}
+.popup a {
+    color: gray;
+    text-decoration: none;
+}
+.pop_pic {
+   display: block;
+}
+.pop_detail {
+   display: inline-block;
+   text-align: left;
+   float: right;
+   margin-right: 1em;
+}
+.popup:target {
+    visibility: visible;
+    opacity: 1;
+}
+.popup:target + .dim{
+    opacity: 1;
+}
+.dim {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    z-index: -1;
+}
+.popupchang .review {
+  color: black;
+}
+.ques {
+    font-size: 1.2em;
+    text-align: center;
+}
+.btn_next{
+    font-size: 1.1em;
+    border: none;
+
+}
+.btn_next:hover{
+    background-color: #778C86;
+    transition: 0s;
+}
+.btn-group{
+    font-family: unset;
+}
