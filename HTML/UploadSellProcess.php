@@ -47,7 +47,7 @@
             material, descript, start_price, current_price, registration_date,
             bid_start_time, closing_time)
         VALUES(
-            '{$art_id}', 33, '".$o_name."', '{$_POST['art_type']}','{$_POST['Upname']}',
+            '{$art_id}', 33, '{$img_id}', '{$_POST['art_type']}','{$_POST['Upname']}',
             '{$_POST['material']}', '{$_POST['info']}', '{$_POST['price']}', '{$_POST['price']}', NOW(),
             '{$bid_start_time}', '{$closing_time}'
         )";

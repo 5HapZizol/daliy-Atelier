@@ -1,12 +1,3 @@
-.h1_top {
-    text-align: center;
-    padding: 3em;
-}
-.divide_hr > hr {
-    align-items: center;
-    border:solid 0.em;
-    width: 50%;
-}
 
 .page_top{
     display: inline-block;
@@ -14,26 +5,18 @@
     display: table;
     margin: 1em auto;
 }
-.page_name {
-    margin: 1em auto;
-    display: table;
-    font-size: 2em;
+#wrap {
+    width: 50%;
+    border: 1px solid red;
+    margin: 0 auto;
+    padding-top: 10px;
+    overflow: hidden;
 }
-.page_top .hr_1{
-    margin: 2em;
-}
-.page_path {
-    display: inline;
-    float: left;
-    padding-left: 3.5em;
-    font-size: 0.6em;
-    color: rgb(180, 180, 180);
-    margin-bottom: 3em;
-}
-.hr_1{
-    margin-top: 4em;
-    border : 0px;
-    border-top: 1px solid;
+
+.divide_hr > hr {
+    align-items: center;
+    border:solid 0.em;
+    width: 50%;
 }
 
 /*경로*/
