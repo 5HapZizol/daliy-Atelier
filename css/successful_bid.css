@@ -19,24 +19,48 @@
     font-size: 0.6em;
     color: rgb(180, 180, 180);
 }
+/*이미지*/
 .product-list {
-   display: inline-block;
-   justify-content: center;
-   text-align: center;
-   position: relative;
-}
-.product-list_1{
-   display: flex;
-   margin-left: 35em;
-   text-align: center;    
-   align-items: stretch;
-   flex-direction: row;
-}
-.product-list_2 {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    justify-content: center
 }
+.product-works {
+    display: flex;
+    position: relative;
+    overflow: hidden; 
+}
+.product-works img {
+    width: 200px;
+    height: 250px;
+    object-fit: contain;
+}
+/*버튼*/
+.btnss{
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.product-works:hover .btnss {
+    display: flex; 
+}
+.btn{
+    font-size: 12px;
+    width: 90px;
+    background-color: transparent;
+    border: none;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    font-weight: 600;
+  }
 .product-works:hover img {
-    transform: scale(1.2); 
+    filter: brightness(0.5) blur(2px);
 }
+.product-works:hover .btnss {
+    opacity: 1; /* 마우스 오버 시 텍스트 표시 */
+}
+  
