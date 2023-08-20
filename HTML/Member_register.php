@@ -32,13 +32,13 @@
 
         <table class="info_table" style="border: 1px solid; border-collapse: collapse;">
             <tr>
-                <td colspan="2"><input type="text" id="name" placeholder="이름"></td>
+                <td colspan="2"><input type="text" name="name" placeholder="이름"></td>
             </tr>
             <tr>
                 <td colspan="2"><input type="text" name="nickname" placeholder="닉네임"></td>
             </tr>
             <tr>
-                <td><input type="text" id="tel" placeholder="휴대전화 번호"></td>
+                <td><input type="text" name="tel" placeholder="휴대전화 번호"></td>
                 <td><input type="button" name="#" value="인증"></td> 
             </tr>
             <tr>
