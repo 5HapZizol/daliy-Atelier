@@ -10,7 +10,7 @@
     $tmpfile =  $_FILES['input_image']['tmp_name'];
     $o_name = $_FILES['input_image']['name'];
     $filename = iconv("UTF-8", "EUC-KR",$_FILES['input_image']['name']);
-    $folder = "../img/auction".$filename; //파일경로
+    $folder = "../img/auction/".$filename; //파일경로
     move_uploaded_file($tmpfile,$folder);
 
     //이미지 db 업로드
