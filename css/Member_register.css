@@ -116,3 +116,40 @@ p {
 .container {
     text-align: center;
 }
+
+.wrapper input[type = "text"]:focus {
+    outline: none;
+    border-color: black;
+}
+.wrapper input[type = "password"]:focus {
+    outline: none;
+    border-color: black;
+}
+.wrapper input[type = "tel"]:focus {
+    outline: none;
+    border-color: black;
+}
+.wrapper input[type = "number"]:focus {
+    outline: none;
+    border-color: black;
+}
+
+.wrapper input[type="text"] {
+    border: solid 1px rgb(194, 194, 194);
+    border-radius:8px;
+}
+
+.wrapper input[type="password"] {
+    border: solid 1px rgb(194, 194, 194);
+    border-radius:8px;
+}
+
+.wrapper input[type="tel"] {
+    border: solid 1px rgb(194, 194, 194);
+    border-radius:8px;
+}
+
+.wrapper input[type="number"] {
+    border: solid 1px rgb(194, 194, 194);
+    border-radius:8px;
+}

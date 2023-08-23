@@ -13,11 +13,13 @@
       </header>   <!-- 헤더 끝 -->
 
       <!--본문 시작-->
-    <div class = "h1_top"><h1>적립금 충전하기</h1></div>
-    <div class = "divide_hr"><hr></div>
-
-    <div class = "h1_top">
-        <h2>충전하기</h2>
+      <article>
+  <div style="margin-top: 200px;">
+       
+    <div class="page_top">
+      <span class="page_name">충전하기</span>
+      <br>
+      <hr class="hr_1">
     </div>
  <!--충전하기-->
  <form action = "charge_process.php" method = "post" id="charge_form">
@@ -85,7 +87,6 @@
       
     </div>
 
-    <!--사실 별로 필요없는 것 같기도함-->
     <!--결제수단-->
     <div class = "h1_top">
         <h2>결제수단</h2>
@@ -161,7 +162,7 @@
     <div class = "last_container">
         <div class = "dbdmltkgkd">
             <p class = "text-center mb-0">
-                <input type = "radio">
+                <input type = "checkbox" id = "warn_check">
                     주문 내용과 아래 유의 사항을 확인하였으며 결제 진행에 동의합니다.
             </p>
         </div>
@@ -195,6 +196,10 @@
     </div>
         <button type="submit">결제하기</button>
     </form>
+
+</article>
+
+
     <!-- footer 시작 -->
     <footer>  
       <div class="footer-Background">
