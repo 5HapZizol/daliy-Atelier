@@ -92,7 +92,7 @@ hr {
 }
 
 .Question-Title > button{
-    background-color: #778C86;
+    background-color:transparent;
     border: none;
     margin: 0 10px;
 }
