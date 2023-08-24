@@ -46,6 +46,8 @@
               </div>
               </p>
 
+              <br><br>
+
               <p>
               <div class = "wrapper">
                 <input type = "text" placeholder = "이름"/>
