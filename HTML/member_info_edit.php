@@ -13,7 +13,7 @@
   <header>    <!-- 헤더 시작-->
     <div class="Header">
       <div class="Logo">
-        <a href="main_Login.html"><img src="/img/Header_Image/Logo_2.png" /></a>
+        <a href="main_Login.html"><img src="../img/Header_Image/Logo_2.png" /></a>
       </div>
 
       <div class="a12">
@@ -87,21 +87,26 @@
     <div class="hd_bg"></div>
   </header>   <!-- 헤더 끝 -->
 
+    <br>
 
-  <br>
-  <div class="page_top">
-    <span class="page_name">회원 정보 수정</span>
+    
+    <div class="page_top">
+      <span class="page_name">회원 정보 수정</span> 
       <p class="page_path">마이페이지 > 회원 정보 수정</p>
       <br>
       <hr class="hr_1">
     </div>
+
+    
+  <form action = "member_UpdateProcess.php" method = "post" id="update_form">
     <div>
-        <img class="profile" src="../img/best1.jpg">
+        <img class="profile" src="../img/best1.jpg" name="profile_e">
         <button class="photo_select">사진 선택</button>
     </div>
+
     <div>
-      <form action="member_UpdateProcess.php" method="post" id="member_updateform">
       <table class="mem_table">
+    <form id = "update_form" method="post" class = "update_page member_update">
           <tr>
               <td>이름</td>
               <td><input type="text" name="name" placeholder="이름 입력" style="width: 11em;"></td>
@@ -114,62 +119,47 @@
           <tr>
               <td>E-MAIL</td>
               <td><input type="text" name="email_body" placeholder="직접 입력" style="width: 11em;">
-                  <select class="num">
+                  <select class="num" name="email_form">
                       <option value="1">선택</option>
-                      <option value="2" name="email_naver">naver.com</option>
-                      <option value="2" name="email_daum">daum.net</option>
-                      <option value="3" name="email_google">google.co.kr</option>
-                      <option value="4" name="email_nate">nate.com</option>
+                      <option value="naver.com<" id="email_naver">@naver.com</option>
+                      <option value="daum.net" id="email_daum">@daum.net</option>
+                      <option value="google.co.kr" id="email_google">@google.co.kr</option>
+                      <option value="nate.com" id="email_nate">@nate.com</option>
                   </select></td>
-          </tr>
-          <tr>
-              <td>우편번호</td>
-              <td><input type="text" name="email" style="width: 11em;">
-              <button>주소 검색</button></td>
-          </tr>
-          <tr>
-              <td>주소</td>
-              <td><input type="text" name="address" style="width: 25em;"></td>
-          </tr>
-          <tr>
-              <td>상세 주소</td>
-              <td><input type="text" name="address_detail" style="width: 25em;"></td>
           </tr>
           <tr>
             <td>전화번호</td>
             <td>
-            <select class="num" name="tell1">
-                <option value="1">선택</option>
+            <select class="num" name= "tel1">
+                <option value="1">선택</option> 
                 <option value="010">010</option>
                 <option value="011">011</option>
                 <option value="012">012</option>
             </select>
                 -
-                <input type="number" name="tell2" style="width: 3em;">
+                <input type="text" name="tel2" style="width: 3em;">
                 -
-                <input type="number" name="tell3" style="width: 3em;">
+                <input type="text" name="tel3" style="width: 3em;">
             </td>
           </tr>
           <tr>
-              <td>SNS 수신 동의</td>
-              <td><input type="radio" name="sns" id="sns_ok" value="ok" checked="checked">동의
-                  <input type="radio" name="sns" id="sns_no" value="no">비동의</td>
-          </tr>
-          <tr>
               <td>E-MAIL 수신 동의</td>
-              <td><input type="radio" name="email" id="email_ok" value="ok" checked="checked">동의
-                  <input type="radio" name="email" id="email_no" value="no">비동의</td>
+              <td><input type="radio" name="email_agree"  value="email_y" checked="checked">동의
+                  <input type="radio" name="email_agree"  value="email_n">비동의</td>
           </tr>
-        </table>
+        </form>
+      </table>
     </div>
+
     <div class = "btn-group">
       <p>
-          <input type="submit" value="submit"><btn class="btn1" >회원 정보 저장</btn>
+          <input type="submit" ><btn class="btn1" >회원 정보 저장</btn>
           <a href="MyPage.html"><btn class="btn2">취소</btn></a>
       </p>
   </div>
   <br>
 </form>
+
 <!-- footer 시작 -->
 <footer>  
   <div class="footer-Background">
