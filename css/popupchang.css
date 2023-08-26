@@ -30,7 +30,8 @@
     width: 50px;
     float: right;
     border: none;
-    background-color: #fff;
+    color: black;
+    background-color: #ffffff;
 }
 .reviewss {
     display: flex;

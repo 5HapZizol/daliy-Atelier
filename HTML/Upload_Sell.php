@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\CSS\Upload_Sell.css">
+    <link rel="stylesheet" href="../css/Upload_Sell.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 
     <!--태그 관련 -->
@@ -111,6 +111,7 @@
   </header>   <!-- 헤더 끝 -->
 
     <article>
+    <div style="margin-top: 200px;">
     <div id = "title">
         <h2>내 작품 판매하기</h2>
         <hr class="hr_1">
@@ -119,8 +120,8 @@
     <form action="UploadSellProcess.php" method="POST" id="upload-form" enctype="multipart/form-data">
       <img id="img_preview" style="display:none;"/>
       <div class ="up_file">
-          <label for="file">파일 업로드하기</label>
-          <input type="file" id="input_file" name="input_image" onchange="dropFile.handleFiles(this.files)" accept="image/png, image/jpeg, image/jpg">
+          <label for="file"></label>
+          <input type="file" id="input_file" name="input_image" onchange="dropFile.handleFiles(this.files)" accept="image/png, image/jpeg, image/jpg" style="margin-left: 0.1em;">
       </div>
 
 
@@ -128,7 +129,7 @@
             <thead>
                 <tr>
                     <td class="m1_1">작품이름</td>
-                    <td class="name"><input type="text" name="Upname" size="20" style="width:100%;"></td>
+                    <td class="name"><input type="text" name="Upname" size="22" style="width:100%; border:none;"></td>
                 </tr>
             </thead>  
 
@@ -137,7 +138,7 @@
 
                 <tr>
                     <td class = "m1_3">그림 종류</td>
-                    <td><select class="stuff" name="art_type">
+                    <td><select class="stuff" name="art_type" style="font-size:1em;">
                         <option value="실물">실물</option>
                         <option value="디지털">디지털</option>
                         <option value="오브제">오브제</option>
@@ -147,50 +148,51 @@
 
                 <tr>
                     <td>해시태그</td>
-                    <td><input type="text" id="tag" name="hash" size="20" style="width:100%;"></td>
+                    <td><input type="text" id="tag" name="hash" size="22" style="width:100%; border:none;"></td>
                 </tr>
             
                 <tr>
-                    <td>재료</td>
-                    <td><input type="text" name="material" size="20" style="width:100%;"></td>
+                    <td style="text-align: center;">재료</td>
+                    <td><input type="text" name="material" size="22" style="width:100%; border:none; margin-left:1em"></td>
                 </tr>
 
                 <tr>
                     <td>작품설명</td>
-                    <td><textarea name="info" rows="10" cols="60" style="width:100%; border: 1; resize: none;"></textarea></td>
+                    <td><textarea name="info" rows="10" cols="60" style="width:100%; border:none;"></textarea></td>
                 </tr>
             </tbody>
       </table>
 
-      <hr class="hr_2">
+      <hr class="hr_2" style="margin-top: 2em;">
       <h3>경매가 등록하기</h3>
       
 
       <table class="main_2">
           <tr>   
-              <td>입찰가</td>
-              <td id="sale"><input type="number" name="price" min = "1" size="20">원</td>
+              <td style="text-align: center;">입찰가</td>
+              <td id="sale"><input type="number" name="price" min = "1" size="20" style="border:none;">원</td>
           </tr>
 
           <tr>
               <td>경매 시작 시간</td>
               <td id="s_start">
-                <input type="datetime-local" id="date" name="start_d">
+                <input type="datetime-local" id="date" name="start_d"  style="border:none;">
               </td>
           </tr>
 
           <tr>
               <td>경매 종료 시간</td>
               <td id="s_done">
-                <input type="datetime-local" id="date" name="end_d">
+                <input type="datetime-local" id="date" name="end_d"  style="border:none;">
             </td>
-          </tr>
+          </tr> 
       </table>
 
-      <div style="text-align: center;" id="bt_up">
-	      <button type="submit">등록하기</button>
+      <div style="text-align: center; margin-top:2em;  margin-bottom:2em;" id="bt_up">
+	      <button class="BTN" type="submit">등록하기</button>
       </div>
     </form>
+    </div>
     </article>
 
     <!-- footer 시작 -->
