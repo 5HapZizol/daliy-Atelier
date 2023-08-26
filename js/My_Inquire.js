@@ -35,3 +35,12 @@ $(document).ready(function() {
       }
     });
   });
+
+  $(function(){
+    $(".Question-Body").each(function() {
+      // 현재 div 내에서 "Inquire-Answer" 클래스를 가진 div가 없다면 배경색 변경
+      if ($(this).find(".Inquire-Answer").length === 0) {
+          $(this).find(".Question-Title").css({"background-color": "#b3b3b3", "color": "#231f22" });
+      }
+  });
+});
