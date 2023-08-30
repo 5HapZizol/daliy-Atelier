@@ -8,10 +8,9 @@
     <title>전체 경매</title>
 </head>
 <body>
-    <header>    <!-- 헤더 시작-->
-        <div class="Header">
-          </div>
-        </header>   <!-- 헤더 끝 -->
+<?php
+      include("Header.php");
+    ?>
 
     <article>
       <!--본문 시작-->
@@ -295,10 +294,7 @@
 </footer>  <!-- footer 끝 -->
 
 <script>
-  $(document).ready(function(){
-    $(".Header").load("../html/Header.html");
-});
-
+  
 $(document).ready(function(){
     $(".footer-Background").load("../html/Footer.html");
 });

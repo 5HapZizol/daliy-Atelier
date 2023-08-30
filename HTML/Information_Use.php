@@ -7,10 +7,9 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
-  <header>    <!-- 헤더 시작-->
-    <div class="Header">
-    </div>
-  </header>   <!-- 헤더 끝 -->
+<?php
+      include("Header.php");
+    ?>
 
 
   <article>

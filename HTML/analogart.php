@@ -10,7 +10,7 @@
     <title>실물 아트 경매</title>
 </head>
 <body>
-<?php
+    <?php
       include("Header.php");
     ?>
 

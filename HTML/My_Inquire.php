@@ -9,10 +9,9 @@
     <title>문의 사항</title>
 </head>
 <body>
-    <header>
-        <div class="Header">
-        </div>
-    </header> 
+<?php
+      include("Header.php");
+    ?> 
 
     <article>
         <div class="Inquire-Title">

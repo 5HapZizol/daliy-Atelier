@@ -13,11 +13,9 @@
 
 <!--본문-->
 <body>
-  <header>  <!-- 헤더 시작-->
-    <div class="Header">
-      </div>
-  </header>
-  <!-- 헤더 끝 -->
+<?php
+      include("Header.php");
+    ?>
 
     <article>
       <!--본문 시작-->

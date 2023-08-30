@@ -10,10 +10,9 @@
     <title>문의 하기</title>
 </head>
 <body>
-  <header>    <!-- 헤더 시작-->
-    <div class="Header">
-    </div>
-  </header>   <!-- 헤더 끝 -->
+<?php
+      include("Header.php");
+    ?>
 
     <article>
       <div class="Q-Write-Backgoround">
