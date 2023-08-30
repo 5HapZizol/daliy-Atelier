@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("127.0.0.1", "root", "0430!!", "daily-art", "3306");
+    $conn = mysqli_connect("127.0.0.1", "root", "pma5hapzizol", "daily-art", "3306");
     //$conn = mysqli_connect(주소, 아이디, "비밀번호", DB 스키마 이름, 포트);
 
 ?>
@@ -12,10 +12,10 @@
 
 </head>
 <body>
-    <?php
-        include("Header.php");
-    ?>
-
+  <header>    <!-- 헤더 시작-->
+    <div class="Header">
+    </div>
+  </header>   <!-- 헤더 끝 -->
 
   <article>
     <div class="art_auction_info">
@@ -148,6 +148,10 @@
      </footer> <!-- footer 끝 -->
 
     <script>
+
+      $(document).ready(function(){
+          $(".Header").load("/html/Header.html");
+      });
 
       $(document).ready(function(){
           $(".footer-Background").load("/html/Footer.html");

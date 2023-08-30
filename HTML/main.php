@@ -9,7 +9,9 @@ session_start();
     <link rel="stylesheet" href="../css/main.css" type="text/css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script>
-      
+      $(document).ready(function(){
+          $(".Header").load("../html/Header.html");
+      });
 
       $(document).ready(function(){
           $(".footer-Background").load("../html/Footer.html");
@@ -241,9 +243,10 @@ session_start();
   </script>
 </head>
 <body>
-    <?php
-        include("Header.php");
-      ?>
+  <header>    <!-- 헤더 시작-->
+    <div class="Header">
+      </div>
+  </header>   <!-- 헤더 끝 -->
 
    <article>
    <div class="section">
