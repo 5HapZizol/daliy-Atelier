@@ -12,10 +12,9 @@
 
     <!--본문-->
     <body>
-      <header>    <!-- 헤더 시작-->
-        <div class="Header">
-        </div>
-      </header>   <!-- 헤더 끝 -->
+    <?php
+        include("Header.php");
+     ?>
 
       <article>
         <div style="margin-top: 200px;">
@@ -115,10 +114,6 @@
 
     
       <script>
-
-        $(document).ready(function(){
-          $(".Header").load("../html/Header.html");
-        });
 
         $(document).ready(function(){
           $(".footer-Background").load("../html/Footer.html");
