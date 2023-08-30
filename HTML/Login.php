@@ -7,13 +7,12 @@
         <title>로그인</title>
         <link rel="stylesheet" href="../css/Login.css">
         <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <script src="/js/Login.js"></script>
+        <script src="../js/Login.js"></script>
     </head>
     <body>
-      <header>    <!-- 헤더 시작-->
-        <div class="Header">
-         </div>
-      </header>   <!-- 헤더 끝 -->
+      <?php
+        include("Header.php");
+      ?>
 
         <article> <!--로그인 시작-->
             <div id="TitleLogin">

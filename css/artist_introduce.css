@@ -69,6 +69,7 @@
     color: rgb(78, 108, 188);
 }
 
+/* 넘어가는 버튼 */
 .Artist-Introduce-Button{
     display: flex;
     justify-content: center;
