@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>일반 회원 가입</title>
+        <title>작가 회원 가입</title>
         <link rel="stylesheet" href="../css/Member_register.css">
 
         <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -20,7 +20,7 @@
       <article>
         <div style="margin-top: 200px;">
           <div class="page_top">
-            <span class="page_name">회원가입</span>
+            <span class="page_name">작가 회원가입</span>
             <br>
             <hr class="hr_1">
           </div>
@@ -29,11 +29,9 @@
           <div class = "box">
               
             <div class = "container">
-              
-              <p class = "notice">
+                <p class = "notice">
                     *은 필수 입력
                 </p>
-                
               <div class = "wrapper">
                 <input type = "text" name = "Userid" placeholder="*아이디 입력" id = "user_id"/>
                 <button name = "id_check">중복확인</button>
@@ -55,13 +53,27 @@
 
               <p>
               <div class = "wrapper">
-                <input type = "text" placeholder = "*이름 (실명 필수)" id = "user_name"/>
+                <input type = "text" placeholder = "*작가명 (특수문자 제외 10자 이내)" id = "auother_nick"/>
               </div>
               </p>
 
               <p>
               <div class = "wrapper">
-                <input type = "text" placeholder = "*닉네임" id = "user_nick"/>
+                <input type = "text" placeholder = "개인 홈페이지 링크" id = "user_homepage"/>
+              </div>
+              </p>
+
+              <p>
+              <div class = "wrapper">
+                <input type = "password" placeholder = "sns 아이디" id = "sns_id"/>
+              </div>
+              </p>
+
+              <br><br>
+
+              <p>
+              <div class = "wrapper">
+                <input type = "text" placeholder = "*이름 (실명 필수)" id = "user_name"/>
               </div>
               </p>
 
@@ -84,6 +96,7 @@
                   <input type = "text" placeholder = "*이메일" id = "user_email"/>
                 </div>
               </p>
+
               <br>
               <br>
               <p>

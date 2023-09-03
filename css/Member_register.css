@@ -153,3 +153,10 @@ p {
     border: solid 1px rgb(194, 194, 194);
     border-radius:8px;
 }
+
+
+
+.notice {
+    color: rgb(122, 122, 122);
+    font-size: 15px;
+}
