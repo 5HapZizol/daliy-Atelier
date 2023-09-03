@@ -36,7 +36,7 @@
     border-top: 1px solid;
 }
 /*전체 박스*/
-.box {
+.box_filter {
     margin: 0 auto;
     padding-top:2em;
     padding-bottom: 2em;
@@ -46,7 +46,7 @@
 }
 
 /*줄 간격*/
-.box > div {
+.box_filter > div {
     margin-top: 2em;
     margin-bottom: 2em;
 }

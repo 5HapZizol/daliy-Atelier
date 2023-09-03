@@ -15,6 +15,7 @@
     ?>
 
     <article>
+      <form action="Q_writeProcess.php" method="post">
       <div class="Q-Write-Backgoround">
         <div class="Q-Write-Title">
           <h1>문의 하기</h1>
@@ -27,11 +28,11 @@
           </div>
     
             <div class="Q-Write-Type-Select">
-              <select name="" id="">
-                <option value="">회원정보</option>
-                <option value="">포인트</option>
-                <option value="">작품</option>
-                <option value="">배송</option>
+              <select name="Q_Write_Type_Select" id="Q_Write_Type_Select">
+                <option value="회원정보">회원정보</option>
+                <option value="포인트">포인트</option>
+                <option value="작품">작품</option>
+                <option value="배송">배송</option>
               </select>
             </div>
         </div>
@@ -43,7 +44,7 @@
           </div>
 
           <div class="Q-Write-SvInput">
-            <input type="text">
+            <input type="text" id="Q_Write_SvInput" name="Q_Write_SvInput">
           </div>
 
         </div>
@@ -54,7 +55,7 @@
           </div>
 
           <div class="Q-Write-CoInput">
-            <textarea name="" id="" cols="30" rows="10"  placeholder="내용을 입력하세요">
+            <textarea name="Q_Write_CoInput" id="Q_Write_CoInput" cols="30" rows="10"  placeholder="내용을 입력하세요">
             </textarea>
           </div>
         </div>
@@ -67,7 +68,7 @@
           <div class="Q-Write-File">
             <input class="Q-Write-File-name" value="첨부파일" placeholder="첨부파일">
             <label>
-              <input type="file" multiple>
+              <input type="file" id="Q_Write_File" multiple>
               파일찾기
             </label> 
           </div>
@@ -91,14 +92,15 @@
 
         <div class="Q-Write-Sixth">
           <div class="Q-Write-Up">
-            <button>저장</button>
+            <button type="submit">저장</button>
           </div>
 
           <div class="Q-Write-Cancel">
-            <button>취소</button>
+            <button type="submit">취소</button>
           </div>
         </div>
       </div>
+      </form>
 
     </article>
     

@@ -175,7 +175,7 @@
     justify-content: center;
 }
 
-.Q-Write-Sixth > div button{
+.Q-Write-Sixth div button{
     width: 90px;
     height: 40px;
     font-size: 18px;
@@ -183,4 +183,14 @@
     margin: 80px 25px;
     background-color:#a4a3a4;
     border: solid 1px #a4a3a4;
+}
+
+.Q-Write-Sixth div button:hover{
+    background-color:#6b6b6b;
+    border: solid 1px #6b6b6b;
+}
+
+.Q-Write-Sixth div button:active{
+    background-color:#6b6b6b;
+    border: solid 1px #6b6b6b;
 }
