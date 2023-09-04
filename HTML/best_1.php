@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("127.0.0.1", "root", "0430!!", "daily-art", "3306");
+    $conn = mysqli_connect("127.0.0.1", "root", "pma5hapzizol", "daily-art", "3306");
     //$conn = mysqli_connect(주소, 아이디, "비밀번호", DB 스키마 이름, 포트);
 
 ?>
@@ -20,7 +20,7 @@
   <article>
     <div class="art_auction_info">
         <?php
-            $sql = "SELECT * FROM Art where artid = 'art_64e1f11888e333.99238849'";
+            $sql = "SELECT * FROM Art where artid = '{$_GET['aid']}'";
             $result = mysqli_query($conn, $sql);
             if ($result === false) {    //오류 여부
                 echo "작품 찾기에 문제가 생겼습니다. 관리자에게 문의해주세요.";

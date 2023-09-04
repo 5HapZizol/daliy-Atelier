@@ -1,3 +1,7 @@
+<?php
+  ini_set('display_errors','0');
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +11,17 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="../js/header.js"></script>
     <title>헤더</title>
+    <script>
+
+      //로그아웃
+      function logout() {
+        console.log("hello");
+        const data = confirm("로그아웃 하시겠습니까?");
+        if (data) {
+          location.href = "logoutProcess.php";
+        }
+      }
+    </script>
 </head>
 <body>
     <header>    <!-- 헤더 시작-->
@@ -17,9 +32,21 @@
     
           <div class="a12">
             <div class="Header-SignUp">
-              <a href="Login.php">로그인</a>
-              <a href="">회원가입</a>
-              <a href="MyPage.html">마이페이지</a>
+              <?php
+                if (isset($_SESSION['user'])) { //로그인 되었을 시
+              ?>
+                <a onclick="logout()">로그아웃</a>
+                <a href="#">구매 현황</a>
+                <a href="MyPage.php">마이페이지</a>
+              <?php
+              } else {  //로그인이 안되었을 시
+              ?>
+                <a href="Login.php">로그인</a>
+                <a href="Member_register.php">회원가입</a>
+                <a href="service.html">고객센터</a>
+              <?php
+              }
+              ?>
             </div>
     
             <div class="Header-catalogue">
@@ -37,7 +64,7 @@
                   <li class="dept1">
                     <a href="#">경매</a>
                     <ul class="inner-menu">
-                      <li class="dept2"><a href="totalart.html">전체</a></li>
+                      <li class="dept2"><a href="totalart.php">전체</a></li>
                       <li class="dept2"><a href="digitalArt.html">디지털</a></li>
                       <li class="dept2"><a href="analogart.html">실물</a></li>
                       <li class="dept2"><a href="#">작가별 작품</a></li>
