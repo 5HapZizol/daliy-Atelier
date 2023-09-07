@@ -34,11 +34,11 @@
     </div><!--menu_type-->
 <div class="reviewss">
 
-<div class="box" type="button">
-    <div class="winning_bid"><img src="../img/auction/end_9.jpg" width="90%" style="margin-top: 0.4em;"></div>
+<div class="box" type="button" style="margin-right: 1.5em;">
+    <div class="winning_bid"><img src="../img/auction/end_9.jpg" width="100%" style="margin-top: 0.4em;"></div>
     
   <div class="contents">
-      <div class="detail">너무 이뻐요! 제가 원하는 그림이에요!</div>
+      <div class="detail">이뻐요 제가 원하는 그림이에요!</div>
       <div class="bid_price">낙찰가 : 100,000원</div>
       
       <div class="title">푸르른</div>    
@@ -46,8 +46,8 @@
   </div>
 </div> <!-- box-1 -->
 
-<div class="box" type="button">
-  <div class="winning_bid"><img src="../img/auction/end_13.jpg" width="90%" style="margin-top: 0.4em;"></div>
+<div class="box" type="button" style="margin-right: 1.5em;">
+  <div class="winning_bid"><img src="../img/auction/end_13.jpg" width="100%" style="margin-top: 0.4em;"></div>
   
 <div class="contents">
     <div class="detail">레몬 진짜 사진 같아요~~!😊😊</div>
@@ -58,11 +58,11 @@
 </div>
 </div> <!-- box-2 -->
 
-<div class="box" type="button">
-  <div class="winning_bid"><img src="../img/auction/new_13.png" width="90%" style="margin-top: 0.4em;"></div>
+<div class="box" type="button" style="margin-right: 1.5em;">
+  <div class="winning_bid"><img src="../img/auction/new_13.png" width="100%" style="margin-top: 0.4em;"></div>
   
 <div class="contents">
-    <div class="detail">아 너무 맘에 들어요!! 딱 찾던 거예요!</div>
+    <div class="detail">너무 맘에 들어요!! 딱 찾던 거예요!</div>
     <div class="bid_price">낙찰가 : 150,000원</div>
     
     <div class="title">자연액자</div>    
@@ -71,7 +71,7 @@
 </div> <!-- box-3 -->
 
 <div class="box" type="button">
-  <div class="winning_bid"><img src="../img/auction/best4.jpg" width="90%" style="margin-top: 0.4em;"></div>
+  <div class="winning_bid"><img src="../img/auction/best4.jpg" width="100%" style="margin-top: 0.4em;"></div>
   
 <div class="contents">
     <div class="detail">완죤 귀요미.....</div>
@@ -96,7 +96,7 @@
   <input type="radio" name="slide" id="slide_1" checked>
   <input type="radio" name="slide" id="slide_2">
   <input type="radio" name="slide" id="slide_3">
-  <div class="SlideWrap">
+  <div class="SlideWrap" style="margin-left:2.5em; margin-top:0.5em;">
 <ul class="SlideList">
 <!-- 슬라이드 영역 -->
 <li class="Slide_item">
@@ -139,7 +139,7 @@
     <div class="date">작성 날짜 : 2022.12.31</div>
     <div class="divider" style="margin-top: 0.5em; margin-bottom: 0.5em;"></div>
     <div class="review_detail">
-  <div class="review" style="font-size: 1.1em; color: black; font-family: math;">
+  <div class="review" style="font-size: 1.1.5em; color: black; font-family: math;">
   너무 이뻐요!!  제가 원하는 느낌의 그림이예요 제가 이번에
   처음으로 카페를 운영하게 되어서 카페에 어울리는 시원한 그림을 찾고 있었는데,
   사이즈도 딱 맞고, 이 작가님 그림 많이 찾게 될 거 같네욯ㅎ😊
@@ -160,19 +160,20 @@
     </div>
   </div>
 
-<div class = "ques">
-  <div class="btn-group">
-      <nav class="btn_catalogue">
-        <button class="btn_next" style="background-color: #bbbbbb;"> < </button>
-        <button class="btn_next">1</button>
-        <button class="btn_next">2</button>
-        <button class="btn_next">3</button>
-        <button class="btn_next">4</button>
-        <button class="btn_next">5</button>
-          <button class="btn_next" style="background-color: #646464;"> > </button>
-      </nav>
+  <div class="Artist-Introduce-Button">
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button>10</button>
+    <button>></button>
+    <button>>></button>
   </div>
-</div>
 
   </article>
 
