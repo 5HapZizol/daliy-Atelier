@@ -183,28 +183,37 @@
     
   </div>
 </footer>  <!-- footer 끝 -->
+<script>
+      $(document).ready(function(){
+        $(".Header").load("../html/Header.html");
+    });
+
+    $(document).ready(function(){
+        $(".footer-Background").load("../html/Footer.html");
+    });
+    </script>
 
 <script>
-  $(document).ready(function(){
-    $(".Header").load("/html/Header.html");
-  });
+      $(document).ready(function(){
+          $(".Header").load("../html/Header.html");
+      });
 
-  $(document).ready(function(){
-    $(".footer-Background").load("/html/Footer.html");
-  });
+      $(document).ready(function(){
+          $(".footer-Background").load("../html/Footer.html");
+      });
+      const open = () => {
+        document.querySelector(".popup").classList.remove("hidden");
+      }
+    
+      const close = () => {
+        document.querySelector(".popup").classList.add("hidden");
+      }
+    
+      document.querySelector(".box").addEventListener("click", open);
+      document.querySelector(".close_btn").addEventListener("click", close);
+      document.querySelector(".dim").addEventListener("click", close);
+    </script>
 
-  const open = () => {
-    document.querySelector(".popup").classList.remove("hidden");
-  }
 
-  const close = () => {
-    document.querySelector(".popup").classList.add("hidden");
-  }
-
-  document.querySelector(".box").addEventListener("click", open);
-  document.querySelector(".close_btn").addEventListener("click", close);
-  document.querySelector(".dim").addEventListener("click", close);
-
-</script>
 </body>
 </html>
