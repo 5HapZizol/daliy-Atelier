@@ -1,0 +1,288 @@
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Author-First{
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.Author-Profile{
+    box-shadow: 5px 5px 5px 5px #e0e1e0;
+}
+
+.Author-Profile img{
+    box-sizing: border-box;
+    width: 350px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.Author-History{
+    margin: 0 150px;
+}
+
+.Author-History div:nth-child(1){
+    font-size: 35px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.Author-History div:nth-child(2){
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.Author-History div:nth-child(3){
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.Author-History div:nth-child(4){
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0 0 60px;
+}
+
+.Author-History div:nth-child(5){
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.Author-History div:nth-child(6){
+    font-size: 16px;
+    width: 240px;
+}
+
+.Author-History div:nth-child(7){
+    font-weight: 500;
+}
+
+article hr{
+    width: 75%;
+    color: #e0e1e0;
+}
+
+.Author-Progress{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.Author-Progress-Title{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 20px 20px;
+}
+
+.Author-Progress-Work{
+    display: flex;
+    margin: 0 0 15px;
+}
+
+.Author-Progress-Img{
+    display: flex;
+    margin: 0 20px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.Author-Progress-Img >div img{
+    box-sizing: border-box;
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 4px 4px 5px 3px #e0e1e0;
+}
+
+.Author-Progress-Particulars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Author-Progress-Particulars div{
+    font-weight: 500;
+}
+
+.Author-Progress-Particulars-Title{
+    margin: 10px 0 5px;
+    font-size: 23px;
+    
+}
+
+.Author-Progress-Particulars-Time{
+    margin: 0 0 5px;
+    font-size: 16px;
+}
+
+.Author-Progress-Particulars-Price{
+    font-size: 17px;
+}
+
+.Author-Termination{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.Author-Termination-Title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Author-Terminatio{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.Author-Termination-Title{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 20px 20px;
+}
+
+.Author-Termination-Work{
+    display: flex;
+    margin: 0 0 15px;
+}
+
+.Author-Termination-Img{
+    display: flex;
+    margin: 0 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Author-Termination-Img >div img{
+    box-sizing: border-box;
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 4px 4px 5px 3px #e0e1e0;
+}
+
+.Author-Termination-Particulars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Author-Termination-Particulars div{
+    font-weight: 500;
+}
+
+.Author-Termination-Particulars-Title{
+    margin: 10px 0 5px;
+    font-size: 23px;
+}
+
+.Author-Termination-Particulars-Price{
+    font-size: 17px;
+}
+
+.Author-Review{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.Author-Review-Title{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 20px 20px;
+}
+
+.Author-Review-List{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 20px 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    word-break:break-all;
+}   
+
+.Author-Review-Img{}
+
+.Author-Review-Img img{
+    box-sizing: border-box;
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.Author-Review-Detailed{
+    width: 85%;
+    margin: 10px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.Author-Review-Detailed div{
+    margin: 0 13px;
+}
+
+.Author-Review-Writing{
+    word-break:break-all;
+}
+
+.Author-Review-User{
+    font-weight: 500;
+}
+
+.Author-Review-Rating{
+
+}
+
+.Author-Review-Rating img{
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+}
+
+
+/* 넘어가는 버튼 */
+.Artist-Introduce-Button{
+    display: flex;
+    justify-content: center;
+    margin: 70px 0;
+}
+
+.Artist-Introduce-Button button{
+    margin: 0 1px;
+    width: 40px;
+    height: 40px;
+    background-color: #e1e0e1;
+    border: 1px solid #a4a3a4;
+    cursor: pointer;
+    
+}
+
+.Artist-Introduce-Button button:first-child{
+    background-color: #231f22;
+    border: 1px solid #231f22;
+    color: #fff;
+}
+
+.Artist-Introduce-Button button:nth-child(11), .Artist-Introduce-Button button:nth-child(12){
+    background-color: #fff;
+    border: 1px solid #a4a3a4;
+} 
+
+.Artist-Introduce-Button button:hover{
+    background-color: #231f22;
+    border: 1px solid #231f22;
+    color: #fff;
+}
+
+.Artist-Introduce-Button button:nth-child(11):hover, .Artist-Introduce-Button button:nth-child(12):hover{
+    background-color: #e1e0e1;
+    border: 1px solid #a4a3a4;
+    color: #040404;
+}
+

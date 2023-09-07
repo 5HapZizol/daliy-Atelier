@@ -1,0 +1,264 @@
+.art_auction_info{
+    display: table;
+    margin: 3em auto;
+    width: 80%;
+}
+.art_auction_info:after {
+    content : "";
+    display : block;
+    clear : both;
+} 
+/*작품 이미지*/
+.art_auction_info > img {
+    margin-top: 3em;
+    float: left;
+}
+/*오른쪽 칸 전체*/
+.art_auction_info_right{
+    float: right;
+    margin-right: 8em;
+}
+/*경매 정보 텍스트 박스*/
+.art_info_text_box{
+    margin-top: 3em;
+    word-break:break-all;
+}
+.art_info_text_box div{
+    margin-bottom: 0.1em;
+}
+.art_info_text_box .title{
+    font-size: 3em;
+    font-weight: bold;
+}
+.art_info_text_box .artist{
+    font-size: 1.4em;
+    color: #4b4b4b;
+    font-weight: bold;
+}
+.art_info_text_box .category{
+    font-size: 1em;
+    color: #979797;
+}
+.art_info_text_box .start_price{
+    font-size: 1em;
+    color: #979797;
+}
+.art_info_text_box .left_time{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.art_info_text_box .current_price{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*경매 버튼*/
+.art_auction_btns{
+    margin-top: 3em;
+}
+.art_auction_btns .openBtn{
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 0.2em 1.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+}
+.art_auction_btns .likes{
+  background-color: #fff;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 2em;
+}
+.art_auction_btns .likes img{
+    vertical-align: text-bottom;
+}
+.art_auction_btns .report{
+    background-color: #fff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 1em;
+}
+/*작품 소개*/
+.art_introduce{
+    width: 80%;
+    word-break:break-all;
+    display: table;
+    margin: 0 auto;
+    margin-top: 7em;
+}
+.art_introduce div{
+    color: #4b4b4b;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.art_introduce .top{
+    color: #000000;
+    font-size: 2em;
+    font-weight: bold;
+}
+hr{
+	  border-top: 0.1em solid #c0c0c0;
+}
+/*작가 소개*/
+.artist_introduce{
+    width: 80%;
+    word-break:break-all;
+    display: table;
+    margin: 0 auto;
+    margin-top: 7em;
+}
+.artist_introduce div{
+    color: #4b4b4b;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.artist_introduce .top{
+    color: #000000;
+    font-size: 2em;
+    font-weight: bold;
+}
+/*주의 사항*/
+.art_caution{
+    width: 80%;
+    word-break:break-all;
+    display: table;
+    margin: 0 auto;
+    margin-top: 7em;
+}
+.art_caution div{
+    color: #4b4b4b;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.art_caution .top{
+    color: #000000;
+    font-size: 2em;
+    font-weight: bold;
+}
+/*작가의 다른 작품 */
+.artist_other_art div{
+    color: #4b4b4b;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.artist_other_art .top{
+    color: #000000;
+    font-size: 2em;
+    font-weight: bold;
+}
+.artist_other_art{
+    width: 80%;
+    margin-top: 7em;
+    text-align: center;
+    position: static;
+    display: inline-block;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+.artist_other_art > ul{
+    width: 51em;
+    height: 50em;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+.artist_other_art > ul > li{
+    float: left;
+    width: 15em;
+    height: 15em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.artist_other_art *{
+    float: none;
+}
+.artist_other_art li {
+    list-style: none;
+}
+
+/*작가 리뷰 창*/
+.art_review {
+    width: 80%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
+.art_review .top{
+    color: #000000;
+    font-size: 2em;
+    font-weight: bold;
+    padding-left: 1.5em;
+    margin: 0 auto;
+}
+/*리뷰 칸*/
+.review_box {
+    display: flex;
+    margin: auto;
+    width: 50em;
+    height: 7.5em;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.review_box img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    margin: 5px;
+}
+.review_box .box_img {
+    display: inline-block;
+}
+.review_box .box_detail {
+    display: inline-block;
+    width: 41.5em;
+    height: 6.8em;
+    margin: 5px;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.review_box .reviewss_1 {
+    margin-left: 13px;
+    margin-top: 2px;
+}
+.review_box .consumer_1 {
+    margin-top: 3px;
+    margin-left: 13px;
+}
+.review_box .star_box{
+    width: 115px;
+    height: 28px;
+    object-fit: cover;
+}
+/*넘어가는 버튼*/
+.ques {
+    margin-top: 5em;
+    font-size: 1.2em;
+    text-align: center;
+}
+.btn_next{
+    font-size: 1.1em;
+    border: none;
+
+}
+.btn_next:hover{
+    background-color: #778C86;
+    transition: 0s;
+}
+.btn-group{
+    font-family: unset;
+}
+.jump {
+    margin: 1em;
+}

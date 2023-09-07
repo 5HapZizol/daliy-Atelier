@@ -1,0 +1,113 @@
+.page_top{
+    display: inline-block;
+    margin-left:auto; 
+    margin-right:auto;
+    width: 60%;
+    display: table;
+    margin: 1em auto;
+}
+.page_name {
+    margin: 1em auto;
+    display: table;
+    font-size: 2.2em;
+}
+.page_name{
+    margin-top: 2em;
+}
+.hr_1{
+    margin-bottom: 1em;
+}
+.page_path { 
+    margin-left: 1%;
+    font-size: 0.6em;
+    color: rgb(180, 180, 180);
+}
+/*메뉴타입*/
+.menu_type {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 2em;
+}
+.menu_type div {
+    margin: 0 5px 0;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
+.menu_type button {
+    font-weight: 500;
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #b3b3b3; /* 모든 자식 요소의 기본 텍스트 색상 */
+}
+.menu-animation {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.5s;
+}
+.menu_type div.active .Tap-animation {
+    width: 100%;
+  }
+.menu_type div.active button {
+    color: #000000; /* 클릭된 요소의 텍스트 색상 */
+  }
+.menu_type div:first-child.active button {
+    color: #000000; /* 첫 번째 자식 요소인 "Bid status"의 텍스트 색상 */
+  }
+.separator{
+    border-left: 1px solid #7b7b7b;
+    height: 1.1em;
+    top: 0.3em;
+}
+/*리뷰 한줄에 4개씩*/
+.reviewss{
+    display: inline-block;
+    margin-left: 50em;
+    margin-right: 50em;
+}
+/*리뷰 박스*/
+.box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    height: 15em;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.winning_bid{
+    display: block;
+    text-align: center;
+    margin: 0.2em;
+}
+/*리뷰 내용*/
+.contents {
+    text-align: center;
+}
+.contents .detail {
+    font-size: 0.7em;
+    color: rgb(0, 0, 0);
+}
+.bid_price {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 0.5em;
+    color: rgb(75, 74, 74);
+}
+.contents .title {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.3em;
+}
+.bid_rated{
+    display: block;
+    text-align: center;
+}
