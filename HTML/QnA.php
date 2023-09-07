@@ -4,7 +4,7 @@
     <title>고객센터</title>
     <meta charset="UTF-8">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <link type="text/css" rel="stylesheet" href="../css/QnA.css"></link>
+    <link rel="stylesheet" href="../css/QnA.css">
 </head>
 
 <!--본문-->
