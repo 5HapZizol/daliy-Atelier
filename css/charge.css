@@ -1,4 +1,3 @@
-/*본문 스타일*/
 .h1_top {
     text-align: center;
     padding: 3em;
@@ -9,168 +8,90 @@
     width: 50%;
 }
 
+.page_top{
+    display: inline-block;
+    width: 60%;
+    display: table;
+    margin: 1em auto;
+}
+.page_name {
+    margin: 1em auto;
+    display: table;
+    font-size: 2em;
+}
+.page_top .hr_1{
+    margin: 2em;
+}
+.page_path {
+    display: inline;
+    float: left;
+    padding-left: 3.5em;
+    font-size: 0.6em;
+    color: rgb(180, 180, 180);
+    margin-bottom: 3em;
+}
+.hr_1{
+    margin-top: 4em;
+    border : 0px;
+    border-top: 1px solid;
+}
+
 .container {
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
     align-items: center;
     border:solid 1em;
     width: 40%;
     border: 1px;
 }
 
-.point-page {
-    margin-top: 20px;
-}
-
-.point-page.section {
-    display: flex;
-    margin-bottom: 16px;
-    margin: 0;
-    position: relative;
-    padding: 26px 18px;
-}
-
-.section-content {
-    flex-grow: 1;
-}
-
-form {
-    display: block;
-}
-
-/*라디오 박스*/
-.radio-box {
-    border-collapse: collapse;
-    cursor: pointer;
-}
-
-.radio-box > div.checked {
-    border: 1px solid #778C86;
-}
-
-.radio-box > div:first-child {
-    border-radius: 4px 4px 0 0;
-}
-
-.radio-box .custom-control {
-    padding: 15px;
-}
-
-.custom-control {
-    min-height: 24px;
-    line-height: 24px;
-    padding-left: 24px;
-}
-
-.custom-control .daily-radio {
-    padding-left: 26px;
-}
-
-control:last-child {
-    margin-bottom: 0;
-}
-
-input[type = checkbox], input[type = radio] {
-    box-sizing: border-box;
-    padding: 0;
-}
-
-.custom-control-input {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-}
-
-.radio-box > div.checked-label {
-    color :#778C86;
-    font-weight: 500;
-}
-
-.custom-control-label {
-    font-size: 15px;
-    vertical-align: top;
-    word-break: keep-all;
-}
-
-.custom-control-label {
-    position: relative;
-    margin-bottom: 0;
-}
-
-.daily-radio.custom-control-label {
-    display: flex;
+.container_2 {
+    margin: 0 auto;
+    text-align: center;
     align-items: center;
+    border:solid 1em;
+    width: 20%;
+    border: 1px;
 }
 
-.radio-box>div label {
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    position: relative;
     cursor: pointer;
+    display: inline-flex;
+    gap: 0.8em;
+    border: 1px solid #000000;
+    border-radius: 0.2em;
+    padding: 1.5em 3em;
+    margin: 5px;
+    width: 40%;
 }
 
-.radio-box label {
-    padding: 20px 10px;
-    width: 100%;
-}
-
-
-.daily-radio .custom-control-input :checked~.custom-control-label::before {
+input[type="radio"]:checked + label:before{
+    height: 1em;
+    width: 1em;
+    border: 0.65em solid #ffffff;
     background-color: #778C86;
 }
 
-.daily-radio .custom-control-input :checked~.custom-control-label::before {
-    border: 1px solid #778C86;
+input[type="radio"]:checked + label{
+    background-color: #778C86;
 }
 
-.daily-radio .custom-control-label::before {
-    top: 0;
-    left: 0;
+.text-alpha-black-47 {
+    color: rgba(0, 0, 0, .47)! important;
 }
 
-.custom-control-input:checked~.custom-control-label::before{
-    color: #fff;
-}
-
-.daily-radio.custom-control-label::before {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-    top: 2px;
-    left: -26px;
-    background-color: transparent;
-    border: 1px solid rgba(0,0,0,.27);
-    transition: none;
-    border-radius: 50%;
-}
-
-.radio-box label::before {
-    position: relative;
-}
-
-.custom-control-label::before, .custom-file-label, .custom-select {
-    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-
-
-/*예상 적립액*/
-.point-page .point-balance {
-    padding: 16px 0;
-    font-size: inherit;
-    line-height: inherit;
-    background-color: #fafafa;
-    border-radius: 6px;
-}
-.point-charge .point-balance {
-    margin-top: 24px;
-}
 .point-balance {
     padding: 0 24px;
     font-size: 14px;
     line-height: 21px;
     border-radius: 6px;
 }
-.text-alpha-black-47 {
-    color: rgba(0,0,0,.47)!important;
-}
+
 .text-center {
     text-align: center!important;
 }
@@ -179,27 +100,10 @@ input[type = checkbox], input[type = radio] {
     margin-bottom: 40px;
 }
 
-.point-page .form-group {
-    margin-bottom: 40px;
+.info {
+    text-align: left;
 }
 
-label {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-}
-[class*="form-label"] {
-    padding-top: 0;
-    padding-bottom: 8px;
-    /* margin-bottom: 0; */
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    word-break: keep-all;
-}
-
-.form-control, .custom-select {
-    font-size: 15px;
-}
 .form-control {
     display: block;
     width: 100%;
@@ -212,7 +116,24 @@ label {
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    align-items: center;
+}
+
+.last_container {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    border:solid 1em;
+    border: 1px;
+    padding-bottom: 3em;
+}
+.last_last_container {
+    margin: 0 auto;
+    align-items: center;
+    border:solid 1em;
+    width: 40%;
+    border: 1px;
+    padding-bottom: 2em;
 }
 
 /*유의 사항*/
@@ -237,23 +158,6 @@ label {
     transition: 0s;
 }
 
-.last_container {
-    margin: 0 auto;
-    align-items: center;
-    text-align: center;
-    border:solid 1em;
-    width: 40%;
-    border: 1px;
-    padding-bottom: 3em;
-}
-.last_last_container {
-    margin: 0 auto;
-    align-items: center;
-    border:solid 1em;
-    width: 40%;
-    border: 1px;
-    padding-bottom: 2em;
-}
 .text_notice {
     font-size: 12px;
     color: #868686;

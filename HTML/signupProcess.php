@@ -8,8 +8,7 @@
         INSERT INTO user
         (Userid, password, name, nickname, phone_number, email, join_date)
         VALUES('{$_POST['Userid']}', '{$hashedPassword}', '{$_POST['name']}', '{$_POST['nickname']}', '{$_POST['tel']}', '{$_POST['email']}', NOW()
-        )";
-    //sql문
+        )";    //sql문
     echo $sql;
     $result = mysqli_query($conn, $sql);
 
@@ -20,7 +19,7 @@
     ?>
     <script>
         alert("회원가입이 완료되었습니다");
-        location.href = "main.html";
+        location.href = "main.php";
     </script>
 <?php
 }

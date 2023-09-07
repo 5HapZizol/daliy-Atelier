@@ -1,6 +1,6 @@
 .h1_top {
     text-align: center;
-    padding: 0.5em;
+    padding: 3em;
 }
 .divide_hr > hr {
     align-items: center;
@@ -8,8 +8,35 @@
     width: 50%;
 }
 
+.page_top{
+    display: inline-block;
+    width: 60%;
+    display: table;
+    margin: 1em auto;
+}
+.page_name {
+    margin: 1em auto;
+    display: table;
+    font-size: 2em;
+}
+.page_top .hr_1{
+    margin: 2em;
+}
+.page_path {
+    display: inline;
+    float: left;
+    padding-left: 3.5em;
+    font-size: 0.6em;
+    color: rgb(180, 180, 180);
+    margin-bottom: 3em;
+}
+.hr_1{
+    margin-top: 4em;
+    border : 0px;
+    border-top: 1px solid;
+}
 /*전체 박스*/
-/*.box {
+.box_filter {
     margin: 0 auto;
     padding-top:2em;
     padding-bottom: 2em;
@@ -17,10 +44,9 @@
     border:solid 0em;
     width: 40vw;
 }
-*/
 
 /*줄 간격*/
-.box > div {
+.box_filter > div {
     margin-top: 2em;
     margin-bottom: 2em;
 }

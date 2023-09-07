@@ -24,29 +24,35 @@
         margin-bottom: 3em;
     }  
     .mem_fro_info_1 {
-        display: table;
+        display: block;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
     } 
-    .img_1 {
+    .my_img {
         display: inline-block;
-        float: left;
-        margin-right: 1em;
     }
     
     .box_1 {
         display: inline-block;
-        float: right; 
         width: 40em; /* 너비 조절 */
         height: 7.5em; /* 높이 조절 */
         border: 1px solid black; /* 테두리 선 지정 */
         background-color: rgba(255, 255, 255, 0.923); 
     }
     .box_text {
-        display: table;
+        display: inline-block;
         float: left;
         margin-left: 1.2em;
+        font-size: 0.9em;
+    }
+    .box_text_1 {
+        display: inline-block;  
+        margin-left: 4em;
+        font-size: 0.9em;
+    }
+    .box_text_2 {
+        display: inline-block;
         font-size: 0.9em;
     }
     .charge_btn {
@@ -54,19 +60,16 @@
         border: none;
         width: 3.6em;
         height: 2em;
+        margin-left: 0.5em;
     }
-    .box_text_1 {
-        display: inline-block;
-        margin-right: -2em;
-        font-size: 0.9em;
-    }
-    .line {
-        display: table;
-        width: 0.07em;
-        height: 7.6em; 
-        background-color: black;
-        margin-left: 20em;
-        margin-top: -3.8em;
+   
+    .line {  
+     display: inline-block;
+     width: 0.07em;
+     height: 7.5em;
+     background-color: black;
+     margin-right: 10em;
+     margin-top: -4.2em;
     }
     table{
         border-collapse : collapse;

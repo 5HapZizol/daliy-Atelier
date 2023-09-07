@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 $(document).ready(function(){
     $(".footer-Background").load("../html/Footer.html");
@@ -33,3 +34,12 @@ $(document).ready(function(){
 //     xhr.send(data);
 //     });
 // });
+=======
+$(document).ready(function(){
+    $(".Header").load("../html/Header.html");
+});
+
+$(document).ready(function(){
+    $(".footer-Background").load("../html/Footer.html");
+});
+>>>>>>> c9f367d8ee90bc66d63de39b88413b62015bba73

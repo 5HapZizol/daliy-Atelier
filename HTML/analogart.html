@@ -84,8 +84,6 @@
               <div></div>
             </a>
           </div>
-        </div>
-        <div class="hd_bg"></div>
       </header>   <!-- 헤더 끝 -->
 
     <!--본문 시작-->
@@ -309,7 +307,172 @@
     </div>
 
 
+  <div class="container">
 
+    <div class="box-container">
+ 
+       <div class="box">
+          <div class="image">
+             <img src="../img/auction/best2.png" alt="">
+          </div>
+          <div class="content">
+             <h3>blog title goes here</h3>
+             <p>34:06:32</p>
+             <a href="#" class="btn">입찰</a>
+             <div class="icons">
+                <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                <span> <i class="fas fa-user"></i> by admin </span>
+             </div>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <div class="image">
+             <img src="../img/auction/best1.jpg" alt="">
+          </div>
+          <div class="content">
+             <h3>blog title goes here</h3>
+             <p>62:34:14</p>
+             <a href="#" class="btn">입찰</a>
+             <div class="icons">
+                <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                <span> <i class="fas fa-user"></i> by admin </span>
+             </div>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <div class="image">
+             <img src="../img/auction/best3.jpg" alt="">
+          </div>
+          <div class="content">
+             <h3>blog title goes here</h3>
+             <p>12:43:23</p>
+             <a href="#" class="btn">입찰</a>
+             <div class="icons">
+                <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                <span> <i class="fas fa-user"></i> by admin </span>
+             </div>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <div class="image">
+             <img src="../img/auction/best4.jpg" alt="">
+          </div>
+          <div class="content">
+             <h3>blog title goes here</h3>
+             <p>34:53:54</p>
+             <a href="#" class="btn">입찰</a>
+             <div class="icons">
+                <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                <span> <i class="fas fa-user"></i> by admin </span>
+             </div>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <div class="image">
+             <img src="../img/auction/done_digi_1.jpg" alt="">
+          </div>
+          <div class="content">
+             <h3>blog title goes here</h3>
+             <p>43:15:49</p>
+             <a href="#" class="btn">입찰</a>
+             <div class="icons">
+                <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                <span> <i class="fas fa-user"></i> by admin </span>
+             </div>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <div class="image">
+             <img src="../img/auction/done_digi_2.jpg" alt="">
+          </div>
+          <div class="content">
+             <h3>blog title goes here</h3>
+             <p>71:34:01</p>
+             <a href="#" class="btn">입찰</a>
+             <div class="icons">
+                <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                <span> <i class="fas fa-user"></i> by admin </span>
+             </div>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <div class="image">
+             <img src="../img/auction/done_digi_3.jpg" alt="">
+          </div>
+          <div class="content">
+             <h3>blog title goes here</h3>
+             <p>53:34:06</p>
+             <a href="#" class="btn">입찰</a>
+             <div class="icons">
+                <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                <span> <i class="fas fa-user"></i> by admin </span>
+             </div>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <div class="image">
+             <img src="../img/auction/done_digi_4.jpg" alt="">
+          </div>
+          <div class="content">
+             <h3>blog title goes here</h3>
+             <p>14:23:14</p>
+             <a href="#" class="btn">입찰</a>
+             <div class="icons">
+                <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                <span> <i class="fas fa-user"></i> by admin </span>
+             </div>
+          </div>
+       </div>
+ 
+       <div class="box">
+          <div class="image">
+             <img src="../img/auction/done_digi_5.jpg" alt="">
+          </div>
+          <div class="content">
+             <h3>blog title goes here</h3>
+             <p>45:12:53</p>
+             <a href="#" class="btn">입찰</a>
+             <div class="icons">
+                <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
+                <span> <i class="fas fa-user"></i> by admin </span>
+             </div>
+          </div>
+       </div>
+ 
+    </div>
+ 
+    <div id="load-more"> load more </div>
+    <script>
+
+      let loadMoreBtn = document.querySelector('#load-more');
+      let currentItem = 3;
+      
+      loadMoreBtn.onclick = () =>{
+         let boxes = [...document.querySelectorAll('.container .box-container .box')];
+         for (var i = currentItem; i < currentItem + 3; i++){
+            boxes[i].style.display = 'inline-block';
+         }
+         currentItem += 3;
+      
+         if(currentItem >= boxes.length){
+            loadMoreBtn.style.display = 'none';
+         }
+      }
+      
+      </script>
+      
+ </div>
+
+
+
+    </article>
 
 
 
@@ -317,35 +480,18 @@
 
     <footer>  <!-- footer 시작 -->
         <div class="footer-Background">
-        <div class="footer-Left">
-            <div class="footer-terms">
-                <ul>
-                    <li>개인정보처리방침</li>
-                    <li>이용약관</li>
-                    <a href="service.html" style="text-decoration: none; color: white;"><li>서비스</li></a>
-                    <a href="center.html" style="text-decoration: none; color: white;"><li>고객센터</li></a>
-                  </ul>
-            </div>
-
-            <div class="footer-social-Icon">
-            <img src="/img/icon/Instagram.png" class="footer-Instagram"/>
-            <img src="/img/icon/Blog.png" class="footer-Blog"/>
-            <img src="/img/icon/FaceBook.png" class="footer-FaceBook"/>
-            </div>   
-        </div>
-        
-        <div class="footer-developer">
-            <p>
-            (주)서일대학교 소프트웨어공학과 | 학과 사무실:02-490-7398 | 주소: 서울특별시 중랑구 용마산로90길 28
-            </p>
-            <p>
-            이메일: 202103631@office.seoil.ac.kr | 디자인: 202103631 전채영
-            </p>
-            <p>
-            개인정보보호책임자: 전채영 | 쥐어터트리는 자: 손예빈 | 지져진 자: 김민주 | 영혼이 소멸한 자: 박서영 | 건들면무는자: 박성주
-            </p>
-        </div>
+       
         </div>
     </footer>  <!-- footer 끝 -->
+
+    <script>
+      $(document).ready(function(){
+        $(".Header").load("/html/Header.html");
+      });
+
+      $(document).ready(function(){
+          $(".footer-Background").load("/html/Footer.html");
+      });
+    </script>
 </body>
 </html>

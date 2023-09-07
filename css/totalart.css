@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> da25bc3581d40c806ae62ca1f41d88e14888a8b6
+=======
+>>>>>>> c9f367d8ee90bc66d63de39b88413b62015bba73
 
 .page_top{
     display: inline-block;
@@ -9,28 +12,15 @@
     display: table;
     margin: 1em auto;
 }
-.page_name {
-    margin: 1em auto;
-    display: table;
-    font-size: 2em;
-}
-.page_top .hr_1{
-    margin: 2em;
-}
-.page_path {
-    display: inline;
-    float: left;
-    padding-left: 3.5em;
-    font-size: 0.6em;
-    color: rgb(180, 180, 180);
-    margin-bottom: 3em;
-}
-.hr_1{
-    margin-top: 4em;
-    border : 0px;
-    border-top: 1px solid;
+#wrap {
+    width: 50%;
+    border: 1px solid red;
+    margin: 0 auto;
+    padding-top: 10px;
+    overflow: hidden;
 }
 
+<<<<<<< HEAD
 html, body {
     margin: 0;
 }
@@ -41,12 +31,15 @@ html, body {
     text-align: center;
     padding: 3em;
 }
+=======
+>>>>>>> c9f367d8ee90bc66d63de39b88413b62015bba73
 .divide_hr > hr {
     align-items: center;
     border:solid 0.em;
     width: 50%;
 }
 
+<<<<<<< HEAD
 .page_top{
     display: inline-block;
     width: 60%;
@@ -77,6 +70,8 @@ html, body {
 
 >>>>>>> back
 >>>>>>> da25bc3581d40c806ae62ca1f41d88e14888a8b6
+=======
+>>>>>>> c9f367d8ee90bc66d63de39b88413b62015bba73
 /*경로*/
 .rudfh {
     font-size: 15px;
@@ -85,35 +80,34 @@ html, body {
     padding-bottom: 1em;
 }
 
-/*
-article {
-    float: left;
-    margin-left: 10px;
-    margin-bottom: 10px;
+*{
+   margin:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
 }
-div>article {
-    float: left;
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
-*/
-
-.box {
-    margin: 0 auto;
-    padding-bottom: 2em;
-    align-items: center;
-    border:solid 0em;
-    width: 40vw;
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding:25px 20px;
 }
 
-.second-box {
-    margin: 0 auto;
-    padding-top:2em;
-    padding-bottom: 2em;
-    align-items: center;
-    text-align: center;
+.container .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap:20px;
 }
 
+.container .box-container .box{
+  background-color: #fff;
+  padding:20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  display: none;
+}
+
+<<<<<<< HEAD
 /*작품 목록*/
 <<<<<<< HEAD
 =======
@@ -158,72 +152,119 @@ div>article {
 }
 .img_list_info *{
     float: none;
-}
-.img_list li {
-    list-style: none;
-}
-
-/*grid*/
-#wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    margin-bottom: 20px;
-    text-align: center;
-    background-color: antiquewhite;
+=======
+.container .box-container .box:nth-child(1),
+.container .box-container .box:nth-child(2),
+.container .box-container .box:nth-child(3){
+  display: inline-block;
+>>>>>>> c9f367d8ee90bc66d63de39b88413b62015bba73
 }
 
-.items {
-    align-items: baseline;
-    text-align: center;
-    object-fit: scale-down;
+.container .box-container .box .image{
+  margin-bottom: 20px;
+  overflow: hidden;
+  height: 250px;
+  border-radius: 5px;
 }
 
-.down-btn {
-    background-color:#0a0a23;
-    color: #fff;
-    border-radius:50px;
-    padding: 1em;
-    display: block;  
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 3em;
+.container .box-container .box .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
 }
 
-.container {
-    margin: 0 auto;
-    text-align: center;
-    align-items: center;
-    border:solid 1em;
-    width: 40%;
-    border: 1px;
+.container .box-container .box:hover .image img{
+  transform: scale(1.1);
 }
 
+.container .box-container .box .content h3{
+  font-size: 20px;
+  color:#334;
+}
+
+.container .box-container .box .content p{
+  font-size: 30px;
+  line-height: 2;
+  padding:15px 0;
+}
+
+<<<<<<< HEAD
 <<<<<<< HEAD
 /*user agent stylesheet 때문에 ul에 자꾸 패딩 값이 들어감*/
 =======
 /*user agent stylesheet 때문에 ul에 자꾸 패딩 값이 들어감*//*user agent stylesheet 때문에 ul에 자꾸 패딩 값이 들어감*//*user agent stylesheet 때문에 ul에 자꾸 패딩 값이 들어감*/
+=======
+.container .box-container .box .content .btn{
+  display: inline-block;
+  padding:10px 30px;
+  border:1px solid #334;
+  color:#334;
+  font-size: 16px;
+}
+>>>>>>> c9f367d8ee90bc66d63de39b88413b62015bba73
 
-
-
-.contain {
-  object-fit: contain;
+.container .box-container .box .content .btn:hover{
+  background-color: #778C86;
+  border-color: #778C86;
+  color:#fff;
 }
 
-.img_size-fix {
-    width: 150px;
-    height: 100px;
-    border: none;
+.container .box-container .box .content .icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top:1px solid #334;
 }
 
-.contianer {
-    margin: 3em;
+.container .box-container .box .content .icons span{
+  font-size: 14px;
+  color:#777;
 }
 
-.box_1 {
-    margin: 0 auto;
-    padding-bottom: 2em;
-    align-items: center;
-    border:solid 0em;
-    width: 50%;
+.container .box-container .box .content .icons span i{
+  color:#778C86;
+  padding-right: 5px;
 }
+
+#load-more{
+  margin-top: 20px;
+  display: inline-block;
+  padding:13px 30px;
+  border:1px solid #334;
+  color:#334;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#load-more:hover{
+  background-color: #778C86;
+  border-color: #778C86;
+  color:#fff;
+}
+<<<<<<< HEAD
 >>>>>>> da25bc3581d40c806ae62ca1f41d88e14888a8b6
+=======
+
+@media (max-width:450px){
+
+  .container .box-container{
+    grid-template-columns: 1fr;
+  }
+
+  .container .box-container .box .image{
+    height: 200px;
+  }
+
+  .container .box-container .box .content p{
+    font-size: 12px;
+  }
+
+  .container .box-container .box .content .icons span{
+    font-size: 12px;
+  }
+
+}
+>>>>>>> c9f367d8ee90bc66d63de39b88413b62015bba73
