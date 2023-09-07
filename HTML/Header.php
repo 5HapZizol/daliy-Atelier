@@ -54,10 +54,10 @@
               <nav>
                 <ul id="gnb">
                   <li class="dept1">
-                    <a href="#">이벤트</a>
+                    <a href="#">공지사항</a>
                     <ul class="inner-menu">
-                      <li class="dept2"><a href="#">이벤트 안내</a></li>
-                      <li class="dept2"><a href="#">당첨자 발표</a></li>
+                      <li class="dept2"><a href="notice.php">공지 사항</a></li>
+                      <li class="dept2"><a href="event.php">이벤트 안내</a></li>
                     </ul>
                   </li>
     
