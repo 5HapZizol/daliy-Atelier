@@ -1,8 +1,31 @@
 
 $(document).ready(function(){
     $(".footer-Background").load("../html/Footer.html");
+
+    displayFileNames();
+
+  // 파일 입력 상자(change 이벤트)가 변경될 때마다 displayFileNames 함수 호출
+  $('#Q_Write_File').change(displayFileNames);
 });
 
+
+function displayFileNames() {
+    const fileInput = $('#Q_Write_File')[0];
+    const fileNameDisplay = $('.Q-Write-File-name');
+    
+    // 파일이 선택되었을 때만 처리
+    if (fileInput.files.length > 0) {
+      let fileNames = [];
+      for (let i = 0; i < fileInput.files.length; i++) {
+        fileNames.push(fileInput.files[i].name);
+      }
+      fileNameDisplay.val(fileNames.join(', '));
+    } else {
+      fileNameDisplay.val('첨부파일');
+    }
+  }
+  
+  
 
 // $(function () {
 

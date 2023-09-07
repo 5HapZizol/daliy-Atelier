@@ -12,7 +12,6 @@
     <link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
     
     <script>
-
       $(function(){
           $(".footer-Background").load("../html/Footer.html");
       });
@@ -101,9 +100,10 @@
 </head>
 
 <body>
-    <?php
-        include("Header.php");
-    ?>
+  <header>    <!-- 헤더 시작-->
+    <div class="Header">
+      </div>
+  </header>   <!-- 헤더 끝 -->
 
     <article>
     <div style="margin-top: 200px;">
