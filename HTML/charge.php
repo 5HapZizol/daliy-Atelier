@@ -3,7 +3,7 @@
 <head>
     <title>적립금 충전</title>
     <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="../css/charge_2.css"></link>
+    <link type="text/css" rel="stylesheet" href="../css/charge.css"></link>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>

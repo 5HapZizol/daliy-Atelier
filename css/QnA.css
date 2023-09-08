@@ -1,7 +1,6 @@
-
 .h1_top {
     text-align: center;
-    padding: 0.5em;
+    padding: 3em;
 }
 .divide_hr > hr {
     align-items: center;
@@ -9,30 +8,64 @@
     width: 50%;
 }
 
+.page_top{
+    display: inline-block;
+    width: 60%;
+    display: table;
+    margin: 1em auto;
+}
+.page_name {
+    margin: 1em auto;
+    display: table;
+    font-size: 2em;
+}
+.page_top .hr_1{
+    margin: 2em;
+}
+.page_path {
+    display: inline;
+    float: left;
+    padding-left: 3.5em;
+    font-size: 0.6em;
+    color: rgb(180, 180, 180);
+    margin-bottom: 3em;
+}
+.hr_1{
+    margin-top: 4em;
+    border : 0px;
+    border-top: 1px solid;
+}
+
+
 /*페이지 탐색 버튼*/
-search_btn {
+.search_btn {
     background-color: rgb(226, 226, 226);
     border: none;
     display: inline-block;
 }
 /*페이지 탐색 버튼 액션 이벤트*/
-serach_btn:hover {
+.serach_btn:hover {
+    outline: none;
     background-color: #778C86;
     transition: 0s;
 }
 
 /*항목 선택 버튼*/
-select_btn {
-    padding-top: 20px;
+.select_btn {
     background-color: rgb(226, 226, 226);
-    width: 10em;
-    height: 3em;
-    border: none;
     display: inline-block;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 8em;
+    height: 4em;
+    border: none;
     margin: 0.5em 0.5em;
+    font-size: 16px;
+    cursor: pointer;
 }
 /*항목 선택 버튼 액션 이벤트*/
-select_btn:hover{
+.select_btn:hover{
     background-color: #778C86;
     transition: 0s;
 }
@@ -40,6 +73,7 @@ select_btn:hover{
 /*항목 선택 버튼 중앙 정렬*/
 .btn-group {
     text-align: center;
+    align-items: center;
 }
 
 .btn_cataloague {
@@ -86,30 +120,14 @@ h3_center {
 }
 
 /*검색창
-<<<<<<< HEAD:css/center.css
-input {
-    width: 20em;
-=======
-<<<<<<< HEAD:css/center.css
-input {
-    width: 20em;
-=======
 .input_QnA {
     width: 20px;
->>>>>>> back:css/QnA.css
->>>>>>> da25bc3581d40c806ae62ca1f41d88e14888a8b6:css/QnA.css
     height: 0.75em;
     padding: 0.5em;
     outline: none;
 }
 */
-<<<<<<< HEAD:css/center.css
-=======
-<<<<<<< HEAD:css/center.css
-=======
 
->>>>>>> back:css/QnA.css
->>>>>>> da25bc3581d40c806ae62ca1f41d88e14888a8b6:css/QnA.css
 
 /*셀렉트 박스*/
 select {
@@ -156,14 +174,62 @@ go_to_btn_search:hover{
     transition: 0s;
 }
 
-/*Q 버튼 동그란거..*/
-ques_btn {
+/*경로*/
+.rudfh {
+    font-size: 15px;
     text-align: center;
-    color:aliceblue;
-    background-color: #778C86;
-    width: 1.5em;
-    height: 1.5em;
-    border: none;
+    color: #949494;
+    padding-bottom: 1em;
+}
+
+/*accordion*/
+.accordion {
+    margin: 0 auto;
+    text-align: left;
+    align-items: center;
+    border:solid 1em;
+    width: 40%;
+    border: 1px;
+}
+
+/*answer*/
+input[id*="answer"] {
+    display: none;
+}
+input[id*="answer"] + label {
+    display: block;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-bottom: 0;
+    color: #000;
+    font-weight: 900;
+    background-color: #e7e7e7;
+    cursor: pointer;
+    position: relative;
+}
+input[id*="answer"] + label em {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
     display: inline-block;
-    border-radius:1em;
+    background: url('/img/arrow.png') 0 0 no-repeat;
+}
+input[id*="answer"] + label + div {
+    max-height: 0;
+    transition: all .35s;
+    overflow: hidden;
+    font-size: 15px;
+}
+input[id*="answer"] + label + div p {
+    display: inline-block;
+    padding: 20px;
+}
+input[id*="answer"]:checked + label + div {
+    max-height: 100px;
+}
+input[id*="answer"]:checked + label em {
+    background: url('/img/arrow2.png') 0 0 no-repeat;
 }
