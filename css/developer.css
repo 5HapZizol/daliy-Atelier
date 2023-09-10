@@ -1,22 +1,107 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+* {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
 .page_top{
-    display: inline-block;
-    width: 60%;
-    display: table;
-    margin: 1em auto;
+    width: 93em;
+    height: 15em;
+    display: table-cell;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4); /* 그림자 효과 */
 }
 .page_name {
+    font-family: monospace;
     margin: auto;
     display: table;
-    font-size: 2.2em;
+    margin-top: 3.5em;
+    font-size: 2.5em;
 }
-.page_top .hr_1{
+.gap {
+    margin-top: 3em;
+}
+.rdochang {
+    text-align: center;
+}
+.separator{
+    border-left: 1px solid #7b7b7b;
     margin: 2em;
 }
-.page_path {
-    display: inline;
+
+/* 라디오 버튼에 대한 스타일 설정 */
+input[type="radio"] {
+    display: none;
+  }
+  
+  /* 라디오 버튼 라벨 스타일 설정 */
+  label {
+    cursor: pointer;
+  }
+  
+  /* 초기에는 모든 메뉴를 숨깁니다. */
+  .menu {
+    display: none;
+    margin-top: 5em;
+    /*margin-left: 17em;
+    margin-right: 17em;*/
+  }
+  
+  /* 라디오 버튼이 선택됐을 때 해당 메뉴 내용을 보이도록 설정 */
+  #menu1rdo:checked ~ #menu1,
+  #menu2rdo:checked ~ #menu2,
+  #menu3rdo:checked ~ #menu3,
+  #menu4rdo:checked ~ #menu4,
+  #menu5rdo:checked ~ #menu5  {
+    display: block;
+  }
+  .menu img{
     float: left;
-    padding-left: 3.5em;
-    font-size: 0.6em;
-    color: rgb(180, 180, 180);
-    margin-bottom: 3em;
-}  
+    margin-left: 17.03em;
+    width: 320px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  .de1_box {
+    width: 93em;
+    height: 350px;
+  }
+  /*개발자 세부내용*/
+  .de_box {
+    float: right;
+    background-color: white;
+    margin-right: 17em;
+    width: 600px;
+    height: 350px;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  .de_name {
+    margin-top: 2em;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .gap_1 {
+    width: 600px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  .de_edu {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .de_nu {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .de_rol {
+    font-size: 1em;
+    font-weight: bold;
+  }
+  .de_com {
+    font-size: 1em;
+    margin: 0.5em;
+  }
+  .gap2 {
+    margin-top: 5em;
+  }
