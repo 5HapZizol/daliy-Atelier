@@ -5,7 +5,34 @@
         die("데이터베이스 연결 오류: " . mysqli_connect_error());
     }
 
-    $Q_Write_Id = uniqid("Q_Write", true);
+    $Q_Write_Id = generateUniqueId(4); // 중복되지 않는 4자리 값 얻기
+
+    function generateUniqueId($desiredLength) {
+        global $conn; // $conn 변수를 함수 내에서 사용 가능하게 함
+    
+        $uniqueId = ""; // 무작위로 생성된 값
+    
+        // 중복되지 않는 값을 얻을 때까지 반복
+        while (true) {
+            $uniqueId = generateRandomId($desiredLength); // 원하는 길이의 무작위 숫자 생성
+    
+            // 데이터베이스에서 중복 여부 확인
+            $sql = "SELECT * FROM Q_write WHERE Q_Write_Id = '$uniqueId'";
+            $result = mysqli_query($conn, $sql);
+    
+            if ($result->num_rows == 0) {
+                // 중복되지 않는 값 발견
+                break;
+            }
+        }
+        return $uniqueId;
+    }
+    
+    function generateRandomId($desiredLength) {
+        // 원하는 길이의 무작위 숫자 생성
+        return str_pad(mt_rand(0, pow(10, $desiredLength) - 1), $desiredLength, '0', STR_PAD_LEFT);
+    }
+
     $Q_Write_Type_Select = $_POST['Q_Write_Type_Select'];
     $Q_Write_SvInput = $_POST['Q_Write_SvInput'];
     $Q_Write_CoInput = $_POST['Q_Write_CoInput'];
@@ -43,5 +70,9 @@
         )";
     $result = mysqli_query($conn, $sql);
 
-        
 ?>
+
+<script>
+    alert("문의가 등록되었습니다.");
+    window.location.href = "Q_list.php";
+</script>

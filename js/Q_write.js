@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     $(".footer-Background").load("../html/Footer.html");
 
@@ -6,6 +5,7 @@ $(document).ready(function(){
 
   // 파일 입력 상자(change 이벤트)가 변경될 때마다 displayFileNames 함수 호출
   $('#Q_Write_File').change(displayFileNames);
+
 });
 
 
