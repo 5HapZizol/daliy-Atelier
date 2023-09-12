@@ -28,7 +28,7 @@
         echo $_SESSION['user'];
 ?>
     <script>
-        alert("로그인에 성공하였습니다.")
+        alert("로그인에 성공하였습니다.");
         location.href = "main.php";
     </script>
 <?php

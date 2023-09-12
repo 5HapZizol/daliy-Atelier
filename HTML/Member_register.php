@@ -24,125 +24,87 @@
             <hr class="hr_1">
           </div>
 
-      
+          
+          <form action="signupProcess.php" method="POST" id="signup-form">
           <div class = "box">
               
             <div class = "container">
-<<<<<<< HEAD
-              <div class = "wrapper">
-                <input type = "text" name = "Userid" placeholder="아이디 입력"/>
-=======
-              
-              <p class = "notice">
-                    *은 필수 입력
+                <div class = "wrapper">
+                  <input type = "text" name = "Userid" placeholder="*아이디 입력" id = "user_id"/>
+                  <button name = "id_check">중복확인</button>
+                </div>
+
+                <p>
+                <div class = "wrapper">
+                  <input type = "password" placeholder = "*비밀번호 입력 (문자, 숫자, 특수문자 포함 8~20자)"  name="password" id="password" />
+                </div>
                 </p>
-                
-              <div class = "wrapper">
-                <input type = "text" name = "Userid" placeholder="*아이디 입력" id = "user_id"/>
->>>>>>> c9f367d8ee90bc66d63de39b88413b62015bba73
-                <button name = "id_check">중복확인</button>
-              </div>
 
-              <p>
-              <div class = "wrapper">
-<<<<<<< HEAD
-                <input type = "password" placeholder = "비밀번호 입력 (문자, 숫자, 특수문자 포함 8~20자)" id = "password"/>
-=======
-                <input type = "password" placeholder = "*비밀번호 입력 (문자, 숫자, 특수문자 포함 8~20자)" id = "password"/>
->>>>>>> c9f367d8ee90bc66d63de39b88413b62015bba73
-              </div>
-              </p>
-
-              <p>
-              <div class = "wrapper">
-<<<<<<< HEAD
-                <input type = "password" placeholder = "비밀번호 재입력" id = "password_check"/>
-=======
-                <input type = "password" placeholder = "*비밀번호 재입력" id = "password_check"/>
->>>>>>> c9f367d8ee90bc66d63de39b88413b62015bba73
-              </div>
-              </p>
-
-              <br><br>
-
-              <p>
-              <div class = "wrapper">
-<<<<<<< HEAD
-                <input type = "text" placeholder = "이름"/>
-=======
-                <input type = "text" placeholder = "*이름 (실명 필수)" id = "user_name"/>
->>>>>>> c9f367d8ee90bc66d63de39b88413b62015bba73
-              </div>
-              </p>
-
-              <p>
-              <div class = "wrapper">
-<<<<<<< HEAD
-                <input type = "text" placeholder = "닉네임"/>
-=======
-                <input type = "text" placeholder = "*닉네임" id = "user_nick"/>
->>>>>>> c9f367d8ee90bc66d63de39b88413b62015bba73
-              </div>
-              </p>
-
-              <p>
-              <div class = "wrapper">
-<<<<<<< HEAD
-                <input type = "tel" placeholder = "전화번호"/>
-=======
-                <input type = "tel" placeholder = "*전화번호" id  = "user_phone"/>
->>>>>>> c9f367d8ee90bc66d63de39b88413b62015bba73
-                <button>인증</button>
-              </div>
-              </p>
-
-              <p>
+                <p>
                 <div class = "wrapper">
-<<<<<<< HEAD
-                <input type = "number" placeholder = "인증번호"/>
-=======
-                <input type = "number" placeholder = "*인증번호" id = "Certification_Number"/>
->>>>>>> c9f367d8ee90bc66d63de39b88413b62015bba73
-                <button>확인</button>
+                  <input type = "password" placeholder = "*비밀번호 재입력" id = "password-check"/>
                 </div>
-              </p>
+                </p>
 
-              <p>
+                <br><br>
+
+                <p>
                 <div class = "wrapper">
-<<<<<<< HEAD
-                  <input type = "text" placeholder = "이메일" />
+                  <input type = "text" placeholder = "*이름 (실명 필수)"  id="name" name="name" />
                 </div>
-              </p>
+                </p>
 
-=======
-                  <input type = "text" placeholder = "*이메일" id = "user_email"/>
+                <p>
+                <div class = "wrapper">
+                  <input type = "text" placeholder = "*닉네임" name="nickname" />
                 </div>
-              </p>
->>>>>>> c9f367d8ee90bc66d63de39b88413b62015bba73
-              <br>
-              <br>
-              <p>
-                SMS 수신 동의 여부
-                <input type = "radio" class = "checked_btn" id = "sns_ok" name = "sns" value = "ok" checked>
-                  <label for="sns_ok">동의</label>
-                  <input type="radio" class = "checked_btn" id="sns_no" name="sns" value="no">
-                <label for="sns_no">비동의</label>
-              </p>
+                </p>
 
-              <p>
-                EMAIL 수신 동의 여부
-                  <input type="radio" class = "checked_btn" id="email_ok" name="email" value="ok"
-                  checked>
-                  <label for="email_ok">동의</label>
-                  <input type="radio" class = "checked_btn" id="email_no" name="email" value="no">
-                <label for="email_no">비동의</label>
-              </p>
+                <p>
+                <div class = "wrapper">
+                  <input type = "tel" placeholder = "*전화번호" name="tel"/>
+                  <button>인증</button>
+                </div>
+                </p>
 
-              <button type = "button" id = "register_btn">가입하기</button>
+                <p>
+                  <div class = "wrapper">
+                  <input type = "number" placeholder = "*인증번호" id = "Certification_Number"/>
+                  <button>확인</button>
+                  </div>
+                </p>
+
+                <p>
+                  <div class = "wrapper">
+                    <input type = "text" placeholder = "*이메일"  id="email"/>
+                  </div>
+                </p>
+                <br>
+                <br>
+                <p>
+                  SMS 수신 동의 여부
+                  <input type = "radio" class = "checked_btn" id = "sns_ok" name = "sns" value = "ok" checked>
+                    <label for="sns_ok">동의</label>
+                    <input type="radio" class = "checked_btn" id="sns_no" name="sns" value="no">
+                  <label for="sns_no">비동의</label>
+                </p>
+
+                <p>
+                  EMAIL 수신 동의 여부
+                    <input type="radio" class = "checked_btn" id="email_ok" name="email" value="ok"
+                    checked>
+                    <label for="email_ok">동의</label>
+                    <input type="radio" class = "checked_btn" id="email_no" name="email" value="no">
+                  <label for="email_no">비동의</label>
+                </p>
+
+
             </div>
         </div>
 
+        <input type=button id="register_btn">가입하기</input>  
           
+        </form>
       </article>
 
       <!-- footer 시작 -->
@@ -164,8 +126,7 @@
         const passwordCheck = document.querySelector("#password-check");
         registerbtn.addEventListener("click", function(e) {
           if(password.value&& password.value === passwordCheck.value){
-                  
-          signupForm.submit();
+  	        $("form").submit();
           }else{
               alert("비밀번호가 서로 일치하지 않습니다");
           }

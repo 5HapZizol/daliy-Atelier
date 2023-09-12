@@ -152,14 +152,4 @@ p {
 .wrapper input[type="number"] {
     border: solid 1px rgb(194, 194, 194);
     border-radius:8px;
-<<<<<<< HEAD
-=======
-}
-
-
-
-.notice {
-    color: rgb(122, 122, 122);
-    font-size: 15px;
->>>>>>> c9f367d8ee90bc66d63de39b88413b62015bba73
 }
