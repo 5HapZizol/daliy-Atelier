@@ -26,8 +26,8 @@
 
           
           <form action="signupProcess.php" method="POST" id="signup-form">
-            <?php
-              $User_status = 0;
+          <?php
+              $User_status = 1;
             ?>
           <div class = "box">
               
@@ -104,6 +104,7 @@
 
             </div>
         </div>
+        
         <input type="hidden" name="User_status" value="<?php echo $User_status; ?>">
         <input type=button id="register_btn">가입하기</input>  
           

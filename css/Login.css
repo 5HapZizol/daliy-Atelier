@@ -1,4 +1,4 @@
- @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 * {
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
@@ -9,7 +9,8 @@
   box-sizing: border-box;
   font-size: 37px;
   font-weight: 700;
-  margin: 200px auto 50px;
+  margin: 50px auto 50px;
+  justify-content: center;
 }
 
 .choice {
@@ -48,41 +49,21 @@
   background-color: #cfcfcf;
 }
 
-.General-login-form {
+.login-form {
   width: 100%;
   padding: 40px;
   border: 1px solid #223;
   box-sizing: border-box;
 }
 
-.Author-login-form {
-  width: 100%;
-  padding: 40px;
-  border: 1px solid #223;
-  box-sizing: border-box;
-}
-
-.General-login-form form input {
+.login-form form input {
   width: 100%;
   margin: 0.8rem 0;
   padding: 0.5rem;
   box-sizing: border-box;
 }
 
-.Author-login-form form input {
-  width: 100%;
-  margin: 0.8rem 0;
-  padding: 0.5rem;
-  box-sizing: border-box;
-}
-
-.General-login-form form button {
-  width: 100%;
-  margin: 1.8rem 0;
-  padding: 0.4rem 0;
-}
-
-.Author-login-form form button {
+.login-form form button {
   width: 100%;
   margin: 1.8rem 0;
   padding: 0.4rem 0;
@@ -108,7 +89,7 @@
   margin: 0;
 }
 
-.current{
-  display: none;
+.account a {
+  color: #223;
+  text-decoration: none;
 }
-

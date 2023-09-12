@@ -38,7 +38,7 @@
                           <img src="../img/user.png" alt="">
                        </div>
                        <div class="content">
-                        <input type="button" name = "select_2" value="일반 회원" class = "auother" onclick="location.href='#'"/>
+                        <input type="button" name = "select_2" value="일반 회원" class = "auother" onclick="location.href='Member_register.php'"/>
                        </div>
                     </div>
               
@@ -47,7 +47,7 @@
                           <img src="../img/artist.png" alt="">
                        </div>
                        <div class="content">
-                          <input type="button" name = "select_2" value="작가 회원" class = "auother" onclick="location.href='#'"/>
+                          <input type="button" name = "select_2" value="작가 회원" class = "auother" onclick="location.href='Member_Artist_register.php'"/>
                        </div>
                     </div>
                 </div>

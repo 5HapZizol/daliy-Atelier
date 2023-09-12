@@ -7,7 +7,7 @@
         <title>로그인</title>
         <link rel="stylesheet" href="../css/Login.css">
         <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <script src="/js/Login.js"></script>
+        <script src="../js/Login.js"></script>
     </head>
     <body>
     <?php
