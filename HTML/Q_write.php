@@ -15,7 +15,7 @@
     ?>
 
     <article>
-      <form action="Q_writeProcess.php" method="post">
+      <form action="Q_writeProcess.php" method="post"  enctype="multipart/form-data">
       <div class="Q-Write-Backgoround">
         <div class="Q-Write-Title">
           <h1>문의 하기</h1>
@@ -55,8 +55,7 @@
           </div>
 
           <div class="Q-Write-CoInput">
-            <textarea name="Q_Write_CoInput" id="Q_Write_CoInput" cols="30" rows="10"  placeholder="내용을 입력하세요">
-            </textarea>
+            <textarea name="Q_Write_CoInput" id="Q_Write_CoInput" cols="30" rows="10"  placeholder="내용을 입력하세요"></textarea>
           </div>
         </div>
 
@@ -68,7 +67,7 @@
           <div class="Q-Write-File">
             <input class="Q-Write-File-name" value="첨부파일" placeholder="첨부파일">
             <label>
-              <input type="file" id="Q_Write_File" multiple>
+              <input type="file" id="Q_Write_File" name="Q_Write_File" accept="image/png, image/jpeg, image/jpg" multiple>
               파일찾기
             </label> 
           </div>

@@ -1,3 +1,11 @@
+<?php
+  $conn = mysqli_connect("127.0.0.1", "root", "0430!!", "daily-art", "3306");
+
+    if (!$conn) {
+        die("데이터베이스 연결 오류: " . mysqli_connect_error());
+    }
+?>
+
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -34,93 +42,56 @@
             </tr>    
         </thead>
 
-        <tbody class="tb_body">
-            <div class="safe">
-                <tr >
-                    <td>8203</td> <td>배송</td> <td>배송이 안와요</td> <td>se***34</td> <td>23-03-12</td> <td>대기</td>
-                </tr>
-                <tr>
-                    <td>8204</td> <td>포인트</td> <td>포인트 적립 환불</td> <td>du***94</td> <td>23-03-12</td> <td>대기</td>
-                </tr>
-                <tr >
-                    <td>8203</td> <td>배송</td> <td>배송이 안와요</td> <td>se***34</td> <td>23-03-12</td> <td>대기</td>
-                </tr>
-                <tr>
-                    <td>8204</td> <td>포인트</td> <td>포인트 적립 환불</td> <td>du***94</td> <td>23-03-12</td> <td>대기</td>
-                </tr>
-                <tr>    
-                    <td>8205</td> <td>회원정보</td> <td>일반회원에서 작가회원으로 변경하고 싶습니다</td> <td>as***57</td> <td>23-03-12</td> <td>대기</td>
-                </tr>
-                <tr>    
-                    <td>8205</td> <td>회원정보</td> <td>일반회원에서 작가회원으로 변경하고 싶습니다</td> <td>as***57</td> <td>23-03-12</td> <td>대기</td>
-                </tr>
-            </div>
+    <?php
 
-            <div class="done">
+        $sql = "SELECT Q_write_id, Q_write_select, Q_write_title, DATE_FORMAT(Q_write_time, '%y-%m-%d') AS Q_write_time FROM Q_write ORDER BY Q_write_time DESC LIMIT 0, 10";
+        $result = mysqli_query($conn, $sql);
+
+        $Q_write_data = []; // 데이터를 저장할 배열 생성
+
+        if ($result->num_rows > 0) {
+            while ($Q_write = $result->fetch_array()) {
+                if (strlen($Q_write["Q_write_title"]) > 20) {
+                    $Q_write["Q_write_title"] = mb_substr($Q_write["Q_write_title"], 0, 20, "utf-8") . "...";
+                }
+                // 데이터를 배열에 저장
+                $Q_write_data[] = $Q_write;
+            }
+        }
+    ?>
+
+    <tbody class="tb_body">
+        <div class="done">
+            <?php foreach ($Q_write_data as $Q_write_item): ?>
                 <tr>    
-                    <td>8206</td> <td>작품</td> <td>디지털아트와 실물아트의 차이점은 뭔가요?</td> <td>qw***99</td> <td>23-03-11</td> <td class="Q_stay">완료</td>
+                    <td><?php echo isset($Q_write_item['Q_write_id']) ? $Q_write_item['Q_write_id'] : ''; ?></td>
+                    <td><?php echo isset($Q_write_item['Q_write_select']) ? $Q_write_item['Q_write_select'] : ''; ?></td>
+                    <td><?php echo isset($Q_write_item['Q_write_title']) ? $Q_write_item['Q_write_title'] : ''; ?></td>
+                    <td>qw***99</td>
+                    <td><?php echo isset($Q_write_item['Q_write_time']) ? $Q_write_item['Q_write_time'] : ''; ?></td>
+                    <td class="Q_stay">완료</td>
                 </tr>
-                <tr>    
-                    <td>8207</td> <td>포인트</td> <td>최소얼마부터 충정가능 한가요?</td> <td>wg***14</td> <td>23-03-11</td> <td class="Q_stay">완료</td>
-                </tr>
-                <tr>
-                    <td>8208</td> <td>배송</td> <td>배송은 보통 며칠 걸리나요?</td> <td>fn***26</td> <td>23-03-11</td> <td class="Q_stay">완료</td>
-                </tr>   
-                <tr>    
-                    <td>8206</td> <td>작품</td> <td>디지털아트와 실물아트의 차이점은 뭔가요?</td> <td>qw***99</td> <td>23-03-11</td> <td class="Q_stay">완료</td>
-                </tr>
-                <tr>    
-                    <td>8207</td> <td>포인트</td> <td>최소얼마부터 충정가능 한가요?</td> <td>wg***14</td> <td>23-03-11</td> <td class="Q_stay">완료</td>
-                </tr>
-                <tr>
-                    <td>8208</td> <td>배송</td> <td>배송은 보통 며칠 걸리나요?</td> <td>fn***26</td> <td>23-03-11</td> <td class="Q_stay">완료</td>
-                </tr>
-                <tr>    
-                    <td>8207</td> <td>포인트</td> <td>최소얼마부터 충정가능 한가요?</td> <td>wg***14</td> <td>23-03-11</td> <td class="Q_stay">완료</td>
-                </tr>
-                <tr>
-                    <td>8208</td> <td>배송</td> <td>배송은 보통 며칠 걸리나요?</td> <td>fn***26</td> <td>23-03-11</td> <td class="Q_stay">완료</td>
-                </tr>
-                <tr>    
-                    <td>8206</td> <td>작품</td> <td>디지털아트와 실물아트의 차이점은 뭔가요?</td> <td>qw***99</td> <td>23-03-11</td> <td class="Q_stay">완료</td>
-                </tr>
-                <tr>    
-                    <td>8207</td> <td>포인트</td> <td>최소얼마부터 충정가능 한가요?</td> <td>wg***14</td> <td>23-03-11</td> <td class="Q_stay">완료</td>
-                </tr>
-                <tr>
-                    <td>8208</td> <td>배송</td> <td>배송은 보통 며칠 걸리나요?</td> <td>fn***26</td> <td>23-03-11</td> <td class="Q_stay">완료</td>
-                </tr>
-                <tr>    
-                    <td>8207</td> <td>포인트</td> <td>최소얼마부터 충정가능 한가요?</td> <td>wg***14</td> <td>23-03-11</td> <td class="Q_stay">완료</td>
-                </tr>
-                <tr>
-                    <td>8208</td> <td>배송</td> <td>배송은 보통 며칠 걸리나요?</td> <td>fn***26</td> <td>23-03-11</td> <td class="Q_stay">완료</td>
-                </tr>
-                <tr>    
-                    <td>8207</td> <td>포인트</td> <td>최소얼마부터 충정가능 한가요?</td> <td>wg***14</td> <td>23-03-11</td> <td class="Q_stay">완료</td>
-                </tr>
-            </div>
-        </tbody>
-    </table>
+            <?php endforeach; ?>
+        </div>
+    </tbody>
+</table>
+
 
     <div style = "margin-top: 50px;"></div>
-    <div class = "ques">
-      <div class="btn-group">
-          <nav class="btn_catalogue">
-              <go_to_btn_search> 1 </go_to_btn_search>
-              <go_to_btn_search> 2 </go_to_btn_search>
-              <go_to_btn_search> 3 </go_to_btn_search>
-              <go_to_btn_search> 4 </go_to_btn_search>
-              <go_to_btn_search> 5 </go_to_btn_search>
-              <go_to_btn_search> 6 </go_to_btn_search>
-              <go_to_btn_search style="background-color: #bbbbbb;"> > </go_to_btn_search>
-              <go_to_btn_search style="background-color: #646464;"> >> </go_to_btn_search>
-          </nav>
+    <div class="Artist-Introduce-Button">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>10</button>
+        <button>></button>
+        <button>>></button>
       </div>
-  
-      <i class="fa-solid fa-angle-right" id="next_page"></i>
-      <i class="fa-solid fa-anles-right" id="last_page"></i>
-  </div>
   
   
   <div style="margin-bottom:  100px;">
