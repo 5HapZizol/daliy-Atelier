@@ -184,35 +184,30 @@
   </div>
 </footer>  <!-- footer 끝 -->
 <script>
-      $(document).ready(function(){
+    $(document).ready(function () {
         $(".Header").load("../html/Header.html");
     });
 
-    $(document).ready(function(){
+    $(document).ready(function () {
         $(".footer-Background").load("../html/Footer.html");
     });
-    </script>
 
-<script>
-      $(document).ready(function(){
-          $(".Header").load("../html/Header.html");
-      });
-
-      $(document).ready(function(){
-          $(".footer-Background").load("../html/Footer.html");
-      });
-      const open = () => {
+    const open = () => {
         document.querySelector(".popup").classList.remove("hidden");
-      }
-    
-      const close = () => {
+        // 팝업이 열릴 때 헤더 숨기기
+        document.querySelector(".Header").style.display = "none";
+    }
+
+    const close = () => {
         document.querySelector(".popup").classList.add("hidden");
-      }
-    
-      document.querySelector(".box").addEventListener("click", open);
-      document.querySelector(".close_btn").addEventListener("click", close);
-      document.querySelector(".dim").addEventListener("click", close);
-    </script>
+        // 팝업이 닫힐 때 헤더 다시 표시하기
+        document.querySelector(".Header").style.display = "block";
+    }
+
+    document.querySelector(".box").addEventListener("click", open);
+    document.querySelector(".close_btn").addEventListener("click", close);
+    document.querySelector(".dim").addEventListener("click", close);
+</script>
 
 
 </body>
