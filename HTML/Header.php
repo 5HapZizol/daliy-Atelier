@@ -43,7 +43,7 @@
               ?>
                 <a href="Login.php">로그인</a>
                 <a href="Member_register.php">회원가입</a>
-                <a href="service.html">고객센터</a>
+                <a href="center_author.php">고객센터</a>
               <?php
               }
               ?>
@@ -65,8 +65,8 @@
                     <a href="#">경매</a>
                     <ul class="inner-menu">
                       <li class="dept2"><a href="totalart.php">전체</a></li>
-                      <li class="dept2"><a href="digitalArt.html">디지털</a></li>
-                      <li class="dept2"><a href="analogart.html">실물</a></li>
+                      <li class="dept2"><a href="digitalArt.php">디지털</a></li>
+                      <li class="dept2"><a href="analogart.php">실물</a></li>
                       <li class="dept2"><a href="#">작가별 작품</a></li>
                     </ul>
                   </li>
@@ -74,7 +74,7 @@
                   <li class="dept1">
                     <a href="#">소개글</a>
                     <ul class="inner-menu">
-                      <li class="dept2"><a href="artist_introduce.html">작가소개</a></li>
+                      <li class="dept2"><a href="artist_introduce.php">작가소개</a></li>
                       <li class="dept2"><a href="#">개발자 소개</a></li>
                     </ul>
                   </li>
@@ -82,9 +82,9 @@
                   <li class="dept1">
                     <a href="#">서비스</a>
                     <ul class="inner-menu">
-                      <li class="dept2"><a href="Information_Use.html">경매 진행방법</a></li>
-                      <li class="dept2"><a href="QnA.html">고객센터</a></li>
-                      <li class="dept2"><a href="Q_list.html">Q&A</a></li>
+                      <li class="dept2"><a href="Information_Use.php">경매 진행방법</a></li>
+                      <li class="dept2"><a href="QnA.php">고객센터</a></li>
+                      <li class="dept2"><a href="Q_list.php">Q&A</a></li>
                     </ul>
                   </li>
                 </ul>

@@ -40,15 +40,15 @@
     <div class = "btn-group">
         <nav class="btn_catalogue">
           <p>
-            <button class="select_btn" onclick="location.href='QnA.html'">전체</button>
-            <button class="select_btn" onclick="location.href='center_delivery.html'">배송</button>
-            <button class="select_btn" onclick="location.href='center_point.html'">포인트</button>
-            <button class="select_btn" onclick="location.href='center_author.html'">작가등록</button>
+          <button class="select_btn" onclick="location.href='QnA.php'">전체</button>
+            <button class="select_btn" onclick="location.href='center_delivery.php'">배송</button>
+            <button class="select_btn" onclick="location.href='center_point.php'">포인트</button>
+            <button class="select_btn" onclick="location.href='center_author.php'">작가등록</button>
             <br>
-            <button class="select_btn" onclick="location.href='center_auction.html'">경매</button>
-            <button class="select_btn" onclick="location.href='center_work.html'">작품등록</button>
-            <button class="select_btn" onclick="location.href='center_member.html'">회원정보</button>
-            <button class="select_btn" onclick="location.href='center_etc.html'">기타</button>
+            <button class="select_btn" onclick="location.href='center_auction.php'">경매</button>
+            <button class="select_btn" onclick="location.href='center_work.php'">작품등록</button>
+            <button class="select_btn" onclick="location.href='center_member.php'">회원정보</button>
+            <button class="select_btn" onclick="location.href='center_etc.php'">기타</button>
           </p>
         </nav>
     </div>
