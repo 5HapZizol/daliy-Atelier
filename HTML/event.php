@@ -24,7 +24,7 @@
   <div class="slideshow-container" >
     <div class="slide">
         <div class="mySlides fade">
-            <a href="#"><img src="/img/artist.jpg" width="100%"></a>
+            <a href="e_artist.php"><img src="/img/artist.jpg" width="100%"></a>
         </div>
         
         <div class="mySlides fade">
@@ -46,7 +46,7 @@
         <span class="dot"><input class ="btn" type="radio" class="radio_button" id="radio_2" name="slider" /></span>
         <span class="dot"><input class ="btn" type="radio" class="radio_button" id="radio_3" name="slider" /></span>
         <span class="dot"><input class ="btn" type="radio" class="radio_button" id="radio_4" name="slider" /></span>
-    </div>
+    </div>   
   </div>
 
     <br>
@@ -119,6 +119,7 @@
 
 
         <div class="notice-contain">
+            <a href="e_artist.php">
             <div class="notice-img">
                 <img src="/img/artist.jpg" width="95%">
             </div>
@@ -141,7 +142,15 @@
     <script src="/js/event.js"></script>
 </body>
 
-    <footer>  <!-- footer 시작 -->
-        <div class="footer-Background"></div>
+
+    <footer>  
+      <div class="footer-Background"></div>
     </footer>  <!-- footer 끝 -->
+    <script>
+     
+
+    $(document).ready(function(){
+        $(".footer-Background").load("../html/Footer.html");
+    });
+    </script>
 </html>

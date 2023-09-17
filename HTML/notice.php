@@ -91,7 +91,14 @@
 
     </body>
 
-    <footer>  <!-- footer 시작 -->
-        <div class="footer-Background"></div>
+    <footer>  
+      <div class="footer-Background"></div>
     </footer>  <!-- footer 끝 -->
+    <script>
+     
+
+    $(document).ready(function(){
+        $(".footer-Background").load("../html/Footer.html");
+    });
+    </script>
 </html>

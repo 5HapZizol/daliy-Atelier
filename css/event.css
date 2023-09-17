@@ -1,6 +1,13 @@
+/*링크색상 변동 방지*/
 *{
-    box-sizing: border-box;
+  a {
+    color: black; 
+  }
+  a:visited {
+    color: black;
+  }
 }
+
 
 body {
     font-family: Verdana, sans-serif;
