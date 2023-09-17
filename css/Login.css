@@ -38,31 +38,51 @@
   border: 1px solid #223;
 }
 
-.login-tab .General_Login {
+.login-tab .General-Login {
   border-top-right-radius: 2rem;
   border-bottom: 1px solid #fff;
 }
 
-.login-tab .Author_Login {
+.login-tab .Author-Login {
   border-top-left-radius: 2rem;
   background-color: #cfcfcf;
 }
 
-.login-form {
+.General-login-form {
   width: 100%;
   padding: 40px;
   border: 1px solid #223;
   box-sizing: border-box;
 }
 
-.login-form form input {
+.Author-login-form {
+  width: 100%;
+  padding: 40px;
+  border: 1px solid #223;
+  box-sizing: border-box;
+}
+
+.General-login-form form input {
   width: 100%;
   margin: 0.8rem 0;
   padding: 0.5rem;
   box-sizing: border-box;
 }
 
-.login-form form button {
+.Author-login-form form input {
+  width: 100%;
+  margin: 0.8rem 0;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.General-login-form form button {
+  width: 100%;
+  margin: 1.8rem 0;
+  padding: 0.4rem 0;
+}
+
+.Author-login-form form button {
   width: 100%;
   margin: 1.8rem 0;
   padding: 0.4rem 0;
@@ -86,5 +106,9 @@
 
 .social-login button:last-child {
   margin: 0;
+}
+
+.current{
+  display: none;
 }
 
