@@ -85,7 +85,7 @@ session_start();
                 new_img6.src = "../img/auction/new_12.png";
                 new_img6.style.width = "70%";
 
-                document.getElementById('new_title1').innerText = "고양이 한손";
+                document.getElementById('new_title1').innerText = "이게 왜 안 바뀌냐";
                 document.getElementById('new_title2').innerText = "산장";
                 document.getElementById('new_title3').innerText = "못";
                 document.getElementById('new_title4').innerText = "모래성";
@@ -245,7 +245,8 @@ session_start();
 <body>
 <?php
       include("Header.php");
-    ?>
+    ?> 
+    <div style="margin-top: 200px;">
 
    <article>
    <div class="section">
@@ -361,65 +362,98 @@ session_start();
               <span>실물</span>
           </label>
         </div>
-        <div class="img_list">
-            <ul>
-                <li>
-                    <div class="img_list_info">
-                        <img src="../img/auction/new_1.jpg" width="90%" class="bottom" id="new_img1">
-                        <h1 id="new_title1">엎질러진 자연</h1>
+
+        <div class = "container">
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../img/auction/new_1.jpg" class="bottom" id="new_img1">
+                    </div>
+                    <div class="content">
+                        <h1 id = "new_title1">엎질러진 자연</h1>
                         <p id="new_price1">현재가: 209,001 원</p>
-                        <h2 id="new_time1">68:49:12</h2>
-                        <div class="status"><a href="../HTML/auction/new_1.html"> 입찰 </a></div>
+                        <h2 id = "new_time1">68:49:12</h2>
+                        <div class = "status">
+                            <a href="../HTML/auction/new_1.html" class="btn">입찰</a>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <div class="img_list_info">
-                        <img src="../img/auction/new_2.jpg" width="90%" class="bottom" id="new_img2">
-                        <h1 id="new_title2">노을</h1>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../img/auction/new_2.jpg" class="bottom" id="new_img2">
+                    </div>
+                    <div class="content">
+                        <h1 id = "new_title2">노을</h1>
                         <p id="new_price2">현재가: 360,064 원</p>
-                        <h2 id="new_time2">67:33:57</h2>
-                        <div class="status"><a href="../HTML/auction/new_2.html"> 입찰 </a></div>
+                        <h2 id = "new_time2">67:33:57</h2>
+                        <div class = "status">
+                            <a href="../HTML/auction/new_2.html" class="btn">입찰</a>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <div class="img_list_info">
-                        <img src="../img/auction/new_3.jpg" width="90%" class="bottom" id="new_img3">
-                        <h1 id="new_title3">목도리냥</h1>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../img/auction/new_3.jpg" class="bottom" id="new_img3">
+                    </div>
+                    <div class="content">
+                        <h1 id = "new_title3">목도리냥</h1>
                         <p id="new_price3">현재가: 278,200 원</p>
-                        <h2 id="new_time3">65:04:28</h2>
-                        <div class="status"><a href=""> 입찰 </a></div>
+                        <h2 id = "new_time3">65:04:28</h2>
+                        <div class = "status">
+                            <a href="../HTML/auction/new_3.html" class="btn">입찰</a>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <div class="img_list_info">
-                        <img src="../img/auction/new_4.png" width="90%" class="bottom" id="new_img4">
-                        <h1 id="new_title4">우리 집 앞</h1>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../img/auction/new_4.png" class="bottom" id="new_img4">
+                    </div>
+                    <div class="content">
+                        <h1 id = "new_title4">우리 집 앞</h1>
                         <p id="new_price4">현재가: 459,768 원</p>
-                        <h2 id="new_time4">62:39:39</h2>
-                        <div class="status"><a href=""> 입찰 </a></div>
+                        <h2 id = "new_time4">62:39:39</h2>
+                        <div class = "status">
+                            <a href="" class="btn">입찰</a>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <div class="img_list_info">
-                        <img src="../img/auction/new_5.png" width="90%" class="bottom" id="new_img5">
-                        <h1 id="new_title5">멍때림</h1>
-                        <p id="new_price5">현재가: 203,200 원</p>
-                        <h2 id="new_time5">68:49:12</h2>
-                        <div class="status"><a href=""> 입찰 </a></div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../img/auction/new_5.png" class="bottom" id="new_img5">
                     </div>
-                </li>
-                <li>
-                    <div class="img_list_info">
-                        <img src="../img/auction/new_6.png" width="90%" class="bottom" id="new_img6">
-                        <h1 id="new_title6">골목</h1>
-                        <p id="new_price6">현재가: 203,200 원</p>
-                        <h2 id="new_time6">68:49:12</h2>
-                        <div class="status"><a href=""> 입찰 </a></div>
+                    <div class="content">
+                        <h1 id = "new_title5">우리 집 앞</h1>
+                        <p id="new_price5">현재가: 459,768 원</p>
+                        <h2 id = "new_time5">62:39:39</h2>
+                        <div class = "status">
+                            <a href="" class="btn">입찰</a>
+                        </div>
                     </div>
-                </li>
-            </ul>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../img/auction/new_6.png" class="bottom" id="new_img6">
+                    </div>
+                    <div class="content">
+                        <h1 id = "new_title6">우리 집 앞</h1>
+                        <p id="new_price6">현재가: 459,768 원</p>
+                        <h2 id = "new_time6">62:39:39</h2>
+                        <div class = "status">
+                            <a href="" class="btn">입찰</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+
     <div class="end_pic">
         <div class="textbox_h">
             <h2>종료 작품</h2>
@@ -438,57 +472,70 @@ session_start();
               <span>실물</span>
           </label>
         </div>
-        <div class="img_list">
-            <ul>
-                <li>
-                    <div class="img_list_info">
-                        <img src="../img/auction/done_digi_1.jpg" width="90%" class="bottom"
-                        id="end_img1">
-                        <h1 id="end_title1">틈새</h1>
-                        <p id="end_price1">낙찰가: 209,001 원</p>
+        
+        <div class = "container">
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../img/auction/new_1.jpg" class="bottom" id="new_img1">
                     </div>
-                </li>
-                <li>
-                    <div class="img_list_info">
-                        <img src="../img/auction/done_digi_2.jpg" width="90%" class="bottom"
-                        id="end_img2">
-                        <h1  id="end_title2">결합</h1>
-                        <p id="end_price2">낙찰가: 360,064 원</p>
+                    <div class="content">
+                        <h1 id = "new_title1">엎질러진 자연</h1>
+                        <p id="new_price1">현재가: 209,001 원</p>
                     </div>
-                </li>
-                <li>
-                    <div class="img_list_info">
-                        <img src="../img/auction/done_digi_3.jpg" width="90%" class="bottom"
-                        id="end_img3">
-                        <h1  id="end_title3">마틴</h1>
-                        <p id="end_price3">낙찰가: 278,200 원</p>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../img/auction/new_2.jpg" class="bottom" id="new_img2">
                     </div>
-                </li>
-                <li>
-                    <div class="img_list_info">
-                        <img src="../img/auction/done_digi_4.jpg" width="90%" class="bottom"
-                        id="end_img4">
-                        <h1 id="end_title4">소라</h1>
-                        <p id="end_price4">낙찰가: 459,768 원</p>
+                    <div class="content">
+                        <h1 id = "new_title2">노을</h1>
+                        <p id="new_price2">현재가: 360,064 원</p>
                     </div>
-                </li>
-                <li>
-                  <div class="img_list_info">
-                      <img src="../img/auction/done_digi_5.jpg" width="90%" class="bottom"
-                      id="end_img5">
-                      <h1  id="end_title5">파란</h1>
-                      <p id="end_price5">낙찰가: 203,200 원</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="img_list_info">
-                      <img src="../img/auction/done_digi_6.jpg" width="90%" class="bottom"
-                      id="end_img6">
-                      <h1 id="end_title6">조각</h1>
-                      <p id="end_price6">낙찰가: 278,500 원</p>
-                  </div>
-                </li>
-          </ul>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../img/auction/new_3.jpg" class="bottom" id="new_img3">
+                    </div>
+                    <div class="content">
+                        <h1 id = "new_title3">목도리냥</h1>
+                        <p id="new_price3">현재가: 278,200 원</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../img/auction/new_4.png" class="bottom" id="new_img4">
+                    </div>
+                    <div class="content">
+                        <h1 id = "new_title4">우리 집 앞</h1>
+                        <p id="new_price4">현재가: 459,768 원</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../img/auction/new_5.png" class="bottom" id="new_img5">
+                    </div>
+                    <div class="content">
+                        <h1 id = "new_title5">우리 집 앞</h1>
+                        <p id="new_price5">현재가: 459,768 원</p>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../img/auction/new_6.png" alt="">
+                    </div>
+                    <div class="content">
+                        <h1 id = "new_title6">우리 집 앞</h1>
+                        <p id="new_price6">현재가: 459,768 원</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
    </article>

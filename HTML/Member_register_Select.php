@@ -9,8 +9,8 @@
 </head>
 <body>
 <?php
-        include("Header.php");
-      ?>
+      include("Header.php");
+    ?>
 
     <article>
     <!--본문 시작-->
