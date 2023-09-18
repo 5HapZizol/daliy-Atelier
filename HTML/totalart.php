@@ -1,7 +1,7 @@
 <?php
      $conn = mysqli_connect("127.0.0.1", "root", "pma5hapzizol", "daily-art", "3306");
      //$conn = mysqli_connect(주소, 아이디, "비밀번호", DB 스키마 이름, 포트);
-   
+     include $_SERVER['DOCUMENT_ROOT']."/server.php";
      //if($pageNumber < 1) $pageNumber = 1;
      //$pageCount  = $_GET['pageCount']??6;//페이지당 몇개씩 보여줄지, 없으면 6
      //$startLimit = ($pageNumber-1)*$pageCount;//쿼리의 limit 시작 부분
@@ -24,12 +24,11 @@
    
      //맨 처음 접속할 경우 처음부터 출력 시작할 수 있도록
      if(!isset($start)) $start = 0;
-   
      //테이블 전체개수
-     $sql = "select count(*) as cnt from art";
-     $result = mysqli_query($conn, $sql);
-     $tmp = mysqli_fetch_array($result);
-     $total = $tmp['cnt'];
+     //$sql = "select count(*) as cnt from art";
+     //$result = mysqli_query($conn, $sql);
+     //$tmp = mysqli_fetch_array($result);
+     //$total = $tmp['cnt'];
      ?>
 <!DOCTYPE html>
 <html lang="en"><head>
@@ -230,8 +229,8 @@
             </div>
             <div class="content">
                 <h3><?=$row['name']?></h3>
-                <p>현재가: <?=$row['current_price']?> 원</p>
-                <p><?=$interval->format('%d %h:%i')?></p>
+                <p>현재가: <?=number_format($row['current_price'])?> 원</p>
+                <p><?=$interval->format('%dD %h:%i')?></p>
                 <a href="../HTML/best_1.php?aid=<?=$row['artId']?>" class="btn">입찰</a>
                 <div class="icons">
                     <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>

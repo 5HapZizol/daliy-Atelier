@@ -100,11 +100,7 @@
     
   <form action = "member_UpdateProcess.php" method = "post" id="update_form">
     <div>
-<<<<<<< HEAD
         <img class="profile" src="../img/auction/best1.jpg">
-=======
-        <img class="profile" src="../img/best1.jpg" name="profile_e">
->>>>>>> f1fa70cf9dbbfb95ff9ac0dd2b277def96cda57f
         <button class="photo_select">사진 선택</button>
     </div>
 
