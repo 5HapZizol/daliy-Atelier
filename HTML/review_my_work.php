@@ -201,7 +201,7 @@
     const close = () => {
         document.querySelector(".popup").classList.add("hidden");
         // 팝업이 닫힐 때 헤더 다시 표시하기
-        document.querySelector(".Header").style.display = "block";
+        document.querySelector(".Header").style.display = "";
     }
 
     document.querySelector(".box").addEventListener("click", open);
