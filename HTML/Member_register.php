@@ -26,6 +26,9 @@
 
           
           <form action="signupProcess.php" method="POST" id="signup-form">
+            <?php
+              $User_status = 0;
+            ?>
           <div class = "box">
               
             <div class = "container">
@@ -89,19 +92,19 @@
                   <label for="sns_no">비동의</label>
                 </p>
 
-                <p>
-                  EMAIL 수신 동의 여부
-                    <input type="radio" class = "checked_btn" id="email_ok" name="email" value="ok"
-                    checked>
-                    <label for="email_ok">동의</label>
-                    <input type="radio" class = "checked_btn" id="email_no" name="email" value="no">
-                  <label for="email_no">비동의</label>
-                </p>
+              <p>
+                EMAIL 수신 동의 여부
+                  <input type="radio" class = "checked_btn" id="email_ok" name="email" value="ok"
+                  checked>
+                  <label for="email_ok">동의</label>
+                  <input type="radio" class = "checked_btn" id="email_no" name="email" value="no">
+                <label for="email_no">비동의</label>
+              </p>
 
-
+              <button type = "button" id = "register_btn">가입하기</button>
             </div>
         </div>
-
+        <input type="hidden" name="User_status" value="<?php echo $User_status; ?>">
         <input type=button id="register_btn">가입하기</input>  
           
         </form>
@@ -116,6 +119,7 @@
 
     
       <script>
+
 
         $(document).ready(function(){
           $(".footer-Background").load("../html/Footer.html");

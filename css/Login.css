@@ -1,4 +1,4 @@
- @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 * {
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
@@ -9,7 +9,8 @@
   box-sizing: border-box;
   font-size: 37px;
   font-weight: 700;
-  margin: 200px auto 50px;
+  margin: 50px auto 50px;
+  justify-content: center;
 }
 
 .choice {
@@ -38,12 +39,12 @@
   border: 1px solid #223;
 }
 
-.login-tab .General_Login {
+.login-tab .General-Login {
   border-top-right-radius: 2rem;
   border-bottom: 1px solid #fff;
 }
 
-.login-tab .Author_Login {
+.login-tab .Author-Login {
   border-top-left-radius: 2rem;
   background-color: #cfcfcf;
 }
@@ -88,3 +89,7 @@
   margin: 0;
 }
 
+.account a {
+  color: #223;
+  text-decoration: none;
+}

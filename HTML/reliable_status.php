@@ -73,7 +73,6 @@
           <div class="Bid-List">
             <div class="Bid-Art-Image">
               <img src="../img/Art0212.jpg">
-              <img src="../img/Art0212.jpg">
             </div>
 
             <div class="Bid-Information">

@@ -52,49 +52,82 @@
     background-color: #000;
     color: #ffffff;
 }
-/*작품 목록*/
-.img_list{
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
-    position: static;
+    padding:25px 20px;
+}
+
+.container .heading{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color:#334;
+}
+
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap:20px;
+}
+
+.container .box-container .box{
+    background-color: #fff;
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    display: none;
+}
+
+.container .box-container .box:nth-child(1),
+.container .box-container .box:nth-child(2),
+.container .box-container .box:nth-child(3),
+.container .box-container .box:nth-child(4),
+.container .box-container .box:nth-child(5),
+.container .box-container .box:nth-child(6){
     display: inline-block;
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
 }
-.img_list > ul{
-    width: 51em;
-    height: 50em;
+
+.container .box-container .box .image{
+    margin-bottom: 20px;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 5px;
 }
-.img_list > ul > li{
-    float: left;
-    width: 10em;
-    height: 28em;
-    margin-left: 1em;
-    margin-right: 1em;
+
+.container .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
 }
-.img_list_1 > h1{
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-    font-size: 1.5em;
+
+.container .box-container .box:hover .image img{
+    transform: scale(1.1);
 }
-.img_list_1 > h2{
-    margin-bottom: 0.3em;
-    font-size: 1.2em;
+
+.container .box-container .box .content h3{
+    font-size: 20px;
+    color:#334;
 }
-.img_list_1 > .status{
+
+.container .box-container .box .content p{
+    font-size: 15px;
+    color:#777;
+    line-height: 2;
+    padding:15px 0;
+}
+
+.container .box-container .box .content .btn{
     display: inline-block;
-    padding: 0.5em;
-}.img_list_1 > .status > a{
-    color: #0e0a0a;
+    padding:10px 30px;
+    border:1px solid #334;
+    color:#334;
+    font-size: 16px;
 }
-.img_list_1 *{
-    float: none;
-}
-.img_list li {
-    list-style: none;
-}
-.status {
-    display: inline-block;
-    background-color: #b0aeae;
-    padding: 0.5em;
+
+.container .box-container .box .content .btn:hover{
+    background-color: #778C86;
+    border-color: #778C86;
+    color:#fff;
 }

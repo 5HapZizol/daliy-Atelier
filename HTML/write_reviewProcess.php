@@ -1,3 +1,8 @@
+<?php
+  ini_set('display_errors','0');
+  session_start();
+?>
+
 <?php 
     $conn = mysqli_connect("127.0.0.1", "root", "0430!!", "daily-art", "3306");
 

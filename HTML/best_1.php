@@ -1,7 +1,7 @@
 <?php
-    $conn = mysqli_connect("127.0.0.1", "root", "pma5hapzizol", "daily-art", "3306");
+    $conn = mysqli_connect("127.0.0.1", "root", "0430!!", "daily-art", "3306");
     //$conn = mysqli_connect(주소, 아이디, "비밀번호", DB 스키마 이름, 포트);
-
+   
 ?>
 <html lang="en">
 <head>
@@ -133,9 +133,9 @@
                 입찰가 : <input type="text" name="bid_price" placeholder="<?=number_format($art['current_price'])?> 이상">원
             </div>
             <div class="buttonBox">
-                <button type="submit" class="nextBtn">확인</button>
+                <button type="button" class="nextBtn" id="next_btn">확인</button>
                 </form>
-                <button class="closeBtn">닫기</button>
+                <button type="button" class="closeBtn">닫기</button>
             </div>
     </div>
   </div>
@@ -149,21 +149,41 @@
 
     <script>
 
-      $(document).ready(function(){
-          $(".footer-Background").load("/html/Footer.html");
-      });
-      const open = () => {
-        document.querySelector(".modal").classList.remove("hidden");
-      }
-    
-      const close = () => {
-        document.querySelector(".modal").classList.add("hidden");
-      }
-    
-      document.querySelector(".openBtn").addEventListener("click", open);
-      document.querySelector(".closeBtn").addEventListener("click", close);
-      document.querySelector(".bg").addEventListener("click", close);
-    
+        $(document).ready(function(){
+            $(".footer-Background").load("/html/Footer.html");
+        });
+        const open = () => {
+            document.querySelector(".modal").classList.remove("hidden");
+        }
+        
+        const close = () => {
+            document.querySelector(".modal").classList.add("hidden");
+        }
+        
+        document.querySelector(".openBtn").addEventListener("click", open);
+        document.querySelector(".closeBtn").addEventListener("click", close);
+        document.querySelector(".bg").addEventListener("click", close);
+
+        
+        const bidInsertForm = document.querySelector("#bid-insert-form");
+        const nextbtn = document.querySelector("#next_btn");
+
+        nextbtn.addEventListener("click", function(e) {
+            <?php
+            if(!isset($_SESSION['user'])){
+            ?>
+                alert("로그인이 필요한 항목입니다.");
+                window.location = "login.php";
+            <?php
+            }else{
+            ?>
+                location.replace("/user/mypageForm.jsp");
+                bidInsertForm.submit();
+            <?php
+            }
+            ?>
+        });
+
     </script>
 </body>
 </html>
