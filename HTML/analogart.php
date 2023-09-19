@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link type="text/css" rel="stylesheet" href="../css/endlessScroll.css"></link>
     <link type="text/css" rel="stylesheet" href="../css/totalart.css"></link>
     <link type="text/css" rel="stylesheet" href="../css/filter.css"></link>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="../js/endlessScroll.js"></script>
     <title>실물 아트 경매</title>
 </head>
 <body>
