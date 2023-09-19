@@ -1,4 +1,7 @@
-    
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+* {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
     .page_top{
         display: inline-block;
         margin-left:auto; 
@@ -10,7 +13,8 @@
     .page_name {
         margin: 1em auto;
         display: table;
-        font-size: 2.2em;
+        font-size: 2em;
+        font-weight: 500;
     }
     .page_top .hr_1{
         margin: 2em;

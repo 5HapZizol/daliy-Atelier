@@ -30,12 +30,12 @@
           </div>
 
           <div class="product-works">
-            <img src="../img/auction/done_digi_3.jpg">
-            <div class="btnss">
-              <button class="btn" type="button" onclick="">🔍︎자세히 보기</button>
-              <button class="btn" type="button" onclick="location.href='write_review.html'">🖍리뷰 쓰기</button>
-            </div><!--btnss-->
-          </div>
+          <img src="../img/auction/done_real_1.jpg">
+          <div class="btnss">
+            <button class="btn" type="button">🔍︎자세히 보기</button>
+            <button class="btn" type="button" onclick="location.href='write_review.html'">🖍리뷰 쓰기</button>
+          </div><!--btnss-->
+        </div>
 
           <div class="product-works">
             <img src="../img/auction/new_14.png">
@@ -44,8 +44,6 @@
               <button class="btn" type="button" onclick="location.href='write_review.html'">🖍리뷰 쓰기</button>
             </div><!--btnss-->
           </div>
-      </div><!--product-list-->
-     <div class="product-list">
 
          <div class="product-works">
           <img src="../img/auction/done_digi_2.jpg">
@@ -57,6 +55,22 @@
 
         <div class="product-works">
           <img src="../img/auction/done_digi_5.jpg">
+          <div class="btnss">
+            <button class="btn" type="button" onclick="">🔍︎자세히 보기</button>
+            <button class="btn" type="button" onclick="location.href='write_review.html'">🖍리뷰 쓰기</button>
+          </div><!--btnss-->
+        </div>
+
+        <div class="product-works">
+            <img src="../img/auction/done_digi_3.jpg">
+            <div class="btnss">
+              <button class="btn" type="button" onclick="">🔍︎자세히 보기</button>
+              <button class="btn" type="button" onclick="location.href='write_review.html'">🖍리뷰 쓰기</button>
+            </div><!--btnss-->
+          </div>
+          
+        <div class="product-works">
+          <img src="../img/auction/end_14.jpg">
           <div class="btnss">
             <button class="btn" type="button" onclick="">🔍︎자세히 보기</button>
             <button class="btn" type="button" onclick="location.href='write_review.html'">🖍리뷰 쓰기</button>
