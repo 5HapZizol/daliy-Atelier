@@ -1,3 +1,8 @@
+<?php
+     $conn = mysqli_connect("127.0.0.1", "root", "pma5hapzizol", "daily-art", "3306");
+     //$conn = mysqli_connect(주소, 아이디, "비밀번호", DB 스키마 이름, 포트);
+   
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +33,43 @@
             <div class="Bid-Tap-btn3"><button>종료</button><span class="Tap-animation"></span></div>
           </div>
           <hr>  
+          <?php
+            //세션값 받아오기
+            $user_id = $_SESSION['user'];
+            $sql = "SELECT * from ART
+                    where ARTID IN (SELECT DISTINCT artid 
+                                    FROM bid
+                                    WHERE userid = '{$user_id}'
+                                    ORDER BY bid_time );";
+            $result = mysqli_query($conn, $sql);
+            if ($result === false) {    //오류 여부
+               echo "낙찰 작품 찾기에 문제가 생겼습니다. 관리자에게 문의해주세요.";
+               echo mysqli_error($conn);
+            }
+            while($row = mysqli_fetch_array($result)){
+              //이미지 경로 찾기
+              $sql = "select img_path from image where art_img_id = '{$row['art_img_id']}'";
+              $result2 = mysqli_query($conn, $sql);
+              $ttmp = mysqli_fetch_array($result2);
+              $image_path = $ttmp['img_path'];
+               
+              //타이머를 위한 시간 차이 구하기
+              $datetime1 = new DateTime(date("Y-m-d H:i:s"));
+              $datetime2 = new DateTime($row['closing_time']);
+              $interval = $datetime1->diff($datetime2);
 
+              //작가명 가져오기
+              $sql = "select artist_name from artist where artist_code = '{$row['artist_code']}'";
+              $result = mysqli_query($conn, $sql);
+              $artist = mysqli_fetch_array($result);
+
+              //내 경매 가격 가져오기
+              $sql = "SELECT DISTINCT artid, MAX(bid_price) as max_price
+                      FROM bid
+                      WHERE userid = '{$user_id}' and artid ='{$row['artid']}'";
+              $result = mysqli_query($conn, $sql);
+              $my_bid = mysqli_fetch_array($result);
+          ?>
           <div class="Bid-List">
             <div class="Bid-Art-Image">
               <img src="../img/Art0212.jpg">
@@ -37,71 +78,37 @@
 
             <div class="Bid-Information">
               <div class="Bid-First">
-                <div>바다 한 가운데</div>
-                <div>지나가는개</div>
-                <div>시작가 40,000원</div>
+                <div><?=$row['name']?></div>
+                <div><?=$artist['artist_name']?></div>
+                <div>시작가 <?=$row['start_price']?>원</div>
               </div>
               
               <div class="Bid-Line"></div>
 
               <div class="Bid-Second">
                 <div>TIMER</div>
-                <div>49:32:41</div>
+                <div><?=$interval->format('%d %h:%i')?></div>
               </div>
 
               <div class="Bid-Line"></div>
   
               <div class="Bid-Third">
                 <div>현재 최고가</div>
-                <div>194,490원</div>
+                <div><?=$row['current_price']?>원</div>
               </div>
 
               <div class="Bid-Line"></div>
   
               <div class="Bid-Fourth">
-                <div>내 경매가: 59,300원</div>
+                <div>내 경매가: <?=$my_bid['max_price']?>원</div>
                 <div><button>가격 올리기</button></div>
               </div>
             </div>
 
           </div>
-
-          <div class="Bid-List">
-            <div class="Bid-Art-Image">
-              <img src="../img/Art0921.jpg">
-              <img src="../img/Art0921.jpg">
-            </div>
-
-            <div class="Bid-Information">
-              <div class="Bid-First">
-                <div>백야</div>
-                <div>aiaiia</div>
-                <div>시작가 20,000원</div>
-              </div>
-              
-              <div class="Bid-Line"></div>
-
-              <div class="Bid-Second">
-                <div>TIMER</div>
-                <div>30:29:21</div>
-              </div>
-
-              <div class="Bid-Line"></div>
-  
-              <div class="Bid-Third">
-                <div>현재 최고가</div>
-                <div>56,000원</div>
-              </div>
-
-              <div class="Bid-Line"></div>
-  
-              <div class="Bid-Fourth">
-                <div>내 경매가: 30,300원</div>
-                <div><button>가격 올리기</button></div>
-              </div>
-            </div>
-
-          </div>
+          <?php 
+          }
+          ?>
         </div>
       </article>
 
