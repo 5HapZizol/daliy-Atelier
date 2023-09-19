@@ -47,7 +47,7 @@
                           <img src="../img/artist.png" alt="">
                        </div>
                        <div class="content">
-                          <input type="button" name = "select_2" value="작가 회원" class = "auother" onclick="location.href='Member_Artist_register.php'"/>
+                          <input type="button" name = "select_2" value="작가 회원" class = "auother" onclick="location.href='Member_Auother_register.php'"/>
                        </div>
                     </div>
                 </div>
