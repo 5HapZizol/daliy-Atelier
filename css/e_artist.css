@@ -1,0 +1,4 @@
+.my_gradient_1 {
+    background-image: linear-gradient(to bottom right, rgb(248, 115, 115), rgb(110, 163, 248));
+    height: 100vh;
+}

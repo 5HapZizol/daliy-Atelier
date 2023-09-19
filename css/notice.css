@@ -1,3 +1,12 @@
+/*링크색상 변동 방지*/
+*{
+  a { text-decoration: none; color: black; }
+      a:visited { text-decoration: none; }
+      a:hover { text-decoration: none; }
+      a:focus { text-decoration: none; }
+      a:hover, a:active { text-decoration: none; }
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;

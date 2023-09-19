@@ -1,3 +1,7 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+* {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
 .page_top{
     display: inline-block;
     margin-left:auto; 
@@ -9,7 +13,8 @@
 .page_name {
     margin: 1em auto;
     display: table;
-    font-size: 2.2em;
+    font-size: 2em;
+    font-weight: 800;
 }
 .page_name{
     margin-top: 2em;
@@ -108,4 +113,45 @@
 .bid_rated{
     display: block;
     text-align: center;
+}
+
+
+/* 넘어가는 버튼 */
+.Artist-Introduce-Button{
+    display: flex;
+    justify-content: center;
+    margin: 70px 0;
+}
+
+.Artist-Introduce-Button button{
+    margin: 0 1px;
+    width: 40px;
+    height: 40px;
+    background-color: #e1e0e1;
+    border: 1px solid #a4a3a4;
+    cursor: pointer;
+    
+}
+
+.Artist-Introduce-Button button:first-child{
+    background-color: #231f22;
+    border: 1px solid #231f22;
+    color: #fff;
+}
+
+.Artist-Introduce-Button button:nth-child(11), .Artist-Introduce-Button button:nth-child(12){
+    background-color: #fff;
+    border: 1px solid #a4a3a4;
+} 
+
+.Artist-Introduce-Button button:hover{
+    background-color: #231f22;
+    border: 1px solid #231f22;
+    color: #fff;
+}
+
+.Artist-Introduce-Button button:nth-child(11):hover, .Artist-Introduce-Button button:nth-child(12):hover{
+    background-color: #e1e0e1;
+    border: 1px solid #a4a3a4;
+    color: #040404;
 }
