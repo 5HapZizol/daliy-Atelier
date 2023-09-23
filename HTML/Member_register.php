@@ -26,14 +26,13 @@
 
           
           <form action="signupProcess.php" method="POST" id="signup-form">
-            <?php
-              $User_status = 0;
-            ?>
+          <input type="hidden" name="User_status" value="<?php echo $User_status = 0; ?>">
+
           <div class = "box">
               
             <div class = "container">
                 <div class = "wrapper">
-                  <input type = "text" name = "Userid" placeholder="*아이디 입력" id = "user_id"/>
+                  <input type = "text" name = "user_id" placeholder="*아이디 입력" id = "user_id"/>
                   <button name = "id_check">중복확인</button>
                 </div>
 
