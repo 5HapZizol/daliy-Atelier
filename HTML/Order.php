@@ -20,7 +20,7 @@
 
 
     <div class="conatiner">
-        <table align="center">
+        <table align = "center">
             <tr>
                 <td rowspan="3">
                     혜택정보

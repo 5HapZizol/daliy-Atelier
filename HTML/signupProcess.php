@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("127.0.0.1", "root", "0430!!", "daily-art", "3306");
+    include '../server.php'; 
     //$conn = mysqli_connect(주소, 아이디, "비밀번호", DB 스키마 이름, 포트);
     $hashedPassword = password_hash($_POST['password'], PASSWORD_DEFAULT);
     //비밀번호 해쉬 암호화

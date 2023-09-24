@@ -1,8 +1,3 @@
-<?php
-    $conn = mysqli_connect("127.0.0.1", "root", "0430!!", "daily-art", "3306");
-    //$conn = mysqli_connect(주소, 아이디, "비밀번호", DB 스키마 이름, 포트);
-   
-?>
 <html lang="en">
 <head>
     <title>작품 페이지</title>
@@ -45,7 +40,7 @@
                 $interval = $datetime1->diff($datetime2);
 
                 //작가명 가져오기
-                $sql = "select artist_name from artist where artist_code = '33'";
+                $sql = "select artist_name from artist where artist_code = '{$art['artist_code']}'";
                 $result = mysqli_query($conn, $sql);
                 $artist = mysqli_fetch_array($result);
         ?>
@@ -123,7 +118,7 @@
 
     </div>
     <div class="modalBox">
-        <form action="BidInsertProcess.php" method="POST" id="bid-insert-form">
+        <form action="BidInsertProcess.php?aid=<?=$_GET['aid']?>" method="POST" id="bid-insert-form">
             <div class="modalTop">
                 <span>결제입력창</span>
             </div>

@@ -1,9 +1,6 @@
 <?php
-    $host="localhost";
-    $user="root";
-    $pass="1111";
-    $dbname= "daily_atelier";
-    $conn = mysqli_connect("127.0.0.1", "root", "pma5hapzizol", "daily-art", "3306");
+    session_start();
+    include '../server.php'; 
 
     $tell = $_POST["tel1"].$_POST["tel2"].$_POST["tel3"];
     $email = $_POST['email_body'].'@'.$_POST['email_form'];

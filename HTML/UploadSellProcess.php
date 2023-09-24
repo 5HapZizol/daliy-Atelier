@@ -1,7 +1,6 @@
 <?php
-
-$conn = mysqli_connect("127.0.0.1", "root", "pma5hapzizol", "daily-art", "3306");
-//$conn = mysqli_connect(주소, 아이디, "비밀번호", DB 스키마 이름, 포트);
+session_start();
+include '../server.php'; 
 
 //이미지 고유 아이디 난수 생성
 $img_id = uniqid("image_", true);

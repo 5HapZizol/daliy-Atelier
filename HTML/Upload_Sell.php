@@ -13,26 +13,6 @@
     
     <script>
 
-      $(function(){
-          $(".Header").load("../html/Header.html");
-      });
-
-      $(function(){
-          $(".footer-Background").load("../html/Footer.html");
-      });
-
-
-      var input = document.getElementById('tag');
-      var tagify = new Tagify(input);
-        
-      // 태그가 추가되면 이벤트 발생
-      tagify.on('add', function() {
-        console.log(tagify.value); // 입력된 태그 정보 객체
-      });
-
-      //엔터 이벤트 삭제
-      
-
       $.fn.setPreview = function(opt){
           "use strict"
               var defaultOpt = {
@@ -107,6 +87,8 @@
 <body>
   <header>    <!-- 헤더 시작-->
     <div class="Header">
+        <?php 
+        include("Header.php"); ?>
       </div>
   </header>   <!-- 헤더 끝 -->
 

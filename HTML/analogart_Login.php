@@ -235,14 +235,6 @@
           </button>
     </div>
         </article>
-
-
-
-
-
-
-
-
     <footer>  <!-- footer 시작 -->
         <div class="footer-Background">
         

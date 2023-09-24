@@ -1,18 +1,16 @@
 <?php
-     $conn = mysqli_connect("127.0.0.1", "root", "pma5hapzizol", "daily-art", "3306");
-     //$conn = mysqli_connect(주소, 아이디, "비밀번호", DB 스키마 이름, 포트);
-     include $_SERVER['DOCUMENT_ROOT']."/server.php";
-     //if($pageNumber < 1) $pageNumber = 1;
-     //$pageCount  = $_GET['pageCount']??6;//페이지당 몇개씩 보여줄지, 없으면 6
-     //$startLimit = ($pageNumber-1)*$pageCount;//쿼리의 limit 시작 부분
-     //$firstPageNumber  = $_GET['firstPageNumber'];
+    include '../server.php'; 
+    //if($pageNumber < 1) $pageNumber = 1;
+    //$pageCount  = $_GET['pageCount']??6;//페이지당 몇개씩 보여줄지, 없으면 6
+    //$startLimit = ($pageNumber-1)*$pageCount;//쿼리의 limit 시작 부분
+    //$firstPageNumber  = $_GET['firstPageNumber'];
    
    
-     //$sql = "select * from art";
-     //$sql .= $search_where;
-     //$order = " order by pid desc";//마지막에 등록한걸 먼저 보여줌
-     //$limit = " limit $startLimit, $pageCount";
-     //$query = $sql.$order.$limit;
+    //$sql = "select * from art";
+    //$sql .= $search_where;
+    //$order = " order by pid desc";//마지막에 등록한걸 먼저 보여줌
+    //$limit = " limit $startLimit, $pageCount";
+    //$query = $sql.$order.$limit;
      //echo "query=>".$query."<br>";
      //$result = $mysqli->query($query) or die("query error => ".$mysqli->error);
      //while($rs = $result->fetch_object()){
