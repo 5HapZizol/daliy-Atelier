@@ -52,7 +52,7 @@
         </script>
         <?php
         }
-    } else {
+    } else if($User_status == 0){
         // 일반 회원 가입 처리
         $sql = "INSERT INTO user (Userid, password, name, nickname, phone_number, email, join_date, User_status)
                 VALUES('{$user_id}', '{$hashedPassword}', '{$name}', '{$nickname}', '{$tel}', '{$email}', NOW(), '0'

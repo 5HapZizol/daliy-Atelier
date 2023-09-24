@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("127.0.0.1", "root", "pma5hapzizol", "daily-art", "3306");
+    $conn = mysqli_connect("127.0.0.1", "root", "0430!!", "daily-art", "3306");
     $login_id = $_POST['userId'];
     $login_pw = $_POST['password'];
 
@@ -18,7 +18,7 @@
     // echo $row['id'];
     // DB 정보를 가져왔으니 
     // 비밀번호 검증 로직을 실행하면 된다. 
-    $passwordResult = password_verify($password, $hashedPassword);
+    $passwordResult = password_verify($login_pw, $hashedPassword);
     if ($passwordResult === true) {
         // 로그인 성공
         // 세션에 id 저장
