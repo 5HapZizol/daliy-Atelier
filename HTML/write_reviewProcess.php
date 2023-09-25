@@ -29,5 +29,5 @@
 
 <script>
     alert("문의가 등록되었습니다.");
-    window.location.href = "review_my_work.php";
+    window.location.href = "my_review.php";
 </script>
