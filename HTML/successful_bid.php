@@ -9,6 +9,7 @@
 <body>
 <?php
       include("Header.php");
+      $conn = mysqli_connect("127.0.0.1", "root", "0430!!", "daily-art", "3306");
     ?>
 
     <article>
@@ -21,61 +22,35 @@
           </div>
       <div class="product-list">
 
-          <div class="product-works">
-            <img src="../img/auction/done_digi_7.jpg">
-            <div class="btnss">
-              <button class="btn" type="button" onclick="onclick=location.href='best_5.html'">🔍︎자세히 보기</button>
-              <button class="btn" type="button" onclick="location.href='write_review.html'">🖍리뷰 쓰기</button>
-            </div><!--btnss-->
-          </div>
-
-          <div class="product-works">
-          <img src="../img/auction/done_real_1.jpg">
-          <div class="btnss">
-            <button class="btn" type="button">🔍︎자세히 보기</button>
-            <button class="btn" type="button" onclick="location.href='write_review.html'">🖍리뷰 쓰기</button>
-          </div><!--btnss-->
-        </div>
-
-          <div class="product-works">
-            <img src="../img/auction/new_14.png">
-            <div class="btnss">
-              <button class="btn" type="button" onclick="">🔍︎자세히 보기</button>
-              <button class="btn" type="button" onclick="location.href='write_review.html'">🖍리뷰 쓰기</button>
-            </div><!--btnss-->
-          </div>
-
-         <div class="product-works">
-          <img src="../img/auction/done_digi_2.jpg">
-          <div class="btnss">
-            <button class="btn" type="button">🔍︎자세히 보기</button>
-            <button class="btn" type="button" onclick="location.href='write_review.html'">🖍리뷰 쓰기</button>
-          </div><!--btnss-->
-        </div>
-
-        <div class="product-works">
-          <img src="../img/auction/done_digi_5.jpg">
-          <div class="btnss">
-            <button class="btn" type="button" onclick="">🔍︎자세히 보기</button>
-            <button class="btn" type="button" onclick="location.href='write_review.html'">🖍리뷰 쓰기</button>
-          </div><!--btnss-->
-        </div>
-
-        <div class="product-works">
-            <img src="../img/auction/done_digi_3.jpg">
-            <div class="btnss">
-              <button class="btn" type="button" onclick="">🔍︎자세히 보기</button>
-              <button class="btn" type="button" onclick="location.href='write_review.html'">🖍리뷰 쓰기</button>
-            </div><!--btnss-->
-          </div>
+      <?php
+      $sql = "SELECT * FROM Art ORDER BY registration_date limit 0, 6";
+      $result = mysqli_query($conn, $sql);
+      if ($result === false) {    //오류 여부
+         echo "작품 찾기에 문제가 생겼습니다. 관리자에게 문의해주세요.";
+         echo mysqli_error($conn);
+      }
+      while($row = mysqli_fetch_array($result)){
+         //이미지 경로 찾기
+         $sql = "select img_path from image where art_img_id = '{$row['art_img_id']}'";
+         $result2 = mysqli_query($conn, $sql);
+         $ttmp = mysqli_fetch_array($result2);
+         $image_path = $ttmp['img_path'];
+      
+      ?>
+      <div class="product-works">
+        <img src="<?=$image_path?>" alt="">
+        <div class="btnss">
+          <button class="btn" type="button" onclick="onclick=location.href='best_5.html'">🔍︎자세히 보기</button>
+          <button class="btn" type="button" onclick="location.href='write_review.php?aid=<?=$row['artId']?>'">🖍리뷰 쓰기</button>
+        </div><!--btnss-->
+      </div>
+        
+      <?php
+      }
+      ?>
+      
           
-        <div class="product-works">
-          <img src="../img/auction/end_14.jpg">
-          <div class="btnss">
-            <button class="btn" type="button" onclick="">🔍︎자세히 보기</button>
-            <button class="btn" type="button" onclick="location.href='write_review.html'">🖍리뷰 쓰기</button>
-          </div><!--btnss-->
-        </div>
+
 
       </div><!--product-list-->
       <br>

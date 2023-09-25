@@ -85,12 +85,9 @@
 </head>
 
 <body>
-  <header>    <!-- 헤더 시작-->
-    <div class="Header">
-        <?php 
-        include("Header.php"); ?>
-      </div>
-  </header>   <!-- 헤더 끝 -->
+<?php
+      include("Header.php");
+    ?>
 
     <article>
     <div style="margin-top: 200px;">

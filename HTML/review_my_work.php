@@ -12,6 +12,8 @@
     <body>
     <?php
       include("Header.php");
+      $conn = mysqli_connect("127.0.0.1", "root", "0430!!", "daily-art", "3306");
+      
     ?>
 
         <article>
@@ -33,57 +35,43 @@
       <div class="menu-btn3"><button>별점순</button><span class="menu-animation"></span></div>
     </div><!--menu_type-->
 <div class="reviewss">
-
-<div class="box" type="button" style="margin-right: 1.5em;">
-    <div class="winning_bid"><img src="../img/auction/end_9.jpg" width="100%" style="margin-top: 0.4em;"></div>
-    
-  <div class="contents">
-      <div class="detail">이뻐요 제가 원하는 그림이에요!</div>
-      <div class="bid_price">낙찰가 : 100,000원</div>
-      
-      <div class="title">푸르른</div>    
-      <div class="bid_rated"><img src="../img/star_1.png" width="35%"></div>
-  </div>
-</div> <!-- box-1 -->
-
-<div class="box" type="button" style="margin-right: 1.5em;">
-  <div class="winning_bid"><img src="../img/auction/end_13.jpg" width="100%" style="margin-top: 0.4em;"></div>
   
-<div class="contents">
-    <div class="detail">레몬 진짜 사진 같아요~~!😊😊</div>
-    <div class="bid_price">낙찰가 : 190,000원</div>
-    
-    <div class="title">레몬드림</div>    
-    <div class="bid_rated"><img src="../img/star_1.png" width="35%"></div>
+<?php
+  $sql_review = "SELECT
+                      r.*,
+                      a.current_price,
+                      a.name,
+                      DATE_FORMAT(r.Review_number, '%y-%m-%d') AS Formatted_Review_number,
+                      i.img_path
+                    FROM review r
+                    INNER JOIN art a ON r.artId = a.artid
+                    INNER JOIN image i ON a.art_img_id = i.art_img_id;
+                  ";
+          
+  $result_review = mysqli_query($conn, $sql_review);
+        if ($result_review === false) {    //오류 여부 
+            echo "작품 찾기에 문제가 생겼습니다. 관리자에게 문의해주세요.";
+            echo mysqli_error($conn);
+         }
+
+         while($row = mysqli_fetch_array($result_review)){
+          
+       ?>
+       <div class="box" type="button" style="margin-right: 1.5em;">
+        <div class="winning_bid"><img src="<?=$row['img_path'];?>" width="100%" style="margin-top: 0.4em;"></div>
+        
+      <div class="contents">
+      <div class="detail"><?= strlen($row['Review_descript']) > 20 ? substr($row['Review_descript'], 0, 20) . '...' : $row['Review_descript'] ?></div>
+          <div class="bid_price">낙찰가 : <?= number_format($row['current_price']); ?>원</div>
+          
+          <div class="title"><?=$row['name']?></div>    
+          <div class="bid_rated"><img src="../img/star_1.png" width="35%"></div>
+      </div>
+    </div> <!-- box-1 -->
+         
+       
 </div>
-</div> <!-- box-2 -->
 
-<div class="box" type="button" style="margin-right: 1.5em;">
-  <div class="winning_bid"><img src="../img/auction/new_13.png" width="100%" style="margin-top: 0.4em;"></div>
-  
-<div class="contents">
-    <div class="detail">너무 맘에 들어요!! 딱 찾던 거예요!</div>
-    <div class="bid_price">낙찰가 : 150,000원</div>
-    
-    <div class="title">자연액자</div>    
-    <div class="bid_rated"><img src="../img/star_1.png" width="35%"></div>
-</div>
-</div> <!-- box-3 -->
-
-<div class="box" type="button">
-  <div class="winning_bid"><img src="../img/auction/best4.jpg" width="100%" style="margin-top: 0.4em;"></div>
-  
-<div class="contents">
-    <div class="detail">완죤 귀요미.....</div>
-    <div class="bid_price">낙찰가 : 50,000원</div>
-    
-    <div class="title">출근 중</div>    
-    <div class="bid_rated"><img src="../img/star_1.png" width="35%"></div>
-</div>
-</div> <!-- box-4 -->
-
-
-</div><!--rivewss-->
 
 <div class="popup hidden">
   <div class="dim"></div>
@@ -134,23 +122,19 @@
  </div>
     </div>
 <div class="pop_detail">
-  <div class="consumer"> 구매자 : rlaalswn 님</div>
+  <div class="consumer"> 구매자 : <?= $row['Userid']?> 님</div>
     <div class="divider" style="margin-top: 0.5em; margin-bottom: 0.5em;"></div>
-    <div class="date">작성 날짜 : 2022.12.31</div>
+    <div class="date">작성 날짜 : <?= $row['Formatted_Review_number']?></div>
     <div class="divider" style="margin-top: 0.5em; margin-bottom: 0.5em;"></div>
     <div class="review_detail">
   <div class="review" style="font-size: 1.1.5em; color: black; font-family: math;">
-  너무 이뻐요!!  제가 원하는 느낌의 그림이예요 제가 이번에
-  처음으로 카페를 운영하게 되어서 카페에 어울리는 시원한 그림을 찾고 있었는데,
-  사이즈도 딱 맞고, 이 작가님 그림 많이 찾게 될 거 같네욯ㅎ😊
-  시니어 작가가 아닌 취미로 그림을 하시는 분의 그림을 이번에 처음 도전하는 경매인데 낙찰도 받고 
-  사진도 너무너무너무너무 맘에 듭니다. 팬 될 거 같네요~~ 아주 좋아요ㅎㅎ😇😇</div>
+  <?=$row['Review_descript']?></div>
  </div>   
     <div class="divider" style="margin-top: 0.5em;"></div>
-  <div class="bid_price" style="font-size: 1.4em; margin: 0.3em;">낙찰가 : 100,000원</div>
+  <div class="bid_price" style="font-size: 1.4em; margin: 0.3em;">낙찰가 : <?= number_format($row['current_price']);?>원</div>
     <div class="divider" style="margin-top: 0.5em;"></div>
     <br>
-  <div class="title">푸르른</div>
+  <div class="title"><?=$row['name']?></div>
     <div class="divider" style="margin-top: 0.5em; margin-bottom: 0.5em;"></div>
   <div class="category">#자연 #초자연 #밝은 #바다 #디지털아트</div>
   <div class="divider" style="margin-top: 0.5em; margin-bottom: 0.5em;"></div>
@@ -159,7 +143,9 @@
 </div><!--popup_2-->
     </div>
   </div>
-
+  <?php
+       }
+       ?>
   <div class="Artist-Introduce-Button">
     <button>1</button>
     <button>2</button>

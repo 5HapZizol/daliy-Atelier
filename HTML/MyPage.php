@@ -65,7 +65,7 @@
           <button  class="mem_info" onclick="location.href='member_info_edit.html'">회원정보 수정</button> 
           <button class="mem_info" onclick="location.href='choice_art.html'">찜 작품</button>
           <button class="mem_info" onclick="location.href='reliable_status.html'" >입찰 현황</button>
-          <button class="mem_info" onclick="location.href='successful_bid.html'">낙찰 작품</button>
+          <button class="mem_info" onclick="location.href='successful_bid.php'">낙찰 작품</button>
           <br>
           <button class="mem_info" onclick="location.href='Order_status.html'" >배송 조회</button>
           <button class="mem_info" onclick="location.href='review_my_work.html'" >나의 리뷰</button>
