@@ -62,14 +62,14 @@
     <br>
     </div>
     <div class = "btn-group">
-          <button  class="mem_info" onclick="location.href='member_info_edit.html'">회원정보 수정</button> 
-          <button class="mem_info" onclick="location.href='choice_art.html'">찜 작품</button>
-          <button class="mem_info" onclick="location.href='reliable_status.html'" >입찰 현황</button>
+          <button  class="mem_info" onclick="location.href='member_info_edit.php'">회원정보 수정</button> 
+          <button class="mem_info" onclick="location.href='choice_art.php'">찜 작품</button>
+          <button class="mem_info" onclick="location.href='reliable_status.php'" >입찰 현황</button>
           <button class="mem_info" onclick="location.href='successful_bid.php'">낙찰 작품</button>
           <br>
-          <button class="mem_info" onclick="location.href='Order_status.html'" >배송 조회</button>
-          <button class="mem_info" onclick="location.href='review_my_work.html'" >나의 리뷰</button>
-          <button class="mem_info" onclick="location.href='My_Inquire.html'">문의 현황</button>
+          <button class="mem_info" onclick="location.href='Order_status.php'" >배송 조회</button>
+          <button class="mem_info" onclick="location.href='my_review.php'" >나의 리뷰</button>
+          <button class="mem_info" onclick="location.href='My_Inquire.php'">문의 현황</button>
   </div>
   <br>
   <br>
