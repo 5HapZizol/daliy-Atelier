@@ -102,7 +102,16 @@
   <a>
     <img src="../img/auction/new_4.png">
   </a>
-
+</li>
+<li class="Slide_item">
+  <a>
+    <img src="../img/auction/end_17.jpg">
+  </a>
+</li>
+<li class="Slide_item">
+  <a>
+    <img src="../img/auction/end_18.jpg">
+  </a>
 </li class="Slide_item">
 
 <!-- 좌,우 슬라이드 버튼 -->
@@ -146,7 +155,7 @@
   <div class="divider" style="margin-top: 0.5em; margin-bottom: 0.5em;"></div>
   <img class="re_star" src="../img/star.png">
   </div><!--pop_detail-->
-</div><!--popup_1-->
+</div><!--popup_2-->
     </div>
   </div>
 
