@@ -49,21 +49,41 @@
   background-color: #cfcfcf;
 }
 
-.login-form {
+.General-login-form {
   width: 100%;
   padding: 40px;
   border: 1px solid #223;
   box-sizing: border-box;
 }
 
-.login-form form input {
+.General-login-form form input {
   width: 100%;
   margin: 0.8rem 0;
   padding: 0.5rem;
   box-sizing: border-box;
 }
 
-.login-form form button {
+.General-login-form form button {
+  width: 100%;
+  margin: 1.8rem 0;
+  padding: 0.4rem 0;
+}
+
+.Author-login-form {
+  width: 100%;
+  padding: 40px;
+  border: 1px solid #223;
+  box-sizing: border-box;
+}
+
+.Author-login-form form input {
+  width: 100%;
+  margin: 0.8rem 0;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.Author-login-form form button {
   width: 100%;
   margin: 1.8rem 0;
   padding: 0.4rem 0;
