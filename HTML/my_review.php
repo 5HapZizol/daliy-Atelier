@@ -101,6 +101,16 @@
   <a>
     <img src="../img/auction/end_11.jpg">
   </a>
+</li>
+<li class="Slide_item">
+  <a>
+    <img src="../img/auction/end_17.jpg">
+  </a>
+</li>
+<li class="Slide_item">
+  <a>
+    <img src="../img/auction/end_18.jpg">
+  </a>
 </li class="Slide_item">
 
 <!-- 좌,우 슬라이드 버튼 -->
