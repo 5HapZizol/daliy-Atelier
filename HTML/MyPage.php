@@ -9,6 +9,10 @@
 <body>
 <?php
       include("Header.php");
+      $user_id = $_SESSION['user'];
+      $sql = "SELECT * FROM USER where userid = '$user_id'";
+      $result = mysqli_query($conn, $sql);
+      $user = mysqli_fetch_array($result);
   ?>
 
   <article>
@@ -23,7 +27,7 @@
       <a><img  src="../img/auction/new_17.png" width="102em" height="122em"></a>
        <div class="box_1">
          <br>
-         <div class="box_text">사용 가능한 적립금: 140,000원  
+         <div class="box_text">사용 가능한 적립금: <?=number_format($user['reserve'])?>원  
          <a href="charge.html"><button class="charge_btn"> 충전</button></a>
        </div>
          <br>

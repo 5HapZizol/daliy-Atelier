@@ -90,7 +90,7 @@
       
                   <div class="Bid-Third">
                     <div>현재 최고가</div>
-                    <div><?=$row['current_price']?>원</div>
+                    <div><?=number_format($row['current_price'])?>원</div>
                   </div>
 
                   <div class="Bid-Line"></div>
@@ -170,7 +170,7 @@
       
                   <div class="Bid-Third">
                     <div>현재 최고가</div>
-                    <div><?=$row['current_price']?>원</div>
+                    <div><?=number_format($row['current_price'])?>원</div>
                   </div>
 
                   <div class="Bid-Line"></div>
@@ -249,7 +249,7 @@
       
                   <div class="Bid-Third">
                     <div>현재 최고가</div>
-                    <div><?=$row['current_price']?>원</div>
+                    <div><?=number_format($row['current_price'])?>원</div>
                   </div>
 
                   <div class="Bid-Line"></div>
