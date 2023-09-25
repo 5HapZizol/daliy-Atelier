@@ -76,7 +76,7 @@
                     <a href="#">소개글</a>
                     <ul class="inner-menu">
                       <li class="dept2"><a href="artist_introduce.php">작가소개</a></li>
-                      <li class="dept2"><a href="#">개발자 소개</a></li>
+                      <li class="dept2"><a href="developer.php">개발자 소개</a></li>
                     </ul>
                   </li>
     
