@@ -134,7 +134,133 @@
             </div>
     </div>
   </div>
-  </article>
+  <div class="art_review">
+    <div class="top">작가의 다른 작품 REVIEW</div>
+    <hr>
+    <br>
+    <div class="review_box" type="button">
+    <div class="box_img"><img src="../img/hpimage.jpg"></div>
+    <div class="box_detail">
+        <div class="reviewss_1" style="font-family: math;">
+            가오에 살고 가오의 죽는다. 제가 원하던 그림입니다😇😇 방이 너무 횡해서 이번기회에 그냥 편한 마음으로 도전해봤는데 제가 낙찰. 받을 줄도 몰랐어요
+        그림 너무 맘에 듭니다~</div>
+         <div class="consumer_1"> 구매자 : dim 님</div>
+         <img class="star_box" src="../img/R.png">
+        </div>
+    </div><!--리뷰박스-->
+
+        <div class="jump"></div>
+
+
+    <div class="review_box" type="button">
+        <div class="box_img"><img src="../img/auction/end_12.jpg"></div>
+        <div class="box_detail">
+            <div class="reviewss_1" style="font-family: math;">
+                너무 이뻐요!!  제가 원하는 느낌의 그림이에요 제가 이번에
+                처음으로 카페를 운영하게 되어서 카페에 어울리는 시원한 그림을 찾고 있었는데...</div>
+             <div class="consumer_1"> 구매자 : 내꺼 님</div>
+             <img class="star_box" src="../img/R.png">
+            </div>
+        </div><!--리뷰박스-->
+
+        <div class="jump"></div>
+
+    <div class="review_box" type="button">
+    <div class="box_img"><img src="../img/auction/best3.jpg"></div>
+    <div class="box_detail">
+        <div class="reviewss_1" style="font-family: math;">
+            너무 이뻐요!!  제가 원하는 느낌의 그림이에요 제가 이번에
+            처음으로 카페를 운영하게 되어서 카페에 어울리는 시원한 그림을 찾고 있었는데...</div>
+         <div class="consumer_1"> 구매자 : whwdk 님</div>
+         <img class="star_box" src="../img/R.png">
+        </div>
+    </div><!--리뷰박스-->   
+    
+    <div class="jump"></div>
+
+    <div class="review_box" type="button">
+        <div class="box_img"><img src="../img/auction/best4.jpg"></div>
+        <div class="box_detail">
+            <div class="reviewss_1" style="font-family: math;">
+                너무 이뻐요!!  제가 원하는 느낌의 그림이에요 제가 이번에
+                처음으로 카페를 운영하게 되어서 카페에 어울리는 시원한 그림을 찾고 있었는데...</div>
+             <div class="consumer_1"> 구매자 : 구매자 님</div>
+             <img class="star_box" src="../img/R.png">
+            </div>
+        </div><!--리뷰박스-->   
+
+  </div>
+  
+  <div class="popup hidden">
+    <div class="dim"></div>
+  
+   <div class="popupBox">
+    <div class="btnBox"><button class="close_btn">닫기</button></div>
+    <div class="popup_2">
+        <div class="pic_section" style="display: contents;">
+          <input type="radio" name="slide" id="slide_1" checked>
+          <input type="radio" name="slide" id="slide_2">
+          <input type="radio" name="slide" id="slide_3">
+          <div class="SlideWrap">
+        <ul class="SlideList">
+        <!-- 슬라이드 영역 -->
+        <li class="Slide_item">
+          <a>
+            <img src="../img/hpimage.jpg">
+          </a>
+        </li>
+        <li class="Slide_item">
+          <a>
+            <img src="../img/art_auction_pic1.jpg">
+          </a>
+        </li>
+        <li class="Slide_item">
+          <a>
+            <img src="../img/auction/end_11.jpg">
+          </a>
+        </li class="Slide_item">
+        
+        <!-- 좌,우 슬라이드 버튼 -->
+        <div class="slide_control">
+          <div>
+            <label for="slide_3" class="Left"></label>
+            <label for="slide_2" class="Right"></label>
+          </div>
+          <div>
+            <label for="slide_1" class="Left"></label>
+            <label for="slide_3" class="Right"></label>
+          </div>
+          <div>
+            <label for="slide_2" class="Left"></label>
+            <label for="slide_1" class="Right"></label>
+          </div>
+        </div>
+        </ul>
+         </div>
+            </div>
+    <div class="pop_detail">
+        <div class="consumer"> 구매자 : dim 님</div>
+        <div class="divider" style="margin-top: 0.5em; margin-bottom: 0.5em;"></div>
+        <div class="date">작성 날짜 : 2022.1.31</div>
+        <div class="divider" style="margin-top: 0.5em; margin-bottom: 0.5em;"></div>
+        <div class="review_detail">
+        <div class="review" style="font-size: 1.1em; color: black; font-family: math;">
+    가오에 살고 가오의 죽는다. 제가 원하던 그림입니다😇😇 방이 너무 횡해서 이번기회에 그냥 편한 마음으로 도전해봤는데 제가 낙찰...</div>
+    </div>   
+        <div class="divider" style="margin-top: 0.5em;"></div>
+        <div class="bid_price" style="font-size: 1.4em; margin: 0.3em;">낙찰가 : 100,000원</div>
+        <div class="divider" style="margin-top: 0.5em;"></div>
+        <br>
+        <div class="title">어두운</div>
+        <div class="divider" style="margin-top: 0.5em; margin-bottom: 0.5em;"></div>
+        <div class="category">#현실 #검은색 #디지털아트</div>
+        <div class="divider" style="margin-top: 0.5em; margin-bottom: 0.5em;"></div>
+        <img class="re_star" src="../img/star.png">
+        </div><!--pop_detail-->
+        </div>
+        </div>
+    </div>
+    </article>
 
     <footer> <!--  footer 시작 -->
       <div class="footer-Background">

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\CSS\a_closeup.css">
+    <link rel="stylesheet" href="../css/a_closeup.css">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <title>원본 사이즈 모달 테스트</title>
 </head>

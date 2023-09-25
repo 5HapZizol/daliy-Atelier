@@ -103,8 +103,6 @@
               <button type = "button" id = "register_btn">가입하기</button>
             </div>
         </div>
-        <!-- <input type="hidden" name="User_status" value="<?php echo $User_status; ?>">
-        <input type=button id="register_btn">가입하기</input>   -->
           
         </form>
       </article>
