@@ -1,9 +1,18 @@
 <?php
-    include '../server.php'; 
+    $conn = mysqli_connect("127.0.0.1", "root", "0430!!", "daily-art", "3306");
     //$conn = mysqli_connect(주소, 아이디, "비밀번호", DB 스키마 이름, 포트);
-    $hashedPassword = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    if (isset($_POST['password'])) {
+        $password = $_POST['password'];
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+        // 이후 작업 수행
+    } else {
+        // "password" 키가 존재하지 않는 경우 처리할 코드
+        echo "비밀번호를 찾을 수 없습니다.";
+    }
     //비밀번호 해쉬 암호화
     //echo $hashedPassword;
+
+
 
     $artist_code = uniqid("artist_", true);
 

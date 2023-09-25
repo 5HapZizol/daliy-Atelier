@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
   <html lang="en">
       <head>
           <meta charset="UTF-8">
@@ -134,24 +134,22 @@
       
         <script>
           $(document).ready(function(){
-            $(".footer-Background").load("../html/Footer.html");
-          });
-          const signupForm = document.querySelector("#signup-form");
-          const registerbtn = document.querySelector("#register_btn");
-          const password = document.querySelector("#password");
-          const passwordCheck = document.querySelector("#password-check");
-          registerbtn.addEventListener("click", function(e) {
-            if(password.value&& password.value === passwordCheck.value){
-                    
-            signupForm.submit();
-            }else{
-                alert("비밀번호가 서로 일치하지 않습니다");
-            }
-          });
+    $(".footer-Background").load("../html/Footer.html");
+});
 
-          document.getElementById("register_btn").addEventListener("click", function() {
-             window.location.href = "signupProcess.php";
-         });
+const signupForm = document.querySelector("#A-signup-form");
+const registerbtn = document.querySelector("#register_btn");
+const password = document.querySelector("#password");
+const passwordCheck = document.querySelector("#password_check");
+
+registerbtn.addEventListener("click", function(e) {
+    if (password.value && password.value === passwordCheck.value) {
+        // 비밀번호 확인이 일치할 때만 폼을 제출합니다.
+        signupForm.submit();
+    } else {
+        alert("비밀번호가 서로 일치하지 않습니다.");
+    }
+});
         </script>
 
       </body>
