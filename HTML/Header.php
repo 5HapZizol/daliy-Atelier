@@ -43,7 +43,7 @@
               } else {  //로그인이 안되었을 시
               ?>
                 <a href="Login.php">로그인</a>
-                <a href="Member_register.php">회원가입</a>
+                <a href="Member_register_Select.php">회원가입</a>
                 <a href="center_author.php">고객센터</a>
               <?php
               }
