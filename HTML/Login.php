@@ -27,20 +27,19 @@
                 
                 
                 <div class="General-login-form">
-                    <div class="input_infor">
-                    <form method="POST" action="loginProcess.php">
-                        <div>
-                            <div id="form_Id">아이디</div>
-                            <input type="text" id="input_Id" name="userId" placeholder="아이디를 입력하세요" required />
+                    <form method="POST" action="loginProcess.php?type=0">
+                        <div class="input_infor">
+                            <div>
+                                <div id="form_Id">아이디</div>
+                                <input type="text" id="userId" name="userId" placeholder="아이디를 입력하세요" required />
+                            </div>
+                            <div>
+                                <div id="form_Pwd">비밀번호</div>
+                                <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요" />
+                            </div>
+                            <button class="btn_Login" type="submit">로 그 인</button>
                         </div>
-                        <div>
-                            <div id="form_Pwd">비밀번호</div>
-                            <input type="password" id="input_Pwd" name="password" placeholder="비밀번호를 입력하세요" />
-                        </div>
-
-                        <button class="btn_Login" type="submit">로 그 인</button>
-                      </form>
-                    </div>
+                    </form>
 
                     <div class="account">
                         <div class="left">
@@ -61,20 +60,20 @@
                 </div>
 
                 <div class="Author-login-form">
-                    <div class="input_infor">
-                    <form method="POST" action="loginProcess.php">
-                        <div>
-                            <div id="form_Id">아이디</div>
-                            <input type="text" id="input_Id" name="userId" placeholder="아이디를 입력하세요" required />
-                        </div>
-                        <div>
-                            <div id="form_Pwd">비밀번호</div>
-                            <input type="password" id="input_Pwd" name="password" placeholder="비밀번호를 입력하세요" />
-                        </div>
+                    <form method="POST" action="loginProcess.php?type=1">
+                        <div class="input_infor">
+                            <div>
+                                <div id="form_Id">아이디</div>
+                                <input type="text" id="userId" name="userId" placeholder="아이디를 입력하세요" required />
+                            </div>
+                            <div>
+                                <div id="form_Pwd">비밀번호</div>
+                                <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요" />
+                            </div>
 
-                        <button class="btn_Login" type="submit">로 그 인</button>
-                      </form>
-                    </div>
+                            <button class="btn_Login" type="submit">로 그 인</button>
+                        </div>
+                    </form>
 
                     <div class="account">
                         <div class="left">
@@ -83,7 +82,7 @@
                         </div>
 
                         <div class="right">
-                        <span class="Sign_Up"><a href="Member_register.php">회원가입</a></span>
+                        <span class="Sign_Up"><a href="Member_Auother_register.php">회원가입</a></span>
                         </div>
                     </div>
 

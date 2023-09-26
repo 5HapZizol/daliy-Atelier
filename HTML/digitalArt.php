@@ -28,8 +28,7 @@
       <!-- </div> -->
   
       <div class = "box">
-          <div>
-              
+          <div>  
               <span><b>구분</b></span>
               <!--버튼 누를 때마다 페이지 변환-->
               <div class="pick_btn">
