@@ -39,6 +39,17 @@ date_default_timezone_set('Asia/Seoul');
 $bid_start_time = date("Y-m-d H:i:s", strtotime($_POST['start_d']));
 $closing_time = date("Y-m-d H:i:s", strtotime($_POST['end_d']));
 
+$sql = "SELECT artist_code FROM artist";
+$result = mysqli_query($conn, $sql);
+
+if ($result) {
+    $row = mysqli_fetch_array($result);
+    $artist_code = $row['artist_code'];
+} else {
+    // 작가 코드를 가져오지 못한 경우에 대한 오류 처리
+    echo "작가 코드를 가져오는 데 문제가 발생했습니다.";
+}
+
 //작품 db 업로드
 $sql = "
         INSERT INTO ART(
@@ -46,7 +57,7 @@ $sql = "
             material, descript, start_price, current_price, registration_date,
             bid_start_time, closing_time)
         VALUES(
-            '{$art_id}', 33, '{$img_id}', '{$_POST['art_type']}','{$_POST['Upname']}',
+            '{$art_id}', '{$artist_code}', '{$img_id}', '{$_POST['art_type']}','{$_POST['Upname']}',
             '{$_POST['material']}', '{$_POST['info']}', '{$_POST['price']}', '{$_POST['price']}', NOW(),
             '{$bid_start_time}', '{$closing_time}'
         )";

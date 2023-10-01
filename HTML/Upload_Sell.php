@@ -1,3 +1,8 @@
+<?php
+    
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -87,6 +92,28 @@
 <body>
 <?php
       include("Header.php");
+      // 세션에서 사용자 정보 가져오기
+    $user_id = $_SESSION['user'];
+
+    // 사용자의 User_status를 확인
+    $sql = "SELECT User_status FROM user WHERE Userid = '{$user_id}'";
+    $result = mysqli_query($conn, $sql);
+
+    if ($result === false) {
+        echo "사용자 정보를 가져오는데 문제가 발생했습니다. 관리자에게 문의해주세요.";
+        echo mysqli_error($conn);
+        exit; // 오류 발생 시 중단
+    }
+    
+    $row = mysqli_fetch_array($result);
+    $user_status = $row['User_status'];
+    
+    // User_status가 1인 경우에만 페이지 허용
+    if ($user_status != 1) {
+        echo "<script>alert('권한이 없습니다.');</script>";
+        echo "<script>window.location.href = 'main.php';</script>";
+        exit;
+    }
     ?>
 
     <article>
