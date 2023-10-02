@@ -6,50 +6,55 @@
         user-select: none;
     }
     .page_top{
-        display: inline-block;
         width: 60%;
         display: table;
-        margin: 1em auto;
+        margin: 0.5em auto;
+        margin-top: 5em;
     }
     .page_name {
         margin: 1em auto;
         display: table;
-        font-size: 2em;
+        font-size: 1.8em;
+        font-weight: 800;
     }
-    .page_top .hr_1{
-        margin: 2em;
+    .hr_1{
+        margin-right: 2em;
+        margin-left: 2em;
     }
     .page_path {
         display: inline;
-        float: left;
         padding-left: 3.5em;
         font-size: 0.6em;
         color: rgb(180, 180, 180);
         margin-bottom: 3em;
-    }
-    .hr_1{
-        margin-top: 4em;
-        border : 0px;
-        border-top: 1px solid;
-    }
+    }  
     .profile{
-        display: block; 
         display: table;
         margin: 1em auto;
         width: 10%;
         height: 20%;
-        box-shadow: inset;
+        object-fit: cover;
     }
     .photo_select{
         display: block; 
         margin: 12px auto; 
+        border: none;
+        background-color: rgb(142, 138, 138);
+        padding: 5px;
+    }
+    .select {
+        border: none;
+        background-color: rgb(212, 210, 210);
+        padding: 5px;
     }
     table{
-        margin : 5px auto;
+        margin : 4px auto;
         padding: 1em;
+        border: none;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
     .num{
-        margin-left: 1%;
+        padding: 5px;
         font-weight: normal;
     }
     input[type="radio"]{
@@ -57,16 +62,20 @@
         margin-left: 2em;
     }
     .mem_table {
-        border: 1px solid #444444;
+        border: none;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
         border-collapse: collapse;
     }
     th, td {
-        border: 1px solid #444444;
-        padding: 0.5em;
+        border: none;
+        font-size: 13px;
+        padding: 12px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
       }
     .btn-group {
         text-align: center;
     }
+
     btn {    
         display: inline-block;
         padding: 1em;

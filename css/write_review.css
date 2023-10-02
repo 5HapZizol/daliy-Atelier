@@ -37,18 +37,6 @@
     height: 500px;
     object-fit: cover;
 }
-.plus_box{
-    margin-left: 0.5em;
-    margin-bottom: 0.5em;
-    border: 1px solid rgb(180, 180, 180);
-    width: 24em; 
-    height: 5em;
-}
-.plus_img {
-    margin: 0.6em;
-    border: none;
-    background-color: #fff;
-}
 /*리뷰 작성*/
 .write_box {
     display: block;

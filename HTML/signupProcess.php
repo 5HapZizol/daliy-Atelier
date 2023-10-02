@@ -1,6 +1,5 @@
 <?php
-    $conn = mysqli_connect("127.0.0.1", "root", "0430!!", "daily-art", "3306");
-    //$conn = mysqli_connect(주소, 아이디, "비밀번호", DB 스키마 이름, 포트);
+    include '../server.php';
     if (isset($_POST['password'])) {
         $password = $_POST['password'];
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
@@ -47,7 +46,7 @@
         $result = mysqli_query($conn, $sql);
     
         $sql = "INSERT INTO artist (artist_code, Userid, artist_name, artist_intro, homepage, artist_sns)
-                VALUES('{$artist_code}', '{$A_user_id}', '{$user_name}', '{}', '{$user_homepage}', '{$sns_id}')";
+                VALUES('{33}', '{$A_user_id}', '{$user_name}', '{}', '{$user_homepage}', '{$sns_id}')";
         $result = mysqli_query($conn, $sql);
     
         if ($result === false) { // 에러 여부 확인
