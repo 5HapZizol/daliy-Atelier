@@ -1,8 +1,3 @@
-<?php
-    
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +12,10 @@
     <link href="https://unpkg.com/@yaireo/tagify/dist/tagify.css" rel="stylesheet" type="text/css" />
     
     <script>
+
+        $(document).ready(function(){
+            $(".footer-Background").load("../html/Footer.html");
+        });
 
       $.fn.setPreview = function(opt){
           "use strict"
