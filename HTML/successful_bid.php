@@ -52,25 +52,26 @@ if ($result === false) {
 }
 
 while ($row = mysqli_fetch_array($result)) {
-    // 이미지 경로 가져오기
-    $sql = "SELECT i.img_path
-    FROM artist AS a
-    JOIN art AS ar ON a.artist_code = ar.artist_code
-    JOIN image AS i ON ar.art_img_id = i.art_img_id
-    WHERE a.userid = '{$user_id}' ORDER BY registration_date LIMIT 0, 6";
-    $result2 = mysqli_query($conn, $sql);
+    // 각 작품마다 이미지를 가져오기 위해 쿼리 수정
+    $sql2 = "SELECT i.img_path
+             FROM artist AS a
+             JOIN art AS ar ON a.artist_code = ar.artist_code
+             JOIN image AS i ON ar.art_img_id = i.art_img_id
+             WHERE a.userid = '{$user_id}' AND ar.artId = '{$row['artId']}'";
+    $result2 = mysqli_query($conn, $sql2);
     $ttmp = mysqli_fetch_array($result2);
     $image_path = $ttmp['img_path'];
 ?>
     <div class="product-works">
         <img src="<?=$image_path?>" alt="">
         <div class="btnss">
-            <button class="btn" type="button" onclick="onclick=location.href='best_1.php?aid=<?=$row['artId']?>'">🔍︎자세히 보기</button>
+            <button class="btn" type="button" onclick="location.href='best_1.php?aid=<?=$row['artId']?>'">🔍︎자세히 보기</button>
             <button class="btn" type="button" onclick="location.href='write_review.php?aid=<?=$row['artId']?>'">🖍리뷰 쓰기</button>
         </div><!--btnss-->
     </div>
 <?php
 }
+
 ?>
       
           

@@ -135,17 +135,16 @@
 }
 /*저장버튼*/
 .btn-g{
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
-btn {    
-    display: inline-block;
-    padding: 1em;
-    padding-top: 0.5em;
-    width: 7em;
-    height: 1em;
+.btn-g button {    
+    margin: 50px 10px;
     border: none;
-    margin: 1em 0.3em;
+    width: 80px;
+    height: 30px;
 }
+
 .btn_1 {
     background-color: rgb(142, 138, 138);
     text-emphasis-color: white;
@@ -153,7 +152,7 @@ btn {
 .btn_2 {
     background-color: rgb(212, 210, 210);
 }
-btn:hover{
+.btn-g button:hover{
     background-color: #778C86;
     transition: 0s;
 }

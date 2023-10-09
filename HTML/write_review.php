@@ -71,10 +71,8 @@
         </div><!--review_box-->
 
         <div class = "btn-g">
-            <p>
                 <button class="btn_1">올리기</button>
                 <button class="btn_2">취소</button>
-            </p>
         </div>
     </form>
 </article>
