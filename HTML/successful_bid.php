@@ -9,6 +9,7 @@
 <body>
 <?php
       include("Header.php");
+      include 'bidCheckProcess.php';
     ?>
 
     <article>

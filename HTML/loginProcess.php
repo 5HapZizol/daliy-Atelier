@@ -10,7 +10,6 @@
         // DB 정보 가져오기
         $sql = "SELECT * FROM User WHERE Userid ='{$login_id}' AND User_status = '{$login_type}'";
         $result = mysqli_query($conn, $sql);
-        echo $sql;
 
         if ($result) {
             $row = mysqli_fetch_array($result);

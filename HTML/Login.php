@@ -48,7 +48,7 @@
                         </div>
 
                         <div class="right">
-                        <span class="Sign_Up"><a href="Member_register.php">회원가입</a></span>
+                        <span class="Sign_Up"><a href="Member_register_Select.php">회원가입</a></span>
                         </div>
                     </div>
 
@@ -82,7 +82,7 @@
                         </div>
 
                         <div class="right">
-                        <span class="Sign_Up"><a href="Member_Auother_register.php">회원가입</a></span>
+                        <span class="Sign_Up"><a href="Member_register_Select.php">회원가입</a></span>
                         </div>
                     </div>
 

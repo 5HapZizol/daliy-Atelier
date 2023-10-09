@@ -1,4 +1,12 @@
 <?php
+function uploadedFile($uploadUrl, $fileName) {
+    return iconv("utf-8", "CP949", $uploadUrl.basename2($fileName));
+}
+
+function basename2($filename) {
+    return preg_replace( '/^.+[\\\\\\/]/', '', $filename);
+}
+
 session_start();
 include '../server.php'; 
 
@@ -9,8 +17,9 @@ $img_id = uniqid("image_", true);
 $tmpfile = $_FILES['input_image']['tmp_name'];
 $o_name = $_FILES['input_image']['name'];
 $filename = iconv("UTF-8", "EUC-KR", $_FILES['input_image']['name']);
-$folder = "../img/auction/" . $filename; //파일경로
-move_uploaded_file($tmpfile, $folder);
+$folder = "../img/auction/".$filename; //파일경로
+move_uploaded_file($tmpfile, uploadedFile($folder, $o_name));
+
 
 //이미지 db 업로드
 $sql = "

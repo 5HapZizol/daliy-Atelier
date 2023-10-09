@@ -39,6 +39,7 @@
 <body>
   <?php
       include("Header.php");
+      include 'bidCheckProcess.php';
     ?>
 
   <article>
@@ -220,6 +221,11 @@
                $datetime1 = new DateTime(date("Y-m-d H:i:s"));
                $datetime2 = new DateTime($row['closing_time']);
                $interval = $datetime1->diff($datetime2);
+
+               //작가명 가져오기
+               $sql = "select artist_name from artist where artist_code = '{$row['artist_code']}'";
+               $artist_result = mysqli_query($conn, $sql);
+               $artist = mysqli_fetch_array($artist_result);
          ?>
          <div class="box">
             <div class="image">
@@ -231,8 +237,8 @@
                 <p><?=$interval->format('%dD %h:%i')?></p>
                 <a href="../HTML/best_1.php?aid=<?=$row['artId']?>" class="btn">입찰</a>
                 <div class="icons">
-                    <span> <i class="fas fa-calendar"></i> 21st may, 2022 </span>
-                    <span> <i class="fas fa-user"></i> by admin </span>
+                    <span> <i class="fas fa-calendar"></i> <?=$datetime2->format('jS M, o')?> </span>
+                    <span> <i class="fas fa-user"></i> by  <?=$artist['artist_name']?> </span>
                 </div>
             </div>
          </div>

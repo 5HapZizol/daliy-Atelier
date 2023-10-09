@@ -58,7 +58,7 @@
                 <div class="title" onclick="location.href='member_info_edit.php'">회원정보수정</div>
             </li>
             <li class="group">
-                <div class="title" onclick="location.href='charge.html'">충전</div>
+                <div class="title" onclick="location.href='charge.php'">충전</div>
             </li>
             <li class="group">
                 <div class="title">나의 작품</div>

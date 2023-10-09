@@ -9,6 +9,7 @@
 <body>
     <?php
         include("Header.php");
+        include ("bidCheckProcess.php");
     ?>
 
 
@@ -51,7 +52,7 @@
             <div class="artist"><?=$artist['artist_name']?></div>
             <div class="category">#<?=$art['material']?> #<?=$art['art_type']?> </div>
             <div class="start_price">시작가: <?=number_format($art['start_price'])?> 원</div>
-            <div class="left_time">남은시간: <?=$interval->format('%d 일 %h 시: %i 분')?></div>
+            <div class="left_time">남은시간: <?=$interval->format('%d일 %h:%i')?></div>
             <div class="current_price">현재 최고가: <?=number_format($art['current_price'])?> 원</div>
         </div>
         <div class="art_auction_btns">
@@ -123,7 +124,7 @@
                 <span>결제입력창</span>
             </div>
             <p>현재가: <?=number_format($art['current_price'])?>원</p>
-            <p>마감일: 9/23(토) 14:00 KST 순차마감</p>
+            <p>마감일: <?=$datetime2->format('n/d(D) H:i')?> KST 순차마감</p>
             <div class="inputMoney">
                 입찰가 : <input type="text" name="bid_price" placeholder="<?=number_format($art['current_price'])?> 이상">원
             </div>
