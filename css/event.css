@@ -61,11 +61,13 @@ img {
 
 .contain{
   position: relative;
+  width: 90%;
 }
 
 .notice-contain{
   display: inline-block;
   margin-bottom: 3em;
+  
 }
 
 .notice-img{

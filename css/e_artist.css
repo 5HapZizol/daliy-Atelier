@@ -1,4 +1,13 @@
-.my_gradient_1 {
-    background-image: linear-gradient(to bottom right, rgb(248, 115, 115), rgb(110, 163, 248));
-    height: 100vh;
+.bgimg{
+    height: 120%;
+    width: 80%;
+    margin-left: 10%;
+    background-repeat : no-repeat;
+    background-size: cover;
+}
+
+.enotice{
+    padding-top: 3em;
+    padding-left: 11em;
+    font-size: 20px;
 }

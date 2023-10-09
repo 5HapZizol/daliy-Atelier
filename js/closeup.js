@@ -16,7 +16,7 @@ $(function(){
       $(".imgC").click(function(){
         $(".modal").show();
         var imgSrc = $(this).children("img").attr("src");
-        $(".modalBox img").attr("src", imgSrc);
+        $(".modalbox img").attr("src", imgSrc);
       });
 
       /*

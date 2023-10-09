@@ -44,7 +44,13 @@
                 $result = mysqli_query($conn, $sql);
                 $artist = mysqli_fetch_array($result);
         ?>
-        <img src="<?=$image_path?>" width="50%">
+       
+        <div class="imgList">
+		    <div class="imgC">
+                <img src="<?=$image_path?>" width="50%">
+            </div>
+        </div>
+
         <div class="art_auction_info_right">
         <div class="art_info_text_box">
             <div class="title"><?=$art['name']?></div>
@@ -89,13 +95,16 @@
       <div>온라인으로 게재된 이미지로 작품의 일부 컨디션을 확인할 수 있으나 실제 상태를 정확하게 반영하지 못할 수 있으며 작품의 색상, 밝기 등이 실물과 다르게 보일 수 있습니다.</div>
       <div>실물을 확인하지 않아 발생되는 문제에 대한 책임은 응찰자에게 있으며, 이와 같은 유의사항을 반드시 확인하시고 신중히 응찰해 주시길바랍니다.</div>
   </div>
+
+  <div class="imgList">
   <div class="artist_other_art">
       <div class="top">작가의 다른 작품</div>
-      <hr/>
       <ul>
           <li>
+            <div class="imgC">
               <img src="../img/other_art_1.png" width="90%" class="bottom" style="
               vertical-align: text-bottom;">
+            </div>
           </li>
           <li>
               <img src="../img/other_art_2.png" width="90%" class="bottom" style="
@@ -112,11 +121,14 @@
               <img src="../img/auction/new_1.jpg" width="90%" class="bottom">
           </li>
       </ul>
-  </div>
+        </div>
+    </div>
+
   <div class="modal hidden">
     <div class="bg">
 
     </div>
+
     <div class="modalBox">
         <form action="BidInsertProcess.php?aid=<?=$_GET['aid']?>" method="POST" id="bid-insert-form">
             <div class="modalTop">
@@ -133,7 +145,17 @@
                 <button type="button" class="closeBtn">닫기</button>
             </div>
     </div>
-  </div>
+
+    <!-- 이미지원본 모달 -->
+    <div class="modal">
+        <span class="close">&times;</span>
+        <div class="modalbox">  
+            <img src="">
+        </div>
+    </div>
+  
+    
+
   <div class="art_review">
     <div class="top">작가의 다른 작품 REVIEW</div>
     <hr>
@@ -261,6 +283,8 @@
         </div>
     </div>
     </article>
+    
+     
 
     <footer> <!--  footer 시작 -->
       <div class="footer-Background">
@@ -306,5 +330,6 @@
         });
 
     </script>
+    <script src="/js/closeup.js"></script>
 </body>
 </html>

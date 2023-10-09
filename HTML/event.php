@@ -51,6 +51,7 @@
 
     <br>
 
+    <section>
     <div class="contain">
         <div class="notice-contain">
             <div class="notice-img">
@@ -136,7 +137,7 @@
             </div>
         </div><!--notice contain-->
     </div>
-
+    </section>
 
     <!-- 바디 위에 있어야 동작함 건드리지 마세요-->
     <script src="/js/event.js"></script>

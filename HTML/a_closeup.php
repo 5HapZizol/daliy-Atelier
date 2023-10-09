@@ -22,13 +22,13 @@
 
 	<div class="modal">
         <span class="close">&times;</span>
-		<div class="modalBox">
+		<div class="modalbox">
 			<img src="">
 		</div>
 	</div>
 </body>
 
 
-    <script src="/js/a_closeup.js"></script>
+    <script src="/js/closeup.js"></script>
 </body>
 </html>
