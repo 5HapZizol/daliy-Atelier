@@ -33,6 +33,7 @@
       <div class="separator"></div>
       <div class="menu-btn3"><button>별점순</button><span class="menu-animation"></span></div>
     </div><!--menu_type-->
+
 <div class="reviewss">
   
 <?php
@@ -56,8 +57,8 @@
          while($row = mysqli_fetch_array($result_review)){
           
        ?>
-       <div class="box" type="button" style="margin-right: 1.5em;">
-        <div class="winning_bid"><img src="<?=$row['img_path'];?>" width="100%" style="margin-top: 0.4em;"></div>
+       <div class="box" type="button">
+        <div class="winning_bid"><img src="<?=$row['img_path'];?>"></div>
         
       <div class="contents">
       <div class="detail"><?= strlen($row['Review_descript']) > 20 ? substr($row['Review_descript'], 0, 20) . '...' : $row['Review_descript'] ?></div>
@@ -80,54 +81,8 @@
   
  <div class="popup_2">
 <div class="pic_section" style="display: contents;">
-  <input type="radio" name="slide" id="slide_1" checked>
-  <input type="radio" name="slide" id="slide_2">
-  <input type="radio" name="slide" id="slide_3">
-  <div class="SlideWrap" style="margin-left:2.5em; margin-top:0.5em;">
-<ul class="SlideList">
-<!-- 슬라이드 영역 -->
-<li class="Slide_item">
-  <a>
-    <img src="../img/auction/end_9.jpg" height="50%">
-  </a>
-</li>
-<li class="Slide_item">
-  <a>
-    <img src="../img/auction/end_10.jpg">
-  </a>
-</li>
-<li class="Slide_item">
-  <a>
-    <img src="../img/auction/end_11.jpg">
-  </a>
-</li>
-<li class="Slide_item">
-  <a>
-    <img src="../img/auction/end_17.jpg">
-  </a>
-</li>
-<li class="Slide_item">
-  <a>
-    <img src="../img/auction/end_18.jpg">
-  </a>
-</li class="Slide_item">
-
-<!-- 좌,우 슬라이드 버튼 -->
-<div class="slide_control">
-  <div>
-    <label for="slide_3" class="Left"></label>
-    <label for="slide_2" class="Right"></label>
-  </div>
-  <div>
-    <label for="slide_1" class="Left"></label>
-    <label for="slide_3" class="Right"></label>
-  </div>
-  <div>
-    <label for="slide_2" class="Left"></label>
-    <label for="slide_1" class="Right"></label>
-  </div>
-</div>
-</ul>
+  <div class="pop_work">
+    <img src="../img/auction/done_digi_2.jpg" style="width: 600px; height: 550px; object-fit: cover; margin-top: 30px; margin-right: 10px;"> 
  </div>
     </div>
 <div class="pop_detail">
@@ -178,7 +133,10 @@
     
   </div>
 </footer>  <!-- footer 끝 -->
-<script>
+  <script>
+    $(document).ready(function () {
+        $(".Header").load("../html/Header.html");
+    });
 
     $(document).ready(function () {
         $(".footer-Background").load("../html/Footer.html");
@@ -186,17 +144,22 @@
 
     const open = () => {
         document.querySelector(".popup").classList.remove("hidden");
-        // 팝업이 열릴 때 헤더 숨기기
+        // 팝업창 열었을 때 숨김
         document.querySelector(".Header").style.display = "none";
     }
 
     const close = () => {
         document.querySelector(".popup").classList.add("hidden");
-        // 팝업이 닫힐 때 헤더 다시 표시하기
+        // 팝업창 닫았을 때 다시 보이게
         document.querySelector(".Header").style.display = "";
     }
 
-    document.querySelector(".box").addEventListener("click", open);
+    //모든 리뷰 상자에 이벤트 리스너 추가
+    const reviewBoxes = document.querySelectorAll(".box");
+    reviewBoxes.forEach((box) => {
+        box.addEventListener("click", open);
+    });
+
     document.querySelector(".close_btn").addEventListener("click", close);
     document.querySelector(".dim").addEventListener("click", close);
 </script>
