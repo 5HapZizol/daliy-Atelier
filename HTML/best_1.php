@@ -16,6 +16,7 @@
   <article>
     <div class="art_auction_info">
         <?php
+            date_default_timezone_set('Asia/Seoul');
             $sql = "SELECT * FROM Art where artid = '{$_GET['aid']}'";
             $result = mysqli_query($conn, $sql);
             if ($result === false) {    //오류 여부
@@ -40,6 +41,10 @@
                 $datetime2 = new DateTime($art['closing_time']);
                 $interval = $datetime1->diff($datetime2);
 
+                if ($interval->format('%R') === '-') {
+                    $interval = new DateInterval('PT0S'); // 0일 0시 0분
+                }
+
                 //작가명 가져오기
                 $sql = "select artist_name from artist where artist_code = '{$art['artist_code']}'";
                 $result = mysqli_query($conn, $sql);
@@ -55,17 +60,20 @@
             <div class="left_time">남은시간: <?=$interval->format('%d일 %h:%i')?></div>
             <div class="current_price">현재 최고가: <?=number_format($art['current_price'])?> 원</div>
         </div>
-        <div class="art_auction_btns">
-            <button class="openBtn" type="button">
-                <label>입찰 하기</label>
-            </button>
-            <button class="likes" type="button">
-                <img src="../img/likes.png" width="80%" alt="대체 텍스트" onclick="" >
-            </button>
-            <button class="report" type="button">
-                <img src="../img/report.png" width="70%"  alt="대체 텍스트" onclick="" >
-            </button>
-          </div>
+        <?php if ($interval->format('%d:%h:%i') !== '0:0:0') { ?>
+            <div class="art_auction_btns">
+                <button class="openBtn" type="button">
+                    <label>입찰 하기</label>
+                </button>
+                <button class="likes" type="button">
+                    <img src="../img/likes.png" width="80%" alt="대체 텍스트" onclick="" >
+                </button>
+                <button class="report" type="button">
+                    <img src="../img/report.png" width="70%"  alt="대체 텍스트" onclick="" >
+                </button>
+            </div>
+            <?php } ?>
+        
       </div>
       
   </div>

@@ -44,7 +44,7 @@
         $result = mysqli_query($conn, $sql);
     
         $sql = "INSERT INTO artist (artist_code, Userid, artist_name, artist_intro, homepage, artist_sns)
-                VALUES('{33}', '{$A_user_id}', '{$user_name}', '{}', '{$user_homepage}', '{$sns_id}')";
+                VALUES('{$artist_code}', '{$A_user_id}', '{$user_name}', '{}', '{$user_homepage}', '{$sns_id}')";
         $result = mysqli_query($conn, $sql);
     
         if ($result === false) { // 에러 여부 확인
