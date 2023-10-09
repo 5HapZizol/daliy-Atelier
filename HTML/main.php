@@ -247,9 +247,9 @@ include 'bidCheckProcess.php';
 <?php
       include("Header.php");
     ?> 
-    <div style="margin-top: 200px;">
 
    <article>
+   <div style="margin-top: 200px;"></div>
    <div class="section">
         <input type="radio" name="slide" id="slide01" checked>
         <input type="radio" name="slide" id="slide02">
@@ -260,28 +260,34 @@ include 'bidCheckProcess.php';
 			<li class="slideitem">
 				<a>
 					<div class="textbox">
-						<h3>6월 경매</h3>
-						<p>이달의 경매</p>
+                        <!--
+						<h3>1 제목</h3>
+						<p>설명</p>
+                        -->
 					</div>
-					<img src="../img/slide_pic_3.png" height="50%">
+					<img src="../img/main/001.jpg" height="50%">
 				</a>
 			</li>
 			<li class="slideitem">
 				<a>
 					<div class="textbox">
-						<h3>2 제목</h3>
+                        <!--
+						<h3>1 제목</h3>
 						<p>설명</p>
+                        -->
 					</div>
-					<img src="../img/slide_pic_2.jpg">
+					<img src="../img/main/002.jpg">
 				</a>
 			</li>
 			<li class="slideitem">
 				<a>
 					<div class="textbox">
-						<h3>3 제목</h3>
+                        <!--
+						<h3>1 제목</h3>
 						<p>설명</p>
+                        -->
 					</div>
-					<img src="../img/slide_pic_1.jpg">
+					<img src="../img/main/003.jpg">
 				</a>
 			</li class="slideitem">
 

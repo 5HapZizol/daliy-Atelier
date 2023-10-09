@@ -168,11 +168,46 @@ go_to_btn_search {
     margin: 0.01em;
 }
 
-/*페이지 넘김 버튼 액션 이벤트*/
-go_to_btn_search:hover{
-    background-color: #778C86;
-    transition: 0s;
+/* 넘어가는 버튼 */
+.Artist-Introduce-Button{
+    display: flex;
+    justify-content: center;
+    margin: 70px 0;
 }
+
+.Artist-Introduce-Button button{
+    margin: 0 1px;
+    width: 40px;
+    height: 40px;
+    background-color: #e1e0e1;
+    border: 1px solid #a4a3a4;
+    cursor: pointer;
+    
+}
+
+.Artist-Introduce-Button button:first-child{
+    background-color: #231f22;
+    border: 1px solid #231f22;
+    color: #fff;
+}
+
+.Artist-Introduce-Button button:nth-child(11), .Artist-Introduce-Button button:nth-child(12){
+    background-color: #fff;
+    border: 1px solid #a4a3a4;
+} 
+
+.Artist-Introduce-Button button:hover{
+    background-color: #231f22;
+    border: 1px solid #231f22;
+    color: #fff;
+}
+
+.Artist-Introduce-Button button:nth-child(11):hover, .Artist-Introduce-Button button:nth-child(12):hover{
+    background-color: #e1e0e1;
+    border: 1px solid #a4a3a4;
+    color: #040404;
+}
+
 
 /*경로*/
 .rudfh {

@@ -75,58 +75,60 @@
         <span style="float: right;"> 총 n개</span>
     </div>
 
+
     <div class = "accordion">
-      <input type="radio" name="accordion" id = 'answer01'>
+      <input type="checkbox" name="accordion" id = 'answer01'>
       <label for = "answer01">[경매] 자주 들어오는 질문을 넣는 곳<em></em></label>
-        <div><p>
+        <div class = "QnA_answer"><p>
           자주 묻는 질문의 응답을 적어두는 곳
         </p></div>
 
-      <input type="radio" name="accordion" id = 'answer02'>
+      <input type="checkbox" name="accordion" id = 'answer02'>
       <label for = "answer02">[배송] 자주 들어오는 질문을 넣는 곳<em></em></label>
-        <div><p>
+        <div class = "QnA_answer"><p>
           자주 묻는 질문의 응답을 적어두는 곳
         </p></div>
 
-      <input type="radio" name="accordion" id = 'answer03'>
+      <input type="checkbox" name="accordion" id = 'answer03'>
       <label for = "answer03">[포인트] 자주 들어오는 질문을 넣는 곳<em></em></label>
-        <div><p>
+        <div class = "QnA_answer"><p>
           자주 묻는 질문의 응답을 적어두는 곳
         </p></div>
       
-      <input type="radio" name="accordion" id = 'answer04'>
+      <input type="checkbox" name="accordion" id = 'answer04'>
       <label for = "answer04">[작품등록] 자주 들어오는 질문을 넣는 곳<em></em></label>
-        <div><p>
+        <div class = "QnA_answer"><p>
           자주 묻는 질문의 응답을 적어두는 곳
         </p></div>
       
-      <input type="radio" name="accordion" id = 'answer05'>
+      <input type="checkbox" name="accordion" id = 'answer05'>
       <label for = "answer05">[포인트] 자주 들어오는 질문을 넣는 곳<em></em></label>
-        <div><p>
+        <div class = "QnA_answer"><p>
           자주 묻는 질문의 응답을 적어두는 곳
         </p></div>
       
-      <input type="radio" name="accordion" id = 'answer06'>
+      <input type="checkbox" name="accordion" id = 'answer06'>
       <label for = "answer06">[회원정보] 자주 들어오는 질문을 넣는 곳<em></em></label>
-        <div><p>
+        <div class = "QnA_answer"><p>
           자주 묻는 질문의 응답을 적어두는 곳
         </p></div>
     </div>
 
-    <div class = "ques">
-      <div class="btn-group">
-          <nav class="btn_catalogue">
-              <go_to_btn_search> 1 </go_to_btn_search>
-              <go_to_btn_search> 2 </go_to_btn_search>
-              <go_to_btn_search> 3 </go_to_btn_search>
-              <go_to_btn_search> 4 </go_to_btn_search>
-              <go_to_btn_search> 5 </go_to_btn_search>
-              <go_to_btn_search> 6 </go_to_btn_search>
-              <go_to_btn_search style="background-color: #bbbbbb;"> > </go_to_btn_search>
-              <go_to_btn_search style="background-color: #646464;"> >> </go_to_btn_search>
-          </nav>
-      </div>
+    <div class="Artist-Introduce-Button">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>10</button>
+      <button>></button>
+      <button>>></button>
     </div>
+
     </article>
 
 
