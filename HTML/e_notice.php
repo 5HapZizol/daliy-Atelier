@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="..\CSS\e_artist.css">
         <script src="http://code.jquery.com/jquery-latest.js"></script>
-        <title>이벤트 안내</title>
+        <title>구매전 안내</title>
     </head>
 
     <!--header 시작-->
@@ -19,16 +19,11 @@
     <body>
         <section>
             <div calss="backimg">
-                <img class="bgimg"src="../img/findtoartist.png">
-            </div>
-        </section>
-
-        <section>
-            <div class="enotice">
-                <p>데일리 아뜰리에 에서 경험을 함께할 작가님들을 모집하고 있습니다!</p>
+                <img class="bgimg"src="../img/afterbuying.jpg">
             </div>
         </section>
     </body>
+
 
     <footer>  <!-- footer 시작 -->
         <div class="footer-Background"></div>

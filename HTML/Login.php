@@ -43,8 +43,8 @@
 
                     <div class="account">
                         <div class="left">
-                        <span class="Id_Find"><a href="#">아이디 찾기</a></span>
-                        <span class="Pwd_Find"><a href="#">비밀번호 찾기</a></span>
+                            <span class="Id_Find"><a href="#">아이디 찾기</a></span>
+                            <span class="Pwd_Find"><a href="#">비밀번호 찾기</a></span>
                         </div>
 
                         <div class="right">
@@ -53,9 +53,10 @@
                     </div>
 
                     <div class="social-login">
-                        <button type="button" style="background-color: rgb(239, 5, 5);">구글 아이디로 로그인</button>
-                        <button type="button" style="background-color: rgb(2, 236, 18);">네이버 아이디로 로그인</button>
-                        <button type="button" style="background-color: rgb(255, 208, 0);">카카오 아이디로 로그인</button>
+                        <button class="facebook">Facebook</button>
+                        <button class="google">Google</button>
+                        <button class="naver">Naver</button>
+                        <button class="kakao">Kakao</button>
                     </div>
                 </div>
 
@@ -87,9 +88,10 @@
                     </div>
 
                     <div class="social-login">
-                        <button type="button" style="background-color: rgb(239, 5, 5);">구글 아이디로 로그인</button>
-                        <button type="button" style="background-color: rgb(2, 236, 18);">네이버 아이디로 로그인</button>
-                        <button type="button" style="background-color: rgb(255, 208, 0);">카카오 아이디로 로그인</button>
+                        <button class="facebook">Facebook</button>
+                        <button class="google">Google</button>
+                        <button class="naver">Naver</button>
+                        <button class="kakao">Kakao</button>
                     </div>
                 </div>
 
