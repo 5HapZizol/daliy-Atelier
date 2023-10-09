@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>내 작품 리뷰 페이지</title>
+    <title>내가 쓴 리뷰 페이지</title>
     <link rel="stylesheet" href="../css/review_my_work.css"> 
     <link rel="stylesheet" href="../css/popupchang.css">  
     <link rel="stylesheet" href="../css/slider.css">

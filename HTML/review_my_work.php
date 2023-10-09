@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <title>내가 쓴 작품 리뷰 페이지</title>
+      <title>내 작품 리뷰 페이지</title>
         <link rel="stylesheet" href="../css/my_review.css"> 
         <link rel="stylesheet" href="../css/popupchang.css"> 
         <script src="http://code.jquery.com/jquery-latest.js"></script>
