@@ -78,37 +78,37 @@
     </div>
 
     <div class = "accordion">
-      <input type="radio" name="accordion" id = 'answer01'>
+      <input type="checkbox" name="accordion" id = 'answer01'>
       <label for = "answer01">[경매] 자주 들어오는 질문을 넣는 곳<em></em></label>
         <div><p>
           자주 묻는 질문의 응답을 적어두는 곳
         </p></div>
 
-      <input type="radio" name="accordion" id = 'answer02'>
+      <input type="checkbox" name="accordion" id = 'answer02'>
       <label for = "answer02">[경매] 자주 들어오는 질문을 넣는 곳<em></em></label>
         <div><p>
           자주 묻는 질문의 응답을 적어두는 곳
         </p></div>
 
-      <input type="radio" name="accordion" id = 'answer03'>
+      <input type="checkbox" name="accordion" id = 'answer03'>
       <label for = "answer03">[경매] 자주 들어오는 질문을 넣는 곳<em></em></label>
         <div><p>
           자주 묻는 질문의 응답을 적어두는 곳
         </p></div>
       
-      <input type="radio" name="accordion" id = 'answer04'>
+      <input type="checkbox" name="accordion" id = 'answer04'>
       <label for = "answer04">[경매] 자주 들어오는 질문을 넣는 곳<em></em></label>
         <div><p>
           자주 묻는 질문의 응답을 적어두는 곳
         </p></div>
       
-      <input type="radio" name="accordion" id = 'answer05'>
+      <input type="checkbox" name="accordion" id = 'answer05'>
       <label for = "answer05">[경매] 자주 들어오는 질문을 넣는 곳<em></em></label>
         <div><p>
           자주 묻는 질문의 응답을 적어두는 곳
         </p></div>
       
-      <input type="radio" name="accordion" id = 'answer06'>
+      <input type="checkbox" name="accordion" id = 'answer06'>
       <label for = "answer06">[경매] 자주 들어오는 질문을 넣는 곳<em></em></label>
         <div><p>
           자주 묻는 질문의 응답을 적어두는 곳

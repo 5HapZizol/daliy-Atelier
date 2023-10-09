@@ -16,8 +16,12 @@
 
     <article>
       <div class="Artist-Introduce-Title">
-        <h1>작가 소개</h1>
-        <hr>
+        <div class="page_top">
+        <span class="page_name">작가 소개</span>
+        <p class="page_path">소개글 > 작가 소개</p>
+        <br>
+        <hr class="hr_1">
+    </div>
       </div>
 
       <div class="Artist-Body">

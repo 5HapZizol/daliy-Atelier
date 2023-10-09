@@ -83,7 +83,7 @@
   text-align: center;
   align-items: center;
   border:solid 1em;
-  width: 50%;
+  width: 100%;
   border: 1px;
   padding-bottom: 1px;
 }
@@ -123,7 +123,8 @@ div .btn_Q{
 
 
 
-table {
+.Qlist_table {
+  text-align: center;
   margin-top: 3em;
   padding-top: 1em;
   width: 50%;
@@ -137,7 +138,7 @@ table {
   overflow: hidden;
 }
 th {
-  text-align: left;
+  text-align: center;
 }
   
 thead {
