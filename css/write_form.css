@@ -61,9 +61,19 @@
 
 .Answer_Text {
     font-size: 1.2em;
-    padding-bottom: 10em;
 }
 
 .Ques_Text {
     font-size: 1.2em;
 }
+
+.box-container .box .image{
+    overflow: hidden;
+    height:50%;
+  }
+  
+.box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+  }
