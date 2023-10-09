@@ -29,10 +29,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 300px;
+    height: 280px;
     margin-left:18em; 
     margin-right:18em;
 }
+
+.no-Bid-Art{
+    position: absolute;
+    margin: 7rem 0;
+    font-size: 20px;
+    color: #b3b3b3;
+}
+
 .product-works {
     display: flex;
     position: relative;
