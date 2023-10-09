@@ -51,6 +51,11 @@
                     echo mysqli_error($conn);
                 }
 
+                if (mysqli_num_rows($result_review) === 0) {
+                  echo '<div class="no-reviews">리뷰한 작품이 없습니다.</div>';
+              } else {
+                
+
                 while($row = mysqli_fetch_array($result_review)){
                 ?>
                 <div class="box" type="button" data-userid="<?= $row['Userid'] ?>" data-review-number="<?= $row['Formatted_Review_number'] ?>" data-review-descript="<?= $row['Review_descript'] ?>" data-current-price="<?= $row['current_price'] ?>" data-name="<?= $row['name'] ?>" data-categories="#자연 #초자연 #밝은 #바다 #디지털아트">
@@ -65,7 +70,8 @@
                     </div>
                 </div>
                 <?php
-                }
+                 }
+               }
                 ?>
             </div>
 
@@ -128,6 +134,11 @@
             }
             ?>
 
+
+          <?php
+            if (mysqli_num_rows($result_review) === 0) {
+              echo '<div></div>';
+          } else { ?>
             <div class="Artist-Introduce-Button">
                 <button>1</button>
                 <button>2</button>
@@ -142,7 +153,9 @@
                 <button>></button>
                 <button>>></button>
             </div>
-
+            <?php
+               }
+            ?>
         </article>
 
         <!-- footer 시작 -->
