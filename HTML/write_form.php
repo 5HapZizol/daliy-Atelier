@@ -15,14 +15,27 @@
         <div style="margin-top: 200px;"></div>
 
         <div class = "page_top_1">
-        <div class = "container_2">
-         <span class="QA_title">Q. 질문의 제목이 들어가는 곳</span>
-        </div>
-        <div class = "container_2">
-            <p class = "writer">작성자 : user_id</p>
-        </div>
-        <div class = "Ques_Text">상세 질문을 적는 곳</div>
+            <div class = "container_2">
+                <span class="QA_title">Q. 질문의 제목이 들어가는 곳</span>
+            </div>
+            <div class = "container_2">
+                <p class = "writer">작성자 : user_id</p>
+            </div>
+            <div class = "container_2">
+                <div class = "Ques_Text">상세 질문을 적는 곳</div>
+            </div>
        </div>
+
+       <div class = "page_top_1">
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../img/main_image.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class = "page_top_2">
             <hr class="hr_1">
@@ -37,6 +50,17 @@
             </div>
             <div class = "container_2">
                 <div class = "Answer_Text">상세 답변이 들어가는 곳</div>
+            </div>
+        </div>
+
+        <div class = "page_top_1">
+            <div class="box-container">
+
+                <div class="box">
+                    <div class="image">
+                        <img src="../img/test_img.png">
+                    </div>
+                </div>
             </div>
         </div>
     </article>
