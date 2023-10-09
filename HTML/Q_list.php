@@ -18,7 +18,7 @@
   
 <?php
       include("Header.php");
-    ?>
+?>
 
 <div style="margin-top: 200px;">
   <article>
@@ -47,11 +47,11 @@
 
         <?php
 
-            $sql = "SELECT Q_write_id, Q_write_select, Q_write_title, DATE_FORMAT(Q_write_time, '%y-%m-%d') AS Q_write_time FROM Q_write ORDER BY Q_write_time DESC LIMIT 0, 10";
+            $sql = "SELECT Q_write_id, Q_write_select, Q_write_title, DATE_FORMAT(Q_write_time, '%y-%m-%d') AS Q_write_time FROM Q_write ORDER BY Q_write_id DESC LIMIT 0, 10";
             $result = mysqli_query($conn, $sql);
 
             $Q_write_data = []; // 데이터를 저장할 배열 생성
-
+            $user_id = $_SESSION['user'];
             if ($result->num_rows > 0) {
                 while ($Q_write = $result->fetch_array()) {
                     if (strlen($Q_write["Q_write_title"]) > 20) {
@@ -70,9 +70,9 @@
                         <td><?php echo isset($Q_write_item['Q_write_id']) ? $Q_write_item['Q_write_id'] : ''; ?></td>
                         <td><?php echo isset($Q_write_item['Q_write_select']) ? $Q_write_item['Q_write_select'] : ''; ?></td>
                         <td><?php echo isset($Q_write_item['Q_write_title']) ? $Q_write_item['Q_write_title'] : ''; ?></td>
-                        <td>qw***99</td>
+                        <td><?php echo preg_replace('/(?<=\w)\w(?=\w)/', '*', $user_id); ?></td>
                         <td><?php echo isset($Q_write_item['Q_write_time']) ? $Q_write_item['Q_write_time'] : ''; ?></td>
-                        <td class="Q_stay">완료</td>
+                        <td class="Q_stay">대기</td>
                     </tr>
                 <?php endforeach; ?>
             </div>
