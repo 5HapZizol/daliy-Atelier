@@ -123,7 +123,7 @@
     </div>
 
     <form action="UploadSellProcess.php" method="POST" id="upload-form" enctype="multipart/form-data">
-      <img id="img_preview" style="display:none;"/>
+      <div><img class="upload_img" id="img_preview" style="display:none;"/><div>
       <div class ="up_file">
           <label for="file"></label>
           <input type="file" id="input_file" name="input_image" onchange="dropFile.handleFiles(this.files)" accept="image/png, image/jpeg, image/jpg" style="margin-left: 0.1em;">
@@ -200,11 +200,34 @@
     </div>
     </article>
 
-    <!-- footer 시작 -->
-    <footer>  
-      <div class="footer-Background">
+    <footer>  <!-- footer 시작 -->
+  <div class="footer-Background">
+    
+  </div>
+</footer>  <!-- footer 끝 -->
+<script>
+$(document).ready(function(){
+    // 이미지 보이도록
+    function previewImage(input) {
+        var imgElement = document.getElementById('img_preview');
         
-      </div>
-    </footer>  <!-- footer 끝 -->
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function(e) {
+                imgElement.src = e.target.result;
+                imgElement.style.display = 'block'; 
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    
+    // 파일 입력 요소에 이벤트 리스너 연결
+    $('#input_file').change(function() {
+        previewImage(this);
+    });
+});
+</script>
 </body>
 </html>
