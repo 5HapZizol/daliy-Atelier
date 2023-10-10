@@ -12,6 +12,11 @@
 <body>
 <?php
       include("Header.php");
+      if (!isset($_SESSION['user'])) {
+        // 사용자가 로그인되어 있지 않으면 알림 창 띄우기
+        echo "<script>alert('로그인이 필요합니다.'); window.location.href = 'login.php';</script>";
+        exit; // 로그인이 필요하므로 스크립트를 종료
+    }
     ?>
 
     <article>

@@ -28,11 +28,23 @@
 .page_top_2 .hr_1{
     margin: 2em;
 }
+
+.writer3{
+    display: flex;
+}
 .writer {
     display: table;
     font-size: 0.8em;
     color: rgb(180, 180, 180);
+    margin: 0 10px
 }
+
+.writer2{
+    font-size: 16px;
+    margin: 0
+}
+
+
 .answer_time {
     display: table;
     font-size: 0.8em;
@@ -45,6 +57,8 @@
 }
 
 .container_2 {
+    display: flex;
+    justify-content: space-between;
     text-align: left;
     border:solid 1em;
     width:100%;
@@ -77,3 +91,7 @@
     width: 100%;
     object-fit: scale-down;
   }
+
+.hidden{
+    display: none;
+}
