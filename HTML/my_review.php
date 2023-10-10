@@ -23,7 +23,7 @@
             </div><!-- page top -->
 
             <div class="menu_type">
-                <div class="menu-btn1"><button>전체</button><span class="menu-animation"></span></div>
+                <div class="menu-btn1"><button onclick="sortReviewsByRecent()">전체</button><span class="menu-animation"></span></div>
                 <div class="separator"></div>
                 <div class="menu-btn2"><button onclick="sortReviewsByRecent()">최근 리뷰순</button><span class="menu-animation"></span></div>
                 <div class="separator"></div>

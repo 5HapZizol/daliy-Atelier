@@ -32,51 +32,62 @@
               <hr class="hr_1">
           </div>
       <div class="product-list">
+    
+    <?php
+    // 세션에서 userid 가져오기
+    $user_id = $_SESSION['user'];
 
-      <?php
-      // 세션에서 userid 가져오기
-$user_id = $_SESSION['user'];
+    $current_time = date('Y-m-d H:i:s'); // 현재 시간을 가져옵니다.
 
-$current_time = date('Y-m-d H:i:s'); // 현재 시간을 가져옵니다.
+    $sql = "SELECT *
+            FROM Art
+            WHERE closing_time < '{$current_time}'
+            ORDER BY registration_date
+            LIMIT 0, 6";
+    $result = mysqli_query($conn, $sql);
 
-$sql = "SELECT *
-        FROM Art
-        WHERE closing_time < '{$current_time}'
-        ORDER BY registration_date
-        LIMIT 0, 6";
-$result = mysqli_query($conn, $sql);
+    if ($result === false) {
+        echo "작품 찾기에 문제가 생겼습니다. 관리자에게 문의해주세요.";
+        echo mysqli_error($conn);
+    }
 
-if ($result === false) {
-    echo "작품 찾기에 문제가 생겼습니다. 관리자에게 문의해주세요.";
-    echo mysqli_error($conn);
-}
-
-      if (mysqli_num_rows($result) === 0) {
+    if (mysqli_num_rows($result) === 0) {
         echo '<div class="no-Bid-Art">낙찰된 작품이 없습니다.</div>';
-      } else {
+    } else {
+        while ($row = mysqli_fetch_array($result)) {
+            // 각 작품마다 이미지를 가져오기 위해 쿼리 수정
+            $sql2 = "SELECT i.img_path, ar.artId
+                     FROM artist AS a
+                     JOIN art AS ar ON a.artist_code = ar.artist_code
+                     JOIN image AS i ON ar.art_img_id = i.art_img_id
+                     WHERE a.userid = '{$user_id}' AND ar.artId = '{$row['artId']}'";
+            $result2 = mysqli_query($conn, $sql2);
+            $ttmp = mysqli_fetch_array($result2);
+            $image_path = $ttmp['img_path'];
 
-      while ($row = mysqli_fetch_array($result)) {
-          // 각 작품마다 이미지를 가져오기 위해 쿼리 수정
-          $sql2 = "SELECT i.img_path
-                  FROM artist AS a
-                  JOIN art AS ar ON a.artist_code = ar.artist_code
-                  JOIN image AS i ON ar.art_img_id = i.art_img_id
-                  WHERE a.userid = '{$user_id}' AND ar.artId = '{$row['artId']}'";
-          $result2 = mysqli_query($conn, $sql2);
-          $ttmp = mysqli_fetch_array($result2);
-          $image_path = $ttmp['img_path'];
-      ?>
-          <div class="product-works">
-              <img src="<?=$image_path?>" alt="">
-              <div class="btnss">
-                  <button class="btn" type="button" onclick="location.href='best_1.php?aid=<?=$row['artId']?>'">🔍︎자세히 보기</button>
-                  <button class="btn" type="button" onclick="location.href='write_review.php?aid=<?=$row['artId']?>'">🖍리뷰 쓰기</button>
-              </div><!--btnss-->
-          </div>
-      <?php
+            $artId = $row['artId'];
+            $sql_check_review = "SELECT * FROM review WHERE artId = '$artId' AND Userid = '$user_id'";
+            $result_check_review = mysqli_query($conn, $sql_check_review);
+
+            echo '<div class="product-works">';
+            echo '<img src="' . $image_path . '" alt="">';
+
+            echo '<div class = "button-Location">';
+            // "자세히 보기" 버튼
+            echo '<button class="btn" type="button" onclick="location.href=\'best_1.php?aid=' . $row['artId'] . '\'">🔍︎자세히 보기</button>';
+
+            if (mysqli_num_rows($result_check_review) > 0) {
+                // 이미 리뷰가 작성된 경우 "리뷰 수정하기" 버튼 생성
+                echo '<button class="btn" type="button" onclick="location.href=\'write_review.php?aid=' . $row['artId'] . '\'">🖍리뷰 수정하기</button>';
+            } else {
+                // 리뷰가 작성되지 않은 경우 "리뷰 쓰기" 버튼 생성
+                echo '<button class="btn" type="button" onclick="location.href=\'write_review.php?aid=' . $row['artId'] . '\'">🖍리뷰 쓰기</button>';
+            }
+            echo '</div>';
+          echo '</div>';
         }
-      }
-      ?>
+    }
+    ?>
       </div><!--product-list-->
       <br>
       <br>
@@ -92,8 +103,6 @@ if ($result === false) {
     </footer>  <!-- footer 끝 -->
 
     <script>
-       
-
       $(document).ready(function(){
           $(".footer-Background").load("../html/Footer.html");
       });
