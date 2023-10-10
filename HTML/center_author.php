@@ -78,56 +78,57 @@
 
     <div class = "accordion">
       <input type="checkbox" name="accordion"id = 'answer01'>
-      <label for = "answer01">[작가등록] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer01">[작가등록] 아무나 작가 등록을 할 수 있나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          작가 등록은 누구나 할 수 있습니다.
         </p></div>
 
       <input type="checkbox" name="accordion" id = 'answer02'>
-      <label for = "answer02">[작가등록] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer02">[작가등록] 작가 등록이 안돼요.<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          해당 사항은 1대 1 문의하기로 문의해주시길 바랍니다.
         </p></div>
 
       <input type="checkbox" name="accordion" id = 'answer03'>
-      <label for = "answer03">[작가등록] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer03">[작가등록] 작가 등록을 취소하고 싶은데 어떻게 하는지 모르겠어요.<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          마이페이지의 회원 정보 수정에서 수정하실 수 있습니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer04'>
-      <label for = "answer04">[작가등록] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer04">[작가등록] 미성년자도 작가 등록을 할 수 있나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          보호자의 동의와 인증이 있으면 할 수 있습니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer05'>
-      <label for = "answer05">[작가등록] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer05">[작가등록] 작가 등록 시 수수료가 드나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          데일리 아틀리에서의 작가 등록 시 수수료가 발생하지 않습니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer06'>
-      <label for = "answer06">[작가등록] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer06">[작가등록] 작가 회원 유지 조건이 있나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          가입일 기준 3개월 이상 작품 업로드가 없을 시 이용에 제한이 있을 수 있습니다.
         </p></div>
     </div>
 
-    <div class = "ques">
-      <div class="btn-group">
-          <nav class="btn_catalogue">
-              <go_to_btn_search> 1 </go_to_btn_search>
-              <go_to_btn_search> 2 </go_to_btn_search>
-              <go_to_btn_search> 3 </go_to_btn_search>
-              <go_to_btn_search> 4 </go_to_btn_search>
-              <go_to_btn_search> 5 </go_to_btn_search>
-              <go_to_btn_search> 6 </go_to_btn_search>
-              <go_to_btn_search style="background-color: #bbbbbb;"> > </go_to_btn_search>
-              <go_to_btn_search style="background-color: #646464;"> >> </go_to_btn_search>
-          </nav>
-      </div>
+    <div class="Artist-Introduce-Button">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>10</button>
+      <button>></button>
+      <button>>></button>
     </div>
+
     </article>
 
 

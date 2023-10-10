@@ -78,39 +78,39 @@
 
     <div class = "accordion">
       <input type="checkbox" name="accordion" id = 'answer01'>
-      <label for = "answer01">[경매] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer01">[경매] 경매 진행 과정은 어떻게 되나요?<em></em></label>
         <div class = "QnA_answer"><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          경매 진행 과정은 작가님의 직접 입찰 후 낙찰, 지정된 기한의 최고가의 가격이 낙찰되는 순입니다.
         </p></div>
 
       <input type="checkbox" name="accordion" id = 'answer02'>
-      <label for = "answer02">[배송] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer02">[배송] 배송은 얼마나 걸리나요?<em></em></label>
         <div class = "QnA_answer"><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          배송사의 상황에 따라 최소 2일에서 최대 7일 정도 걸릴 수 있습니다. 상세 확인은 마이페이지의 배송 현황을 확인해주세요.
         </p></div>
 
       <input type="checkbox" name="accordion" id = 'answer03'>
-      <label for = "answer03">[포인트] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer03">[포인트] 포인트 적립은 필수인가요?<em></em></label>
         <div class = "QnA_answer"><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          포인트 적립 후 경매 참여 시 입찰금은 적립된 금액의 최대치를 넘길 수 없으므로 포인트 적립은 필수입니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer04'>
-      <label for = "answer04">[작품등록] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer04">[작품등록] 작품 등록은 일반 회원은 할 수 없나요?<em></em></label>
         <div class = "QnA_answer"><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          일반 회원은 작품 등록이 불가하며 작가 회원만 작품 등록이 가능합니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer05'>
-      <label for = "answer05">[포인트] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer05">[포인트] 문화상품권으로 포인트 충전이 가능한가요?<em></em></label>
         <div class = "QnA_answer"><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          포인트 적립 시 문화상품권을 이용한 적립은 불가합니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer06'>
-      <label for = "answer06">[회원정보] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer06">[회원정보] 작가 회원에서 일반 회원으로 변경할 수 있나요?<em></em></label>
         <div class = "QnA_answer"><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+        작가 회원에서 일반 회원으로의 전환이 가능합니다.
         </p></div>
     </div>
 

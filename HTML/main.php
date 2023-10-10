@@ -249,7 +249,7 @@ include 'bidCheckProcess.php';
     ?> 
 
    <article>
-   <div style="margin-top: 200px;"></div>
+
    <div class="section">
         <input type="radio" name="slide" id="slide01" checked>
         <input type="radio" name="slide" id="slide02">
@@ -316,6 +316,8 @@ include 'bidCheckProcess.php';
 		</ul>
 	    </div>
     </div>
+
+
     <div class="introduce">
         <div class="textbox_h">
             <h2>누구나 가볍게</h2>

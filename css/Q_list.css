@@ -206,42 +206,71 @@ a {
   
   }
 
-
-  .Artist-Introduce-Button{
-    display: flex;
-    justify-content: center;
-    margin: 70px 0;
-}
-
-.Artist-Introduce-Button button{
+ /* 공통 스타일 */
+.pagination-button,
+.pagination-button-next {
     margin: 0 1px;
     width: 40px;
     height: 40px;
     background-color: #e1e0e1;
     border: 1px solid #a4a3a4;
     cursor: pointer;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
 }
 
-.Artist-Introduce-Button button:first-child{
-    background-color: #231f22;
-    border: 1px solid #231f22;
-    color: #fff;
+.current-page{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.Artist-Introduce-Button button:nth-child(11), .Artist-Introduce-Button button:nth-child(12){
+.pagination-button-next {
+    background-color: #fff;
+}
+
+/* 처음과 마지막 버튼 스타일 */
+.pagination-button:first-child,
+.pagination-button:last-child {
     background-color: #fff;
     border: 1px solid #a4a3a4;
-} 
+}
 
-.Artist-Introduce-Button button:hover{
+/* 호버 스타일 */
+.pagination-button:hover,
+.pagination-button-next:hover {
+    background-color: #e1e0e1;
+    border: 1px solid #a4a3a4;
+    color: #000;
+}
+
+/* 현재 페이지 스타일 */
+.Artist-Introduce-Button .current-page {
     background-color: #231f22;
     border: 1px solid #231f22;
     color: #fff;
 }
 
-.Artist-Introduce-Button button:nth-child(11):hover, .Artist-Introduce-Button button:nth-child(12):hover{
-    background-color: #e1e0e1;
-    border: 1px solid #a4a3a4;
-    color: #040404;
+/* 숫자 부분 hover 스타일 추가 */
+.Artist-Introduce-Button a:hover,
+.Artist-Introduce-Button .current-page:hover {
+    background-color: #231f22;
+    border: 1px solid #231f22;
+    color: #fff;
 }
+
+
+/* 부모 컨테이너 스타일 */
+.Artist-Introduce-Button {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0;
+}
+

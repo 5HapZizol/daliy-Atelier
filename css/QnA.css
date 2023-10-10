@@ -154,20 +154,6 @@ select {
     margin-bottom: 3em;  
 }
 
-/*페이지 넘김 버튼*/
-go_to_btn_search {
-    font-size: 15px;
-    font-weight: 300;
-    text-align: center;
-    padding-top: 0.5em;
-    background-color: rgb(226, 226, 226);
-    width: 2em;
-    height: 2em;
-    border: none;
-    display: inline-block;
-    margin: 0.01em;
-}
-
 /* 넘어가는 버튼 */
 .Artist-Introduce-Button{
     display: flex;

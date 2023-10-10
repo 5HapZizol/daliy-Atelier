@@ -21,21 +21,19 @@ font-style: normal;
     display:none;
 }
 .section .slidewrap {
-    max-width:1200px;
+    max-width:1960px;
     margin:0 auto;
+    overflow: hidden;
 }
 
 .section .slidelist {
     white-space:nowrap;
     font-size:0;
-    overflow:hidden;
-    position:relative;
 }
 .section .slidelist > li {
     display:inline-block;
     vertical-align:middle;
     width:100%;
-    height: 400px;
     transition:all .5s;
 }
 .section .slidelist > li > a {
@@ -53,37 +51,23 @@ font-style: normal;
     padding:50px;
     cursor:pointer;
 }
-.section .slidelist .textbox {
-    position:absolute;
-    z-index:1;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    line-height:1.6;
-    text-align:center;
+.section .slidelist .left {
+    left: 30px;
+    background: url('../img/main_left.png') center center / 100% no-repeat;
 }
-.section .slidelist .textbox h3 {
-    font-size:25px;
-    color:#fff;
-    transform:translateY(30px);
-    transition:all .5s;
-}
-.section .slidelist .textbox p {
-    font-size:16px;
-    color:#fff;
-    opacity:0;transform:
-    translateY(30px);
-    transition:all .5s;
+.section .slidelist .right {
+    right: 30px;
+    background: url('../img/main_right.png') center center / 100% no-repeat;
 }
 
 /* input에 체크되면 슬라이드 효과 */
-.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {
+.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {
     transform:translateX(0%);
 }
-.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {
+.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {
     transform:translateX(-100%);
 }
-.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {
+.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {
     transform:translateX(-200%);
 }
 

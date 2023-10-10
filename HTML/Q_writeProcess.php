@@ -7,20 +7,20 @@
     }
 
     // 마지막 번호 조회
-$sql = "SELECT MAX(Q_write_id) AS max_id FROM Q_write";
-$result = mysqli_query($conn, $sql);
-$row = mysqli_fetch_assoc($result);
-$lastId = $row['max_id'];
+    $sql = "SELECT MAX(Q_write_id) AS max_id FROM Q_write";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_assoc($result);
+    $lastId = $row['max_id'];
 
-// 마지막 번호가 없으면 1로 시작, 아니면 다음 번호 생성
-if ($lastId === null) {
-    $nextId = 1;
-} else {
-    $nextId = $lastId + 1;
-}
+    // 마지막 번호가 없으면 1로 시작, 아니면 다음 번호 생성
+    if ($lastId === null) {
+        $nextId = 1;
+    } else {
+        $nextId = $lastId + 1;
+    }
 
-// 4자리로 포맷팅 (0001, 0002 등)
-$Q_Write_Id = sprintf('%04d', $nextId);
+    // 4자리로 포맷팅 (0001, 0002 등)
+    $Q_Write_Id = sprintf('%04d', $nextId);
 
     
     function generateRandomId($desiredLength) {
@@ -31,7 +31,7 @@ $Q_Write_Id = sprintf('%04d', $nextId);
     $Q_Write_Type_Select = $_POST['Q_Write_Type_Select'];
     $Q_Write_SvInput = $_POST['Q_Write_SvInput'];
     $Q_Write_CoInput = $_POST['Q_Write_CoInput'];
-
+    $user_id = $_SESSION['user'];
      //이미지 고유 아이디 난수 생성
     $img_id = uniqid("image_", true);
 
@@ -59,9 +59,9 @@ $Q_Write_Id = sprintf('%04d', $nextId);
 
     $sql = "
         INSERT INTO q_write (
-            Q_write_id, art_img_id, Q_write_select, Q_write_title, Q_write_content) 
+            Q_write_id, art_img_id, Q_write_select, Q_write_title, Q_write_content, user_id) 
         VALUES (
-            '{$Q_Write_Id}','{$img_id}',  '{$Q_Write_Type_Select}', '{$Q_Write_SvInput}', '{$Q_Write_CoInput}'
+            '{$Q_Write_Id}','{$img_id}',  '{$Q_Write_Type_Select}', '{$Q_Write_SvInput}', '{$Q_Write_CoInput}', '{$user_id}'
         )";
     $result = mysqli_query($conn, $sql);
 

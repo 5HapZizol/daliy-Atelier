@@ -78,56 +78,57 @@
 
     <div class = "accordion">
       <input type="checkbox" name="accordion" id = 'answer01'>
-      <label for = "answer01">[기타] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer01">[기타] AI 그림도 판매가 가능한가요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          AI 그림의 경우 판매가 불가하며 적발 시 사이트 이용에 제재가 가해질 수 있습니다.
         </p></div>
 
       <input type="checkbox" name="accordion" id = 'answer02'>
-      <label for = "answer02">[기타] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer02">[기타] 작가님을 후원하고 싶어요.<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          작가님 후원은 낙찰금 지불 시 소정의 금액을 더 추가하여 결제하실 수 있습니다. 낙찰금 이상의 금액은 후원금으로 전달됩니다.
         </p></div>
 
       <input type="checkbox" name="accordion" id = 'answer03'>
-      <label for = "answer03">[기타] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer03">[기타] 디지털 그림을 샀는데 데이터 손실로 잃어버렸어요.<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          1대 1 문의로 문의하시면 본인인증과 결제 확인 후 재전달을 도와드리겠습니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer04'>
-      <label for = "answer04">[기타] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer04">[기타] 구입한 작품을 재판매 할 수 있나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          저작권의 문제로 재판매가 불가한 작품은 판매하실 수 없으며 재판매 적발 시 형사처벌이 이루어질 수 있습니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer05'>
-      <label for = "answer05">[기타] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer05">[기타] 작품을 가게나 상업적인 곳에 이용해도 되나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          도용이 아니라면 전시하셔도 됩니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer06'>
-      <label for = "answer06">[기타] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer06">[기타] 작가가 직접 악플이나 과한 부정적 후기를 삭제할 수 있나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          직접 삭제는 불가하며 신고를 하시면 내부에서 논의 후 삭제 조치가 됩니다.
         </p></div>
     </div>
 
-    <div class = "ques">
-      <div class="btn-group">
-          <nav class="btn_catalogue">
-              <go_to_btn_search> 1 </go_to_btn_search>
-              <go_to_btn_search> 2 </go_to_btn_search>
-              <go_to_btn_search> 3 </go_to_btn_search>
-              <go_to_btn_search> 4 </go_to_btn_search>
-              <go_to_btn_search> 5 </go_to_btn_search>
-              <go_to_btn_search> 6 </go_to_btn_search>
-              <go_to_btn_search style="background-color: #bbbbbb;"> > </go_to_btn_search>
-              <go_to_btn_search style="background-color: #646464;"> >> </go_to_btn_search>
-          </nav>
-      </div>
+    <div class="Artist-Introduce-Button">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>10</button>
+      <button>></button>
+      <button>>></button>
     </div>
+
     </article>
 
 
