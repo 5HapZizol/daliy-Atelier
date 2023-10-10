@@ -80,56 +80,57 @@
 
     <div class = "accordion">
       <input type="checkbox" name="accordion" id = 'answer01'>
-      <label for = "answer01">[회원정보] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer01">[회원정보] 작가 회원에서 일반 회원으로 변경할 수 있나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          작가 회원에서 일반 회원으로의 전환이 가능합니다.
         </p></div>
 
       <input type="checkbox" name="accordion" id = 'answer02'>
-      <label for = "answer02">[회원정보] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer02">[회원정보] 회원 탈퇴는 어떻게 하나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          직접 문의 시 빠른 탈퇴를 도와드리고 있습니다. 남기신 후기, 작품 등은 전부 삭제 처리가 되며 30일 내 탈퇴를 철회할 수 있으나 삭제된 후기 및 작품은 복구되지 않습니다.
         </p></div>
 
       <input type="checkbox" name="accordion" id = 'answer03'>
-      <label for = "answer03">[회원정보] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer03">[회원정보] 회원 정보에서 배송지 입력이 필수인가요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          배송지 입력은 필수가 아닙니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer04'>
-      <label for = "answer04">[회원정보] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer04">[회원정보] 닉네임도 변경할 수 있나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          변경할 수 있습니다. 부적절한 닉네임 설정 시 제재를 받을 수 있습니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer05'>
-      <label for = "answer05">[회원정보] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer05">[회원정보] 탈퇴까지 시간이 얼마나 걸리나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          회원 탈퇴 시 영업일 기준 7일내로 이루어집니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer06'>
-      <label for = "answer06">[회원정보] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer06">[회원정보] 닉네임 수정이 안돼요.<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          1대 1 문의로 문의 남겨주시면 확인 후 변경 도와드리겠습니다.
         </p></div>
     </div>
 
-    <div class = "ques">
-      <div class="btn-group">
-          <nav class="btn_catalogue">
-              <go_to_btn_search> 1 </go_to_btn_search>
-              <go_to_btn_search> 2 </go_to_btn_search>
-              <go_to_btn_search> 3 </go_to_btn_search>
-              <go_to_btn_search> 4 </go_to_btn_search>
-              <go_to_btn_search> 5 </go_to_btn_search>
-              <go_to_btn_search> 6 </go_to_btn_search>
-              <go_to_btn_search style="background-color: #bbbbbb;"> > </go_to_btn_search>
-              <go_to_btn_search style="background-color: #646464;"> >> </go_to_btn_search>
-          </nav>
-      </div>
+    <div class="Artist-Introduce-Button">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>10</button>
+      <button>></button>
+      <button>>></button>
     </div>
+
     </article>
 
 

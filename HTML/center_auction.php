@@ -79,56 +79,57 @@
 
     <div class = "accordion">
       <input type="checkbox" name="accordion" id = 'answer01'>
-      <label for = "answer01">[경매] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer01">[경매] 경매에 참여했다가 취소할 수 있나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          경매 참여를 취소할 수 있으며 이는 입찰한 작품에서 확인하실 수 있습니다.
         </p></div>
 
       <input type="checkbox" name="accordion" id = 'answer02'>
-      <label for = "answer02">[경매] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer02">[경매] 경매는 보통 며칠동안 진행되나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          작가님이 정하신 기간만큼 경매가 진행됩니다.
         </p></div>
 
       <input type="checkbox" name="accordion" id = 'answer03'>
-      <label for = "answer03">[경매] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer03">[경매] 미성년자도 경매에 참여할 수 있나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          미성년자의 경매 참여 시 보호자의 동의가 반드시 필요하며 지켜지지 않아 발생한 경매의 경우 입찰 및 낙찰이 취소될 수 있습니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer04'>
-      <label for = "answer04">[경매] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer04">[경매] 작가도 경매에 참여할 수 있나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          작가 회원도 일반 회원과 같이 경매에 참여할 수 있습니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer05'>
-      <label for = "answer05">[경매] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer05">[경매] 입찰금을 잘못 적었어요.<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          입찰 취소 후 재입찰하실 수 있습니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer06'>
-      <label for = "answer06">[경매] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer06">[경매] 포인트보다 높은 가격을 제시하고 나중에 충전하면 안되나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          포인트 이상의 가격을 제시할 수 없습니다.
         </p></div>
     </div>
 
-    <div class = "ques">
-      <div class="btn-group">
-          <nav class="btn_catalogue">
-              <go_to_btn_search> 1 </go_to_btn_search>
-              <go_to_btn_search> 2 </go_to_btn_search>
-              <go_to_btn_search> 3 </go_to_btn_search>
-              <go_to_btn_search> 4 </go_to_btn_search>
-              <go_to_btn_search> 5 </go_to_btn_search>
-              <go_to_btn_search> 6 </go_to_btn_search>
-              <go_to_btn_search style="background-color: #bbbbbb;"> > </go_to_btn_search>
-              <go_to_btn_search style="background-color: #646464;"> >> </go_to_btn_search>
-          </nav>
-      </div>
+    <div class="Artist-Introduce-Button">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>10</button>
+      <button>></button>
+      <button>>></button>
     </div>
+
   </article>
 
 

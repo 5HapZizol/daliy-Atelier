@@ -80,56 +80,57 @@
 
     <div class = "accordion">
       <input type="checkbox" name="accordion" id = 'answer01'>
-      <label for = "answer01">[포인트] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer01">[포인트] 포인트 충전은 어떻게 하나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          마이페이지 내의 적립금 옆 충전 버튼으로 하실 수 있습니다.
         </p></div>
 
       <input type="checkbox" name="accordion" id = 'answer02'>
-      <label for = "answer02">[포인트] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer02">[포인트] 포인트 적립은 필수인가요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+        포인트 적립 후 경매 참여 시 입찰금은 적립된 금액의 최대치를 넘길 수 없으므로 포인트 적립은 필수입니다.
         </p></div>
 
       <input type="checkbox" name="accordion" id = 'answer03'>
-      <label for = "answer03">[포인트] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer03">[포인트] 경매로 받은 포인트는 언제 출금할 수 있나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          10만원 이상의 수입이 발생 시 출금할 수 있습니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer04'>
-      <label for = "answer04">[포인트] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer04">[포인트] 문화상품권으로 포인트 충전이 가능한가요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+         포인트 적립 시 문화상품권을 이용한 적립은 불가합니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer05'>
-      <label for = "answer05">[포인트] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer05">[포인트] 적립된 포인트를 환불 할 수 있나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          환불 시 5% 수수료가 차감된 금액만큼 환불됩니다. 환불은 카드사의 상황에 따라 3일 이상 소요될 수 있습니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer06'>
-      <label for = "answer06">[포인트] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer06">[포인트] 많은 금액을 충전해두고 싶은데 여러번 충전해야되나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          직접 입력한 금액으로도 충전이 가능합니다.
         </p></div>
     </div>
 
-    <div class = "ques">
-      <div class="btn-group">
-          <nav class="btn_catalogue">
-              <go_to_btn_search> 1 </go_to_btn_search>
-              <go_to_btn_search> 2 </go_to_btn_search>
-              <go_to_btn_search> 3 </go_to_btn_search>
-              <go_to_btn_search> 4 </go_to_btn_search>
-              <go_to_btn_search> 5 </go_to_btn_search>
-              <go_to_btn_search> 6 </go_to_btn_search>
-              <go_to_btn_search style="background-color: #bbbbbb;"> > </go_to_btn_search>
-              <go_to_btn_search style="background-color: #646464;"> >> </go_to_btn_search>
-          </nav>
-      </div>
+    <div class="Artist-Introduce-Button">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>10</button>
+      <button>></button>
+      <button>>></button>
     </div>
+
    </article>
 
 
