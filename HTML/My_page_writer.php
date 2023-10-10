@@ -14,7 +14,7 @@
   <article>
     <br>
     <div class="page_top">
-        <span class="page_name">작가 MY PAGE</span>
+        <span class="page_name"><!--작가 -->MY PAGE</span>
         <br>
         <hr class="hr_1">
     </div>
@@ -22,7 +22,7 @@
       <div class="my_img">
           <img src="../img/auction/new_9.png" width="50%">
       </div>
-      <div class="my_nickname">미누주 작가님</div>
+      <div class="my_nickname">미누주 <!--작가 -->님</div>
   
       <div>
       <table border="1" style="border: none;">

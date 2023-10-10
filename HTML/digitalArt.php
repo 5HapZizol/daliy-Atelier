@@ -1,269 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="en"><head>
     <meta charset="UTF-8">
-    <!-- <script src="../js/index.js"></script>
-    <link type="text/css" rel="stylesheet" href="../css/index.css"></link> -->
     <link type="text/css" rel="stylesheet" href="../css/totalart.css"></link>
     <link type="text/css" rel="stylesheet" href="../css/filter.css"></link>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <title>디지털 아트 경매</title>
 </head>
 <body>
-<?php
+  <?php
       include("Header.php");
+      include 'bidCheckProcess.php';
     ?>
 
-    <article>
-      <!--본문 시작-->
-    <div style="margin-top: 200px;">
+  <article>
+    <!--본문 시작-->
 
-      <!-- <div class = "rudfh"> -->
-        <div class="page_top">
-          <span class="page_name">디지털 아트 경매</span>
-          <p class="page_path">홈 > 경매 > 디지털 아트 경매</p>
-          <br>
-          <hr class="hr_1">
-      </div>
-      <!-- </div> -->
-  
-      <div class = "box">
-          <div>  
-              <span><b>구분</b></span>
-              <!--버튼 누를 때마다 페이지 변환-->
-              <div class="pick_btn">
-                  <label class="pick_new">
-                      <input type="radio" name="digi-anal" value="total">
-                      <span><a href="../html/totalart.html" style="
-                          color: inherit;
-                          text-decoration: none;">전체</a></span>
-                  </label>
-                  <label class="pick_new">
-                      <input type="radio" name="digi-anal" value="digital">
-                      <span><a href="../html/digitalart.html" style="
-                          color: inherit;
-                          text-decoration: none;">디지털</a></span>
-                  </label>
-                  <label class="pick_new">
-                      <input type="radio" name="digi-anal" value="real">
-                      <span><a href="../html/analogart.html" style="
-                          color: inherit;
-                          text-decoration: none;">실물</a></span>
-                  </label>
-              </div>
-              
-          </div>
-  
-          <div>
-              <span><b>테마</b></span>
-              
-              <div class="pick_btn">
-                  <label class="pick_new">
-                      <input type="radio" name="sel_btun" value="view">
-                      <span>풍경</span>
-                  </label>
-                  <label class="pick_new">
-                      <input type="radio" name="sel_btun" value="person">
-                      <span>인물</span>
-                  </label>
-                  <label class="pick_new">
-                      <input type="radio" name="sel_btun" value="jung">
-                      <span>정물</span>
-                  </label>
-                  <label class="pick_new">
-                      <input type="radio" name="sel_btun" value="animal">
-                      <span>동물</span>
-                  </label>
-                  <label class="pick_new">
-                      <input type="radio" name="sel_btun" value="abstract">
-                      <span>추상</span>
-                  </label>
-                  <label class="pick_new">
-                      <input type="radio" name="sel_btun" value="popart">
-                      <span>팝아트</span>
-                  </label>
-              </div>
-          </div>
-          
-          <div>
-              <span><b>형태</b></span>
-              <div class="pick_btn">
-                  <label class="pick_new">
-                      <input type="radio" name="form_btun" value="right">
-                      <span>정방형</span>
-                  </label>
-                  <label class="pick_new">
-                      <input type="radio" name="form_btun" value="colspan">
-                      <span>가로형</span>
-                  </label>
-                  <label class="pick_new">
-                      <input type="radio" name="form_btun" value="rowspan">
-                      <span>세로형</span>
-                  </label>
-                  <label class="pick_new">
-                      <input type="radio" name="form_btun" value="circle">
-                      <span>원형</span>
-                  </label>
-                  <label class="pick_new">
-                      <input type="radio" name="form_btun" value="set">
-                      <span>세트</span>
-                  </label>
-                  <label class="pick_new">
-                      <input type="radio" name="form_btun" value="m">
-                      <span>미디어</span>
-                  </label>
-              </div>
-          </div>
-          
-          <div>
-              <b>구매가격</b>
-              <div class = "font_buy">직접입력</div>
-              <input type="text" placeholder="10" class="search_text"> ~ <input type="text" placeholder="800" class="search_text"> 만원
-              
-              
-              <button class="search_filter_btn">
-                  <img width=50% height="50%" src="../img/Header_Image/search.png"/>
-              </button>
-          </div>
-          <span style="float: right;">
-              <input type="text" placeholder="검색어 입력" class="search_text" style="width: 10em" >
-              <span class = "btn-group">
-                  <button class="search_filter_btn">
-                      <img width=50% height="50%" src="../img/Header_Image/search.png"/>
-                  </button>
-              </span>
-          </span>
-      </div>
-  
-      <div class = "contianer">
-          <section>
-            <!--box_1이 박스 한 개-->
-              <div class = "box_1">
-                <div class="second-box">
-                  <div class="img_list">
-                    <ul style="padding: 0;">
-                      <li>
-                        <div class="img_list_info">
-                            <img src="../img/auction/new_1.jpg" width="90%" class="img_size-fix">
-                            <h1>엎질러진 자연</h1>
-                            <p>현재가: 209,001 원</p>
-                            <h2>68:49:12</h2>
-                            <div class="status"><a href="../HTML/auction/new_1.html"> 입찰 </a></div>
-                        </img>
-                      </li>
-                      <li>
-                        <div class="img_list_info">
-                            <img src="../img/auction/new_2.jpg" width="90%" class="img_size-fix">
-                            <h1>노을</h1>
-                            <p>현재가: 360,064 원</p>
-                            <h2>67:33:57</h2>
-                            <div class="status"><a href=""> 입찰 </a></div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="img_list_info">
-                            <img src="../img/auction/new_3.jpg" width="90%" class="img_size-fix">
-                            <h1>목도리냥</h1>
-                            <p>현재가: 278,200 원</p>
-                            <h2>65:04:28</h2>
-                            <div class="status"><a href=""> 입찰 </a></div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+  <div style="margin-top: 200px;">
+
+    <div class="page_top">
+      <span class="page_name">디지털 아트 경매</span>
+      <p class="page_path">홈 >경매 > 디지털</p>
+      <br>
+      <hr class="hr_1">
+  </div>
+  <!-- </div> -->
+
+  <!--filter 시작-->
+  <div class = "box_filter">
+    <div>
       
-              <div class = "box_1">
-                <div class="second-box">
-                  <div class="img_list">
-                    <ul style="padding: 0;">
-                      <li>
-                        <div class="img_list_info">
-                            <img src="../img/auction/new_4.png" width="90%" class="img_size-fix">
-                            <h1>우리 집 앞</h1>
-                            <p>현재가: 459,768 원</p>
-                            <h2>62:39:39</h2>
-                            <div class="status"><a href=""> 입찰 </a></div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="img_list_info">
-                            <img src="../img/auction/new_5.png" width="90%" class="img_size-fix">
-                            <h1>멍때림</h1>
-                            <p>현재가: 203,200 원</p>
-                            <h2>68:49:12</h2>
-                            <div class="status"><a href=""> 입찰 </a></div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="img_list_info">
-                            <img src="../img/auction/new_6.png" width="90%" class="img_size-fix">
-                            <h1>골목</h1>
-                            <p>현재가: 203,200 원</p>
-                            <h2>68:49:12</h2>
-                            <div class="status"><a href=""> 입찰 </a></div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+      <span><b>구분</b></span>
+      <!--버튼 누를 때마다 페이지 변환-->
+      <div class="pick_btn">
+          <label class="pick_new">
+              <input type="radio" name="digi-anal" value="digital">
+              <span><a href="/html/digitalart.php" style="
+                  color: inherit;
+                  text-decoration: none;">디지털</a></span>
+          </label>
+      </div>
+    </div>
+
+    <div>
+      
+      <span><b>테마</b></span>
+      
+      <div class="pick_btn">
+          <label class="pick_new">
+              <input type="radio" name="sel_btun" value="view">
+              <span>풍경</span>
+          </label>
+          <label class="pick_new">
+              <input type="radio" name="sel_btun" value="person">
+              <span>인물</span>
+          </label>
+          <label class="pick_new">
+              <input type="radio" name="sel_btun" value="jung">
+              <span>정물</span>
+          </label>
+          <label class="pick_new">
+              <input type="radio" name="sel_btun" value="animal">
+              <span>동물</span>
+          </label>
+          <label class="pick_new">
+              <input type="radio" name="sel_btun" value="abstract">
+              <span>추상</span>
+          </label>
+          <label class="pick_new">
+              <input type="radio" name="sel_btun" value="popart">
+              <span>팝아트</span>
+      </div>
+      
+    </div>
+
+    <div>
+      <span><b>형태</b></span>
+      <div class="pick_btn">
+          <label class="pick_new">
+              <input type="radio" name="form_btun" value="right">
+              <span>정방형</span>
+          </label>
+          <label class="pick_new">
+              <input type="radio" name="form_btun" value="colspan">
+              <span>가로형</span>
+          </label>
+          <label class="pick_new">
+              <input type="radio" name="form_btun" value="rowspan">
+              <span>세로형</span>
+          </label>
+          <label class="pick_new">
+              <input type="radio" name="form_btun" value="circle">
+              <span>원형</span>
+          </label>
+          <label class="pick_new">
+              <input type="radio" name="form_btun" value="m">
+              <span>미디어</span>
+          </label>
+      </div>
+    </div>
+      
+    <div>
+        <b>구매가격</b>
+        <div class = "font_buy">직접입력</div>
+        <input type="text" placeholder="10" class="search_text"> ~ <input type="text" placeholder="800" class="search_text"> 만원
+        
+        
+        <button class="search_filter_btn">
+            <img width=50% height="50%" src="/img/Header_Image/search.png"/>
+        </button>
+    </div>
+    <span style="float: right;">
+        <input type="text" placeholder="검색어 입력" class="search_text" style="width: 10em" >
+        <span class = "btn-group">
+            <button class="search_filter_btn">
+                <img width=50% height="50%" src="/img/Header_Image/search.png"/>
+            </button>
+        </span>
+    </span>
+  </div>
+    <!--filter 끝-->
+  
+    <div class="container">
+
+      <div class="box-container">
+         <?php
+            $sql = "SELECT * FROM Art WHERE art_status = 0 AND art_type = '디지털' ORDER BY registration_date limit 0, 6";
+            $result = mysqli_query($conn, $sql);
+            if ($result === false) {    //오류 여부
+               echo "작품 찾기에 문제가 생겼습니다. 관리자에게 문의해주세요.";
+               echo mysqli_error($conn);
+            }
+            while($row = mysqli_fetch_array($result)){
+               //이미지 경로 찾기
+               $sql = "select img_path from image where art_img_id = '{$row['art_img_id']}'";
+               $result2 = mysqli_query($conn, $sql);
+               $ttmp = mysqli_fetch_array($result2);
+               $image_path = $ttmp['img_path'];
+               
+               //타이머를 위한 시간 차이 구하기
+               $datetime1 = new DateTime(date("Y-m-d H:i:s"));
+               $datetime2 = new DateTime($row['closing_time']);
+               $interval = $datetime1->diff($datetime2);
+
+               //작가명 가져오기
+               $sql = "select artist_name from artist where artist_code = '{$row['artist_code']}'";
+               $artist_result = mysqli_query($conn, $sql);
+               $artist = mysqli_fetch_array($artist_result);
+         ?>
+         <div class="box">
+            <div class="image">
+                <img src="<?=$image_path?>" width="90%" alt="">
+            </div>
+            <div class="content">
+                <h3><?=$row['name']?></h3>
+                <p>현재가: <?=number_format($row['current_price'])?> 원</p>
+                <p><?=$interval->format('%dD %h:%i')?></p>
+                <a href="../HTML/best_1.php?aid=<?=$row['artId']?>" class="btn">입찰</a>
+                <div class="icons">
+                    <span> <i class="fas fa-calendar"></i> <?=$datetime2->format('jS M, o')?> </span>
+                    <span> <i class="fas fa-user"></i> by  <?=$artist['artist_name']?> </span>
                 </div>
-              </div>
-              
-              <div class = "box_1">
-                <div class="second-box">
-                  <div class="img_list">
-                    <ul style="padding: 0;">
-                      <li>
-                        <div class="img_list_info">
-                            <img src="../img/auction/new_1.jpg" width="90%" class="img_size-fix">
-                            <h1>엎질러진 자연</h1>
-                            <p>현재가: 209,001 원</p>
-                            <h2>68:49:12</h2>
-                            <div class="status"><a href="../HTML/auction/new_1.html"> 입찰 </a></div>
-                        </img>
-                      </li>
-                      <li>
-                        <div class="img_list_info">
-                            <img src="../img/auction/new_2.jpg" width="90%" class="img_size-fix">
-                            <h1>노을</h1>
-                            <p>현재가: 360,064 원</p>
-                            <h2>67:33:57</h2>
-                            <div class="status"><a href=""> 입찰 </a></div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="img_list_info">
-                            <img src="../img/auction/new_3.jpg" width="90%" class="img_size-fix">
-                            <h1>목도리냥</h1>
-                            <p>현재가: 278,200 원</p>
-                            <h2>65:04:28</h2>
-                            <div class="status"><a href=""> 입찰 </a></div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-          </section>
-        </div>
+            </div>
+         </div>
+         <?php 
+         }
+         ?>
+      </div>
+   
+      <div id="load-more"> load more </div>
+      <script>
+        $(document).ready(function(){
+          $(".footer-Background").load("../html/Footer.html");
+      });
+        let loadMoreBtn = document.querySelector('#load-more');
+        let currentItem = 3;
+        
+        loadMoreBtn.onclick = () =>{
+           let boxes = [...document.querySelectorAll('.container .box-container .box')];
+           for (var i = currentItem; i < currentItem + 3; i++){
+              boxes[i].style.display = 'inline-block';
+           }
+           currentItem += 3;
+        
+           if(currentItem >= boxes.length){
+              loadMoreBtn.style.display = 'none';
+           }
+        }
+      </script>
+        
+   </div>
+
+
     </article>
 
-      <footer>  <!-- footer 시작 -->
-        <div class="footer-Background">
-       
-        </div>
-    </footer>  <!-- footer 끝 -->
-
-    <script>
-      $(document).ready(function(){
-        $(".Header").load("/html/Header.html");
-      });
-
-      $(document).ready(function(){
-          $(".footer-Background").load("/html/Footer.html");
-      });
-    </script>
-
+  <footer>  <!-- footer 시작 -->
+    <div class="footer-Background">
+  </footer>  <!-- footer 끝 -->
 </body>
 </html>

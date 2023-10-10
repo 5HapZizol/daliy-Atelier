@@ -1,33 +1,3 @@
-<?php
-    include '../server.php'; 
-    //if($pageNumber < 1) $pageNumber = 1;
-    //$pageCount  = $_GET['pageCount']??6;//페이지당 몇개씩 보여줄지, 없으면 6
-    //$startLimit = ($pageNumber-1)*$pageCount;//쿼리의 limit 시작 부분
-    //$firstPageNumber  = $_GET['firstPageNumber'];
-   
-   
-    //$sql = "select * from art";
-    //$sql .= $search_where;
-    //$order = " order by pid desc";//마지막에 등록한걸 먼저 보여줌
-    //$limit = " limit $startLimit, $pageCount";
-    //$query = $sql.$order.$limit;
-     //echo "query=>".$query."<br>";
-     //$result = $mysqli->query($query) or die("query error => ".$mysqli->error);
-     //while($rs = $result->fetch_object()){
-     //    $rsc[]=$rs;
-     //}
-   
-     //한페이지 당 보일 작품 개수
-     $art_num = 6;
-   
-     //맨 처음 접속할 경우 처음부터 출력 시작할 수 있도록
-     if(!isset($start)) $start = 0;
-     //테이블 전체개수
-     //$sql = "select count(*) as cnt from art";
-     //$result = mysqli_query($conn, $sql);
-     //$tmp = mysqli_fetch_array($result);
-     //$total = $tmp['cnt'];
-     ?>
 <!DOCTYPE html>
 <html lang="en"><head>
     <meta charset="UTF-8">
@@ -64,19 +34,19 @@
       <div class="pick_btn">
           <label class="pick_new">
               <input type="radio" name="digi-anal" value="total">
-              <span><a href="/html/totalart.html" style="
+              <span><a href="/html/totalart.php" style="
                   color: inherit;
                   text-decoration: none;">전체</a></span>
           </label>
           <label class="pick_new">
               <input type="radio" name="digi-anal" value="digital">
-              <span><a href="/html/digitalart.html" style="
+              <span><a href="/html/digitalart.php" style="
                   color: inherit;
                   text-decoration: none;">디지털</a></span>
           </label>
           <label class="pick_new">
               <input type="radio" name="digi-anal" value="real">
-              <span><a href="/html/analogart.html" style="
+              <span><a href="/html/analogart.php" style="
                   color: inherit;
                   text-decoration: none;">실물</a></span>
           </label>
@@ -204,7 +174,7 @@
 
       <div class="box-container">
          <?php
-            $sql = "SELECT * FROM Art ORDER BY registration_date limit 0, 6";
+            $sql = "SELECT * FROM Art WHERE art_status = 0 ORDER BY registration_date limit 0, 6";
             $result = mysqli_query($conn, $sql);
             if ($result === false) {    //오류 여부
                echo "작품 찾기에 문제가 생겼습니다. 관리자에게 문의해주세요.";
