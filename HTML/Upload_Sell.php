@@ -181,14 +181,14 @@
           <tr>
               <td>경매 시작 시간</td>
               <td id="s_start">
-                <input type="datetime-local" id="date" name="start_d"  style="border:none;">
+                <input type="datetime-local" id="start_d" name="start_d"  style="border:none;">
               </td>
           </tr>
 
           <tr>
               <td>경매 종료 시간</td>
               <td id="s_done">
-                <input type="datetime-local" id="date" name="end_d"  style="border:none;">
+                <input type="datetime-local" id="end_d" name="end_d"  style="border:none;">
             </td>
           </tr> 
       </table>
@@ -206,28 +206,40 @@
   </div>
 </footer>  <!-- footer 끝 -->
 <script>
-$(document).ready(function(){
-    // 이미지 보이도록
-    function previewImage(input) {
-        var imgElement = document.getElementById('img_preview');
-        
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
+    $(document).ready(function(){
+        // 이미지 보이도록
+        function previewImage(input) {
+            var imgElement = document.getElementById('img_preview');
             
-            reader.onload = function(e) {
-                imgElement.src = e.target.result;
-                imgElement.style.display = 'block'; 
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                
+                reader.onload = function(e) {
+                    imgElement.src = e.target.result;
+                    imgElement.style.display = 'block'; 
+                }
+                
+                reader.readAsDataURL(input.files[0]);
             }
-            
-            reader.readAsDataURL(input.files[0]);
         }
-    }
-    
-    // 파일 입력 요소에 이벤트 리스너 연결
-    $('#input_file').change(function() {
-        previewImage(this);
+        
+        // 파일 입력 요소에 이벤트 리스너 연결
+        $('#input_file').change(function() {
+            previewImage(this);
+        });
+
+        // 경매 시작 시간과 종료 시간 비교 및 경고 표시
+        $('#start_d, #end_d').change(function() {
+            var startDate = new Date($('#start_d').val());
+            var endDate = new Date($('#end_d').val());
+
+            if (endDate <= startDate) {
+                alert('경매 종료 시간은 경매 시작 시간보다 미래여야 합니다.');
+                $('#end_d').val(''); // 종료 시간 초기화
+            }
+        });
     });
-});
 </script>
+
 </body>
 </html>
