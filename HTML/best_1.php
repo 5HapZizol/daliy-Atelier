@@ -52,12 +52,10 @@
        
         <div class="imgList">
 		    <div class="imgC">
-                <img src="<?=$image_path?>" width="50%">
+                <img src="../img/hpimage.jpg">
             </div>
-        </div>
-
-        <div class="art_auction_info_right">
-        <div class="art_info_text_box">
+            <div class="art_auction_info_right">
+            <div class="art_info_text_box">
             <div class="title"><?=$art['name']?></div>
             <div class="artist"><?=$artist['artist_name']?></div>
             <div class="category">#<?=$art['material']?> #<?=$art['art_type']?> </div>
@@ -65,6 +63,9 @@
             <div class="left_time">남은시간: <?=$interval->format('%d일 %h:%i')?></div>
             <div class="current_price">현재 최고가: <?=number_format($art['current_price'])?> 원</div>
         </div>
+        </div>
+
+        
         <?php if ($interval->format('%d:%h:%i') !== '0:0:0') { ?>
             <div class="art_auction_btns">
                 <button class="openBtn" type="button">

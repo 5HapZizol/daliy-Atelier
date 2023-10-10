@@ -16,7 +16,8 @@
 /*오른쪽 칸 전체*/
 .art_auction_info_right{
     float: right;
-    margin-right: 8em;
+    margin-top: 10em;
+    margin-right: 35em;
 }
 /*경매 정보 텍스트 박스*/
 .art_info_text_box{
@@ -336,11 +337,18 @@ button {
 
 /* 클로즈업 */
 .imgC{
+    float: left;
     cursor: pointer;
     transition: 0.3s;
   }
 
 .imgC:hover {opacity: 0.8;}
+
+.imgC img{
+    margin-top: 3em;
+    width: 80%;
+    height: 80%;
+}
 
 .modals @keyframes zoom {
     from {transform: scale(0)}
