@@ -3,17 +3,24 @@
   font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
 .page_top{
-    width: 93em;
-    height: 15em;
-    display: table-cell;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4); /* 그림자 효과 */
+    display: inline-block;
+    margin-left:auto; 
+    margin-right:auto;
+    width: 60%;
+    display: table;
+    margin: 1em auto;
 }
 .page_name {
-    font-family: monospace;
-    margin: auto;
+    margin: 1em auto;
     display: table;
-    margin-top: 3.5em;
-    font-size: 2.5em;
+    font-size: 1.8em;
+    font-weight: 900;
+}
+.page_name{
+    margin-top: 2em;
+}
+.hr_1{
+    margin-bottom: 1em;
 }
 .gap {
     margin-top: 3em;
@@ -62,7 +69,7 @@ input[type="radio"] {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
   .de1_box {
-    width: 93em;
+    width: 100%;
     height: 350px;
   }
   /*개발자 세부내용*/

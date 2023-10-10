@@ -3,8 +3,7 @@
     <head>
       <title>내가 쓴 작품 리뷰 페이지</title>
         <link rel="stylesheet" href="../css/my_review.css"> 
-        <link rel="stylesheet" href="../css/popupchang.css">  
-        <link rel="stylesheet" href="../css/slider.css">
+        <link rel="stylesheet" href="../css/popupchang.css"> 
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="../js/review_my_work.js"></script>
         
@@ -15,6 +14,7 @@
     ?>
 
         <article>
+          <div>
       <br> 
   <div>
     <div class="page_top">
@@ -34,53 +34,65 @@
     </div><!--menu_type-->
 <div class="reviewss">
 
-<div class="box" type="button" style="margin-right: 1.5em;">
-    <div class="winning_bid"><img src="../img/auction/new_4.png" width="100%" style="margin-top: 2.4em;"></div>
+<div class="box" type="button">
+    <div class="winning_bid"><img src="../img/auction/done_digi_2.jpg"></div>
     
-  <div class="contents" style="margin-top:1.8em;">
+  <div class="contents">
       <div class="detail">너무 귀엽고, 농협은행!~</div>
       <div class="bid_price">낙찰가 : 130,000원</div>
       
-      <div class="title">탑</div>    
-      <div class="bid_rated"><img src="../img/star_1.png" width="35%"></div>
+      <div class="title">세사람</div>    
+      <div class="bid_rated">3.8/10</div>
   </div>
 </div> <!-- box-1 -->
 
-<div class="box" type="button" style="margin-right: 1.5em;">
-  <div class="winning_bid"><img src="../img/auction/done_real_2.jpg" width="90%" style="margin-top: 0.4em;"></div>
+<div class="box" type="button">
+  <div class="winning_bid"><img src="../img/auction/done_digi_3.jpg"></div>
   
 <div class="contents">
-    <div class="detail">내면의 어두움을 잘 표현한 거</div>
-    <div class="bid_price">낙찰가 : 920,000원</div>
+    <div class="detail">너무 귀엽고, 농협은행!~</div>
+    <div class="bid_price">낙찰가 : 130,000원</div>
     
-    <div class="title">내면</div>    
-    <div class="bid_rated"><img src="../img/star_1.png" width="35%"></div>
+    <div class="title">우주비행사</div>    
+    <div class="bid_rated">3.9/10</div>
 </div>
 </div> <!-- box-2 -->
 
-<div class="box" type="button" style="margin-right: 1.5em;">
-    <div class="winning_bid"><img src="../img/auction/done_digi_5.jpg" width="80%" style="margin-top: 0.4em;"></div>
-    
-  <div class="contents">
-      <div class="detail">맘에 듭니다!@@</div>
-      <div class="bid_price">낙찰가 : 550,000원</div>
-      
-      <div class="title">자연액자</div>    
-      <div class="bid_rated"><img src="../img/star_1.png" width="35%"></div>
-  </div>
-  </div> <!-- box-3 -->
-  
-<div class="box" type="button" style="margin-right: 1.5em;">
-  <div class="winning_bid"><img src="../img/auction/done_digi_6.jpg" width="65%" style="margin-top: 0.4em;"></div>
+<div class="box" type="button">
+  <div class="winning_bid"><img src="../img/auction/done_digi_4.jpg"></div>
   
 <div class="contents">
-    <div class="detail">너무 이뻐욯ㅎ</div>
-    <div class="bid_price">낙찰가 : 550,000원</div>
+    <div class="detail">너무 귀엽고, 농협은행!~</div>
+    <div class="bid_price">낙찰가 : 130,000원</div>
     
-    <div class="title">이쁜 소녀야</div>    
-    <div class="bid_rated"><img src="../img/star_1.png" width="35%"></div>
+    <div class="title">파도소리</div>    
+    <div class="bid_rated">5/10</div>
 </div>
-</div> <!-- box-4 -->
+</div> <!-- box-2 -->
+
+<div class="box" type="button">
+  <div class="winning_bid"><img src="../img/auction/done_digi_1.jpg"></div>
+  
+<div class="contents">
+    <div class="detail">너무 귀엽고, 농협은행!~</div>
+    <div class="bid_price">낙찰가 : 130,000원</div>
+    
+    <div class="title">연예인 병</div>    
+    <div class="bid_rated">3.2/10</div>
+</div>
+</div> <!-- box-2 -->
+
+<div class="box" type="button">
+  <div class="winning_bid"><img src="../img/auction/best4.jpg"></div>
+  
+<div class="contents">
+    <div class="detail">너무 귀엽고, 농협은행!~</div>
+    <div class="bid_price">낙찰가 : 130,000원</div>
+    
+    <div class="title">너도?</div>    
+    <div class="bid_rated">4.8/10</div>
+</div>
+</div> <!-- box-2 -->
 
 </div><!--rivewss-->
 
@@ -92,46 +104,10 @@
   
  <div class="popup_2">
 <div class="pic_section" style="display: contents;">
-  <input type="radio" name="slide" id="slide_1" checked>
-  <input type="radio" name="slide" id="slide_2">
-  <input type="radio" name="slide" id="slide_3">
-  <div class="SlideWrap" style="margin-top: 4em; margin-left: 2em;">
-<ul class="SlideList">
-<!-- 슬라이드 영역 -->
-<li class="Slide_item">
-  <a>
-    <img src="../img/auction/new_4.png">
-  </a>
-</li>
-<li class="Slide_item">
-  <a>
-    <img src="../img/auction/end_17.jpg">
-  </a>
-</li>
-<li class="Slide_item">
-  <a>
-    <img src="../img/auction/end_18.jpg">
-  </a>
-</li class="Slide_item">
-
-<!-- 좌,우 슬라이드 버튼 -->
-<div class="slide_control">
-  <div>
-    <label for="slide_3" class="Left"></label>
-    <label for="slide_2" class="Right"></label>
-  </div>
-  <div>
-    <label for="slide_1" class="Left"></label>
-    <label for="slide_3" class="Right"></label>
-  </div>
-  <div>
-    <label for="slide_2" class="Left"></label>
-    <label for="slide_1" class="Right"></label>
-  </div>
+  <div class="pop_work">
+  <img src="../img/auction/done_digi_2.jpg" style="width: 600px; height: 550px; object-fit: cover; margin-top: 30px; margin-right: 10px;">
+  </div>    
 </div>
-</ul>
- </div>
-    </div>
 <div class="pop_detail">
   <div class="consumer"> 구매자 : rlaalswn 님</div>
     <div class="divider" style="margin-top: 0.5em; margin-bottom: 0.5em;"></div>
@@ -173,16 +149,10 @@
     <button>></button>
     <button>>></button>
   </div>
+</div>
 
   </article>
-
-  <!-- footer 시작 -->
- <footer>  
-  <div class="footer-Background">
-    
-  </div>
-</footer>  <!-- footer 끝 -->
-<script>
+  <script>
     $(document).ready(function () {
         $(".Header").load("../html/Header.html");
     });
@@ -193,17 +163,22 @@
 
     const open = () => {
         document.querySelector(".popup").classList.remove("hidden");
-        // 팝업이 열릴 때 헤더 숨기기
+        // Hide header when popup opens
         document.querySelector(".Header").style.display = "none";
     }
 
     const close = () => {
         document.querySelector(".popup").classList.add("hidden");
-        // 팝업이 닫힐 때 헤더 다시 표시하기
-        document.querySelector(".Header").style.display = ""; 
+        // Redisplay the header when the popup is closed
+        document.querySelector(".Header").style.display = "";
     }
 
-    document.querySelector(".box").addEventListener("click", open);
+    // Add event listeners to all the review boxes
+    const reviewBoxes = document.querySelectorAll(".box");
+    reviewBoxes.forEach((box) => {
+        box.addEventListener("click", open);
+    });
+
     document.querySelector(".close_btn").addEventListener("click", close);
     document.querySelector(".dim").addEventListener("click", close);
 </script>

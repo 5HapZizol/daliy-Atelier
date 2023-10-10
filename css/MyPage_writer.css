@@ -1,126 +1,131 @@
-    
-    .page_top{
-        display: inline-block;
-        margin-left:auto; 
-        margin-right:auto;
-        width: 60%;
-        display: table;
-        margin: 1em auto;
-    }
-    .page_name {
-        margin: 1em auto;
-        display: table;
-        font-size: 2.2em;
-    }
-    .page_top .hr_1{
-        margin: 2em;
-    }
-    .page_path {
-        display: inline;
-        float: left;
-        padding-left: 3.5em;
-        font-size: 0.6em;
-        color: rgb(180, 180, 180);
-        margin-bottom: 3em;
-    }  
-    .mem_fro_info_1 {
-        display: block;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    } 
-    .my_img {
-        display: inline-block;
-    }
-    
-    .box_1 {
-        display: inline-block;
-        width: 40em; /* 너비 조절 */
-        height: 7.5em; /* 높이 조절 */
-        border: 1px solid black; /* 테두리 선 지정 */
-        background-color: rgba(255, 255, 255, 0.923); 
-    }
-    .box_text {
-        display: inline-block;
-        float: left;
-        margin-left: 1.2em;
-        font-size: 0.9em;
-    }
-    .box_text_1 {
-        display: inline-block;  
-        margin-left: 4em;
-        font-size: 0.9em;
-    }
-    .box_text_2 {
-        display: inline-block;
-        font-size: 0.9em;
-    }
-    .charge_btn {
-        background-color: rgb(226, 226, 226);
-        border: none;
-        width: 3.6em;
-        height: 2em;
-        margin-left: 0.5em;
-    }
-   
-    .line {  
-     display: inline-block;
-     width: 0.07em;
-     height: 7.5em;
-     background-color: black;
-     margin-right: 10em;
-     margin-top: -4.2em;
-    }
-    table{
-        border-collapse : collapse;
-        text-align:center;
-        margin-left:auto; 
-        margin-right:auto;
-        table-layout: fixed;
-        width: 50%;
-        height: 20px;
-    }
-    .td_1{
-        background-color: #778C86;
-        height: 2em;
-    }
-    tr.no-border-bottom {
-        border-bottom-color: transparent;
-        height: 3em;
-      }
-      .btn-group {
-        text-align: center;  
-    }
-    .mem_info {
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(226, 226, 226);
-        width: 13.8em;
-        height: 4.5em;
-        border: none;
-        margin: 0.3em 0.3em;
-        font-size: 120%; 
-    }
-    .mem_info_1 {
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(226, 226, 226);
-        width: 13em;
-        height: 4em;
-        font-weight: bold;
-        border: none;
-        margin: 0.3em 0.3em;
-        font-size: 120%; 
-    }
-    .mem_info:hover{
-        background-color: #778C86;
-        transition: 0s;
-    }
-    .mem_info_1:hover{
-        background-color: rgb(142, 183, 172);
-        transition: 0s;
-    }
-    .charge_btn:hover {
-        background-color: #778C86;
-        transition: 0s;
-    }
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+* {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+.page_top{
+    width: 60%;
+    display: table;
+    margin: 0.5em auto;
+    margin-top: 2em;
+}
+.page_name {
+    margin: 1em auto;
+    display: table;
+    font-size: 1.6em;
+    font-weight: 800;
+}
+.page_top .hr_1{
+    margin-right: 2em;
+    margin-left: 2em;
+}
+.page_path {
+    display: inline;
+    float: left;
+    padding-left: 3.5em;
+    font-size: 0.6em;
+    color: rgb(180, 180, 180);
+    margin-bottom: 3em;
+}  
+/*전체 태그*/
+.all_tag {
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+}
+/*프로필 이미지*/
+.my_img img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+.my_nickname {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 60px;
+}
+.btnss {
+    display: block;
+}
+/*적립금*/
+table {
+    display: inline-block;
+    border-collapse: collapse;
+} 
+th, td {
+    width: 350px;
+    height: 30px;
+    border: 1px solid #bcbcbc;
+    border-collapse: collapse;
+}
+table tr th:first-child, table tr td:first-child {
+    border-left: none; 
+}
+table tr th:last-child, table tr td:last-child {
+    border-right: none;
+}
+/*버튼 디자인*/
+.btn_gather button{
+    font-size: 15px;
+    letter-spacing: 3px;
+    padding: 1.3rem 2rem;
+    width: 25%;
+    background-color: white;
+    border: #e2e2e2;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-bottom: 3px;
+}
+/*navi 전체*/
+ul#navi {
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    padding: 1.3rem 2rem;
+    width: 25%;
+    background-color: white;
+    border: none;
+}
+/*디자인*/
+ul#navi, ul#navi ul {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+li.group {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-bottom: 5px;
+}
+li.group div.title {
+    padding: 1.3rem 1rem;
+    background:white;
+    cursor:pointer;
+}
+/*서브 버튼*/
+ul.sub li {
+    margin-bottom: 2px;
+    height:35px;
+    line-height:35px;
+    cursor:pointer;
+    background:#e2e2e2;
+}
+ul.sub li a {
+    display: block;
+    width: 100%;
+    height:100%;
+    text-decoration:none;
+    color:#000;
+}
+/*서브 버튼 커서 시*/
+.sub :hover {
+    background:#778C86;;
+}
+.btn_gather :hover {
+    background:#778C86;;
+}  
+.group .title:hover {
+    background:#778C86;;
+}

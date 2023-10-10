@@ -33,11 +33,6 @@
     color: black;
     background-color: #ffffff;
 }
-.reviewss {
-    display: flex;
-    margin-left: 23em;
-    margin-right: 23em;
-}
 .hidden {
     display: none;
 }

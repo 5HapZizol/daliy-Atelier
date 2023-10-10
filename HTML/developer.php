@@ -8,23 +8,19 @@
     <title>개발자 소개</title>
 </head>
 <body>
-  <header>    <!-- 헤더 시작-->
-    <div class="Header">
-    </div>
-  </header>   <!-- 헤더 끝 -->
+<?php
+      include("Header.php");
+      
+    ?>
 
   <article>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-     <div class="page_top">
-        <div class="page_name">DEVELOPER INTRODUTION</div>
-     </div>
+  <br> 
+  <div>
+    <div class="page_top">
+        <span class="page_name">개발자 소개</span>
+        <hr class="hr_1">
+    </div><!-- page top -->
 
     <div class="gap"></div>
 
@@ -153,10 +149,6 @@
 </footer>  <!-- footer 끝 -->
 
 <script>
-  $(document).ready(function(){
-    $(".Header").load("../html/Header.html");
-});
-
 $(document).ready(function(){
     $(".footer-Background").load("../html/Footer.html");
 });

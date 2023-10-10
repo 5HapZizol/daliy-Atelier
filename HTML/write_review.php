@@ -46,9 +46,6 @@
 
         <div class="review_box">
             <div class="review_img"><img src="<?=$image_path?>" alt="작품 이미지">
-                <div class="plus_box">
-                    <button type="button" class="plus_img"><img src="../img/img_plus.png" alt="추가" onclick="" style="width: 4.5em; height: 4.5em;" ></button>
-                </div><!--plus_box-->
             </div>
     
             <div class="write_box"> <!-- -->
@@ -74,10 +71,8 @@
         </div><!--review_box-->
 
         <div class = "btn-g">
-            <p>
                 <button class="btn_1">올리기</button>
                 <button class="btn_2">취소</button>
-            </p>
         </div>
     </form>
 </article>

@@ -28,6 +28,6 @@
 ?>
 
 <script>
-    alert("문의가 등록되었습니다.");
+    alert("리뷰가 등록되었습니다.");
     window.location.href = "my_review.php";
 </script>

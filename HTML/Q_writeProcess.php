@@ -6,28 +6,22 @@
         die("데이터베이스 연결 오류: " . mysqli_connect_error());
     }
 
-    $Q_Write_Id = generateUniqueId(4); // 중복되지 않는 4자리 값 얻기
+    // 마지막 번호 조회
+$sql = "SELECT MAX(Q_write_id) AS max_id FROM Q_write";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+$lastId = $row['max_id'];
 
-    function generateUniqueId($desiredLength) {
-        global $conn; // $conn 변수를 함수 내에서 사용 가능하게 함
-    
-        $uniqueId = ""; // 무작위로 생성된 값
-    
-        // 중복되지 않는 값을 얻을 때까지 반복
-        while (true) {
-            $uniqueId = generateRandomId($desiredLength); // 원하는 길이의 무작위 숫자 생성
-    
-            // 데이터베이스에서 중복 여부 확인
-            $sql = "SELECT * FROM Q_write WHERE Q_Write_Id = '$uniqueId'";
-            $result = mysqli_query($conn, $sql);
-    
-            if ($result->num_rows == 0) {
-                // 중복되지 않는 값 발견
-                break;
-            }
-        }
-        return $uniqueId;
-    }
+// 마지막 번호가 없으면 1로 시작, 아니면 다음 번호 생성
+if ($lastId === null) {
+    $nextId = 1;
+} else {
+    $nextId = $lastId + 1;
+}
+
+// 4자리로 포맷팅 (0001, 0002 등)
+$Q_Write_Id = sprintf('%04d', $nextId);
+
     
     function generateRandomId($desiredLength) {
         // 원하는 길이의 무작위 숫자 생성

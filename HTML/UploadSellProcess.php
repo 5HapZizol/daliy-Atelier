@@ -1,4 +1,12 @@
 <?php
+function uploadedFile($uploadUrl, $fileName) {
+    return iconv("utf-8", "CP949", $uploadUrl.basename2($fileName));
+}
+
+function basename2($filename) {
+    return preg_replace( '/^.+[\\\\\\/]/', '', $filename);
+}
+
 session_start();
 include '../server.php'; 
 
@@ -9,8 +17,9 @@ $img_id = uniqid("image_", true);
 $tmpfile = $_FILES['input_image']['tmp_name'];
 $o_name = $_FILES['input_image']['name'];
 $filename = iconv("UTF-8", "EUC-KR", $_FILES['input_image']['name']);
-$folder = "../img/auction/" . $filename; //파일경로
-move_uploaded_file($tmpfile, $folder);
+$folder = "../img/auction/".$filename; //파일경로
+move_uploaded_file($tmpfile, uploadedFile($folder, $o_name));
+
 
 //이미지 db 업로드
 $sql = "
@@ -39,6 +48,17 @@ date_default_timezone_set('Asia/Seoul');
 $bid_start_time = date("Y-m-d H:i:s", strtotime($_POST['start_d']));
 $closing_time = date("Y-m-d H:i:s", strtotime($_POST['end_d']));
 
+$sql = "SELECT artist_code FROM artist";
+$result = mysqli_query($conn, $sql);
+
+if ($result) {
+    $row = mysqli_fetch_array($result);
+    $artist_code = $row['artist_code'];
+} else {
+    // 작가 코드를 가져오지 못한 경우에 대한 오류 처리
+    echo "작가 코드를 가져오는 데 문제가 발생했습니다.";
+}
+
 //작품 db 업로드
 $sql = "
         INSERT INTO ART(
@@ -46,10 +66,10 @@ $sql = "
             material, descript, start_price, current_price, registration_date,
             bid_start_time, closing_time)
         VALUES(
-            '{$art_id}', 33, '{$img_id}', '{$_POST['art_type']}','{$_POST['Upname']}',
+            '{$art_id}', '{$artist_code}', '{$img_id}', '{$_POST['art_type']}','{$_POST['Upname']}',
             '{$_POST['material']}', '{$_POST['info']}', '{$_POST['price']}', '{$_POST['price']}', NOW(),
             '{$bid_start_time}', '{$closing_time}'
-        )";
+)";
 
 //sql문
 echo $sql;

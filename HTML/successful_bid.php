@@ -7,8 +7,20 @@
     <title>낙찰 작품 페이지</title>
 </head>
 <body>
-<?php
+    <?php
       include("Header.php");
+      include 'bidCheckProcess.php';
+       // 세션에서 userid 가져오기
+        $user_id = isset($_SESSION['user']) ? $_SESSION['user'] : null;
+
+        if (!$user_id) {
+            // 사용자가 로그인되어 있지 않은 경우 권한이 없다는 알림창을 표시합니다.
+            echo '<script>alert("로그인이 필요합니다. 권한이 없습니다.");</script>';
+            // 이후 필요한 처리, 예를 들면 로그인 페이지로 이동하는 리디렉션 등을 수행할 수 있습니다.
+            header("Location: main.php");
+            exit; // 스크립트 실행 중지
+        }
+
     ?>
 
     <article>
@@ -22,35 +34,49 @@
       <div class="product-list">
 
       <?php
-      $sql = "SELECT * FROM Art ORDER BY registration_date limit 0, 6";
-      $result = mysqli_query($conn, $sql);
-      if ($result === false) {    //오류 여부
-         echo "작품 찾기에 문제가 생겼습니다. 관리자에게 문의해주세요.";
-         echo mysqli_error($conn);
-      }
-      while($row = mysqli_fetch_array($result)){
-         //이미지 경로 찾기
-         $sql = "select img_path from image where art_img_id = '{$row['art_img_id']}'";
-         $result2 = mysqli_query($conn, $sql);
-         $ttmp = mysqli_fetch_array($result2);
-         $image_path = $ttmp['img_path'];
-      
+      // 세션에서 userid 가져오기
+$user_id = $_SESSION['user'];
+
+$current_time = date('Y-m-d H:i:s'); // 현재 시간을 가져옵니다.
+
+$sql = "SELECT *
+        FROM Art
+        WHERE closing_time < '{$current_time}'
+        ORDER BY registration_date
+        LIMIT 0, 6";
+$result = mysqli_query($conn, $sql);
+
+if ($result === false) {
+    echo "작품 찾기에 문제가 생겼습니다. 관리자에게 문의해주세요.";
+    echo mysqli_error($conn);
+}
+
+      if (mysqli_num_rows($result) === 0) {
+        echo '<div class="no-Bid-Art">낙찰된 작품이 없습니다.</div>';
+      } else {
+
+      while ($row = mysqli_fetch_array($result)) {
+          // 각 작품마다 이미지를 가져오기 위해 쿼리 수정
+          $sql2 = "SELECT i.img_path
+                  FROM artist AS a
+                  JOIN art AS ar ON a.artist_code = ar.artist_code
+                  JOIN image AS i ON ar.art_img_id = i.art_img_id
+                  WHERE a.userid = '{$user_id}' AND ar.artId = '{$row['artId']}'";
+          $result2 = mysqli_query($conn, $sql2);
+          $ttmp = mysqli_fetch_array($result2);
+          $image_path = $ttmp['img_path'];
       ?>
-      <div class="product-works">
-        <img src="<?=$image_path?>" alt="">
-        <div class="btnss">
-          <button class="btn" type="button" onclick="onclick=location.href='best_5.html'">🔍︎자세히 보기</button>
-          <button class="btn" type="button" onclick="location.href='write_review.php?aid=<?=$row['artId']?>'">🖍리뷰 쓰기</button>
-        </div><!--btnss-->
-      </div>
-        
+          <div class="product-works">
+              <img src="<?=$image_path?>" alt="">
+              <div class="btnss">
+                  <button class="btn" type="button" onclick="location.href='best_1.php?aid=<?=$row['artId']?>'">🔍︎자세히 보기</button>
+                  <button class="btn" type="button" onclick="location.href='write_review.php?aid=<?=$row['artId']?>'">🖍리뷰 쓰기</button>
+              </div><!--btnss-->
+          </div>
       <?php
+        }
       }
       ?>
-      
-          
-
-
       </div><!--product-list-->
       <br>
       <br>

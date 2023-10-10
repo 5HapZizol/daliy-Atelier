@@ -12,10 +12,10 @@
     ?>
 
 
+<div style="margin-top: 200px;">
   <article>
     <!--본문 시작-->
     
-  <div style="margin-top: 200px;">
     
     <div class="page_top">
       <span class="page_name">경매 진행방법</span>

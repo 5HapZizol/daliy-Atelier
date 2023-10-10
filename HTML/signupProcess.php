@@ -1,5 +1,5 @@
 <?php
-    $conn = mysqli_connect("127.0.0.1", "root", "1111", "daily_atelier", "3306");
+    include '../server.php'; 
     //$conn = mysqli_connect(주소, 아이디, "비밀번호", DB 스키마 이름, 포트);
     if (isset($_POST['password'])) {
         $password = $_POST['password'];
@@ -11,10 +11,6 @@
     }
     //비밀번호 해쉬 암호화
     //echo $hashedPassword;
-
-
-
-    $artist_code = uniqid("artist_", true);
 
     $user_id = $_POST['user_id']?? '';       // 일반 아이디
     $A_user_id = $_POST['A_user_id']?? '';   // 작가 아이디
@@ -40,6 +36,7 @@
     
     if ($User_status == 1) {
         // 작가 회원 가입 처리
+        $artist_code = uniqid("artist_", true);
         $sql = "INSERT INTO user (Userid, password, name, nickname, phone_number, email, join_date, User_status)
                 VALUES('{$A_user_id}', '{$hashedPassword}', '{$user_name}', '{$auother_nick}', '{$user_phone}', '{$user_email}', NOW(), '1'
                 )"; // SQL 문
