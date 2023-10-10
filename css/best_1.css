@@ -192,6 +192,7 @@ hr{
     display: table;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3em;
 }
 .art_review .top{
     color: #000000;
@@ -271,11 +272,6 @@ hr{
   }
 
 .imgC:hover {opacity: 0.8;}
-
-@keyframes zoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
-}
 
 .modal {
 	display: none;

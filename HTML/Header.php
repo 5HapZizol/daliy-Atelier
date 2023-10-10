@@ -38,7 +38,7 @@
               ?>
                 <a onclick="logout()">로그아웃</a>
                 <a href="reliable_status.php">입찰 현황</a>
-                <a href="MyPage.php">마이페이지</a>
+                <a href="My_page_writer.php">마이페이지</a>
               <?php
               } else {  //로그인이 안되었을 시
               ?>
