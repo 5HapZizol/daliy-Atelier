@@ -249,20 +249,73 @@ include 'bidCheckProcess.php';
     ?> 
 
    <article>
-   <section class = "main_container">
-    <div class = "slider-wrapper">
-        <div class = "slider">
-            <img id = "slide-1" src = "../img/main/001.jpg"/>
-            <img id = "slide-2" src = "../img/main/002.jpg"/>
-            <img id = "slide-3" src = "../img/main/003.jpg"/>
-        </div>
-        <div class = "slider-nav">
-            <a href="#slide-1"></a>
-            <a href="#slide-2"></a>
-            <a href="#slide-3"></a>
-        </div>
+
+   <div class="section">
+        <input type="radio" name="slide" id="slide01" checked>
+        <input type="radio" name="slide" id="slide02">
+        <input type="radio" name="slide" id="slide03">
+        <div class="slidewrap">
+		<ul class="slidelist">
+			<!-- 슬라이드 영역 -->
+			<li class="slideitem">
+				<a>
+					<div class="textbox">
+                        <!--
+						<h3>1 제목</h3>
+						<p>설명</p>
+                        -->
+					</div>
+					<img src="../img/main/001.jpg" height="50%">
+				</a>
+			</li>
+			<li class="slideitem">
+				<a>
+					<div class="textbox">
+                        <!--
+						<h3>1 제목</h3>
+						<p>설명</p>
+                        -->
+					</div>
+					<img src="../img/main/002.jpg">
+				</a>
+			</li>
+			<li class="slideitem">
+				<a>
+					<div class="textbox">
+                        <!--
+						<h3>1 제목</h3>
+						<p>설명</p>
+                        -->
+					</div>
+					<img src="../img/main/003.jpg">
+				</a>
+			</li class="slideitem">
+
+			<!-- 좌,우 슬라이드 버튼 -->
+			<div class="slide-control">
+				<div>
+					<label for="slide03" class="left"></label>
+					<label for="slide02" class="right"></label>
+				</div>
+				<div>
+					<label for="slide01" class="left"></label>
+					<label for="slide03" class="right"></label>
+				</div>
+				<div>
+					<label for="slide02" class="left"></label>
+					<label for="slide01" class="right"></label>
+				</div>
+			</div>
+
+		</ul>
+		<!-- 페이징 -->
+		<ul class="slide-pagelist">
+			<li><label for="slide01"></label></li>
+			<li><label for="slide02"></label></li>
+			<li><label for="slide03"></label></li>
+		</ul>
+	    </div>
     </div>
-   </section>
 
 
     <div class="introduce">
