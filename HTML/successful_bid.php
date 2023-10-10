@@ -72,7 +72,7 @@
             echo '<div class="product-works">';
             echo '<img src="' . $image_path . '" alt="">';
 
-            echo '<div class = "button-Location">';
+            echo '<div class = "btnss">';
             // "자세히 보기" 버튼
             echo '<button class="btn" type="button" onclick="location.href=\'best_1.php?aid=' . $row['artId'] . '\'">🔍︎자세히 보기</button>';
 
