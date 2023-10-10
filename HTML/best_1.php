@@ -2,7 +2,7 @@
 <head>
     <title>작품 페이지</title>
     <link rel="stylesheet" href="../css/best_1.css">
-    <link rel="stylesheet" href="../css/modal.css">
+    <!--<link rel="stylesheet" href="../css/modal.css">-->
     <script src="http://code.jquery.com/jquery-latest.js"></script>
 
 </head>
@@ -10,7 +10,6 @@
     <?php
         include("Header.php");
     ?>
-
 
   <article>
     <div class="art_auction_info">
@@ -72,8 +71,8 @@
             </button>
           </div>
       </div>
-      
   </div>
+
   <div class="art_introduce">
       <div class="top">작품 소개</div>
       <hr/>
@@ -125,14 +124,10 @@
     </div>
 
   <div class="modal hidden">
-    <div class="bg">
-
-    </div>
-
     <div class="modalBox">
         <form action="BidInsertProcess.php?aid=<?=$_GET['aid']?>" method="POST" id="bid-insert-form">
             <div class="modalTop">
-                <span>결제입력창</span>
+                <span>결제창</span>
             </div>
             <p>현재가: <?=number_format($art['current_price'])?>원</p>
             <p>마감일: 9/23(토) 14:00 KST 순차마감</p>
@@ -141,20 +136,20 @@
             </div>
             <div class="buttonBox">
                 <button type="button" class="nextBtn" id="next_btn">확인</button>
-                </form>
                 <button type="button" class="closeBtn">닫기</button>
             </div>
+        </form>
+        </div>
     </div>
 
+
     <!-- 이미지원본 모달 -->
-    <div class="modal">
+    <div class="modals">
         <span class="close">&times;</span>
         <div class="modalbox">  
             <img src="">
         </div>
     </div>
-  
-    
 
   <div class="art_review">
     <div class="top">작가의 다른 작품 REVIEW</div>
@@ -171,7 +166,7 @@
         </div>
     </div><!--리뷰박스-->
 
-        <div class="jump"></div>
+    <div class="jump"></div>
 
 
     <div class="review_box" type="button">
@@ -206,16 +201,13 @@
             <div class="reviewss_1" style="font-family: math;">
                 너무 이뻐요!!  제가 원하는 느낌의 그림이에요 제가 이번에
                 처음으로 카페를 운영하게 되어서 카페에 어울리는 시원한 그림을 찾고 있었는데...</div>
-             <div class="consumer_1"> 구매자 : 구매자 님</div>
+             <div class="consumer_1"> 구매자 : princethd 님</div>
              <img class="star_box" src="../img/R.png">
             </div>
-        </div><!--리뷰박스-->   
-
+        </div><!--리뷰박스-->  
   </div>
   
   <div class="popup hidden">
-    <div class="dim"></div>
-  
    <div class="popupBox">
     <div class="btnBox"><button class="close_btn">닫기</button></div>
     <div class="popup_2">
@@ -259,7 +251,7 @@
         </div>
         </ul>
          </div>
-            </div>
+        </div>
     <div class="pop_detail">
         <div class="consumer"> 구매자 : dim 님</div>
         <div class="divider" style="margin-top: 0.5em; margin-bottom: 0.5em;"></div>
@@ -284,16 +276,15 @@
     </div>
     </article>
     
-     
-
+    
     <footer> <!--  footer 시작 -->
       <div class="footer-Background">
       
       </div>
      </footer> <!-- footer 끝 -->
 
+    <!-- 입찰모달 -->
     <script>
-
         $(document).ready(function(){
             $(".footer-Background").load("/html/Footer.html");
         });
@@ -303,7 +294,7 @@
         
         const close = () => {
             document.querySelector(".modal").classList.add("hidden");
-        }
+        } 
         
         document.querySelector(".openBtn").addEventListener("click", open);
         document.querySelector(".closeBtn").addEventListener("click", close);
@@ -328,8 +319,12 @@
             }
             ?>
         });
-
     </script>
-    <script src="/js/closeup.js"></script>
+    <script type="text/javascript">
+    var img = document.getElementsByTagName("img");
+    for (var x = 0; x < img.length; x++) {
+      img.item(x).onclick=function() {window.open(this.src)}; 
+    }
+</script>
 </body>
 </html>

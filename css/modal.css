@@ -1,4 +1,4 @@
-button {
+.modalBox .buttonBox button{
     background-color: #000000;
     color: #fff;
     padding: 5px 10px;
@@ -7,7 +7,7 @@ button {
     cursor: pointer;
 }
 
-.modal {
+.modals .hidden{
     position: fixed;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@ button {
     align-items: center;
 }
 
-.modal .bg {
+.modals .bg {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);

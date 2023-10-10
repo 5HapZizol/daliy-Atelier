@@ -192,6 +192,7 @@ hr{
     display: table;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom : 3em
 }
 .art_review .top{
     color: #000000;
@@ -200,8 +201,10 @@ hr{
     padding-left: 1.5em;
     margin: 0 auto;
 }
+
 /*리뷰 칸*/
 .review_box {
+    margin-bottom: 3em;
     display: flex;
     margin: auto;
     width: 50em;
@@ -263,6 +266,73 @@ hr{
     margin: 1em;
 }
 
+/*결제창 모달*/
+button {
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.modals {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.modalBox {
+    position: absolute;
+    background-color: #fff;
+    width: 30%;
+    height: 20%;
+    padding: 10px;
+}
+
+.modalBox button {
+    width: 80px;
+    margin: 0 auto;
+}
+.modalBox .nextBtn {
+    margin-right: 1em;
+}
+.hidden {
+    display: none;
+}
+.modalBox .modalTop{
+    display: block;
+    background-color: #000000;
+    color: #fff;
+    padding: 1em;
+}
+.modalBox > p{
+    margin-left: 1em;
+}
+.modalBox .modalTop span{
+    padding: 1em;
+}
+.inputMoney{
+    margin-left: 1em;
+}
+.inputMoney input{
+    height:30px;
+    padding: 1em auto;
+}
+.buttonBox{
+    margin-top: 1em;
+    display: inline;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* 클로즈업 */
 .imgC{
@@ -272,12 +342,12 @@ hr{
 
 .imgC:hover {opacity: 0.8;}
 
-@keyframes zoom {
+.modals @keyframes zoom {
     from {transform: scale(0)}
     to {transform: scale(1)}
 }
 
-.modal {
+.modals{
 	display: none;
     position: fixed; 
     z-index: 1; 
