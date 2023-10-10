@@ -154,7 +154,7 @@
         <div class = "font_buy">직접입력</div>
         <input type="text" placeholder="10" class="search_text"> ~ <input type="text" placeholder="800" class="search_text"> 만원
         
-        
+         
         <button class="search_filter_btn">
             <img width=50% height="50%" src="/img/Header_Image/search.png"/>
         </button>
