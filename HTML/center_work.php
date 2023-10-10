@@ -81,56 +81,57 @@
 
     <div class = "accordion">
       <input type="checkbox" name="accordion" id = 'answer01'>
-      <label for = "answer01">[작품] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer01">[작품등록] 작품 등록이 안돼요.<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          일시적인 사이트 오류일 수 있으니 로그아웃 후 다시 시도해주시길 바랍니다. 그럼에도 지속적인 오류 발생 시 1대 1 문의하기를 이용해주시길 바랍니다.
         </p></div>
 
       <input type="checkbox" name="accordion" id = 'answer02'>
-      <label for = "answer02">[작품] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer02">[작품등록] 본인/제3자 그림이 도용된 AI 그림을 발견했어요.<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          입찰 화면에서 신고하기 버튼 클릭 후 기타 작성란에 피해자 개인 연락처를 작성해주시고 신고를 하시면 빠른 조치를 취해드릴 수 있습니다.
         </p></div>
 
       <input type="checkbox" name="accordion" id = 'answer03'>
-      <label for = "answer03">[작품] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer03">[작품등록] 이미 등록한 작품을 내리고 싶어요.<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          1대 1 문의를 통해 등록한 작품을 내릴 수 있습니다. 다만 낙찰이 끝난 작품은 삭제가 안되는 점 유의해주시길 바랍니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer04'>
-      <label for = "answer04">[작품] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer04">[작품등록] 작품 등록을 했는데 사진이 이상하게 나와요.<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          사진 크기가 너무 크거나 작을 경우 제대로 보이지 않을 수 있습니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer05'>
-      <label for = "answer05">[작품] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer05">[작품등록] 작품 설명에 아무것도 적지 않아도 되나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+          작품 설명란에 작품 설명은 필수입니다.
         </p></div>
       
       <input type="checkbox" name="accordion" id = 'answer06'>
-      <label for = "answer06">[작품] 자주 들어오는 질문을 넣는 곳<em></em></label>
+      <label for = "answer06">[작품등록] 작품 등록은 일반 회원은 할 수 없나요?<em></em></label>
         <div><p>
-          자주 묻는 질문의 응답을 적어두는 곳
+        일반 회원은 작품 등록이 불가하며 작가 회원만 작품 등록이 가능합니다.
         </p></div>
     </div>
 
-    <div class = "ques">
-      <div class="btn-group">
-          <nav class="btn_catalogue">
-              <go_to_btn_search> 1 </go_to_btn_search>
-              <go_to_btn_search> 2 </go_to_btn_search>
-              <go_to_btn_search> 3 </go_to_btn_search>
-              <go_to_btn_search> 4 </go_to_btn_search>
-              <go_to_btn_search> 5 </go_to_btn_search>
-              <go_to_btn_search> 6 </go_to_btn_search>
-              <go_to_btn_search style="background-color: #bbbbbb;"> > </go_to_btn_search>
-              <go_to_btn_search style="background-color: #646464;"> >> </go_to_btn_search>
-          </nav>
-      </div>
+    <div class="Artist-Introduce-Button">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button>10</button>
+      <button>></button>
+      <button>>></button>
     </div>
+
   </div>
     </article>
 

@@ -14,9 +14,12 @@
     ?> 
 
     <article>
-        <div class="Inquire-Title">
-            <h1>문의 사항</h1>
-        </div>
+    <div style="margin-top: 200px;">
+       
+       <div class="page_top">
+         <span class="page_name">문의 사항</span>
+         <br>
+       </div>
 
         <div class="Tap-Choice">
             <div class="Inquire-Tap-btn"><button>질문전체</button><span class="Tap-animation"></span></div>
@@ -24,44 +27,20 @@
         </div>
         <hr>
 
-        <div class="Inquire-Main">
-            <div class="Question-Body">
-                <div class="Question-Title">
-                    <div><span>Q.</span>배송현황은 어디서 확인할 수 있나요?</div>
-                    <button><img src="../img/arrow.png" class="Arrow-Event"></button>
-                </div>
+        <div class = "accordion">
+         <input type="checkbox" name="accordion" id = 'answer01'>
+         <label for = "answer01">Q. 배송현황은 어디서 확인할 수 있나요?<em></em></label>
+            <div class = "QnA_answer"><p>
+            마이페이지 > 주문 조회에서 확인하실 수 있습니다.
+            </p></div>
 
-                <div class="Inquire-Content">
-                    <div>
-                        <p>
-                            제가 며칠전에 손예빈의 부질없는 여자 라는 작품을 경매에서 낙찰받았는데
-                            언제즈음 받을 수 있는지 확인하고 싶어요.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="Inquire-Answer">
-                    <div>
-                        <span>A.</span>네 고객님 그거는 어쩌구 저쩌구 알아서 찾으세요~~~
-                    </div>
-                </div>
-            </div>
-
-            <div class="Question-Body">
-                <div class="Question-Title">
-                    <div><span>Q.</span>고객센터는 왜 싸가지가 없나요?</div>
-                    <button><img src="../img/arrow.png" class="Arrow-Event"></button>
-                </div>
-
-                <div class="Inquire-Content">
-                    <div>
-                        <p>
-                            애쉬키들 너무 싹수없는것같아요 속상해요
-                        </p>
-                    </div>
-                </div>
-            </div>
+         <input type="checkbox" name="accordion" id = 'answer02'>
+         <label for = "answer02">Q. 적립된 포인트를 반환 받을 수 있나요?<em></em></label>
+            <div class = "QnA_answer"><p>
+            포인트 반환 시 소정의 수수료가 발생할 수 있으며 수수료를 제외한 금액이 환급됩니다.
+            </p></div>
         </div>
+        
 
     </article>
 
