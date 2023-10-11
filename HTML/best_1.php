@@ -49,7 +49,7 @@
                 $result = mysqli_query($conn, $sql);
                 $artist = mysqli_fetch_array($result);
         ?>
-        <img src="<?=$image_path?>" width="50%">
+        <img class="large_pic" src="<?=$image_path?>" width="50%">
         <div class="art_auction_info_right">
         <div class="art_info_text_box">
             <div class="title"><?=$art['name']?></div>
@@ -106,22 +106,22 @@
       <hr/>
       <ul>
           <li>
-              <img src="../img/other_art_1.png" width="90%" class="bottom" style="
+              <img  class="large_pic" src="../img/other_art_1.png" width="90%" class="bottom" style="
               vertical-align: text-bottom;">
           </li>
           <li>
-              <img src="../img/other_art_2.png" width="90%" class="bottom" style="
+              <img  class="large_pic" src="../img/other_art_2.png" width="90%" class="bottom" style="
               vertical-align: text-bottom;">
           </li>
           <li>
-              <img src="../img/auction/new_3.jpg" width="90%" class="bottom" style="
+              <img  class="large_pic" src="../img/auction/new_3.jpg" width="90%" class="bottom" style="
               vertical-align: text-bottom;">
           </li>
           <li>
-              <img src="../img/auction/best3.jpg" width="90%" class="bottom">
+              <img  class="large_pic" src="../img/auction/best3.jpg" width="90%" class="bottom">
           </li>
           <li>
-              <img src="../img/auction/new_1.jpg" width="90%" class="bottom">
+              <img  class="large_pic" src="../img/auction/new_1.jpg" width="90%" class="bottom">
           </li>
       </ul>
   </div>
@@ -151,7 +151,7 @@
     <hr>
     <br>
     <div class="review_box" type="button">
-    <div class="box_img"><img src="../img/hpimage.jpg"></div>
+    <div class="box_img"><img  class="large_pic" src="../img/hpimage.jpg"></div>
     <div class="box_detail">
         <div class="reviewss_1" style="font-family: math;">
             가오에 살고 가오의 죽는다. 제가 원하던 그림입니다😇😇 방이 너무 횡해서 이번기회에 그냥 편한 마음으로 도전해봤는데 제가 낙찰. 받을 줄도 몰랐어요
@@ -165,7 +165,7 @@
 
 
     <div class="review_box" type="button">
-        <div class="box_img"><img src="../img/auction/end_12.jpg"></div>
+        <div class="box_img"><img  class="large_pic" src="../img/auction/end_12.jpg"></div>
         <div class="box_detail">
             <div class="reviewss_1" style="font-family: math;">
                 너무 이뻐요!!  제가 원하는 느낌의 그림이에요 제가 이번에
@@ -178,7 +178,7 @@
         <div class="jump"></div>
 
     <div class="review_box" type="button">
-    <div class="box_img"><img src="../img/auction/best3.jpg"></div>
+    <div class="box_img"><img class="large_pic" src="../img/auction/best3.jpg"></div>
     <div class="box_detail">
         <div class="reviewss_1" style="font-family: math;">
             너무 이뻐요!!  제가 원하는 느낌의 그림이에요 제가 이번에
@@ -191,7 +191,7 @@
     <div class="jump"></div>
 
     <div class="review_box" type="button">
-        <div class="box_img"><img src="../img/auction/best4.jpg"></div>
+        <div class="box_img"><img class="large_pic" src="../img/auction/best4.jpg"></div>
         <div class="box_detail">
             <div class="reviewss_1" style="font-family: math;">
                 너무 이뻐요!!  제가 원하는 느낌의 그림이에요 제가 이번에
@@ -315,8 +315,9 @@
             }
             ?>
         });
-
-        var img = document.getElementsByTagName("img");
+        
+        //var img = document.getElementsByTagName("img");
+        var img = document.getElementsByClassName("large_pic");
         for (var x = 0; x < img.length; x++) {
         img.item(x).onclick=function() {window.open(this.src)}; 
         }

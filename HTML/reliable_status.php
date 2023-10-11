@@ -98,7 +98,7 @@
       
                   <div class="Bid-Fourth">
                     <div>내 경매가: <?=number_format($my_bid['max_price'])?> 원</div>
-                    <div><button>가격 올리기</button></div>
+                    <div><button type="button" onclick="location.href='../HTML/best_1.php?aid=<?=$row['artId']?>'">가격 올리기</button></div>
                   </div>
                 </div>
 
@@ -178,7 +178,7 @@
       
                   <div class="Bid-Fourth">
                     <div>내 경매가: <?=number_format($my_bid['max_price'])?> 원</div>
-                    <div><button>가격 올리기</button></div>
+                    <div><button type="button" onclick="location.href='../HTML/best_1.php?aid=<?=$row['artId']?>'">가격 올리기</button></div>
                   </div>
                 </div>
 
@@ -257,7 +257,6 @@
       
                   <div class="Bid-Fourth">
                     <div>내 경매가: <?=number_format($my_bid['max_price'])?> 원</div>
-                    <div><button>가격 올리기</button></div>
                   </div>
                 </div>
 
