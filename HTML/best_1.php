@@ -308,13 +308,21 @@
                 alert("로그인이 필요한 항목입니다.");
                 window.location = "login.php";
             <?php
-            }else{
+            } else {
             ?>
-                bidInsertForm.submit();
+                var bidPriceInput = bidInsertForm.querySelector("input[name='bid_price']");
+                var currentPrice = <?=$art['current_price']?>; // PHP에서 현재 가격 가져오기
+
+                if (bidPriceInput.value === "" || parseInt(bidPriceInput.value) <= currentPrice) {
+                    alert("현재가보다 큰 금액을 입력해야 합니다.");
+                } else {
+                    bidInsertForm.submit();
+                }
             <?php
             }
             ?>
         });
+
         
         //var img = document.getElementsByTagName("img");
         var img = document.getElementsByClassName("large_pic");
