@@ -174,7 +174,7 @@
 
       <div class="box-container">
          <?php
-            $sql = "SELECT * FROM Art WHERE art_status = 0 ORDER BY registration_date limit 0, 6";
+            $sql = "SELECT * FROM Art WHERE art_status = 0 ORDER BY registration_date";
             $result = mysqli_query($conn, $sql);
             if ($result === false) {    //오류 여부
                echo "작품 찾기에 문제가 생겼습니다. 관리자에게 문의해주세요.";
