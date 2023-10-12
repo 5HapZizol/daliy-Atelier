@@ -198,8 +198,9 @@ padding-right: 5px;
 }
 
 #load-more{
-margin-top: 20px;
-display: inline-block;
+  margin: 20px auto 50px;
+  display: block;
+  max-width: 140px;
 padding:13px 30px;
 border:1px solid #334;
 color:#334;

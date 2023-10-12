@@ -169,53 +169,58 @@
     </span>
   </div>
     <!--filter 끝-->
-  
+
+
     <div class="container">
+    <div class="box-container">
+        <?php
+        $sql = "SELECT * FROM Art WHERE art_status = 0 ORDER BY registration_date";
+        $result = mysqli_query($conn, $sql);
 
-      <div class="box-container">
-         <?php
-            $sql = "SELECT * FROM Art WHERE art_status = 0 ORDER BY registration_date";
-            $result = mysqli_query($conn, $sql);
-            if ($result === false) {    //오류 여부
-               echo "작품 찾기에 문제가 생겼습니다. 관리자에게 문의해주세요.";
-               echo mysqli_error($conn);
+        if ($result === false) {    // 오류 여부
+            echo "작품 찾기에 문제가 생겼습니다. 관리자에게 문의해주세요.";
+            echo mysqli_error($conn);
+        } else {
+            while ($row = mysqli_fetch_array($result)) {
+                // 이미지 경로 찾기
+                $sql = "select img_path from image where art_img_id = '{$row['art_img_id']}'";
+                $result2 = mysqli_query($conn, $sql);
+                $ttmp = mysqli_fetch_array($result2);
+                $image_path = $ttmp['img_path'];
+
+                // 타이머를 위한 시간 차이 구하기
+                $datetime1 = new DateTime(date("Y-m-d H:i:s"));
+                $datetime2 = new DateTime($row['closing_time']);
+                $interval = $datetime1->diff($datetime2);
+
+                // 작가명 가져오기
+                $sql = "select artist_name from artist where artist_code = '{$row['artist_code']}'";
+                $artist_result = mysqli_query($conn, $sql);
+                $artist = mysqli_fetch_array($artist_result);
+          ?>
+          <div class="box">
+             <div class="image">
+                 <img src="<?=$image_path?>" width="90%" alt="">
+             </div>
+             <div class="content">
+                 <h3><?=$row['name']?></h3>
+                 <p>현재가: <?=number_format($row['current_price'])?> 원</p>
+                 <p><?=$interval->format('%dD %h:%i')?></p>
+                 <a href="../HTML/best_1.php?aid=<?=$row['artId']?>" class="btn">입찰</a>
+                 <div class="icons">
+                     <span> <i class="fas fa-calendar"></i> <?=$datetime2->format('jS M, o')?> </span>
+                     <span> <i class="fas fa-user"></i> by  <?=$artist['artist_name']?> </span>
+                 </div>
+             </div>
+          </div>
+          <?php
             }
-            while($row = mysqli_fetch_array($result)){
-               //이미지 경로 찾기
-               $sql = "select img_path from image where art_img_id = '{$row['art_img_id']}'";
-               $result2 = mysqli_query($conn, $sql);
-               $ttmp = mysqli_fetch_array($result2);
-               $image_path = $ttmp['img_path'];
-               
-               //타이머를 위한 시간 차이 구하기
-               $datetime1 = new DateTime(date("Y-m-d H:i:s"));
-               $datetime2 = new DateTime($row['closing_time']);
-               $interval = $datetime1->diff($datetime2);
+        }
+        ?>
+    </div>
+</div>
 
-               //작가명 가져오기
-               $sql = "select artist_name from artist where artist_code = '{$row['artist_code']}'";
-               $artist_result = mysqli_query($conn, $sql);
-               $artist = mysqli_fetch_array($artist_result);
-         ?>
-         <div class="box">
-            <div class="image">
-                <img src="<?=$image_path?>" width="90%" alt="">
-            </div>
-            <div class="content">
-                <h3><?=$row['name']?></h3>
-                <p>현재가: <?=number_format($row['current_price'])?> 원</p>
-                <p><?=$interval->format('%dD %h:%i')?></p>
-                <a href="../HTML/best_1.php?aid=<?=$row['artId']?>" class="btn">입찰</a>
-                <div class="icons">
-                    <span> <i class="fas fa-calendar"></i> <?=$datetime2->format('jS M, o')?> </span>
-                    <span> <i class="fas fa-user"></i> by  <?=$artist['artist_name']?> </span>
-                </div>
-            </div>
-         </div>
-         <?php 
-         }
-         ?>
-      </div>
+  
    
       <div id="load-more"> load more </div>
       <script>
