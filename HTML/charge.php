@@ -23,22 +23,22 @@
  <!--충전하기-->
     <form action = "charge_process.php" method = "post" id="charge_form">
         <div class = "container">
-            <input type = "radio" name = "price" id = "10000" checked = "checked"/>
+            <input type = "radio" name = "price" class="price" id = "10000" value = "10000" checked = "checked"/>
             <label for = "10000">10,000P</label>
             
-            <input type = "radio" name = "price" id = "30000"/>
+            <input type = "radio" name = "price" class="price" id = "30000" value = "30000"/>
             <label for = "30000">30,000P</label>
             
-            <input type = "radio" name = "price" id = "50000"/>
+            <input type = "radio" name = "price"  class="price" id = "50000" value = "50000"/>
             <label for = "50000">50,000P</label>
             
-            <input type = "radio" name = "price" id = "100000"/>
+            <input type = "radio" name = "price"  class="price" id = "100000" value = "100000"/>
             <label for = "100000">100,000P</label>
             
-            <input type = "radio" name = "price" id = "200000"/>
+            <input type = "radio" name = "price"  class="price" id = "200000" value = "200000"/>
             <label for = "200000">200,000P</label>
             
-            <input type = "radio" name = "price" id = "300000"/>
+            <input type = "radio" name = "price"  class="price" id = "300000" value = "300000"/>
             <label for = "300000">300,000P</label>
 
             <div class = "point-balance">
@@ -108,7 +108,7 @@
                 </div>
             </div>
             <div class = "last_container">
-                <div class = "pay-button">
+                <div class = "pay-button" onClick="document.forms['charge_form'].submit();">
                         <a href="" style = "text-decoration : none; color: black;">결제하기</a>
                 </div>
             </div>

@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="../css/MyPage_writer.css">  
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-    <title><!--작가회원 -->마이페이지</title>
+    <title>마이페이지</title>
 </head>
 <body>
 <?php

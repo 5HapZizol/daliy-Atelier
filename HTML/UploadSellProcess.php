@@ -2,7 +2,6 @@
 
 session_start();
 include '../server.php'; 
-
 //이미지 고유 아이디 난수 생성
 $img_id = uniqid("image_", true);
 
