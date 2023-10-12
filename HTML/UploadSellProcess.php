@@ -43,13 +43,12 @@ $closing_time = date("Y-m-d H:i:s", strtotime($_POST['end_d']));
 $sql = "SELECT artist_code FROM artist";
 $result = mysqli_query($conn, $sql);
 
-if ($result) {
-    $row = mysqli_fetch_array($result);
-    $artist_code = $row['artist_code'];
-} else {
-    // 작가 코드를 가져오지 못한 경우에 대한 오류 처리
-    echo "작가 코드를 가져오는 데 문제가 발생했습니다.";
+$artist_codes = array();
+
+while ($row = mysqli_fetch_assoc($result)) {
+    $artist_codes[] = $row['artist_code'];
 }
+
 
 //작품 db 업로드
 $sql = "
