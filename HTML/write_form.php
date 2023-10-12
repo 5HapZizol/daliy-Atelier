@@ -15,7 +15,7 @@
         <div style="margin-top: 200px;"></div>
 
         <?php
-        $sql = "SELECT Q_write_id, Q_write_select, Q_write_title, DATE_FORMAT(Q_write_time, '%y-%m-%d') AS Q_write_time, user_id
+        $sql = "SELECT Q_write_id, Q_write_select, Q_write_title, DATE_FORMAT(Q_write_time, '%y-%m-%d') AS Q_write_time, Q_write_content, user_id
                 FROM Q_write
                 WHERE Q_write_id = '{$_GET['Qid']}'";
         $result = mysqli_query($conn, $sql);
@@ -37,7 +37,7 @@
                 </div>
             </div>
             <div class = "container_2">
-                <div class = "Ques_Text"><?=$Question['Q_write_title']?></div>
+                <div class = "Ques_Text"><?=$Question['Q_write_content']?></div>
             </div>
        </div>
 
