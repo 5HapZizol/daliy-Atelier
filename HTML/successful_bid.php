@@ -42,8 +42,7 @@
     $sql = "SELECT *
             FROM Art
             WHERE closing_time < '{$current_time}'
-            ORDER BY registration_date
-            LIMIT 0, 6";
+            ORDER BY registration_date";
     $result = mysqli_query($conn, $sql);
 
     if ($result === false) {
