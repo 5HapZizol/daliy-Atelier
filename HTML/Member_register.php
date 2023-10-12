@@ -33,8 +33,9 @@
             <div class = "container">
                 <div class = "wrapper">
                   <input type = "text" name = "user_id" placeholder="*아이디 입력" id = "user_id"/>
-                  <button name = "id_check">중복확인</button>
-                </div>
+                  <button name="id_check" id="id_check_btn">중복확인</button>
+                    </div>
+                    <p id="id_check_result"></p>
 
                 <p>
                 <div class = "wrapper">
@@ -100,7 +101,7 @@
                 <label for="email_no">비동의</label>
               </p>
 
-              <button type = "button" id = "register_btn">가입하기</button>
+              <button type="submit" id="register_btn">가입하기</button>
             </div>
         </div>
           
@@ -116,24 +117,41 @@
 
     
       <script>
+$(document).ready(function(){
+    $(".footer-Background").load("../html/Footer.html");
+});
 
+const user_id_input = document.querySelector("#user_id");
+const user_id_check_btn = document.querySelector("#id_check_btn");
+const user_id_check_result = document.querySelector("#id_check_result");
 
-        $(document).ready(function(){
-          $(".footer-Background").load("../html/Footer.html");
-        });
-        const signupForm = document.querySelector("#A-signup-form");
-        const registerbtn = document.querySelector("#register_btn");
-        const password = document.querySelector("#password");
-        const passwordCheck = document.querySelector("#password_check");
+user_id_check_btn.addEventListener("click", function(e) {
+    e.preventDefault();
 
-        registerbtn.addEventListener("click", function(e) {
-            if (password.value && password.value === passwordCheck.value) {
-                // 비밀번호 확인이 일치할 때만 폼을 제출합니다.
-                signupForm.submit();
-            } else {
-                alert("비밀번호가 서로 일치하지 않습니다.");
+    const userId = user_id_input.value;
+    if (userId.trim() === "") {
+        alert("아이디를 입력하세요");
+    } else {
+        checkDuplicateUserId(userId);
+    }
+});
+
+function checkDuplicateUserId(userId) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "check_duplicate_id.php", true);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            if (xhr.responseText === "duplicate") {
+                alert("이미 사용 중인 아이디입니다. 다른 아이디를 입력해주세요.");
+            } else if (xhr.responseText === "available") {
+                alert("사용 가능한 아이디입니다.");
             }
-        });
+        }
+    };
+    xhr.send("user_id=" + userId);
+}
+
       </script>
 
     </body>
