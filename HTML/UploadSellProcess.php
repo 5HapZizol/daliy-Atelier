@@ -22,7 +22,7 @@ $sql = "
         )";
 
 //sql문
-echo $sql;
+// echo $sql;
 $result = mysqli_query($conn, $sql);
 
 if ($result === false) { //오류 여부
@@ -40,6 +40,7 @@ date_default_timezone_set('Asia/Seoul');
 $bid_start_time = date("Y-m-d H:i:s", strtotime($_POST['start_d']));
 $closing_time = date("Y-m-d H:i:s", strtotime($_POST['end_d']));
 
+/*
 $sql = "SELECT artist_code FROM artist";
 $result = mysqli_query($conn, $sql);
 
@@ -48,6 +49,18 @@ $artist_codes = array();
 while ($row = mysqli_fetch_assoc($result)) {
     $artist_codes[] = $row['artist_code'];
 }
+*/
+
+
+$user_id = $_SESSION['user'];
+
+$sql = "SELECT artist_code FROM artist where USERID = '{$user_id}'";
+$result = mysqli_query($conn, $sql);
+
+while ($row = mysqli_fetch_array($result)) {
+    $artist_code = $row['artist_code'];
+}
+
 
 
 //작품 db 업로드
@@ -63,7 +76,7 @@ $sql = "
 )";
 
 //sql문
-echo $sql;
+// echo $sql;
 $result = mysqli_query($conn, $sql);
 
 if ($result === false) { //오류 여부
