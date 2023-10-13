@@ -205,7 +205,7 @@
              <div class="content">
                  <h3><?=$row['name']?></h3>
                  <p>현재가: <?=number_format($row['current_price'])?> 원</p>
-                 <p><?=$interval->format('%dD %h:%i')?></p>
+                 <p><?=$interval->format('%a일 %H시간 %i분 %s초')?></p>
                  <a href="../HTML/best_1.php?aid=<?=$row['artId']?>" class="btn">입찰</a>
                  <div class="icons">
                      <span> <i class="fas fa-calendar"></i> <?=$datetime2->format('jS M, o')?> </span>

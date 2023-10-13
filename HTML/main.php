@@ -180,14 +180,14 @@ include 'bidCheckProcess.php';
             // art_type을 기반으로 해당 유형의 작품을 데이터베이스에서 가져오는 쿼리 작성
             $sql = "SELECT a.*, i.img_path
                     FROM art AS a
-                    JOIN image AS i ON a.art_img_id = i.art_img_id
+                    JOIN image AS i ON a.art_img_id = i.art_img_id and a.art_status = 0
                     WHERE a.art_type = '$art_type'
                     ORDER BY a.registration_date DESC LIMIT 6";
         } else {
             // "전체"를 선택한 경우, 모든 작품을 가져오는 쿼리 작성
             $sql = "SELECT a.*, i.img_path
                     FROM art AS a
-                    JOIN image AS i ON a.art_img_id = i.art_img_id
+                    JOIN image AS i ON a.art_img_id = i.art_img_id and a.art_status = 0
                     ORDER BY a.registration_date DESC LIMIT 6";
         }
 

@@ -2,7 +2,7 @@
 include '../server.php';
 
 // 종료 시간이 지난 작품을 찾습니다.
-$sql_select = "SELECT * FROM art WHERE closing_time < CURDATE()";
+$sql_select = "SELECT * FROM art WHERE closing_time < NOW()";
 $result_select = mysqli_query($conn, $sql_select);
 
 if ($result_select === false) { // 오류인지 확인합니다.
