@@ -158,7 +158,7 @@
             
                 <tr>
                     <td style="text-align: center;">재료</td>
-                    <td><input type="text" name="material" size="22" style="width:100%; border:none; margin-left:1em"></td>
+                    <td><input type="text" name="material" size="22" style="width:100%; border:none;"></td>
                 </tr>
 
                 <tr>
