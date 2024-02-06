@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'bidCheckProcess.php';
+include '../vendor/autoload.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,12 +28,12 @@ include 'bidCheckProcess.php';
 
       function draw_new_Img(artType) {
         // 선택한 라디오 버튼의 id를 URL 매개변수로 전달
-        window.location.href = 'main.php?N_art_type=' + artType;
+        window.location.href = 'index.php?N_art_type=' + artType;
     }
 
     function draw_end_Img(artType) {
         // 선택한 라디오 버튼의 id를 URL 매개변수로 전달
-        window.location.href = 'main.php?E_art_type=' + artType;
+        window.location.href = 'index.php?E_art_type=' + artType;
     }
 
 

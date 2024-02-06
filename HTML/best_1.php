@@ -23,7 +23,7 @@
                 echo mysqli_error($conn);
             ?>
             <script>
-                location.href = "main.php";
+                location.href = "../index.php";
             </script>
             <?php
             }

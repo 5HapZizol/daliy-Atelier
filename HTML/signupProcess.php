@@ -57,7 +57,7 @@
             ?>
             <script>
                 alert("회원 가입이 완료되었습니다");
-                location.href = "main.php";
+                location.href = "../index.php";
             </script>
             <?php
             }
@@ -81,7 +81,7 @@
             ?>
             <script>
                 alert("회원 가입이 완료되었습니다");
-                location.href = "main.php";
+                location.href = "../index.php";
             </script>
             <?php
             }

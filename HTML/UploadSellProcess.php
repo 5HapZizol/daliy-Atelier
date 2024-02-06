@@ -86,7 +86,7 @@ if ($result === false) { //오류 여부
     ?>
     <script>
         alert("업로드가 완료되었습니다");
-        location.href = "main.php";
+        location.href = "../index.php";
     </script>
 <?php
 }

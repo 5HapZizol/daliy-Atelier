@@ -17,7 +17,7 @@
             // 사용자가 로그인되어 있지 않은 경우 권한이 없다는 알림창을 표시합니다.
             echo '<script>alert("로그인이 필요합니다. 권한이 없습니다.");</script>';
             // 이후 필요한 처리, 예를 들면 로그인 페이지로 이동하는 리디렉션 등을 수행할 수 있습니다.
-            header("Location: main.php");
+            header("Location: ../index.php");
             exit; // 스크립트 실행 중지
         }
 

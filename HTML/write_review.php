@@ -4,7 +4,7 @@
 
     if (!$user_id) {
         echo '<script>alert("로그인이 필요합니다. 권한이 없습니다.");</script>';
-        header("Location: main.php");
+        header("Location: ../index.php");
         exit;
     }
 

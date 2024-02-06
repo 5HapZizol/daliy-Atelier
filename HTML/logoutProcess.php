@@ -3,5 +3,5 @@ session_start();
 session_destroy();
 ?>
 <script> //메인 페이지로 이동
-    location.href = "main.php";
+    location.href = "../index.php";
 </script>

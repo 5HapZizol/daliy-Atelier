@@ -110,7 +110,7 @@
     // User_status가 1인 경우에만 페이지 허용
     if ($user_status != 1) {
         echo "<script>alert('권한이 없습니다.');</script>";
-        echo "<script>window.location.href = 'main.php';</script>";
+        echo "<script>window.location.href = '../index.php';</script>";
         exit;
     }
     ?>

@@ -28,7 +28,7 @@
     <header>    <!-- 헤더 시작-->
         <div class="Header">
           <div class="Logo">
-            <a href="main.php"><img src="../img/Header_Image/Logo_2.png" /></a>
+            <a href="../index.php"><img src="../img/Header_Image/Logo_2.png" /></a>
           </div>
     
           <div class="a12">
