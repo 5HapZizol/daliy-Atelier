@@ -81,7 +81,7 @@
           <br>
           <br>
             <?php
-            if ($user['user_status'] == 1) { //작가일 경우
+            if ($user['User_status'] == 1) { //작가일 경우
             ?>
                 <li class="group">
                 <div class="title" onclick="location.href='Upload_Sell.php'"  style="font-weight:bold;" >내 작품 판매하기</div>
