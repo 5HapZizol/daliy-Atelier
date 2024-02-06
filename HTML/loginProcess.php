@@ -8,14 +8,25 @@
         $login_type = $_GET['type']; // 로그인 타입 파라미터 추가
 
         // DB 정보 가져오기
-        $sql = "SELECT * FROM User WHERE Userid ='{$login_id}' AND User_status = '{$login_type}'";
+        $sql = "SELECT * FROM User WHERE Userid ='{$login_id}'";
         $result = mysqli_query($conn, $sql);
 
         if ($result) {
             $row = mysqli_fetch_array($result);
             
             if ($row) {
-                // 사용자를 찾았을 때 비밀번호 검증 로직 실행
+                // 사용자를 찾았을 때 비밀번호 검증 및 사용자 타입 검증 로직 실행
+                if ($row['User_status'] != $login_type) {
+                    // 사용자 타입이 일치하지 않을 경우
+                    ?>
+                    <script>
+                        alert("로그인 실패: 계정 타입이 일치하지 않습니다.");
+                        history.back(); // 이전 페이지로 돌아가기
+                    </script>
+                    <?php
+                    exit; // 이후 코드 실행 방지
+                }
+
                 $hashedPassword = $row['password'];
                 $passwordResult = password_verify($login_pw, $hashedPassword);
 
@@ -24,19 +35,20 @@
                     // 세션에 id 저장
                     session_start();
                     $_SESSION['user'] = $row['Userid'];
-    ?>
+                    ?>
                     <script>
                         alert("로그인에 성공하였습니다.");
                         location.href = "../index.php";
                     </script>
-    <?php
+                    <?php
                 } else {
                     // 로그인 실패
-    ?>
+                    ?>
                     <script>
                         alert("로그인에 실패하였습니다.");
+                        history.back(); // 이전 페이지로 돌아가기
                     </script>
-    <?php
+                    <?php
                 }
             } else {
                 // 사용자를 찾지 못함
