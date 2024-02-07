@@ -7,7 +7,7 @@
         <title>일반 회원 가입</title>
         <link rel="stylesheet" href="../css/Member_register.css">
 
-        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="//code.jquery.com/jquery-latest.js"></script>
     </head>
 
     <!--본문-->

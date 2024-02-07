@@ -69,8 +69,10 @@
             echo "<script>window.location.href = 'Member_register.php';</script>";
         } else {
             // 일반 회원 가입 처리
-            $sql = "INSERT INTO user (Userid, password, name, nickname, phone_number, email, join_date, User_status)
-            VALUES('{$user_id}', '{$hashedPassword}', '{$name}', '{$nickname}', '{$tel}', '{$email}', NOW(), '0'
+            $reserve = (int)0;
+            
+            $sql = "INSERT INTO user (Userid, password, name, nickname, phone_number, email, join_date, User_status, reserve)
+            VALUES('{$user_id}', '{$hashedPassword}', '{$name}', '{$nickname}', '{$tel}', '{$email}', NOW(), '0', $reserve
             )"; // SQL 문
             $result = mysqli_query($conn, $sql);
 
