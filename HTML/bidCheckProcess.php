@@ -1,5 +1,5 @@
 <?php
-include '../server.php';
+include $_SERVER["DOCUMENT_ROOT"].'\server.php';
 
 // 종료 시간이 지난 작품을 찾습니다.
 $sql_select = "SELECT * FROM art WHERE closing_time < NOW()";

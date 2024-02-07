@@ -1,7 +1,6 @@
 <?php
-session_start();
-include 'bidCheckProcess.php';
-include '../vendor/autoload.php';
+    session_start();
+    include $_SERVER["DOCUMENT_ROOT"]."/HTML/bidCheckProcess.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,11 +40,12 @@ include '../vendor/autoload.php';
   </script>
 </head>
 <body>
-<?php
-      include("Header.php");
-    ?> 
-
-   <article>
+    
+    <article>
+        <?php
+            include $_SERVER["DOCUMENT_ROOT"]."/HTML/Header.php";
+        ?> 
+    </article>
 
    <div class="section">
         <input type="radio" name="slide" id="slide01" checked>
@@ -215,7 +215,7 @@ include '../vendor/autoload.php';
 
                 echo '<h2 id="remaining-time">' . $remainingTime . '</h2>
                     <div class="status">
-                        <a href="best_1.php?aid=' . $row['artId'] . '" class="btn">입찰</a>
+                        <a href="../HTML/best_1.php?aid=' . $row['artId'] . '" class="btn">입찰</a>
                     </div>
                 </div>
             </div>';
