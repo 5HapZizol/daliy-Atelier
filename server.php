@@ -1,4 +1,5 @@
 <?php
+    phpinfo(16);
     date_default_timezone_set('Asia/Seoul');
     ini_set('display_errors','0');
     $host = getenv('HOST');
