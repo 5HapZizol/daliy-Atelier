@@ -35,13 +35,15 @@
 
     if ($User_status == 1) {
         // 작가 회원 가입 처리
+        $reserve = (int)0;
+        
         if (empty($A_user_id) || empty($user_name) || empty($user_phone) || empty($user_email)) {
             echo "<script>alert('필수 입력란을 모두 채워주세요.');</script>";
             echo "<script>window.location.href = 'Member_Auother_register.php';</script>";
         } else {
             $artist_code = uniqid("artist_", true);
-            $sql = "INSERT INTO user (Userid, password, name, nickname, phone_number, email, join_date, User_status)
-                    VALUES('{$A_user_id}', '{$hashedPassword}', '{$user_name}', '{$auother_nick}', '{$user_phone}', '{$user_email}', NOW(), '1'
+            $sql = "INSERT INTO user (Userid, password, name, nickname, phone_number, email, join_date, User_status, reserve)
+                    VALUES('{$A_user_id}', '{$hashedPassword}', '{$user_name}', '{$auother_nick}', '{$user_phone}', '{$user_email}', NOW(), '1', $reserve
                     )"; // SQL 문
                     echo "SQL Query: " . $sql;
             $result = mysqli_query($conn, $sql);
