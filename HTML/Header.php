@@ -1,7 +1,7 @@
 <?php
   ini_set('display_errors','0');
   session_start();
-  include '../server.php'; 
+  include $_SERVER["DOCUMENT_ROOT"].'/server.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
