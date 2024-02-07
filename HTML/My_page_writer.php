@@ -11,7 +11,7 @@
 <?php
       include("Header.php");
       $user_id = $_SESSION['user'];
-      $sql = "SELECT * FROM USER where userid = '$user_id'";
+      $sql = "SELECT * FROM user where userid = '$user_id'";
       $result = mysqli_query($conn, $sql);
       $user = mysqli_fetch_array($result);
     ?>

@@ -10,7 +10,7 @@
     $items_per_page = 10; // 한 페이지당 보여줄 항목 수
 
     // 전체 항목 수 가져오기
-    $sql_total = "SELECT COUNT(*) AS total FROM Q_write";
+    $sql_total = "SELECT COUNT(*) AS total FROM q_write";
     $result_total = mysqli_query($conn, $sql_total);
     $total_items = mysqli_fetch_assoc($result_total)['total'];
 
@@ -19,7 +19,7 @@
 
     // 현재 페이지에 맞는 데이터 가져오기
     $offset = ($current_page - 1) * $items_per_page;
-    $sql = "SELECT Q_write_id, Q_write_select, Q_write_title, DATE_FORMAT(Q_write_time, '%y-%m-%d') AS Q_write_time, user_id FROM Q_write ORDER BY Q_write_id DESC LIMIT $offset, $items_per_page";
+    $sql = "SELECT Q_write_id, Q_write_select, Q_write_title, DATE_FORMAT(Q_write_time, '%y-%m-%d') AS Q_write_time, user_id FROM q_write ORDER BY Q_write_id DESC LIMIT $offset, $items_per_page";
     $result = mysqli_query($conn, $sql);
 ?>
 

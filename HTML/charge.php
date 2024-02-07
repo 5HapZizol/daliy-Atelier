@@ -19,6 +19,7 @@
       <span class="page_name">충전하기</span>
       <br>
       <hr class="hr_1">
+      <p>임의로 만든 페이지로, 결제 금액만 누르면 자동 충전이 됩니다.</p>
     </div>
  <!--충전하기-->
     <form action = "charge_process.php" method = "post" id="charge_form">
@@ -109,7 +110,7 @@
             </div>
             <div class = "last_container">
                 <div class = "pay-button" onClick="document.forms['charge_form'].submit();">
-                        <a href="" style = "text-decoration : none; color: black;">결제하기</a>
+                        <a style = "text-decoration : none; color: black;">결제하기</a>
                 </div>
             </div>
         </div>

@@ -152,6 +152,7 @@
             <span class="page_name_1">찜 작품</span>
             <p class="page_path_1">마이페이지 > 찜 작품</p>
             <br>
+            <p>미구현 페이지</p>
             <hr class="hr_1_1">
         </div>
         <div class="pick_btn">
