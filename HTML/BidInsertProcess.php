@@ -25,7 +25,7 @@ if ($bid_price > $reserve) {
 } else {
     // 입찰 정보 업로드
     $bid_id = uniqid("bid_", true);
-    $sql = "INSERT INTO BID
+    $sql = "INSERT INTO bid
         (BIDID, USERID, ARTID, BID_PRICE, BID_TIME)
         VALUES('{$bid_id}', '{$user_id}', '{$_GET['aid']}', '{$bid_price}', NOW()
     )";

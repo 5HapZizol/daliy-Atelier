@@ -45,7 +45,7 @@
 
     //이미지 db 업로드
     $sql = "
-        INSERT INTO IMAGE(
+        INSERT INTO image(
            art_img_id, img_name, img_path)
         VALUES(
             '{$img_id}', '{$filename}', '{$folder}'

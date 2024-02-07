@@ -15,7 +15,7 @@ move_uploaded_file($tmpfile, $folder);
 
 //이미지 db 업로드
 $sql = "
-        INSERT INTO IMAGE(
+        INSERT INTO image(
            art_img_id, img_name, img_path)
         VALUES(
             '{$img_id}', '{$filename}', '{$folder}'
@@ -65,7 +65,7 @@ while ($row = mysqli_fetch_array($result)) {
 
 //작품 db 업로드
 $sql = "
-        INSERT INTO ART(
+        INSERT INTO art(
             artid, artist_code, art_img_id, art_type, name,
             material, descript, start_price, current_price, registration_date,
             bid_start_time, closing_time)
