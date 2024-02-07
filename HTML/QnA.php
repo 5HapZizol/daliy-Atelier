@@ -3,7 +3,7 @@
 <head>
     <title>고객센터</title>
     <meta charset="UTF-8">
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
     <link rel="stylesheet" href="../css/QnA.css">
 </head>
 

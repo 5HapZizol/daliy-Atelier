@@ -43,7 +43,7 @@
     <meta charset="UTF-8">
     <title>작품 리뷰쓰기</title>
     <link rel="stylesheet" href="../css/write_review.css">   
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
     <script>
         const drawStar = (target) => {
             const starElement = document.querySelector('.star span');

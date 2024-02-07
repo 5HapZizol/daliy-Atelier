@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="../css/totalart.css"></link>
     <link type="text/css" rel="stylesheet" href="../css/filter.css"></link>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
     <title>디지털 아트 경매</title>
 </head>
 <body>

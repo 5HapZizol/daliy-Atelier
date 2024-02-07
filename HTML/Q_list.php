@@ -26,7 +26,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
     <link rel="stylesheet" href="/css/Q_list.css">
     <title>1대 1 문의</title>
 </head>

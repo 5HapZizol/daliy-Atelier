@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>서비스 이용 안내</title>
     <link type="text/css" rel="stylesheet" href="../css/Information_Use.css"></link>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
 <?php

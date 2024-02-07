@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>작가 소개</title>
     <link type="text/css" rel="stylesheet" href="../css/artist_introduce.css">
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
     
 </head>
 <body>

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
     <link type="text/css" rel="stylesheet" href="/css/totalart.css"></link>
     <link type="text/css" rel="stylesheet" href="/css/filter.css"></link>
    

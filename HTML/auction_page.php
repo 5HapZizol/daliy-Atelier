@@ -3,7 +3,7 @@
 <head>
     <title>작품 페이지</title>
     <link rel="stylesheet" href="../css/new_1.css">
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
 <?php

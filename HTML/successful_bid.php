@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
     <link rel="stylesheet" href="../css/successful_bid.css">  
     <title>낙찰 작품 페이지</title>
 </head>

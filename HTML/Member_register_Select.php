@@ -4,7 +4,7 @@
     <head>
       <meta charset="UTF-8">
       <link type="text/css" rel="stylesheet" href="../css/Member_register_Select.css"></link>
-      <script src="http://code.jquery.com/jquery-latest.js"></script>
+      <script src="//code.jquery.com/jquery-latest.js"></script>
       <title>회원 가입</title>
 </head>
 <body>

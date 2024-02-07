@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>주문</title>>
     <link rel="stylesheet" href="../css/Order.css">
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
 <?php

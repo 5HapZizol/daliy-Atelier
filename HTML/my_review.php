@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="../css/review_my_work.css"> 
     <link rel="stylesheet" href="../css/popupchang.css">  
     <link rel="stylesheet" href="../css/slider.css">
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
     <script src="../js/review_my_work.js"></script>
 </head>
 <body>
