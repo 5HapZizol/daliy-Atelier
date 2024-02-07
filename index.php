@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <title>데일리 아틀리에</title>
     <link rel="stylesheet" href="../css/main.css" type="text/css">
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
     <script>
 
       $(document).ready(function(){
