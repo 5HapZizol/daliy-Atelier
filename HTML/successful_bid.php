@@ -40,7 +40,7 @@
     $current_time = date('Y-m-d H:i:s'); // 현재 시간을 가져옵니다.
 
     $sql = "SELECT *
-            FROM Art
+            FROM art
             WHERE closing_time < '{$current_time}'
             ORDER BY registration_date";
     $result = mysqli_query($conn, $sql);

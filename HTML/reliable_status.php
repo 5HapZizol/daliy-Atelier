@@ -33,7 +33,7 @@
               <?php
               //세션값 받아오기
                 $user_id = $_SESSION['user'];
-                $sql = "SELECT * from ART
+                $sql = "SELECT * from art
                         where ARTID IN (SELECT DISTINCT artid 
                                         FROM bid
                                         WHERE userid = '{$user_id}'
@@ -112,7 +112,7 @@
               <?php
               //세션값 받아오기
                 $user_id = $_SESSION['user'];
-                $sql = "SELECT * from ART
+                $sql = "SELECT * from art
                         where ARTID IN (SELECT DISTINCT artid 
                                         FROM bid
                                         WHERE userid = '{$user_id}'
@@ -192,7 +192,7 @@
               <?php
               //세션값 받아오기
                 $user_id = $_SESSION['user'];
-                $sql = "SELECT * from ART
+                $sql = "SELECT * from art
                         where ARTID IN (SELECT DISTINCT artid 
                                         FROM bid
                                         WHERE userid = '{$user_id}'

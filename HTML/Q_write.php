@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\CSS\Q_write.css">
+    <link rel="stylesheet" href="../css/Q_write.css">
     <script src="//code.jquery.com/jquery-latest.js"></script>
-    <script src="/js/Q_write.js"></script>
+    <script src="../js/Q_write.js"></script>
     <title>문의 하기</title>
 </head>
 <body>

@@ -7,7 +7,7 @@
     }
 
     // 마지막 번호 조회
-    $sql = "SELECT MAX(Q_write_id) AS max_id FROM Q_write";
+    $sql = "SELECT MAX(Q_write_id) AS max_id FROM q_write";
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($result);
     $lastId = $row['max_id'];

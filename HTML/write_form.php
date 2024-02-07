@@ -16,7 +16,7 @@
 
         <?php
         $sql = "SELECT Q_write_id, Q_write_select, Q_write_title, DATE_FORMAT(Q_write_time, '%y-%m-%d') AS Q_write_time, Q_write_content, user_id
-                FROM Q_write
+                FROM q_write
                 WHERE Q_write_id = '{$_GET['Qid']}'";
         $result = mysqli_query($conn, $sql);
         $Question= mysqli_fetch_array($result);
@@ -50,7 +50,7 @@
                     FROM image
                     WHERE art_img_id = (
                         SELECT art_img_id
-                        FROM Q_write
+                        FROM q_write
                         WHERE Q_write_id = '{$_GET['Qid']}')";
                     $result = mysqli_query($conn, $sql);
                     $image = mysqli_fetch_assoc($result); // 이미지 정보 가져오기

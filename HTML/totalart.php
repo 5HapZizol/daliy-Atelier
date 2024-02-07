@@ -174,7 +174,7 @@
     <div class="container">
     <div class="box-container">
         <?php
-        $sql = "SELECT * FROM Art WHERE art_status = 0 ORDER BY registration_date";
+        $sql = "SELECT * FROM art WHERE art_status = 0 ORDER BY registration_date";
         $result = mysqli_query($conn, $sql);
 
         if ($result === false) {    // 오류 여부

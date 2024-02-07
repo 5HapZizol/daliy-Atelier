@@ -8,7 +8,7 @@
         exit;
     }
 
-    $sql = "SELECT * FROM Art WHERE artid = '{$_GET['aid']}'";
+    $sql = "SELECT * FROM art WHERE artid = '{$_GET['aid']}'";
     $result = mysqli_query($conn, $sql);
 
     if ($result === false) {

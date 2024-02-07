@@ -8,7 +8,7 @@
         $login_type = $_GET['type']; // 로그인 타입 파라미터 추가
 
         // DB 정보 가져오기
-        $sql = "SELECT * FROM User WHERE Userid ='{$login_id}' AND User_status = '{$login_type}'";
+        $sql = "SELECT * FROM user WHERE Userid ='{$login_id}' AND User_status = '{$login_type}'";
         $result = mysqli_query($conn, $sql);
 
         if ($result) {
