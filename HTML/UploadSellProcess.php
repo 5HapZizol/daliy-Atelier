@@ -62,17 +62,18 @@ while ($row = mysqli_fetch_array($result)) {
 }
 
 
+$art_status = (int)0;
 
 //작품 db 업로드
 $sql = "
         INSERT INTO art(
             artid, artist_code, art_img_id, art_type, name,
             material, descript, start_price, current_price, registration_date,
-            bid_start_time, closing_time)
+            bid_start_time, closing_time, art_status)
         VALUES(
             '{$art_id}', '{$artist_code}', '{$img_id}', '{$_POST['art_type']}','{$_POST['Upname']}',
             '{$_POST['material']}', '{$_POST['info']}', '{$_POST['price']}', '{$_POST['price']}', NOW(),
-            '{$bid_start_time}', '{$closing_time}'
+            '{$bid_start_time}', '{$closing_time}', $art_status
 )";
 
 //sql문

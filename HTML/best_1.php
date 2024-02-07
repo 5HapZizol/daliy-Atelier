@@ -16,7 +16,7 @@
     <div class="art_auction_info">
         <?php
             date_default_timezone_set('Asia/Seoul');
-            $sql = "SELECT * FROM Art where artid = '{$_GET['aid']}'";
+            $sql = "SELECT * FROM art where artid = '{$_GET['aid']}'";
             $result = mysqli_query($conn, $sql);
             if ($result === false) {    //오류 여부
                 echo "작품 찾기에 문제가 생겼습니다. 관리자에게 문의해주세요.";
