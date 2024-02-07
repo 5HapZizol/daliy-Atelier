@@ -1,7 +1,7 @@
 $(function(){
-    $(".Header").load("../html/Header.html");
+    $(".Header").load("../HTML/Header.html");
 });
 
 $(function(){
-    $(".footer-Background").load("../html/Footer.html");
+    $(".footer-Background").load("../HTML/Footer.html");
 });

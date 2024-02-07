@@ -208,7 +208,7 @@
       <div id="load-more"> load more </div>
       <script>
         $(document).ready(function(){
-          $(".footer-Background").load("../html/Footer.html");
+          $(".footer-Background").load("../HTML/Footer.html");
       });
         let loadMoreBtn = document.querySelector('#load-more');
         let currentItem = 3;

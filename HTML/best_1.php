@@ -283,7 +283,7 @@
     <script>
 
         $(document).ready(function(){
-            $(".footer-Background").load("/html/Footer.html");
+            $(".footer-Background").load("../HTML/Footer.html");
         });
         const open = () => {
             document.querySelector(".modal").classList.remove("hidden");

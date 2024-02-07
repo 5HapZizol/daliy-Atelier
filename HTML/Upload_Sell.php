@@ -14,7 +14,7 @@
     <script>
 
         $(document).ready(function(){
-            $(".footer-Background").load("../html/Footer.html");
+            $(".footer-Background").load("../HTML/Footer.html");
         });
 
       $.fn.setPreview = function(opt){

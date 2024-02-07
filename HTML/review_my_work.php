@@ -154,11 +154,11 @@
   </article>
   <script>
     $(document).ready(function () {
-        $(".Header").load("../html/Header.html");
+        $(".Header").load("../HTML/Header.html");
     });
 
     $(document).ready(function () {
-        $(".footer-Background").load("../html/Footer.html");
+        $(".footer-Background").load("../HTML/Footer.html");
     });
 
     const open = () => {

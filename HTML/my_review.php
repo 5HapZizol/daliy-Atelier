@@ -135,7 +135,7 @@
 
         <script>
             $(document).ready(function () {
-                $(".footer-Background").load("../html/Footer.html");
+                $(".footer-Background").load("../HTML/Footer.html");
             });
 
             // 모달 팝업 열기 함수

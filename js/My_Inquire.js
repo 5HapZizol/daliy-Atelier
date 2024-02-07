@@ -1,6 +1,6 @@
 
 $(function(){
-  $(".footer-Background").load("../html/Footer.html");
+  $(".footer-Background").load("../HTML/Footer.html");
 });
 
 $(document).ready(function() {

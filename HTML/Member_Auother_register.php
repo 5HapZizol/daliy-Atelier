@@ -133,7 +133,7 @@
 
 <script>
 $(document).ready(function(){
-    $(".footer-Background").load("../html/Footer.html");
+    $(".footer-Background").load("../HTML/Footer.html");
 });
 
 const A_user_id = document.querySelector("#A_user_id");

@@ -14,7 +14,7 @@ $(".login-tab .General-Login").click(function () {
     $(".Author-login-form, .General-login-form").toggle();
 });
 
-    $(".footer-Background").load("../html/Footer.html");
+    $(".footer-Background").load("../HTML/Footer.html");
 });
 
 
